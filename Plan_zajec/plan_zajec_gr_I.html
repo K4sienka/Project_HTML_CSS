@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Plan Zajęć </title>
     <link rel="stylesheet" href="plan_zajec.css">
+    <script src="../Plan_zajec/img_zoom.js"></script>
 
 </head>
 
@@ -51,6 +52,7 @@
                         <td class="left" id="left">
                             <ul>
                                 
+                                <li><a href="../Plan_zajec/plan_zajec.css">Ogólny</a></li>
                                 <li><a class="active" href="../Plan_zajec/plan_zajec_gr_I.html">Grupa I</a></li>
                                 <li><a href="../Plan_zajec/plan_zajec_gr_II.html">Grupa II</a></li>
                                 <li><a href="../Plan_zajec/plan_zajec_gr_III.html">Grupa III</a></li>
@@ -63,22 +65,27 @@
                             </ul>
 
                         </td>
-                        <td id="right">
-
-                        </td>
+                        
 
                         <td id="right">
 
                             <div class="box">
-                                <div class="img"><img src="../Plan_zajec/plany_zdj/gr_I/plan_I.png" width=400px, height=350px>
+                                <div class="img" onclick="Zoom(this)">
+                                    <img src="../Plan_zajec/plany_zdj/gr_I/plan_I.png" width=400px, height=350px>
                                     <div class="container">Tygodnie nieparzyste</div>
                                 </div>
-                                <div class="img"><img src="../Plan_zajec/plany_zdj/gr_I/plan_I_2.png" width=400px, height=350px>
+                                <div class="img" onclick="Zoom(this)">
+                                    <img src="../Plan_zajec/plany_zdj/gr_I/plan_I_2.png" width=400px, height=350px>
                                     <div class="container">Tygodnie parzyste</div>
+                                </div> 
 
                             </div>
 
-                        </td>    
+                        </td>  
+                        <div class="button-wrapper">
+                            <button id="CalendarI" onclick="przeniesDoKalendarza(this.id)">Przejdź do kalendarza</button>
+                        </div>
+
                     </tr>
                   
 
