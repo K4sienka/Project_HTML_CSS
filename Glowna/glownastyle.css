@@ -1,41 +1,47 @@
 *{
     margin: 0;
     padding: 0;
-    font-family: arial;
     box-sizing: border-box; 
+    
 }
  
-img:hover{
-     border-radius: 10px 15px; 
-
-}
-
 body{ 
-     background-color: white;
-     width: 100%;   
+     width: 100%;  
+    background-image: url(../Glowna/A0.jpg); /* Ścieżka do obrazka */
+    background-size: cover; /* Dopasowanie obrazka do tła */
+    background-position: center; /* Wyśrodkowanie obrazka */    
 }
 
-#wrapper{
-     width: 70vw;
-     margin: 0 auto;
-     height: 100vh;
-     
+.wrapper{
+    position: relative;
+    background-color: rgba(255, 255, 255, 0.5);
+    text-align: center;
 }
 
-#top{
-background-color: white;
-
+h1 {
+    position: relative;
+    font-family: 'Copperplate Gothic Light';
+    font-size: 60px;
+    color: #214232;
+    text-align: center;
+    padding: 20px;
+    margin: 0;
 }
 
 header{
-     background-color: rgb(242, 244, 255);
      display: block;
      text-align: center;
      font-size: 1.8vh;
-     margin: 0 auto ;
-     padding: 5%;
-
 }
+
+
+article{
+    display: block;
+    text-align: center;
+    padding: 5%;
+}
+
+/*Menu Główne*/
 
 ul{
     display: flex;
@@ -62,12 +68,12 @@ ul li a{
 ul li ul.podmenu{
     position: absolute;
     display: none;
+    width:100%;
 }
 
 ul li ul.podmenu li {
-    width: 100%; /* Set width to 100% for all list items in the submenu */
-    box-sizing: border-box; /* Include padding and border in the width calculation */
-}
+    width: 100%;
+    box-sizing: border-box;}
 
 ul li:hover ul.podmenu{
     display: block;
@@ -91,22 +97,92 @@ ul li a:hover /*podswietlanie linkow w podmenu*/
     background: #009688;
 }
 
-article{
-     background-color: rgb(242, 244, 255);
-     display: block;
-     text-align: center;
-     padding: 5%;
-     border-bottom: 2px solid #7a0e9e;
-     
-       
+h3{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+/*kontakt*/
+
+.contact-section{
+    font-family: FreeMono, monospace;
+    display: inline-block;
+    background-color: rgba(178, 187, 183, 0.8); /* Zielony kolor tła */
+    padding: 10px; /* Dodaj odstęp dla estetyki */
+    width: 40%;
 }
 
 
+.container
+{
+    width: 100%;
+    text-align: left;
+}
+
+textarea{
+    height: 200px;
+}
+
+input[type="text"]{
+    height:30px;
+}
 
 
+input, textarea
+{
+    width:100%;
+    margin-bottom: 10px;
+    border-radius: .3em;
+    border: 2px solid #214232;
+    box-sizing: border-box;
+    resize:none;
+    padding: 8px;
+}
 
 
+h2{
+    font-size: 30px;
+}
 
+.send
+{
+    background-color: #009688;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    font-size: 13px;
+    margin-bottom: 5em;
+    border-radius: 5em;
+    display: inline-block;
+    padding: 8px 20px;
+    width: unset;
+    cursor: pointer;
+}
+
+.send:hover{
+    background-color: #214232;
+}
+
+.contact-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-left{
+    color: #214232;
+}
+
+/*stopka*/
+
+footer
+{
+    margin-top: 15px;
+    background-color: #f0f0f0;                  /* Kolor wypelnienia tla */
+    padding: 10px;                                      /* Dodatkowy odstep od tekstu do obramowania */
+    text-align: center;                                 /* Wysrodkowanie tekstu w poziomie */
+    letter-spacing: 8px;                           /*odstepy miedzy literami*/
+    opacity: 0.7;
+}
 
 
 

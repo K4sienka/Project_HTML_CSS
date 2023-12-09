@@ -9,12 +9,15 @@
 </head>
 
 <body>
-    <div id="wrapper">
-        <div id="top">
+    <div class="wrapper">
+        <div class="top">
             <header>
-                <h1>Przewodnik po IiAD</h1>
 
+                <h1>Przewodnik po IiAD</h1>
             </header>
+
+
+        <!--Menu główne-->
 
             <ul>
                 <li><a class="menu  active" href="../Glowna/StronaGlowna.html"> Strona główna </a></li>
@@ -37,23 +40,35 @@
             </ul>
 
             <article>
+
                 <h3>Aktualności</h3>
             </article>
         </div>
 
-        <div id="bottom">
 
-            <table>
-                <tr >
-                    <td id="right">
-                        <p> Jest to próba złożenia strony zaliczeniowej na SKiBD trochę wcześniej niż 24 godziny przed terminem końcowym</p>
-                    </td>
-                </tr>
-            </table>
+        <!-- Kontakt -->
+        <section class="contact-section" id="napisz">
+            <div class="container">
+                <div class="contact-left">
+                    <h2>Kontakt do nas!</h2>
+                    <form action="mailto:someone@example.com" method="post" enctype="text/plain">
+                        Imię i Nazwisko:<br>
+                        <input type="text" name="name" placeholder="Podaj swoje imię i nazwisko"><br>
+                        E-mail:<br>
+                        <input type="text" name="mail" placeholder="Podaj swój e-mail AGH"><br>
+                        Treść wiadomości:<br>
+                        <textarea name="message" id="message" cols="30" rows="10" placeholder="Treść wiadomości..."></textarea><br><br>
+                        <input type="submit" class="send" value="Send">
+                        <input type="reset" class="send" resetvalue="Reset">
+                        </form>
+                </div>
+            </div>
+        </section>
 
 
             <footer>
-                <p> Kraków 2022 </p>
+                <p> Kraków 2023 </p>
+                <p> Miasteczko Studenckie AGH </p>
             </footer>
         </div>
 
