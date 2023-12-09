@@ -23,13 +23,11 @@ body{
 }
 
 .top{
-     padding: 5vh 5vh 5vh 5vh;
-
+     padding-bottom: 5vh;
 }
 
 .bottom{
-     padding: 5vh 5vh 5vh 5vh;
-
+     padding-bottom: 5vh
 }
 
 h1 {
@@ -48,7 +46,7 @@ header{
      display: block;
      text-align: center;
      font-size: 1.8vh;
-    /* padding: 5%; */
+    padding: 0 0 5vh 0;
 
 }
 
@@ -161,10 +159,8 @@ td.left{
 .side_menu  li:hover {
      list-style: none;
      text-decoration: none;
+     transition: border-radius 1s ease, padding-left 1s ease,  padding-right 1s ease ;
     
-     padding-left: 40px; /* Zwiększenie odstępu po najechaniu */
-     padding-right: 40px;
-     border-radius: 100px;
 }
 
 
@@ -174,11 +170,16 @@ td.left{
      padding: 5px;
      background-color: black;
      color: white;
+     border-radius: 10px;
 }
 
-.side_menu a:hover{
+.side_menu li a:hover{
      background-color: #9E69AF ;  /*podświetlenie przy najechaniu na element */
-
+     padding-left: 40px; /* Zwiększenie odstępu po najechaniu */
+     padding-right: 40px;
+     border-radius: 100px;
+     transition: border-radius 1.5s ease, padding-left 1.5s ease,  padding-right 1.5s ease ;
+    
 }
 
 .side_menu .active{
@@ -210,7 +211,7 @@ td a.rap{
 
 footer
 {
-    margin-top: 15px;
+   margin-top: 2vh;
     background-color: #f0f0f0;                  /* Kolor wypelnienia tla */
     padding: 10px;                                      /* Dodatkowy odstep od tekstu do obramowania */
     text-align: center;                                 /* Wysrodkowanie tekstu w poziomie */
@@ -331,5 +332,6 @@ footer
      padding-right: 40px;
      background-color: #9E69AF;
      font-size: 14px;
+     
  }
  
