@@ -84,7 +84,7 @@ a:hover,a.menu:hover{
 }
 
 main.active{
-     background-color: #7a0e9e;
+     background-color: rgb(122, 14, 158);
 }
 
 ul li a:hover /*podswietlanie linkow w podmenu*/
@@ -109,7 +109,7 @@ h3{
 }
 
 .up {
-    background-color: #7a0e9e;
+    background-color: rgba(122, 14, 158, 0.7);
     width: 100%; /* Ustaw szerokość na 100%, aby dostosować się do kontenera nadrzędnego */
     max-width: 1000px; /* Ustaw maksymalną szerokość dla daty */
     box-sizing: border-box;
@@ -141,10 +141,22 @@ h3{
     position: absolute;
     top: 436px;
     color: #FFF;
-    font-size: 40px;
+    font-size: 35px;
     margin-left: 170px;
-    font-family: sans-serif, arial;
+    font-family: Verdana;
     display: flex;
+    animation: slideText 1s ease-in-out; /* Dodaj animację slideText */
+}
+
+@keyframes slideText {
+    from {
+        opacity: 0;
+        transform: translateX(100%); /* Przesuń tekst poza obszar diva */
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0%);
+    }
 }
 
 .up h2{
