@@ -109,7 +109,6 @@ h3{
 
 .blog-post {
     width: 75%;
-    max-width: 98rem;
     margin: 6rem auto;
     padding: 20px;
     background-color: rgba(178, 187, 183, 0.8);
@@ -124,20 +123,18 @@ h3{
     text-align: left;
     margin: 0;
     padding: 0;
+    flex: 1; /* Nowa linia: aby zajmowało dostępną przestrzeń */
 }
 
 .blog-post_img {
-    margin-right: 0px;
-    margin-left: 0;
-    position: relative;
-    overflow: hidden;
+    margin-left: 20px; /* Nowa linia: Dodatkowy margines od lewej strony */
+    display: flex;
 }
 
 .blog-post_img img {
     width: 550px;
     height: auto;
     object-fit: cover;
-    display: block;
     border-radius: .8rem;
 }
 
