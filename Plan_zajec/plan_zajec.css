@@ -1,11 +1,13 @@
+/* reset marginesów paddingu i modelu */
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box; 
+    max-height: 100vh;
 }
 
 body{ 
-     height: 100vh;
+ height: 100vh;
     width: 100%;  
     background-image: url(../Glowna/A0.jpg); /* Ścieżka do obrazka */
     background-size: cover; /* Dopasowanie obrazka do tła */
@@ -15,8 +17,8 @@ body{
 
 .wrapper{
      height: 100vh;
-     padding: 5vh 5vh 5vh 5vh;
-    position: relative;
+     padding: 5vh 5vw 5vh 5vw;
+    position:absolute;
     background-color: rgba(255, 255, 255, 0.5);
     text-align: center;
     
@@ -30,7 +32,8 @@ body{
      padding-bottom: 5vh
 }
 
-h1 {
+
+h1 { /*napis przewodnik po iad */
      position: relative;
      font-family: 'Copperplate Gothic Light';
      font-size: 60px;
@@ -77,11 +80,11 @@ nav ul li a{
 nav ul li ul.podmenu{
      position: absolute;
      display: none;
-     width:100%;
+     width:100vw;
  }
  
 nav ul li ul.podmenu li {
-     width: 100%;
+     width: 100vw;
      box-sizing: border-box;}
  
 nav ul li:hover ul.podmenu{
@@ -131,8 +134,8 @@ article{
 
 table{
     
-     padding: 2% 0;
-     width: 100%; 
+     padding: 10px 0px ;
+     width: 100% ; 
      min-height: auto;
      background-color: rgba(255, 255, 255, 0.7);
 }
@@ -196,6 +199,7 @@ td.right{
     
      width: 70%;
      text-align: center;
+     position: relative;
 }
 
 td a.rap{
@@ -229,8 +233,7 @@ footer
 .container
 {
     
-    bottom: 10px;
-    right: 10px;
+    
     color: rgb(70, 64, 64);
     background-color: white;
     
@@ -241,9 +244,9 @@ footer
 
 .read_me
 {
-    position: absolute;
-    bottom: 40%;
-    right: 22%;
+     position: absolute;
+     top: 45%;
+     left: 35%;
     color: rgb(0, 0, 0);
     background-color: rgba(217, 180, 235, 0.8);
     padding: 15px;
@@ -259,35 +262,63 @@ footer
 }
 
 
-.img
+.box .img_plan
 {
+     flex:1;
     position: relative;
     text-align: center;
-    
     transition: transform 0.3s, z-index 0.3s;
     overflow: hidden; /* Ukrycie tresci, ktora wychodzi poza ramki */
     /*opacity: 0.2;*/
     rotate: center;
+    overflow: hidden;
    
     
 }
 
+.box .img_plan img
+{
+     width:100%;
+     height: auto;
+     display: inline-block;
+
+
+}
+
+
 
 .box 
 {
-      display:inline-flex;
-      
-      
+     display: flex;
+     overflow-x: hidden;
         
 }
+
+.prev button, .next button {
+     position: absolute;
+     top: 50%;
+     transform: translateY(-50%);
+     background: none;
+     border: none;
+     font-size: 24px;
+     cursor: pointer;
+}
+
+.prev {
+     left: 0;
+ }
+ 
+ .next {
+     right: 0;
+ }
 
 .zoomed 
 {
      transform: scale(2.2); /* Powiększenie zdjęcia przy najechaniu */
      transition-duration: 1s;
      position: absolute;
-     top: 30%;
-     left: 40%;
+     top: 20%;
+     left: 5%;
      z-index: 1;    
      opacity: 1;
 }
@@ -335,3 +366,17 @@ footer
      
  }
  
+
+ @media only screen and (max-width: 1329px) and (min-width:991){
+
+/*
+1. zmniejszyć powiększenie planów zajęćn i położenie
+1.b zmniejszyć rozmair zdjęć
+2. zmniejszyć paddingi głównego menu
+3.zmniejszyć paddingoi bocznego menu
+4.  
+*/
+
+
+
+ }
