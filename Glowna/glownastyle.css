@@ -100,59 +100,128 @@ h3{
 
 
 /*Aktualnosci*/
-.blog-post_title {
-    font-size: 35px;
-    font-family: 'news';
-    text-align: left;
-    margin-bottom: 10px;
-}
-
 .blog-post {
-    width: 75%;
-    margin: 6rem auto;
-    padding: 20px;
-    background-color: rgba(178, 187, 183, 0.8);
-    display: flex;
-    border-radius: .8rem;
-}
-
-.blog-post_info {
+    margin-top: 50px;
     display: flex;
     flex-direction: column;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.up {
+    background-color: #7a0e9e;
+    width: 100%; /* Ustaw szerokość na 100%, aby dostosować się do kontenera nadrzędnego */
+    max-width: 1000px; /* Ustaw maksymalną szerokość dla daty */
+    box-sizing: border-box;
+    padding: 10px;
+    text-align: center;
     font-family: 'news';
-    text-align: left;
-    margin: 0;
-    padding: 0;
-    flex: 1; /* Nowa linia: aby zajmowało dostępną przestrzeń */
-}
-
-.blog-post_img {
-    margin-left: 20px; /* Nowa linia: Dodatkowy margines od lewej strony */
-    display: flex;
-}
-
-.blog-post_img img {
-    width: 550px;
-    height: auto;
-    object-fit: cover;
-    border-radius: .8rem;
 }
 
 .blog-post_date span {
-    display: block;
-    color: #7a0e9e;
-    font-size: 15px;
-    font-weight: 600;
-    margin-bottom: 15px;
-    text-align: center;
+    color: #000000;
+    font-weight: 200;
+    font-family: 'news';
+    font-size: 20px;
 }
 
-.blog-post_text {
-    flex: 1; /* Zajmuje dostępną przestrzeń */
-    margin-left: 1px;
-    margin-right: 5px;
-    font-size: 1.4rem;
-    color: rgba(0, 0, 0, .7);
+
+.banner-card {
+    width: 100%; /* Ustaw szerokość na 100%, aby dostosować się do kontenera nadrzędnego */
+    max-width: 1000px; /* Dostosuj maksymalną szerokość obrazka według preferencji */
+    position: relative;
+}
+
+.banner-card img {
+    max-width: 100%;
+    height: auto;
+}
+
+.banner-text{
+    position: absolute;
+    top: 436px;
+    color: #FFF;
+    font-size: 40px;
+    margin-left: 170px;
+    font-family: sans-serif, arial;
+    display: flex;
+}
+
+.up h2{
+    margin-top: 20px;
+    font-size: 40px;
+    text-transform: uppercase;
+    color: #FFF;
+    letter-spacing: 5px;
+}
+
+.banner-text .child {
+    display: none;
+    overflow: hidden;
+}
+
+/* Dodajemy stylizację strzałek */
+
+.arrow {
+    background-color: rgb(122, 14, 158); 
+    color: #fff;
+    font-size: 18px;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+#scroll-left {
+    position: absolute;
+    left: 1px; /* Dodaj odstęp od lewej strony */
+}
+
+#scroll-right {
+    position: absolute;
+    right: 1px; /* Dodaj odstęp od prawej strony */
+}
+
+.banner-card {
+    position: relative;
+}
+
+.banner-news,
+#scroll-left,
+#scroll-right {
+    position: absolute;
+    top: 75%;
+}
+
+.arrow-button{
+    background: rgb(39, 38, 38);
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    transition: 0.4s ease;
+}
+
+.arrow-button:hover{
+    box-shadow: 0px 0px 10px 10px rgb(122, 14, 158);
+}
+
+.arrow-button div{
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    border-top: 4px solid #7a0e9e;
+    border-left: 4px solid #7a0e9e;
+    top: 15px;
+}
+
+/* Obróć lewą strzałkę o 180 stopni */
+.arrow-button.left div{
+    transform: rotate(315deg);
+    left: 18px;
+}
+
+.arrow-button.right div{
+    transform: rotate(135deg);
+    right: 18px;
 }
 
 
