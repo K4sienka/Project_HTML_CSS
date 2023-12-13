@@ -1,3 +1,4 @@
+const blogPost = document.querySelector('.blog-post');
 const bannerText = document.getElementById('bannerText');
 const scrollLeftBtn = document.getElementById('scroll-left');
 const scrollRightBtn = document.getElementById('scroll-right');
@@ -32,9 +33,23 @@ function scrollRight() {
     bannerText.style.animation = null; // Ponownie włącz animację
 }
 
+function handleScroll() {
+    const rect = blogPost.getBoundingClientRect();
+
+    // Sprawdź, czy div blog-post jest w widoku
+    if (rect.top < window.innerHeight && rect.bottom >= 0) {
+        showCurrentText();
+    }
+}
+
+// Pokazujemy pierwszy tekst, jeśli div jest w widoku na początku
+document.addEventListener('DOMContentLoaded', function () {
+    handleScroll();
+});
+
+// Obsługa zdarzenia scroll
+window.addEventListener('scroll', handleScroll);
+
 // Dodajemy obsługę kliknięć
 scrollLeftBtn.addEventListener('click', scrollLeft);
 scrollRightBtn.addEventListener('click', scrollRight);
-
-// Pokazujemy pierwszy tekst
-showCurrentText();

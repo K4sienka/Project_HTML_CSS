@@ -64,6 +64,7 @@ ul li ul.podmenu{
     position: absolute;
     display: none;
     width:100%;
+    z-index: 2; /* Ustaw wyższy indeks warstwy */
 }
 
 ul li ul.podmenu li {
@@ -72,6 +73,7 @@ ul li ul.podmenu li {
 
 ul li:hover ul.podmenu{
     display: block;
+    z-index: 2; /* Ustaw wyższy indeks warstwy */
 }
 
 a:hover,a.menu:hover{
@@ -101,57 +103,62 @@ h3{
 
 /*Aktualnosci*/
 .blog-post {
-    margin-top: 50px;
+    margin-top: 120px;
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-bottom: 50px;
+    width: 100%;
 }
 
 .up {
-    background-color: rgba(122, 14, 158, 0.7);
-    width: 100%; /* Ustaw szerokość na 100%, aby dostosować się do kontenera nadrzędnego */
-    max-width: 1000px; /* Ustaw maksymalną szerokość dla daty */
+    background-color: rgba(70, 113, 206, 0.7);
+    width: 50%; /* Ustaw szerokość na 100%, aby dostosować się do kontenera nadrzędnego */
     box-sizing: border-box;
     padding: 10px;
     text-align: center;
     font-family: 'news';
+    overflow: hidden; /* Dodane, aby ukryć nadmiarowy tekst, jeśli przekroczy szerokość */
 }
 
 .blog-post_date span {
     color: #000000;
-    font-weight: 200;
+    font-weight: 200px;
     font-family: 'news';
     font-size: 20px;
 }
 
-
 .banner-card {
-    width: 100%; /* Ustaw szerokość na 100%, aby dostosować się do kontenera nadrzędnego */
-    max-width: 1000px; /* Dostosuj maksymalną szerokość obrazka według preferencji */
     position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
 }
 
 .banner-card img {
-    max-width: 100%;
+    width: 100%;
     height: auto;
+
 }
 
 .banner-text{
     position: absolute;
-    top: 436px;
-    color: #FFF;
-    font-size: 35px;
-    margin-left: 170px;
-    font-family: Verdana;
+    top: 435px; /* Ustaw odległość od góry */
+    left: 110px; /* Ustaw odległość od lewej strony */
+    right: 20px; /* Ustaw odległość od prawej strony */
+    color: #000000;
+    font-size: 40px;
+    font-family: 'bbc-cond';
     display: flex;
-    animation: slideText 1s ease-in-out; /* Dodaj animację slideText */
+    animation: slideText 0.8s ease-in-out;/* Dodaj animację slideText */
+    font-weight: 600;
 }
 
 @keyframes slideText {
     from {
         opacity: 0;
-        transform: translateX(100%); /* Przesuń tekst poza obszar diva */
+        transform: translateX(35%); /* Przesuń tekst poza obszar diva */
     }
     to {
         opacity: 1;
@@ -169,7 +176,6 @@ h3{
 
 .banner-text .child {
     display: none;
-    overflow: hidden;
 }
 
 /* Dodajemy stylizację strzałek */
@@ -185,43 +191,52 @@ h3{
 
 #scroll-left {
     position: absolute;
-    left: 1px; /* Dodaj odstęp od lewej strony */
 }
 
 #scroll-right {
     position: absolute;
-    right: 1px; /* Dodaj odstęp od prawej strony */
 }
 
 .banner-card {
     position: relative;
 }
 
-.banner-news,
 #scroll-left,
 #scroll-right {
     position: absolute;
-    top: 75%;
+    bottom: 20px; /* Ustaw odległość od dołu */
+    background: rgb(233, 228, 228);
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    top: 430px;
+}
+
+#scroll-left {
+    left: 35px; /* Ustaw odległość od lewej strony */
+}
+
+#scroll-right {
+    right: 10px; /* Ustaw odległość od prawej strony */
 }
 
 .arrow-button{
     background: rgb(39, 38, 38);
-    height: 60px;
-    width: 60px;
+    height: 40px;
+    width: 40px;
     border-radius: 50%;
-    transition: 0.4s ease;
 }
 
 .arrow-button:hover{
-    box-shadow: 0px 0px 10px 10px rgb(122, 14, 158);
+    box-shadow: 0px 0px 3px 3px rgb(36, 27, 27);
 }
 
 .arrow-button div{
     position: absolute;
     height: 30px;
     width: 30px;
-    border-top: 4px solid #7a0e9e;
-    border-left: 4px solid #7a0e9e;
+    border-top: 4px solid rgb(158, 14, 14);
+    border-left: 4px solid rgb(158, 14, 14);
     top: 15px;
 }
 
@@ -335,5 +350,11 @@ footer
 @font-face {
     font-family: 'kontakt';
     src: url('fonts/kontakt.ttf') format('truetype');
+
+}
+
+@font-face {
+    font-family: 'bbc-cond';
+    src: url('fonts/bbc-cond.otf') format('truetype');
 
 }
