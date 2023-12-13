@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", function () {
     var formattedDate = currentDate.toLocaleDateString('pl-PL', options);
 
     //napis "Dzisiaj mamy:" jak i datę w jednym elemencie span
-    currentDateContainer.innerHTML =  "<span>" + "Dzisiaj mamy:\t\t" + formattedDate + "</span>";
+    currentDateContainer.innerHTML =  "<span>" + "Dzisiaj mamy:" + formattedDate + "</span>";
 });
 
 
