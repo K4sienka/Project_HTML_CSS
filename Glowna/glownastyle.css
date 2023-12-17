@@ -24,7 +24,7 @@ h1 {
     font-size: 60px;
     color: rgb(0, 0, 0);
     text-align: center;
-    padding: 20px;
+    padding: 15px;
     margin: 0;
     letter-spacing: 5px;
 }
@@ -32,7 +32,6 @@ h1 {
 header{
      display: block;
      text-align: center;
-     font-size: 1.8vh;
 }
 
 
@@ -95,163 +94,78 @@ ul li a:hover /*podswietlanie linkow w podmenu*/
     background: rgb(0, 150, 136);
 }
 
-h3{
-    font-size: 30px;
-    font-weight: bold;
-}
 
-
-
-/*Aktualnosci*/
-.blog-post {
-    margin-top: 80px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 50px;
-    width: 100%;
-}
-
-.up {
-    background-color: rgb(0, 150, 136, 0.7);
-    width: 50%; /* Ustaw szerokość na 100%, aby dostosować się do kontenera nadrzędnego */
-    box-sizing: border-box;
-    padding: 10px;
-    text-align: center;
-    font-family: 'news';
-    overflow: hidden; /* Dodane, aby ukryć nadmiarowy tekst, jeśli przekroczy szerokość */
-}
-
-.blog-post_date span {
-    color: #000000;
-    font-weight: 200px;
-    font-family: 'news';
-    font-size: 20px;
-}
-
-.banner-card {
+/*Aktualności*/
+.ticker-wrapper{
     position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 50%;
+    max-width: 800px;
+    margin: auto;
+    padding: 100px;
 }
 
-.banner-card img {
-    width: 100%;
-    height: auto;
-
-}
-
-.banner-text{
+.bigHeading{
+    display: block;
     position: absolute;
-    top: 435px; /* Ustaw odległość od góry */
-    left: 110px; /* Ustaw odległość od lewej strony */
-    right: 20px; /* Ustaw odległość od prawej strony */
-    color: #000000;
+    font-family: 'news';
     font-size: 40px;
-    font-family: 'bbc-cond';
-    display: flex;
-    animation: slideText 0.8s ease-in-out;/* Dodaj animację slideText */
-    font-weight: 600;
-}
-
-@keyframes slideText {
-    from {
-        opacity: 0;
-        transform: translateX(35%); /* Przesuń tekst poza obszar diva */
-    }
-    to {
-        opacity: 1;
-        transform: translateX(0%);
-    }
-}
-
-.up h2{
-    margin-top: 20px;
-    font-size: 40px;
-    text-transform: uppercase;
+    background-color: #7a0e9e;
     color: #FFF;
-    letter-spacing: 5px;
+    text-transform: uppercase;
+    padding: 15px;
+    letter-spacing: 2px;
 }
 
-.banner-text .child {
-    display: none;
-}
-
-
-/*Strzalki*/
-.arrow {
-    background-color: rgb(122, 14, 158); 
-    color: #fff;
-    font-size: 18px;
-    padding: 10px;
-    border: none;
-    cursor: pointer;
-}
-
-#scroll-left {
+.bigHeading::after,
+.bigHeading::before{
+    content:'';
+    width: 0;
     position: absolute;
+    border-width: 78px;
+    border-style: solid;
+    top: 0;
+    z-index: 2;
 }
 
-#scroll-right {
-    position: absolute;
+.bigHeading::before{
+    border-color: #0000 transparent transparent transparent;
+    right: -78px;
 }
 
-.banner-card {
+.bigHeading::after{
+    border-color: transparent transparent #000 transparent;
+    left: -78px;
+    top: -78px;
+}
+
+.text-update{
+    height: 70px;
+    background: #46CEC0;
+    overflow: hidden;
     position: relative;
+    color: #fff;
+    letter-spacing: 1px;
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+    left: 125px;
 }
 
-#scroll-left,
-#scroll-right {
+.text-update p{
     position: absolute;
-    bottom: 20px; /* Ustaw odległość od dołu */
-    background: rgb(233, 228, 228);
-    height: 60px;
-    width: 60px;
-    border-radius: 50%;
-    top: 430px;
+    width: 150%;
+    margin: 0;
+    text-align: left;
+
 }
 
-#scroll-left {
-    left: 35px; /* Ustaw odległość od lewej strony */
+@keyframes moving{
+    0%{
+        transform: translateX(100%);
+    }
+    100%{
+        transform: translateX(-100%);
+    }
 }
-
-#scroll-right {
-    right: 10px; /* Ustaw odległość od prawej strony */
-}
-
-.arrow-button{
-    background: rgb(39, 38, 38);
-    height: 40px;
-    width: 40px;
-    border-radius: 50%;
-}
-
-.arrow-button:hover{
-    box-shadow: 0px 0px 3px 3px rgb(36, 27, 27);
-}
-
-.arrow-button div{
-    position: absolute;
-    height: 30px;
-    width: 30px;
-    border-top: 4px solid rgb(158, 14, 14);
-    border-left: 4px solid rgb(158, 14, 14);
-    top: 15px;
-}
-
-/* Obróć lewą strzałkę o 180 stopni */
-.arrow-button.left div{
-    transform: rotate(315deg);
-    left: 18px;
-}
-
-.arrow-button.right div{
-    transform: rotate(135deg);
-    right: 18px;
-}
-
 
 
 /*Uczelnia*/
@@ -262,9 +176,9 @@ h3{
 
 .box {
     display: flex;
-    justify-content: space-around;
-    align-items: center;
-    margin-top: 100px;
+    flex-wrap: wrap; /* Pozwala elementom zawijać się na nowej linii */
+    justify-content: center; /* Wycentrowanie elementów */
+    margin-top: 250px;
     margin-bottom: 100px;
 }
 
@@ -453,3 +367,158 @@ footer
     src: url('uczelnia.ttf') format('truetype');
 
 }
+
+
+
+
+
+
+/*Stare aktualnosci
+.blog-post {
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 50px;
+    width: 100%;
+}
+
+.up {
+    background-color: rgb(0, 150, 136, 0.7);
+    width: 50%; 
+    box-sizing: border-box;
+    padding: 10px;
+    text-align: center;
+    font-family: 'news';
+    overflow: hidden; 
+}
+
+.blog-post_date span {
+    color: #000000;
+    font-weight: 200px;
+    font-family: 'news';
+    font-size: 20px;
+}
+
+.banner-card {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}
+
+.banner-card img {
+    width: 100%;
+    height: auto;
+
+}
+
+.banner-text{
+    position: absolute;
+    top: 435px; 
+    left: 110px; 
+    right: 20px; 
+    color: #000000;
+    font-size: 40px;
+    font-family: 'bbc-cond';
+    display: flex;
+    animation: slideText 0.8s ease-in-out;
+    font-weight: 600;
+}
+
+@keyframes slideText {
+    from {
+        opacity: 0;
+        transform: translateX(35%); 
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0%);
+    }
+}
+
+.up h2{
+    margin-top: 20px;
+    font-size: 40px;
+    text-transform: uppercase;
+    color: #FFF;
+    letter-spacing: 5px;
+}
+
+.banner-text .child {
+    display: none;
+}
+
+
+/*Strzalki
+.arrow {
+    background-color: rgb(122, 14, 158); 
+    color: #fff;
+    font-size: 18px;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+#scroll-left {
+    position: absolute;
+}
+
+#scroll-right {
+    position: absolute;
+}
+
+.banner-card {
+    position: relative;
+}
+
+#scroll-left,
+#scroll-right {
+    position: absolute;
+    bottom: 20px;
+    background: rgb(233, 228, 228);
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    top: 430px;
+}
+
+#scroll-left {
+    left: 35px;
+}
+
+#scroll-right {
+    right: 10px; 
+}
+
+.arrow-button{
+    background: rgb(39, 38, 38);
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+}
+
+.arrow-button:hover{
+    box-shadow: 0px 0px 3px 3px rgb(36, 27, 27);
+}
+
+.arrow-button div{
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    border-top: 4px solid rgb(158, 14, 14);
+    border-left: 4px solid rgb(158, 14, 14);
+    top: 15px;
+}
+
+/* Obróć lewą strzałkę o 180 stopni 
+.arrow-button.left div{
+    transform: rotate(315deg);
+    left: 18px;
+}
+
+.arrow-button.right div{
+    transform: rotate(135deg);
+    right: 18px;
+} */

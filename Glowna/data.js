@@ -1,12 +1,53 @@
-// JavaScript do aktualizacji daty
 document.addEventListener("DOMContentLoaded", function () {
     var currentDateContainer = document.getElementById("currentDateContainer");
     var currentDate = new Date();
-    var options = { Weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+    var options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
     var formattedDate = currentDate.toLocaleDateString('pl-PL', options);
 
-    //napis "Dzisiaj mamy:" jak i datę w jednym elemencie span
-    currentDateContainer.innerHTML =  "<span>" + "Dzisiaj mamy:" + formattedDate + "</span>";
+    // Ustaw datę wewnątrz elementu span
+    currentDateContainer.innerHTML = formattedDate;
 });
 
 
+
+//strzalki
+const bannerText = document.getElementById('bannerText');
+const scrollLeftBtn = document.getElementById('scroll-left');
+const scrollRightBtn = document.getElementById('scroll-right');
+
+let currentIndex = 0;
+
+function showCurrentText() {
+    const children = bannerText.children;
+
+    for (let i = 0; i < children.length; i++) {
+        if (i === currentIndex) {
+            children[i].style.display = 'block';
+        } else {
+            children[i].style.display = 'none';
+        }
+    }
+}
+
+function scrollLeft() {
+    currentIndex = (currentIndex - 1 + bannerText.children.length) % bannerText.children.length;
+    showCurrentText();
+    bannerText.style.animation = 'none'; // Wyłącz animację
+    void bannerText.offsetWidth; // Przeczytaj offset, aby zresetować animację
+    bannerText.style.animation = null; // Ponownie włącz animację
+}
+
+function scrollRight() {
+    currentIndex = (currentIndex + 1) % bannerText.children.length;
+    showCurrentText();
+    bannerText.style.animation = 'none'; // Wyłącz animację
+    void bannerText.offsetWidth; // Przeczytaj offset, aby zresetować animację
+    bannerText.style.animation = null; // Ponownie włącz animację
+}
+
+// Dodajemy obsługę kliknięć
+scrollLeftBtn.addEventListener('click', scrollLeft);
+scrollRightBtn.addEventListener('click', scrollRight);
+
+// Pokazujemy pierwszy tekst
+showCurrentText();
