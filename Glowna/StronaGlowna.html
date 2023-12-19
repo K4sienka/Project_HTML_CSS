@@ -48,82 +48,96 @@
             </ul>
         </div>
 
-            <!--Aktualnosci-->
-            <div class="ticker-wrapper"> 
-                <div class="bigHeading">
-                    <br>Aktualności</br>Na dzień: <span id="currentDateContainer"></span> <!--data--><br>
-                    <div class="text-update">
-                        <p>Kolejny dzień łamane są prawa studenta</p>
+        <div class="content">
+            <div class="all_content">
+                    <!--Aktualnosci-->
+                    <div class="ticker-wrapper"> 
+                        <div class="bigHeading">
+                            <div class="text-news">
+                            <br class="text-item1">Aktualności</br>
+                            <br class="text-item2">Na dzień: <span id="currentDateContainer"></span><!--data--></br>
+                            </div>
+                            <button id="scroll-left" class="arrow-button left"><div></div></button>
+                            <div class="text-update">
+                                <p class="news-item">Kolejny dzień łamane są prawa studenta</p>
+                                <p class="news-item">Odwołane zajęcia z R dla grupy 4</p>
+                                <p class="news-item">Przeniesione zajęcia do sali 318 dla grupy 1</p>
+                                <p class="news-item">Kolokwium grupy 5 z PTSD w ten wtorke</p>
+                                <p class="news-item">Odwołane zaliczenie z programowania obiektowego</p>
+                                <p class="news-item">W sali 313 znaleziono zasilacz do laptopa marki Lenovo</p>
+                                <p class="news-item">Zajęcia grupy 3 z Baz Danych w dniu 27.01 odbędą się zdalnie</p>
+                            </div>
+                            <button id="scroll-right" class="arrow-button right"><div></div></button>
+                        </div>
+                    </div>
+                    <script src="data.js"></script>
+                    <script src="strzalki.js"></script>
+
+
+
+                <!--Uczelnia-->
+                <div class="box">
+                    <div class="square" id="square1">
+                        <div class="image-container">
+                            <img src="agh.jpg" alt="">
+                        </div>
+                        <h3>AGH</h3>
+                        <p class="link" onclick="redirectToPage('https://www.agh.edu.pl')">Przejdź do strony</p>
+                    </div>
+                
+                    <div class="square" id="square2">
+                        <div class="image-container">
+                            <img src="wggios.jpg" alt="">
+                        </div>
+                        <h3>Wydział GGIOŚ</h3>
+                        <p class="link" onclick="redirectToPage('https://www.wggios.agh.edu.pl')">Przejdź do strony</p>
+                    </div>
+                
+                    <div class="square" id="square3">
+                        <div class="image-container">
+                            <img src="usos.jpg" alt="">
+                        </div>
+                        <h3>USOS</h3>
+                        <p class="link" onclick="redirectToPage('https://web.usos.agh.edu.pl/kontroler.php?_action=home/index')">Przejdź do strony</p>
+                    </div>
+                
+                    <div class="square" id="square4">
+                        <div class="image-container">
+                            <img src="urss.jpg" alt="">
+                        </div>
+                        <h3>URSS</h3>
+                        <p class="link" onclick="redirectToPage('https://samorzad.agh.edu.pl')">Przejdź do strony</p>
                     </div>
                 </div>
-            </div>
-            <script src="data.js"></script>
-            <script src="strzalki.js"></script>
+                <script src="link.js"></script>
+                    
+                
+                <!-- Kontakt -->
+                <section class="contact-section" id="napisz">
+                    <div class="container">
+                        <div class="contact-left">
+                            <h2>Kontakt do nas!</h2>
+                            <form action="mailto:someone@example.com" method="post" enctype="text/plain">
+                                Imię i nazwisko:<br>
+                                <input type="text" name="name" placeholder="Podaj swoje imię i nazwisko"><br>
+                                E-mail:<br>
+                                <input type="text" name="mail" placeholder="Podaj swój e-mail AGH"><br>
+                                Treść wiadomości:<br>
+                                <textarea name="message" id="message" cols="30" rows="10" placeholder="Treść wiadomości..."></textarea><br><br>
+                                <input type="submit" class="send" value="Wyślij">
+                                <input type="reset" class="send" resetvalue="Reset">
+                                </form>
+                        </div>
+                    </div>
+                </section>
 
-
-
-        <!--Uczelnia-->
-        <div class="box">
-            <div class="square" id="square1">
-                <div class="image-container">
-                    <img src="agh.jpg" alt="">
-                </div>
-                <h3>AGH</h3>
-                <p class="link" onclick="redirectToPage('https://www.agh.edu.pl')">Przejdź do strony</p>
-            </div>
-        
-            <div class="square" id="square2">
-                <div class="image-container">
-                    <img src="wggios.jpg" alt="">
-                </div>
-                <h3>Wydział GGIOŚ</h3>
-                <p class="link" onclick="redirectToPage('https://www.wggios.agh.edu.pl')">Przejdź do strony</p>
-            </div>
-        
-            <div class="square" id="square3">
-                <div class="image-container">
-                    <img src="usos.jpg" alt="">
-                </div>
-                <h3>USOS</h3>
-                <p class="link" onclick="redirectToPage('https://web.usos.agh.edu.pl/kontroler.php?_action=home/index')">Przejdź do strony</p>
-            </div>
-        
-            <div class="square" id="square4">
-                <div class="image-container">
-                    <img src="urss.jpg" alt="">
-                </div>
-                <h3>URSS</h3>
-                <p class="link" onclick="redirectToPage('https://samorzad.agh.edu.pl')">Przejdź do strony</p>
+                    <!--Stopka-->
+                    <footer>
+                        <p> Kraków 2023 </p>
+                        <p> Miasteczko Studenckie AGH </p>
+                    </footer>
             </div>
         </div>
-        <script src="link.js"></script>
-             
-        
-        <!-- Kontakt -->
-        <section class="contact-section" id="napisz">
-            <div class="container">
-                <div class="contact-left">
-                    <h2>Kontakt do nas!</h2>
-                    <form action="mailto:someone@example.com" method="post" enctype="text/plain">
-                        Imię i nazwisko:<br>
-                        <input type="text" name="name" placeholder="Podaj swoje imię i nazwisko"><br>
-                        E-mail:<br>
-                        <input type="text" name="mail" placeholder="Podaj swój e-mail AGH"><br>
-                        Treść wiadomości:<br>
-                        <textarea name="message" id="message" cols="30" rows="10" placeholder="Treść wiadomości..."></textarea><br><br>
-                        <input type="submit" class="send" value="Wyślij">
-                        <input type="reset" class="send" resetvalue="Reset">
-                        </form>
-                </div>
-            </div>
-        </section>
-
-            <!--Stopka-->
-            <footer>
-                <p> Kraków 2023 </p>
-                <p> Miasteczko Studenckie AGH </p>
-            </footer>
-
     </div>
 
 </body>
