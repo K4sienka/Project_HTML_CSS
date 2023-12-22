@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>IiAD 2023/2024</title>
     <link rel="stylesheet" href="glownastyle.css">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>IiAD 2023/2024</title>
 </head>
 
 <body>
@@ -20,8 +20,8 @@
                 <li><a class="menu  active" href="../Glowna/StronaGlowna.html"> Strona główna </a></li>
                 <li> <a class="menu" href="#">O nas</a>
                     <ul class="podmenu">
-                        <li><a href="#">My</a></li>
-                        <li><a href="#">Kontakt</a></li>
+                        <li><a href="#" onclick="scrollToElement('elem1')">My</a></li>
+                        <li><a href="#" onclick="scrollToElement('elem2')">Kontakt</a></li>
                     </ul>
                 </li>              
                 
@@ -46,35 +46,39 @@
                     <li><a class="menu" href="../Plan_zajec/plan_zajec.html"> Plan zajęć </a>
                 </li>
             </ul>
+        
+                            <!--Aktualnosci-->
+                    <div class="news">
+                        <div class="bigHeading">
+                            <div class="cover">
+                                <button id="scroll-left" class="icon" onclick="scrollLeft()"><i class="fa-solid fa-circle-chevron-left"></i></i></button>
+                                <div id="bannerText" class="scroll-text">
+                                    <div class="child">Kolejny dzień łamane są prawa studenta</div>
+                                    <div class="child">Odwołane zajęcia z R dla grupy 4</div>
+                                    <div class="child">Przeniesione zajęcia do sali 318 dla grupy 1</div>
+                                    <div class="child">Kolokwium grupy 5 z PTSD w ten wtorek</div>
+                                    <div class="child">Odwołane zaliczenie z programowania obiektowego</div>
+                                    <div class="child">W sali 313 znaleziono zasilacz do laptopa marki Lenovo</div>
+                                    <div class="child">Zajęcia grupy 3 z Baz Danych w dniu 27.01 odbędą się zdalnie</div>
+                                </div>
+                                <button id="scroll-right" class="icon" onclick="scrollRight()"><i class="fa-solid fa-circle-chevron-right"></i></button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <article class="FAQ" onclick="scrollToElement('faq')">
+                        <p>Masz pytania?</p>
+                        <p>Dowiedz się więcej!</p>
+                    </article>
+
+        </div> <!--koniec top-->
+
+        <!--FAQ-->
+        <div class="x" id="faq">
+            <p>FAQ</p>
         </div>
 
         <div class="content">
-            <div class="all_content">
-                    <!--Aktualnosci-->
-                    <div class="ticker-wrapper"> 
-                        <div class="bigHeading">
-                            <div class="text-news">
-                            <br class="text-item1">Aktualności</br>
-                            <br class="text-item2">Na dzień: <span id="currentDateContainer"></span><!--data--></br>
-                            </div>
-                            <button id="scroll-left" class="arrow-button left"><div></div></button>
-                            <div class="text-update">
-                                <p class="news-item">Kolejny dzień łamane są prawa studenta</p>
-                                <p class="news-item">Odwołane zajęcia z R dla grupy 4</p>
-                                <p class="news-item">Przeniesione zajęcia do sali 318 dla grupy 1</p>
-                                <p class="news-item">Kolokwium grupy 5 z PTSD w ten wtorke</p>
-                                <p class="news-item">Odwołane zaliczenie z programowania obiektowego</p>
-                                <p class="news-item">W sali 313 znaleziono zasilacz do laptopa marki Lenovo</p>
-                                <p class="news-item">Zajęcia grupy 3 z Baz Danych w dniu 27.01 odbędą się zdalnie</p>
-                            </div>
-                            <button id="scroll-right" class="arrow-button right"><div></div></button>
-                        </div>
-                    </div>
-                    <script src="data.js"></script>
-                    <script src="strzalki.js"></script>
-
-
-
                 <!--Uczelnia-->
                 <div class="box">
                     <div class="square" id="square1">
@@ -109,11 +113,11 @@
                         <p class="link" onclick="redirectToPage('https://samorzad.agh.edu.pl')">Przejdź do strony</p>
                     </div>
                 </div>
-                <script src="link.js"></script>
                     
                 
                 <!-- Kontakt -->
-                <section class="contact-section" id="napisz">
+                <div class="contact" id="elem2">
+                <section class="contact-section">
                     <div class="container">
                         <div class="contact-left">
                             <h2>Kontakt do nas!</h2>
@@ -130,6 +134,7 @@
                         </div>
                     </div>
                 </section>
+            </div>
 
                     <!--Stopka-->
                     <footer>
@@ -139,7 +144,9 @@
             </div>
         </div>
     </div>
-
+    <script src="link.js"></script>
+    <script src="data.js"></script>
+    <script src="strzalki.js"></script>
 </body>
 
 </html>

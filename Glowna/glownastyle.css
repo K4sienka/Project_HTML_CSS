@@ -17,23 +17,33 @@ body{
 h1 {
     font-family: 'uczelnia';
     font-size: 80px;
-    color: rgb(255, 255, 255);
+    /*color: rgb(255, 255, 255);*/
     text-align: center;
     letter-spacing: 5px;
+
+    background: url(../Glowna/A0.jpg) repeat;
+    -webkit-background-clip: text;
+    color: transparent;
+    background-clip: text;
+    display: inline-block;
+}
+
+
+.top {
+    background-image: url(../Glowna/A0.jpg); /* Ścieżka do obrazka */
+    background-size: cover; /* Dopasowanie obrazka do tła */
+    background-position: center; /* Wyśrodkowanie obrazka */ 
 }
 
 header{
      display: block;
      text-align: center;
-     padding: 40px;
-     background-color: rgba(0, 0, 0, 0.5);
+     padding: 10px;
+     background-color: rgba(0, 0, 0, 0.85);
 }
 
 .content {
     position: relative;
-    background-image: url(../Glowna/A0.jpg); /* Ścieżka do obrazka */
-    background-size: cover; /* Dopasowanie obrazka do tła */
-    background-position: center; /* Wyśrodkowanie obrazka */ 
 }
 
 .all_content{
@@ -100,127 +110,117 @@ ul li a:hover /*podswietlanie linkow w podmenu*/
 
 
 /*Aktualności*/
-.ticker-wrapper{
-    position: relative;
+.news {
+    background-color: #8A2BE2;
+    padding: 205px; /* Zmniejszenie paddingu */
     width: 800px;
-    padding: 100px;
-    margin: 0 auto; 
+    margin: auto; /* Ustawienie na środku strony */
+    margin-top: 150px; /* Górny margines */
+    margin-bottom: 30px;
+    position: relative; /* Ustawienie pozycji dla pseudo-elementów */
+    z-index: 1;
+    font-family: 'news';
+}
+
+.bigHeading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.cover {
+    display: flex;
+    align-items: center;
+}
+
+.scroll-text {
+    overflow: hidden;
+    animation: slideText 0.8s ease-in-out;
+}
+
+.child {
+    font-size: 1.2em;
+    display: none;
     text-wrap: nowrap;
 }
 
-.bigHeading{
+.child:first-child {
     display: block;
-    position: relative;
+}
+
+.icon {
+    background: none;
+    border: none;
+    font-size: 1.5em;
+    color: white;
+    cursor: pointer;
+}
+
+@keyframes slideText {
+    from {
+        opacity: 0;
+        transform: translateX(35%); 
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0%);
+    }
+}
+
+/*strzalki*/
+#scroll-left,
+#scroll-right {
+    position: absolute;
+    top: 50%;                   /* miejsce pionowo */
+    transform: translateY(-50%);
+    font-size: 20px;
+}
+
+#scroll-left {
+    left: 20px;     /*od lewej krawędzi */
+}
+
+#scroll-right {
+    right: 20px; /*od prawej krawędzi */
+}
+
+.icon i {
+    font-size: 50px; /* Dostosuj wielkość ikon */
+    color: #009688; /* Dostosuj kolor ikon */
+}
+
+.icon:hover i {
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    color: #46CEC0;
+}
+
+/*przycisk FAQ*/
+.FAQ{
+    display: grid;
+    place-items: center;
+    font-size: 14px;
+    font-weight: 500;
+    width: 200px;
+    height: 55px;
     font-family: 'news';
-    background-color: #7a0e9e;
-    color: #FFF;
-    letter-spacing: 2px;
-    padding: 23px;
-    z-index: 1;
+    background-color: rgba(75, 174, 250, 0.85);
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 80px;
+    text-wrap: nowrap;
 }
 
-.text-news{
-    font-size: 30px;
-    margin-top: -30px;
-    margin-left: -50px;
+.FAQ:hover{
+    transform: scale(1.15);
+    background-color: #a2d6fd;
 }
-
-
-.bigHeading::after,
-.bigHeading::before{
-    content:'';
-    width: 0;
-    position: absolute;
-    border-width: 236px; /* Zwiększono wysokość trójkątów */
-    border-style: solid;
-    top: 0;
-    z-index: -1;
-}
-
-.bigHeading::before{
-    border-color: #7a0e9e transparent transparent transparent;
-    right: -235px; 
-}
-
-.bigHeading::after{
-    border-color: transparent transparent #7a0e9e transparent;
-    left: -237px; 
-    top: -236px;
-}
-
-.text-update{
-    height: 80px;
-    width: 130%;
-    background: #009688;
-    overflow: hidden;
-    position: relative;
-    color: #fff;
-    letter-spacing: 1px;
-    font-size: 25px;
-    display: flex;
-    align-items: center;
-    left: -115px;
-    z-index: 2;
-    margin-top: 20px;
-}
-
-.text-update p {
-    margin: 0;
-    transition: opacity 0.5s ease-in-out;
-}
-
-.text-update p.active {
-    opacity: 1;
-}
-
-.arrow-button {
-    background: rgb(39, 38, 38);
-    height: 60px;
-    width: 60px;
-    border-radius: 50%;
-    position: absolute;
-    bottom: 34px;
-    z-index: 3;
-}
-
-.arrow-button:hover {
-    box-shadow: 0px 0px 3px 3px #04665e;
-}
-
-.arrow-button.left {
-    left: -155px;
-}
-
-.arrow-button.right {
-    right: -90px;
-}
-
-.arrow-button div {
-    position: absolute;
-    height: 30px;
-    width: 30px;
-    border-top: 4px solid #04665e;
-    border-left: 4px solid #04665e;
-    top: 15px;
-}
-
-.arrow-button.left div {
-    transform: rotate(315deg);
-    left: 18px;
-}
-
-.arrow-button.right div {
-    transform: rotate(135deg);
-    right: 18px;
-}
-
-
 
 
 
 /*Uczelnia*/
 .highlight {                    /*podswietlanie po kliknieciu w menu*/
-    box-shadow: 20px 20px 20px rgba(33, 66, 50, 0.9);
+    box-shadow: 0 0 20px rgba(33, 66, 50, 0.9);
     transform: scale(1.2);
 }
 
@@ -479,6 +479,11 @@ footer
     font-weight: 600;
 }
 
+
+.banner-text .child {
+    display: none;
+}
+
 @keyframes slideText {
     from {
         opacity: 0;
@@ -498,9 +503,6 @@ footer
     letter-spacing: 5px;
 }
 
-.banner-text .child {
-    display: none;
-}
 
 
 /*Strzalki

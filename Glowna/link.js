@@ -1,9 +1,11 @@
+//link do innej strony
 function redirectToPage(page) {
     window.location.href = page;
 }
 
-
+//przesuwanie po stronie
 function scrollToElement(elementId) {
+    console.log('Scrolling to element: ' + elementId);
     var element = document.getElementById(elementId);
     if (element) {
         element.scrollIntoView({ behavior: 'smooth' });
@@ -14,7 +16,7 @@ function scrollToElement(elementId) {
         // Usuń klasę highlight po pewnym czasie
         setTimeout(function () {
             element.classList.remove('highlight');
-        }, 750);
+        }, 850);
     }
 }
 
