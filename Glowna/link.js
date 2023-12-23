@@ -16,7 +16,7 @@ function scrollToElement(elementId) {
         // Usuń klasę highlight po pewnym czasie
         setTimeout(function () {
             element.classList.remove('highlight');
-        }, 850);
+        }, 1000);
     }
 }
 

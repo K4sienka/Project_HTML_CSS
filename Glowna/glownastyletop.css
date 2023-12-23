@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+    
+}
+ 
+body{ 
+     width: 100%;   
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+h1 {
+    font-family: 'uczelnia';
+    font-size: 80px;
+    text-align: center;
+    letter-spacing: 5px;
+
+    background: url(../Glowna/A0.jpg) repeat;   /*w tle tekstu zdjecie*/
+    -webkit-background-clip: text;
+    color: transparent;
+    background-clip: text;
+    display: inline-block;
+}
+
+.top::before {
+    content: "";
+    background-image: url(../Glowna/A0.jpg); /* Ścieżka do obrazka */
+    background-size: cover; /* Dopasowanie obrazka do tła */
+    background-position: center; /* Wyśrodkowanie obrazka */ 
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0.7; /*przejrzystosc */
+    z-index: -1;
+}
+
+header{
+     display: block;
+     text-align: center;
+     padding: 10px;
+     background-color: rgba(0, 0, 0, 0.85);
+}
+
+.content {
+    position: relative;
+}
+
+
+
+/*Menu Główne*/
+ul{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    background-color: #000000;
+    margin-bottom: 150px;
+}
+
+ul li{
+    flex-grow: 1;
+    display: inline-block;
+    position: relative;
+}
+
+ul li a{
+    display: block;
+    padding: 20px 25px;
+    font-size: 18px;
+    color: #FFF;
+    text-decoration: none;
+    text-align: center;
+}
+
+ul li ul.podmenu{
+    position: absolute;
+    display: none;
+    width:100%;
+    z-index: 2; /* Ustaw wyższy indeks warstwy */
+}
+
+ul li ul.podmenu li {
+    width: 100%;
+    box-sizing: border-box;}
+
+ul li:hover ul.podmenu{
+    display: block;
+    z-index: 2; /* Ustaw wyższy indeks warstwy */
+}
+
+a:hover,a.menu:hover{
+     background-color: #9E69AF ;  /*podświetlenie przy najechaniu na element */
+}
+
+.active{
+     background-color: #7a0e9e; /*podświetlenie podstrony aktualnej w użyciu*/
+
+}
+
+main.active{
+     background-color: rgb(122, 14, 158);
+}
+
+ul li a:hover /*podswietlanie linkow w podmenu*/
+{
+    background: #009688;
+}

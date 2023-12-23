@@ -1,0 +1,116 @@
+
+
+
+/*kontakt*/
+.contact-section {
+    font-family: 'kontakt';
+    display: flex;
+    justify-content: center;
+    background-color: rgba(70, 168, 123, 0.8); /* Zielony kolor tła */
+    border-radius: 20px;
+    padding: 10px; /* Dodaj odstęp dla estetyki */
+    max-width: 600px; /* Maksymalna szerokość formularza */
+    width: 100%; /* Elastyczna szerokość */
+    margin: 0 auto; /* Wyśrodkowanie za pomocą marginesów */
+}
+
+.container
+{
+    width: 100%;
+    text-align: left;
+}
+
+textarea{
+    height: 120px;
+}
+
+input[type="text"]{
+    height:40px;
+}
+
+
+input, textarea
+{
+    width:100%;
+    margin-bottom: 10px;
+    border-radius: .3em;
+    border: 2px solid #000000;
+    box-sizing: border-box;
+    resize:none;
+    padding: 8px;
+}
+
+
+h2{
+    font-size: 30px;
+}
+
+.send
+{
+    background-color: #208858;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    font-size: 13px;
+    margin-bottom: 5em;
+    border-radius: 5em;
+    display: inline-block;
+    padding: 8px 20px;
+    width: unset;
+    cursor: pointer;
+}
+
+.send:hover{
+    background-color: #000000;
+}
+
+.contact-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-left{
+    color: #000000;
+
+}
+
+/*stopka*/
+
+footer
+{
+    margin-top: 15px;
+    background-color: #f0f0f0;                  /* Kolor wypelnienia tla */
+    padding: 10px;                                      /* Dodatkowy odstep od tekstu do obramowania */
+    text-align: center;                                 /* Wysrodkowanie tekstu w poziomie */
+    letter-spacing: 8px;                           /*odstepy miedzy literami*/
+    opacity: 0.7;
+}
+
+
+@font-face {
+    font-family: 'news';
+    src: url('fonts/news.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'title-bold';
+    src: url('fonts/title-bold.otf') format('truetype');
+}
+
+@font-face {
+    font-family: 'kontakt';
+    src: url('fonts/kontakt.ttf') format('truetype');
+
+}
+
+@font-face {
+    font-family: 'bbc-cond';
+    src: url('fonts/bbc-cond.otf') format('truetype');
+
+}
+
+@font-face {
+    font-family: 'uczelnia';
+    src: url('uczelnia.ttf') format('truetype');
+
+}
