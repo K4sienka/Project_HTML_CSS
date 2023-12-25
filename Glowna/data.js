@@ -7,3 +7,19 @@ document.addEventListener("DOMContentLoaded", function () {
     // Ustaw datę wewnątrz elementu span
     currentDateContainer.innerHTML = formattedDate;
 });
+
+
+//
+document.addEventListener('DOMContentLoaded', function () {
+    const checkboxes = document.querySelectorAll('.tab input[type="checkbox"]');
+
+    checkboxes.forEach((checkbox) => {
+        checkbox.addEventListener('change', function () {
+            checkboxes.forEach((otherCheckbox) => {
+                if (otherCheckbox !== checkbox) {
+                    otherCheckbox.checked = false;
+                }
+            });
+        });
+    });
+});

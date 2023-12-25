@@ -15,7 +15,7 @@ body{
 }
 
 h1 {
-    font-family: 'uczelnia';
+    font-family: 'antic';
     font-size: 80px;
     text-align: center;
     letter-spacing: 5px;
@@ -27,19 +27,6 @@ h1 {
     display: inline-block;
 }
 
-.top::before {
-    content: "";
-    background-image: url(../Glowna/A0.jpg); /* Ścieżka do obrazka */
-    background-size: cover; /* Dopasowanie obrazka do tła */
-    background-position: center; /* Wyśrodkowanie obrazka */ 
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    opacity: 0.7; /*przejrzystosc */
-    z-index: -1;
-}
 
 header{
      display: block;

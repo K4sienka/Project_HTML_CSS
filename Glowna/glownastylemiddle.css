@@ -1,12 +1,31 @@
+
+.top::before {
+    content: "";
+    background-image: url(../Glowna/A0.jpg); /* Ścieżka do obrazka */
+    background-size: cover; /* Dopasowanie obrazka do tła */
+    background-position: center; /* Wyśrodkowanie obrazka */ 
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0.7; /*przejrzystosc */
+    z-index: -1;
+}
+
+.top{
+    margin-bottom: 53px;
+}
+
 /*3 sekcje pod menu*/
 .box-3 {
     flex: 10;
     display: flex;
-    flex-wrap: wrap; /* Pozwala elementom zawijać się na nowej linii */
-    justify-content: center; /* Wycentrowanie elementów */
+    flex-wrap: wrap;
+    justify-content: center;
     margin-top: 50px;
     margin-bottom: 100px;
-    position: relative; /* Ustawienie pozycji dla dzieci */
+    position: relative; 
 }
 
 
@@ -39,31 +58,39 @@
 /*Aktualności*/
 .color {
     position: relative;
-    background-color: #7a0e9e;
+    background-color: rgb(122, 14, 158);
     padding: 10px;
     font-family: 'news';
-    width: 980px;
+    max-width: 770px;
     text-align: center;
-    height: 200px;
+    height: 250px;
     margin: 0 20px;
 }
 
 .color::before,
 .color::after {
     content: '';
-    position: absolute; 
+    position: absolute;
+    border-style: solid;
+    border-width: 250px;
 }
 
 .color::before {
-    border-color: #0e349e transparent transparent transparent;
-    right: -70px; 
-    top: 0; 
+    border-color: #7a0e9e transparent transparent transparent;
+    right: 0px;
+    top: 0;
+    transform: translateX(50%);
+    z-index: -1;
 }
 
 .color::after {
-    border-color: transparent transparent #0e3c9e transparent;
-    left: -70px; 
+    border-color: transparent transparent #7a0e9e transparent;
+    left: 0px;
+    bottom: 0;
+    transform: translateX(-50%);
+    z-index: -1;
 }
+
 
 .title {
     display: flex;
@@ -74,19 +101,19 @@
 
 .title .text-item1 {
     color: #000;
-    font-size: 50px;
+    font-size: 60px;
     font-weight: 600;
     letter-spacing: 10px;
 }
 
 .title .text-item2,
 .title .text-item2 span{
-    font-size: 20px;
+    font-size: 25px;
     color: #7CB312;
 }
 
 .news {
-    position: relative; /* Ustawienie pozycji dla pseudo-elementów */
+    position: relative;
     color: #000;
     display: flex;
     flex: 6;
@@ -104,14 +131,19 @@
     font-weight: 580;
     letter-spacing: 2px;
     padding: 20px;
-    min-width: 860px; /* Dostosuj szerokość maksymalną */
-    min-height: 50px;
-    text-align: center;
-    top: 20px;
+    min-width: 860px;
+    min-height: 100px;
+    top: 15px;
+    left: -67px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Wysrodkowanie w pionie */
+    align-items: center; 
 }
 
 .child {
-    font-size: 22px;
+    margin-top: 8px;
+    font-size: 26px;
     display: none;
     animation: slideText 0.5s ease-in-out;
 }
@@ -142,16 +174,16 @@
 #scroll-left,
 #scroll-right {
     position: absolute;
-    top: 40%;                   /* miejsce pionowo */
+    top: 44%;                   /* miejsce pionowo */
     font-size: 20px;
 }
 
 #scroll-left {
-    left: -5px;     /*od lewej krawędzi */
+    left: -180px;     /*od lewej krawędzi */
 }
 
 #scroll-right {
-    right: -5px; /*od prawej krawędzi */
+    right: -44px; /*od prawej krawędzi */
 }
 
 .icon i {
@@ -191,12 +223,139 @@
 
 
 /*FAQ*/
+.middle{
+    background-color: rgba(44, 131, 124, 0.5);
+}
+
 .questions {
-    margin: 150px;
-    padding: 200px;
+    margin-left: 300px;
+    display: flex;
+    width: 700px;
+    font-family: 'antic';
+    margin-bottom: 100px;
+    margin-top: 50px;
+}
+
+.left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 30px;
+}
+
+.FAQ {
+    margin-top: 10px;
+    order: 1;
+    color: #000;
+    font-size: 50px;
+    font-weight: 800;
+    text-align: center;
+    white-space: nowrap;
+    position: absolute;
+    z-index: 2; /
+}
+
+.left img {
+    top: 70px;
+  width: 850px;
+  height: 600px;
+  position: relative;
+}
+
+.right {
+    flex: 1;
+}
+
+.right .tab {
+    position: relative;
+    /*box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 15px 15px rgba(0,0,0, 0.2);*/
+    background-color: #6DADA8;
+    width: 600px;
+    padding: 0 10px 10px;
+    overflow: hidden;
+    margin-bottom: 5px; 
+}
+
+.right .tab input {
+    display: none;
+}
+
+.right .tab label {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.right .tab label::after{
+    content: '+';
+    position: absolute;
+    right: 20px;
+    font-size: 3em;
+    color: rgba(0, 0, 0, 0.5);
+    transition: transform 1s;
+}
+
+.right .tab:hover label::after {
+    color: #000;
+}
+
+.right .tab input:checked ~ label::after {
+    transform: rotate(135deg);
+    color: #fff;
+}
+
+.right .tab label h2 {
+    width: 40px;
+    height: 30px;
+    background-color: rgb(44, 131, 124);
+    display: flex;
     justify-content: center;
-    font-size: 60px;
-    background-color: #a2d6fd;
+    align-items: center;
+    color: #fff;
+    font-size: 1.25em;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.right .tab input:checked ~ label h2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color: rgba(255,255,255, 0.2);
+    font-size: 8em;
+    justify-content: flex-end;
+    padding: 20px;
+}
+
+.right .tab label h3 {
+    position: relative;
+    font-weight: 700;
+    font-size: 20px;
+    color: #000;
+    bottom: 25px;
+    z-index: 10;
+}
+
+.right .tab .content1 {
+    max-height: 0;
+    transition: max-height 0.7s ease; 
+    overflow: hidden;
+}
+
+
+.right .tab input:checked ~ .content1 {
+    max-height: 100vh;
+    transition: max-height 0.7s ease; 
+}
+
+.right .tab .content1 p {
+    position: relative;
+    padding: 10px 0;
+    color: #000;
+    z-index: 10;
 }
 
 
@@ -206,58 +365,73 @@
 
 /*Uczelnia*/
 .highlight {                    /*podswietlanie po kliknieciu w menu*/
-    box-shadow: 0 0 20px rgba(33, 66, 50, 0.9);
     transform: scale(1.2);
+}
+
+.box::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url(../Glowna/miasteczko.jpg);
+    background-size: cover;
+    opacity: 0.55;
+    z-index: -1; /* Umieść tło pod innymi elementami */
 }
 
 .box {
     display: flex;
-    flex-wrap: wrap; /* Pozwala elementom zawijać się na nowej linii */
-    justify-content: center; /* Wycentrowanie elementów */
-    margin-top: 50px;
-    margin-bottom: 100px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    position: relative; 
+    height: 650px;
+}
+
+.intro {
+    position: absolute;
+    top: 30px;
+    font-size: 60px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    color: #034742;
 }
 
 .square {
     width: 350px;
     height: 350px;
     background-color: #46CEC0;
-    border-radius: 20px;
     text-align: center;
     display: flex;
     flex-direction: column;
-    transition: box-shadow 0.3s; /* Dodajemy efekt przejścia */
+    transition: box-shadow 0.3s;
     position: relative;
-    margin: 25px;
-    z-index: 1; /* Domyślna wartość z-index dla kwadratów */
+    margin: 50px;
 }
 
 .square:hover {
-    box-shadow: 20px 20px 20px rgba(33, 66, 50, 0.9); /* Podświetlenie po najechaniu myszką */
-    z-index: 2; /* Zwiększenie z-index dla najechanego kwadratu */
+    box-shadow: 20px 20px 20px rgba(33, 66, 50, 0.9);
+     z-index: 2; 
 }
 
 .image-container {
-    flex: 1; /* Rozciąganie kontenera obrazu, aby zajmował dostępną przestrzeń */
+    flex: 1; 
 }
 
 img {
     width: 100%;
     height: 115%;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
     margin: 0;
-    transition: transform 0.3s; /* Dodane dla efektu powiększenia */
-    z-index: 1; /* Domyślna wartość z-index dla obrazu */
+    transition: transform 0.3s;
 }
 
 .square:hover img{
     transform: scale(1.35);
-    z-index: 2; /* Zwiększenie z-index dla najechanego obrazu */
+    z-index: 2;
 }
 .square:hover h3 {
     transform: scale(1.2);
-    z-index: 2; /* Zwiększenie z-index dla najechanego tekstu */
+    z-index: 2;
     color: #7a0e9e;
 }
 .square:hover .link {
@@ -268,10 +442,9 @@ h3{
     justify-content: center;
     margin-top: 65px;
     font-size: 37px;
-    transition: transform 0.3s; /* Dodane dla efektu powiększenia tekstu */
+    transition: transform 0.3s;
     white-space: nowrap;
     color:#215853;
-    z-index: 1; /* Domyślna wartość z-index dla tekstu */
 }
 
 .link {
@@ -282,8 +455,6 @@ h3{
     color:rgb(2, 92, 83);
     font-size: 25px;
     font-family: 'uczelnia';
-    border-bottom-left-radius: 20px;
-    border-bottom-right-radius: 20px;
 }
 
 .link:hover{

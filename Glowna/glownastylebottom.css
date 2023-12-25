@@ -1,17 +1,27 @@
+/*O nas*/
+.my {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.about {
+    text-align: center;
+    font-size: 50px;
+    font-family: 'bellota';
+    font-weight: 600;
+}
+
 
 
 
 /*kontakt*/
 .contact-section {
-    font-family: 'kontakt';
+    font-family: 'antic';
     display: flex;
     justify-content: center;
-    background-color: rgba(70, 168, 123, 0.8); /* Zielony kolor tła */
-    border-radius: 20px;
-    padding: 10px; /* Dodaj odstęp dla estetyki */
-    max-width: 600px; /* Maksymalna szerokość formularza */
-    width: 100%; /* Elastyczna szerokość */
-    margin: 0 auto; /* Wyśrodkowanie za pomocą marginesów */
+    width: 550px;
+    height: 450px;
+    margin: 0 auto; 
 }
 
 .container
@@ -21,11 +31,11 @@
 }
 
 textarea{
-    height: 120px;
+    height: 140px;
 }
 
 input[type="text"]{
-    height:40px;
+    height:48px;
 }
 
 
@@ -33,7 +43,7 @@ input, textarea
 {
     width:100%;
     margin-bottom: 10px;
-    border-radius: .3em;
+    border-radius: 5px;
     border: 2px solid #000000;
     box-sizing: border-box;
     resize:none;
@@ -47,20 +57,21 @@ h2{
 
 .send
 {
-    background-color: #208858;
-    color: rgb(255, 255, 255);
-    font-weight: bold;
-    font-size: 13px;
-    margin-bottom: 5em;
+    background-color: rgba(122, 14, 158, 0.7);
+    color: #000000 ;
+    font-weight: 600;
+    font-size: 18px;
+    font-family: 'bellota';
+    margin-left: 125px;
     border-radius: 5em;
     display: inline-block;
-    padding: 8px 20px;
+    padding: 5px 20px;
     width: unset;
     cursor: pointer;
 }
 
 .send:hover{
-    background-color: #000000;
+    background-color: rgba(122, 14, 158, 0.5);
 }
 
 .contact-wrapper {
@@ -71,14 +82,24 @@ h2{
 
 .contact-left{
     color: #000000;
+}
 
+form input::placeholder,
+form textarea::placeholder {
+    font-family: 'bellota';
+    color: #000000;
+}
+
+form input,
+form textarea {
+    background-color: rgba(122, 14, 158, 0.5);
 }
 
 /*stopka*/
 
 footer
 {
-    margin-top: 15px;
+    margin-top: 50px;
     background-color: #f0f0f0;                  /* Kolor wypelnienia tla */
     padding: 10px;                                      /* Dodatkowy odstep od tekstu do obramowania */
     text-align: center;                                 /* Wysrodkowanie tekstu w poziomie */
@@ -93,24 +114,31 @@ footer
 }
 
 @font-face {
-    font-family: 'title-bold';
-    src: url('fonts/title-bold.otf') format('truetype');
+    font-family: 'title';
+    src: url('fonts/title.otf') format('truetype');
 }
 
 @font-face {
     font-family: 'kontakt';
-    src: url('fonts/kontakt.ttf') format('truetype');
-
+    src: url('fonts/kontakt.otf') format('truetype');
 }
 
 @font-face {
-    font-family: 'bbc-cond';
-    src: url('fonts/bbc-cond.otf') format('truetype');
-
+    font-family: 'bbc';
+    src: url('fonts/bbc.otf') format('truetype');
 }
 
 @font-face {
     font-family: 'uczelnia';
-    src: url('uczelnia.ttf') format('truetype');
+    src: url('fonts/uczelnia.ttf') format('truetype');
+}
 
+@font-face {
+    font-family: 'antic';
+    src: url('fonts/antic.otf') format('truetype');
+}
+
+@font-face {
+    font-family: 'bellota';
+    src: url('fonts/bellota.otf') format('truetype');
 }

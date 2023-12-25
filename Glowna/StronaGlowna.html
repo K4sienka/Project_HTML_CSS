@@ -7,6 +7,9 @@
     <link rel="stylesheet" href="glownastylemiddle.css">
     <link rel="stylesheet" href="glownastylebottom.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
     <title>IiAD 2023/2024</title>
 </head>
 
@@ -97,13 +100,81 @@
         </div> <!--koniec top-->
 
         <!--FAQ-->
-        <div class="questions" id="faq">
-            <p>FAQ</p>
+        <div class="middle">
+            <div class="questions" id="faq">
+                <div class="left">
+                    <div class="FAQ">FAQ<br>Czyli Najczęściej Zadawane Pytania</br></div>
+                    <img src="../Glowna/logo.png" alt="">
+                </div>
+                <div class="right">
+                        <div class="tab">
+                            <input type="checkbox" name="acc" id="acc1">
+                            <label for="acc1">
+                                <h2>01</h2>
+                                <h3>pytanie</h3>
+                            </label>
+                            <div class="content1">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                            </div>
+                        </div>
+                        <div class="tab">
+                            <input type="checkbox" name="acc" id="acc2">
+                            <label for="acc2">
+                                <h2>02</h2>
+                                <h3>pytanie</h3>
+                            </label>
+                            <div class="content1">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                            </div>
+                        </div>
+                        <div class="tab">
+                            <input type="checkbox" name="acc" id="acc3">
+                            <label for="acc3">
+                                <h2>03</h2>
+                                <h3>pytanie</h3>
+                            </label>
+                            <div class="content1">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                            </div>
+                        </div>
+                        <div class="tab">
+                            <input type="checkbox" name="acc" id="acc4">
+                            <label for="acc4">
+                                <h2>04</h2>
+                                <h3>pytanie</h3>
+                            </label>
+                            <div class="content1">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                            </div>
+                        </div>
+                        <div class="tab">
+                            <input type="checkbox" name="acc" id="acc5">
+                            <label for="acc5">
+                                <h2>05</h2>
+                                <h3>pytanie</h3>
+                            </label>
+                            <div class="content1">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                            </div>
+                        </div>
+                        <div class="tab">
+                            <input type="checkbox" name="acc" id="acc6">
+                            <label for="acc6">
+                                <h2>06</h2>
+                                <h3>pytanie</h3>
+                            </label>
+                            <div class="content1">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                            </div>
+                        </div>
+                </div>
+            </div>
         </div>
 
         <div class="content">
                 <!--Uczelnia-->
                 <div class="box">
+                    <div class="intro">Najważniejsze strony naszej uczelni</div>
                     <div class="square" id="square1">
                         <div class="image-container">
                             <img src="agh.jpg" alt="">
@@ -136,8 +207,18 @@
                         <p class="link" onclick="redirectToPage('https://samorzad.agh.edu.pl')">Przejdź do strony</p>
                     </div>
                 </div>
-                    
-                
+
+
+
+                <!--O nas-->
+                <div class="my">
+                    <div class="about" id="elem1">
+                        <p>Karolina Murzyn</p>
+                        <p>Katarzyna Wesołowska</p>
+                    </div>
+                </div>
+
+
                 <!-- Kontakt -->
                 <div class="contact" id="elem2">
                 <section class="contact-section">
@@ -153,7 +234,7 @@
                                 <textarea name="message" id="message" cols="30" rows="10" placeholder="Treść wiadomości..."></textarea><br><br>
                                 <input type="submit" class="send" value="Wyślij">
                                 <input type="reset" class="send" resetvalue="Reset">
-                                </form>
+                            </form>
                         </div>
                     </div>
                 </section>
@@ -173,28 +254,3 @@
 </body>
 
 </html>
-
-
-
-
-
-
-
-  <!--Pierwotna wersja aktualnosci
-    <div class="blog-post">
-                <div class="up">
-                    <div class="blog-post_date" id="currentDateContainer">
-                    </div>
-                    <h2>Aktualności</h2>
-                </div>
-               <div class="banner-card">
-                    <button id="scroll-left" class="arrow-button left"><div></div></button>
-                    <img src="../Glowna/news1.png">
-                    <div class="banner-text" id="bannerText">
-                        <div class="child">Kolejny dzień łamane są prawa studenta</div>
-                        <div class="child">Odwołane zajęcia z R dla grupy 4</div>
-                        <div class="child">Przeniesione zajęcia do sali 318 dla grupy 1</div>
-                    </div>
-                    <button id="scroll-right" class="arrow-button right"><div></div></button>
-                </div>
-            </div> -->
