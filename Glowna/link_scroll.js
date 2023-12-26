@@ -1,6 +1,6 @@
-//link do innej strony
-function redirectToPage(page) {
-    window.location.href = page;
+//link do innej strony, otwiera sie w nowej karcie
+function redirectToPage(url) {
+    window.open(url, '_blank');
 }
 
 //przesuwanie po stronie

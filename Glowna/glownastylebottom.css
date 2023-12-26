@@ -45,15 +45,15 @@
     line-height: 3em;
 }
 
-.shortInfo h3 {
+.shortInfo h4 {
     font-size: 2rem;
 }
 
-.shortInfo h4 {
+.shortInfo h5 {
     font-size: 1.5rem;
 }
 
-.shortInfo h5 {
+.shortInfo h6 {
     font-size: 1rem;
 }
 
