@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 
-//
+//Mozliwosc w FAQ zeby rozwinac tylko jedno pytanie
 document.addEventListener('DOMContentLoaded', function () {
     const checkboxes = document.querySelectorAll('.tab input[type="checkbox"]');
 

@@ -1,9 +1,9 @@
 
 .top::before {
     content: "";
-    background-image: url(../Glowna/A0.jpg); /* Ścieżka do obrazka */
+    background-image: url(../Glowna/photos/A0.jpg); /* Ścieżka do obrazka */
     background-size: cover; /* Dopasowanie obrazka do tła */
-    background-position: center; /* Wyśrodkowanie obrazka */ 
+    background-position: center; /* Wyśrodkowanie obrazka */
     position: absolute;
     top: 0;
     left: 0;
@@ -13,58 +13,20 @@
     z-index: -1;
 }
 
-.top{
-    margin-bottom: 53px;
-}
-
-/*3 sekcje pod menu*/
-.box-3 {
-    flex: 10;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin-top: 50px;
-    margin-bottom: 100px;
-    position: relative; 
-}
 
 
-/*Lewa strona*/
-.left-top {
-    flex: 2;
-    background-color: rgba(124, 179, 18, 0.8);
-    padding: 100px;
-    left: 50px;
-    height: 600px;
-}
-
-/*Prawa strona*/
-.right-top{
-    flex: 2;
-    background-color: rgba(124, 179, 18, 0.8);
-    padding: 100px;
-    right: 50px;
-    height: 600px;
-}
-
-.left-top,
-.right-top {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-}
 
 
 /*Aktualności*/
 .color {
     position: relative;
-    background-color: rgb(122, 14, 158);
+    background-color: rgba(203, 230, 248, 0.7);
     padding: 10px;
     font-family: 'news';
-    max-width: 770px;
+    max-width: 40vw;
     text-align: center;
-    height: 250px;
-    margin: 0 20px;
+    height: 13vw;
+    margin: auto;
 }
 
 .color::before,
@@ -72,22 +34,22 @@
     content: '';
     position: absolute;
     border-style: solid;
-    border-width: 250px;
+    border-width: 9.25vw;
 }
 
 .color::before {
-    border-color: #7a0e9e transparent transparent transparent;
-    right: 0px;
-    top: 0;
-    transform: translateX(50%);
+    border-color: rgba(203, 230, 248, 0.7) transparent transparent transparent;
+    right: -177px;
+    top: -177px;
+    transform: rotate(135deg);
     z-index: -1;
 }
 
 .color::after {
-    border-color: transparent transparent #7a0e9e transparent;
-    left: 0px;
-    bottom: 0;
-    transform: translateX(-50%);
+    border-color: transparent transparent rgba(203, 230, 248, 0.7) transparent;
+    left: -177px;
+    bottom: -177px;
+    transform: rotate(135deg);
     z-index: -1;
 }
 
@@ -101,15 +63,15 @@
 
 .title .text-item1 {
     color: #000;
-    font-size: 60px;
+    font-size: 2.5rem;
     font-weight: 600;
     letter-spacing: 10px;
 }
 
 .title .text-item2,
 .title .text-item2 span{
-    font-size: 25px;
-    color: #7CB312;
+    font-size: 1rem;
+    color: #3662aa;
 }
 
 .news {
@@ -127,24 +89,24 @@
 
 .scroll-text {
     position: relative;
-    background-color: #7CB312;
+    background-color: rgba(90, 163, 222, 0.8);
     font-weight: 580;
-    letter-spacing: 2px;
-    padding: 20px;
-    min-width: 860px;
-    min-height: 100px;
-    top: 15px;
-    left: -67px;
+    letter-spacing: 1px;
+    width: 40vw;
+    min-height: 5vw;
     display: flex;
     flex-direction: column;
-    justify-content: center; /* Wysrodkowanie w pionie */
-    align-items: center; 
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    margin-top: 20px;
 }
 
 .child {
-    margin-top: 8px;
+    text-align: center;
     font-size: 26px;
-    display: none;
+    margin: 10px 0; 
+    display: flex;
     animation: slideText 0.5s ease-in-out;
 }
 
@@ -174,96 +136,119 @@
 #scroll-left,
 #scroll-right {
     position: absolute;
-    top: 44%;                   /* miejsce pionowo */
-    font-size: 20px;
+    top: 40%;                   /* miejsce pionowo */
+    font-size: 0.75rem;
 }
 
 #scroll-left {
-    left: -180px;     /*od lewej krawędzi */
+    left: -70px;     /*od lewej krawędzi */
 }
 
 #scroll-right {
-    right: -44px; /*od prawej krawędzi */
+    right: -70px; /*od prawej krawędzi */
 }
 
 .icon i {
-    font-size: 50px; /* Dostosuj wielkość ikon */
-    color: #7CB312; /* Dostosuj kolor ikon */
+    font-size: 3.5rem;
+    color: #5aa3de; 
 }
 
 .icon:hover i {
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
-    color: #baf074;
+    color: #3662aa;
 }
+
+
+/*kropki*/
+.dots-container {
+    display: flex;
+    margin-top: 15px; 
+    justify-content: center;
+}
+
+.dot {
+    width: 8px;
+    height: 8px;
+    background-color: #5aa3de;
+    border-radius: 50%;
+    margin: 0 2px;
+    cursor: pointer;
+}
+
+.dot.active {
+    background-color: #0e3066;
+}
+
+
+
 
 /*przycisk FAQ*/
 .More {
-    display: grid;
-    place-items: center;
-    font-size: 14px;
+    padding: 20px 20px;
+    text-align: center;
+    width: 12vw;
+    font-size: 1rem;
     font-weight: 500;
-    width: 200px;
-    height: 55px;
     font-family: 'news';
-    background-color: rgba(186, 238, 130, 0.85);
-    border-radius: 30px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 50px;
-    margin-bottom: 80px;
+    background-color: rgba(90, 163, 222, 0.85);
+    margin: auto;
+    margin-top: 70px;
     text-wrap: nowrap;
 }
 
 .More:hover{
     transform: scale(1.15);
-    background-color: #baf074;
+    background-color: rgba(54, 98, 170, 0.8);
 }
 
 
 
 
 /*FAQ*/
-.middle{
-    background-color: rgba(44, 131, 124, 0.5);
+.middle {
+    margin-top: 200px; 
+    margin-bottom: 50px;   
 }
 
 .questions {
-    margin-left: 300px;
     display: flex;
-    width: 700px;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 50rem;
     font-family: 'antic';
-    margin-bottom: 100px;
-    margin-top: 50px;
 }
 
 .left {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-right: 30px;
+    justify-content: center;
+    flex: 1; /* Działa jak flex-grow: 1 */
 }
 
 .FAQ {
-    margin-top: 10px;
-    order: 1;
     color: #000;
-    font-size: 50px;
+    font-size: 2.5rem;
     font-weight: 800;
     text-align: center;
     white-space: nowrap;
-    position: absolute;
-    z-index: 2; /
 }
 
 .left img {
-    top: 70px;
-  width: 850px;
-  height: 600px;
+  width: 20vw;
+  height: 20vw;
   position: relative;
+  order: 1;
 }
 
 .right {
     flex: 1;
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; 
 }
 
 .right .tab {
@@ -271,10 +256,11 @@
     /*box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     box-shadow: 0 15px 15px rgba(0,0,0, 0.2);*/
     background-color: #6DADA8;
-    width: 600px;
+    width: 30vw;
     padding: 0 10px 10px;
     overflow: hidden;
-    margin-bottom: 5px; 
+    margin: 10px;
+
 }
 
 .right .tab input {
@@ -306,8 +292,8 @@
 }
 
 .right .tab label h2 {
-    width: 40px;
-    height: 30px;
+    width: 2vw;
+    height: 2vw;
     background-color: rgb(44, 131, 124);
     display: flex;
     justify-content: center;
@@ -322,8 +308,8 @@
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 100vw;
     color: rgba(255,255,255, 0.2);
     font-size: 8em;
     justify-content: flex-end;
@@ -333,7 +319,7 @@
 .right .tab label h3 {
     position: relative;
     font-weight: 700;
-    font-size: 20px;
+    font-size: 1rem;
     color: #000;
     bottom: 25px;
     z-index: 10;
@@ -364,16 +350,13 @@
 
 
 /*Uczelnia*/
-.highlight {                    /*podswietlanie po kliknieciu w menu*/
-    transform: scale(1.2);
-}
-
 .box::before {
+    margin: auto;
     content: "";
     position: absolute;
-    width: 100%;
-    height: 100%;
-    background-image: url(../Glowna/miasteczko.jpg);
+    width: 100vw;
+    height: 29vw;
+    background-image: url(../Glowna/photos/miasteczko.jpg);
     background-size: cover;
     opacity: 0.55;
     z-index: -1; /* Umieść tło pod innymi elementami */
@@ -385,28 +368,28 @@
     justify-content: center;
     align-items: center;
     position: relative; 
-    height: 650px;
+    height: 550px;
 }
 
 .intro {
     position: absolute;
     top: 30px;
-    font-size: 60px;
+    font-size: 3rem;
     font-weight: 600;
     letter-spacing: 2px;
     color: #034742;
 }
 
 .square {
-    width: 350px;
-    height: 350px;
+    width: 15vw;
+    height: 15vw;
     background-color: #46CEC0;
     text-align: center;
     display: flex;
     flex-direction: column;
     transition: box-shadow 0.3s;
     position: relative;
-    margin: 50px;
+    margin: 2vw;
 }
 
 .square:hover {
@@ -441,7 +424,7 @@ img {
 h3{
     justify-content: center;
     margin-top: 65px;
-    font-size: 37px;
+    font-size: 2rem;
     transition: transform 0.3s;
     white-space: nowrap;
     color:#215853;
@@ -453,7 +436,7 @@ h3{
     text-decoration: none;
     cursor: pointer;
     color:rgb(2, 92, 83);
-    font-size: 25px;
+    font-size: 2rem;
     font-family: 'uczelnia';
 }
 
