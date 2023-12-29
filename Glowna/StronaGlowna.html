@@ -2,12 +2,12 @@
 <html lang="pl">
 <head>
     <meta charset="UTF-8">
-    <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="glownastyletop.css">
     <link rel="stylesheet" href="glownastylemiddle.css">
     <link rel="stylesheet" href="glownastylebottom.css">
+    <link rel="stylesheet" href="responsywnosc.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
@@ -23,7 +23,7 @@
             <header>
                 <h1>Przewodnik po IiAD</h1>
             </header>
-        <div class="begin" id="elem0"></div>
+            <div class="begin" id="elem0"></div>
          <!--Menu główne-->
             <ul>
                 <li><a class="menu  active" href="../Glowna/StronaGlowna.html"> Strona główna </a></li>
@@ -34,11 +34,11 @@
                     </ul>
                 </li>              
                 
-                <li><a class="menu" href="#"> Baza kontaktowa </a></li>
+                <li><a class="menu" href="#">Baza kontaktowa</a></li>
 
-                    <li><a class="menu" href="#"> Zarząd kierunku </a></li>
+                    <li><a class="menu" href="#">Zarząd kierunku</a></li>
 
-                    <li><a class="menu " href="#"> Sesja </a>
+                    <li><a class="menu " href="#">Sesja zaliczeniowa</a>
                     <ul class="podmenu">
                         <li><a href="#">Egzaminy</a></li>
                         <li><a href="#">Zaliczenia</a></li>
@@ -52,45 +52,44 @@
                         <li><a href="#" onclick="scrollToElement('square4')">URSS</a></li>
                     </ul>
                 </li>
-                    <li><a class="menu" href="../Plan_zajec/plan_zajec.html"> Plan zajęć </a>
+                    <li><a class="menu" href="../Plan_zajec/plan_zajec.html">Plan zajęć</a>
                 </li>
             </ul>
         
 
              <!--Aktualnosci-->
-            <div class="box-3">   
-                <div class="color">            
-                    <div class="title">
-                        <span class="text-item1">Aktualności</span>
-                        <span class="text-item2">Na dzień:  <span id="currentDateContainer"></span><!--data--></span>
-                    </div>  
-                    <div class="news">   
-                        <div class="cover">
-                            <button id="scroll-left" class="icon" onclick="scrollLeft()"><i class="fa-solid fa-angles-left"></i></i></button>
-                           
-                            <div class="scroll-text" id="bannerText">
-                                <div class="child">Kolejny dzień łamane są prawa studenta</div>
-                                <div class="child">Odwołane zajęcia z R dla grupy 4</div>
-                                <div class="child">Przeniesione zajęcia do sali 318 dla grupy 1</div>
-                                <div class="child">Kolokwium grupy 5 z PTSD w ten wtorek</div>
-                                <div class="child">Odwołane zaliczenie z programowania obiektowego</div>
-                                <div class="child">W sali 313 znaleziono zasilacz do laptopa marki Lenovo</div>
-                                <div class="child">Zajęcia grupy 3 z Baz Danych w dniu 27.01 odbędą się zdalnie</div>
+                <div class="a0">   
+                    <div class="color">            
+                        <div class="title">
+                            <span class="text-item1">Aktualności</span>
+                            <span class="text-item2">Na dzień:  <span id="currentDateContainer"></span><!--data--></span>
+                        </div>  
+                        <div class="news">   
+                            <div class="cover">
+                                <button id="scroll-left" class="icon" onclick="scrollLeft()"><i class="fa-solid fa-angles-left"></i></i></button>
+                            
+                                <div class="scroll-text" id="bannerText">
+                                    <div class="child">Kolejny dzień łamane są prawa studenta</div>
+                                    <div class="child">Odwołane zajęcia z R dla grupy 4</div>
+                                    <div class="child">Przeniesione zajęcia do sali 318 dla grupy 1</div>
+                                    <div class="child">Kolokwium grupy 5 z PTSD w ten wtorek</div>
+                                    <div class="child">Odwołane zaliczenie z programowania obiektowego</div>
+                                    <div class="child">W sali 313 znaleziono zasilacz do laptopa marki Lenovo</div>
+                                    <div class="child">Zajęcia grupy 3 z Baz Danych w dniu 27.01 odbędą się zdalnie</div>
+                                </div>
+                                <button id="scroll-right" class="icon" onclick="scrollRight()"><i class="fa-solid fa-angles-right"></i></button>
+                            
                             </div>
-                            <button id="scroll-right" class="icon" onclick="scrollRight()"><i class="fa-solid fa-angles-right"></i></button>
-                           
+                        
                         </div>
-                      
+                        <div id="dots" class="dots-container"></div>
+                
+                        <article class="More" onclick="scrollToElement('faq')">
+                            <p>Masz pytania?</p>
+                            <p>Dowiedz się więcej!</p>
+                        </article>
                     </div>
-                    <div id="dots" class="dots-container"></div>
                 </div>
-            
-                    <article class="More" onclick="scrollToElement('faq')">
-                        <p>Masz pytania?</p>
-                        <p>Dowiedz się więcej!</p>
-                </div>      
-            </div>
-
         </div> <!--koniec top-->
 
         <!--FAQ-->
@@ -202,7 +201,7 @@
                     </div>
                 </div>
 
-
+        </div>
 
                 <!--O nas-->
                 <div class="about" id="elem1"> 

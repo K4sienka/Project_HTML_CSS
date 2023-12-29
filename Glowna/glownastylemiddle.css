@@ -1,31 +1,30 @@
-
-.top::before {
+.a0::before {
     content: "";
     background-image: url(../Glowna/photos/A0.jpg); /* Ścieżka do obrazka */
     background-size: cover; /* Dopasowanie obrazka do tła */
     background-position: center; /* Wyśrodkowanie obrazka */
+    background-repeat: no-repeat;
+    height: 100%; 
     position: absolute;
-    top: 0;
+    top: 8rem;
     left: 0;
     right: 0;
     bottom: 0;
-    opacity: 0.7; /*przejrzystosc */
-    z-index: -1;
+    opacity: 0.8; /*przejrzystosc */
+    z-index: -2;
 }
-
-
 
 
 
 /*Aktualności*/
 .color {
+    top: 10rem;
     position: relative;
     background-color: rgba(203, 230, 248, 0.7);
-    padding: 10px;
     font-family: 'news';
-    max-width: 40vw;
+    width: 50rem;
     text-align: center;
-    height: 13vw;
+    height: 16rem;
     margin: auto;
 }
 
@@ -34,21 +33,21 @@
     content: '';
     position: absolute;
     border-style: solid;
-    border-width: 9.25vw;
+    border-width: 11.25rem;
 }
 
 .color::before {
     border-color: rgba(203, 230, 248, 0.7) transparent transparent transparent;
-    right: -177px;
-    top: -177px;
+    right: -11.25rem;
+    top: -11.25rem;
     transform: rotate(135deg);
     z-index: -1;
 }
 
 .color::after {
     border-color: transparent transparent rgba(203, 230, 248, 0.7) transparent;
-    left: -177px;
-    bottom: -177px;
+    left: -11.25rem;
+    bottom: -11.25rem;
     transform: rotate(135deg);
     z-index: -1;
 }
@@ -62,6 +61,7 @@
 
 
 .title .text-item1 {
+    margin-top: 1.5rem;
     color: #000;
     font-size: 2.5rem;
     font-weight: 600;
@@ -92,20 +92,19 @@
     background-color: rgba(90, 163, 222, 0.8);
     font-weight: 580;
     letter-spacing: 1px;
-    width: 40vw;
-    min-height: 5vw;
+    width: 50rem;
+    height: 7rem;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 100%;
-    margin-top: 20px;
+    margin-top: 1rem;
 }
 
 .child {
     text-align: center;
-    font-size: 22px;
-    margin: 10px 0; 
+    font-size: 1.5rem;
+    margin: 1rem 0; 
     display: flex;
     animation: slideText 0.5s ease-in-out;
 }
@@ -136,16 +135,16 @@
 #scroll-left,
 #scroll-right {
     position: absolute;
-    top: 40%;                   /* miejsce pionowo */
+    top: 3rem;                   /* miejsce pionowo */
     font-size: 0.75rem;
 }
 
 #scroll-left {
-    left: -70px;     /*od lewej krawędzi */
+    left: -5rem;     /*od lewej krawędzi */
 }
 
 #scroll-right {
-    right: -70px; /*od prawej krawędzi */
+    right: -5rem; /*od prawej krawędzi */
 }
 
 .icon i {
@@ -162,16 +161,16 @@
 /*kropki*/
 .dots-container {
     display: flex;
-    margin-top: 15px; 
+    margin-top: 1rem; 
     justify-content: center;
 }
 
 .dot {
-    width: 8px;
-    height: 8px;
+    width: 0.5rem;
+    height: 0.5rem;
     background-color: #5aa3de;
     border-radius: 50%;
-    margin: 0 2px;
+    margin: 0 0.2rem;
     cursor: pointer;
 }
 
@@ -184,15 +183,15 @@
 
 /*przycisk FAQ*/
 .More {
-    padding: 20px 20px;
+    padding: 1rem 1rem;
     text-align: center;
-    width: 12vw;
+    width: 15rem;
     font-size: 1rem;
     font-weight: 500;
     font-family: 'news';
     background-color: rgba(90, 163, 222, 0.85);
     margin: auto;
-    margin-top: 70px;
+    margin-top: 5rem;
     text-wrap: nowrap;
 }
 
@@ -206,8 +205,8 @@
 
 /*FAQ*/
 .middle {
-    margin-top: 200px; 
-    margin-bottom: 50px;   
+    margin-top: 30rem; 
+    margin-bottom: 8rem;   
 }
 
 .questions {
@@ -447,3 +446,4 @@ h3{
 .link:hover{
     color: #7a0e9e;
 }
+

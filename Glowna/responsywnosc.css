@@ -1,0 +1,592 @@
+/* tablety*/
+@media only screen and (min-width: 481px) and (max-width: 768px) 
+{
+    /*Menu*/
+    h1 {
+        font-size: 2.5rem;
+        letter-spacing: 0.2rem;
+    }
+
+    ul li a {
+        padding: 0.8rem 0.8rem;
+        font-size: 0.8rem;
+    }
+
+    ul li ul.podmenu {
+        width: 100%;
+    }
+
+    ul li ul.podmenu a {
+        font-size: 0.9rem;
+    }
+
+    ul.podmenu li a {
+        padding: 20px 0;
+    }
+/*-------------------------------------*/
+
+/*Aktualnosci*/
+.a0::before {
+    height: 80%;
+    top: 7rem;
+}
+
+.color {
+    width: 13rem; 
+    height: 9rem;
+    margin-top: 0.1rem;
+}
+
+.color::before,
+.color::after {
+    border-width: 6.5rem;
+}
+
+.color::before {
+    right: -6.5rem;
+    top: -6.5rem;
+}
+
+.color::after {
+    left: -6.5rem;
+    bottom: -6.5rem;
+}
+
+.title .text-item1 {
+    margin-top: 1rem;
+    font-size: 1.6rem;
+    letter-spacing: 0.1rem; 
+}
+
+.title .text-item2,
+.title .text-item2 span {
+    font-size: 0.8rem; 
+    text-wrap: nowrap;
+}
+
+.scroll-text {
+    width: 14rem; 
+    height: 2rem; 
+    margin-top: 1.5rem;
+}
+
+.child {
+    font-size: 0.7rem; 
+}
+
+#scroll-left {
+    left: -2rem;
+    top: 1.8rem;
+}
+
+#scroll-right {
+    right: -2rem;
+    top: 1.8rem;
+}
+
+.icon i {
+    font-size: 1.5rem; 
+   
+}
+
+.More {
+    width:  14rem; 
+    font-size: 1rem;
+}
+
+.dots-container {
+    margin-top: 0.1rem; 
+}
+
+.dot {
+    width: 0.25rem;
+    height: 0.25rem;
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*telefony*/
+@media only screen and (min-width: 350px) and (max-width: 480px) 
+{
+    /*Menu*/
+    h1 {
+        font-size: 1.5rem;
+        letter-spacing: 0.1em;
+    }
+
+    ul li a {
+        padding: 3px 6px;
+        font-size: 0.7rem;
+    }
+
+    ul li ul.podmenu {
+        width: 100%;
+    }
+
+    ul li ul.podmenu a {
+        font-size: 0.4rem;
+    }
+
+    ul.podmenu li a {
+        padding: 15px 0;
+    }
+
+/*-----------------*/
+/*Aktualnosci*/
+.a0::before {
+    height: 50%;
+    top: 5rem;
+}
+
+.color {
+    top: 3rem;
+    width: 8rem; 
+    height: 6rem;
+}
+
+.color::before,
+.color::after {
+    border-width: 4.25rem; /* brak trojkatow */
+}
+
+.color::before {
+    right: -4.25rem;
+    top: -4.25rem;
+}
+
+.color::after {
+    left: -4.25rem;
+    bottom: -4.25rem;
+}
+
+.title .text-item1 {
+    margin-top: 0.5rem;
+    font-size: 0.9rem;
+    letter-spacing: 0.1rem; 
+}
+
+.title .text-item2,
+.title .text-item2 span {
+    font-size: 0.5rem; 
+    text-wrap: nowrap;
+}
+
+.scroll-text {
+    width: 9.2rem; 
+    height: 1.4rem; 
+    margin-top: 1rem;
+}
+
+.child {
+    font-size: 0.4rem; 
+}
+
+#scroll-left {
+    left: -1.6rem;
+    top: 1.2rem;
+}
+
+#scroll-right {
+    right: -1.6rem;
+    top: 1.2rem;
+}
+
+.icon i {
+    font-size: 1rem; 
+}
+
+.More {
+    width: 8rem; 
+    font-size: 0.5rem;
+}
+
+.dots-container {
+    margin-top: 0.08rem; 
+}
+
+.dot {
+    width: 0.2rem;
+    height: 0.2rem;
+}
+
+}
+
+
+
+
+/*--------------------*/
+/*Ekrany*/
+@media only screen and (min-width: 769px) and (max-width: 1340px) 
+{
+    /*Menu*/
+    h1 {
+        font-size: 3.5rem;
+        letter-spacing: 0.1em;
+    }
+
+    ul li a {
+        padding: 10px 12px;
+        font-size: 1rem;
+    }
+
+    ul li ul.podmenu {
+        width: 100%;
+    }
+
+    ul li ul.podmenu a {
+        font-size: 0.8rem;
+    }
+
+    ul.podmenu li a {
+        padding: 15px 0;
+    }
+
+/*-----------------*/
+/*Aktualnosci*/
+.a0::before {
+    height: 70%;
+    top: 8rem;
+}
+
+.color {
+    width: 20rem; 
+    height: 12rem;
+}
+
+.color::before,
+.color::after {
+    border-width: 8.62rem;
+}
+
+.color::before {
+    right: -8.62rem;
+    top: -8.6rem;
+}
+
+.color::after {
+    left: -8.55rem;
+    bottom: -8.6rem;
+}
+
+.title .text-item1 {
+    margin-top: 1rem;
+    font-size: 1.6rem;
+    letter-spacing: 0.1rem; 
+}
+
+.title .text-item2,
+.title .text-item2 span {
+    font-size: 0.8rem; 
+    text-wrap: nowrap;
+}
+
+.scroll-text {
+    width: 14rem; 
+    height: 2rem; 
+    margin-top: 1.5rem;
+}
+
+.child {
+    font-size: 0.7rem; 
+}
+
+#scroll-left {
+    left: -2rem;
+    top: 1.8rem;
+}
+
+#scroll-right {
+    right: -2rem;
+    top: 1.8rem;
+}
+
+.icon i {
+    font-size: 1.5rem; 
+   
+}
+
+.More {
+    width:  14rem; 
+    font-size: 1rem;
+}
+
+.dots-container {
+    margin-top: 0.1rem; 
+}
+
+.dot {
+    width: 0.25rem;
+    height: 0.25rem;
+}
+
+}
+
+
+
+
+
+
+/*faq*/
+@media only screen and (max-width: 768px) {
+    .questions {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+.left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex: 1; /* Działa jak flex-grow: 1 */
+}
+
+.FAQ {
+    color: #000;
+    font-size: 2.5rem;
+    font-weight: 800;
+    text-align: center;
+    white-space: nowrap;
+}
+
+.left img {
+    width: 15vw; /* Zmniejszenie szerokości obrazka na większych ekranach */
+    height: 15vw; /* Zmniejszenie wysokości obrazka na większych ekranach */
+    position: relative;
+    order: 1;
+}
+
+.right {
+    flex: 1;
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.right .tab {
+    position: relative;
+    background-color: #6DADA8;
+    width: 30vw;
+    padding: 0 10px 10px;
+    overflow: hidden;
+    margin: 5px;
+}
+
+.right .tab label::after {
+    right: 10px; /* Przesunięcie ikony "+" na mniejszych ekranach */
+}
+
+.right .tab input:checked ~ label::after {
+    transform: rotate(135deg);
+}
+
+.right .tab label h2 {
+    width: 3vw; /* Zmniejszenie szerokości ikony "+" na większych ekranach */
+    height: 3vw; /* Zmniejszenie wysokości ikony "+" na większych ekranach */
+    margin-right: 10px;
+}
+
+.right .tab input:checked ~ label h2 {
+    font-size: 6em; /* Zwiększenie rozmiaru ikony "+" na mniejszych ekranach */
+}
+
+.right .tab label h3 {
+    font-size: 1.25rem; /* Zwiększenie rozmiaru tekstu h3 na mniejszych ekranach */
+    bottom: 10px; /* Zmniejszenie odległości od dołu na mniejszych ekranach */
+}
+
+.right .tab .content1 {
+    max-height: 0;
+    transition: max-height 0.7s ease;
+    overflow: hidden;
+}
+
+.right .tab input:checked ~ .content1 {
+    max-height: 100vh;
+    transition: max-height 0.7s ease;
+}
+
+.right .tab .content1 p {
+    padding: 10px 0;
+}
+
+/* Media query dla ekranów o szerokości mniejszej niż 768px (np. tablety) */
+@media only screen and (max-width: 768px) {
+    .left,
+    .right {
+        order: 0; /* Zmiana kolejności dla flexboxa na mniejszych ekranach */
+    }
+}
+
+/* Media query dla ekranów o szerokości mniejszej niż 480px (np. telefony) */
+@media only screen and (max-width: 480px) {
+    .left img {
+        width: 50vw; /* Zmniejszenie szerokości obrazka na bardzo małych ekranach */
+        height: 50vw; /* Zmniejszenie wysokości obrazka na bardzo małych ekranach */
+    }
+
+    .right .tab {
+        width: 90vw; /* Dopasuj szerokość .tab na bardzo małych ekranach */
+    }
+
+    .right .tab label h2 {
+        width: 8vw; /* Zmniejszenie szerokości ikony "+" na bardzo małych ekranach */
+        height: 8vw; /* Zmniejszenie wysokości ikony "+" na bardzo małych ekranach */
+    }
+
+    .right .tab label h3 {
+        font-size: 0.8rem; /* Zmniejszenie rozmiaru tekstu h3 na bardzo małych ekranach */
+    }
+}
+
+
+
+
+
+
+
+/*uczelnia*/
+@media only screen and (max-width: 768px) {
+    .box::before {
+        height: 40vw; /* Dostosuj wysokość tła na mniejszych ekranach */
+    }
+
+    .square {
+        width: 40vw; /* Dostosuj szerokość .square na mniejszych ekranach */
+        height: 40vw; /* Dostosuj wysokość .square na mniejszych ekranach */
+    }
+
+    img {
+        height: 130%; /* Zwiększenie wysokości obrazka na mniejszych ekranach */
+    }
+
+    .link {
+        padding: 10px; /* Zmniejszenie paddingu dla .link na mniejszych ekranach */
+        font-size: 1.5rem; /* Zmniejszenie rozmiaru tekstu dla .link na mniejszych ekranach */
+    }
+}
+
+/* Media query dla ekranów o szerokości mniejszej niż 480px (np. telefony) */
+@media only screen and (max-width: 480px) {
+    .box::before {
+        height: 60vw; /* Dostosuj wysokość tła na bardzo małych ekranach */
+    }
+
+    .square {
+        width: 80vw; /* Dostosuj szerokość .square na bardzo małych ekranach */
+        height: 80vw; /* Dostosuj wysokość .square na bardzo małych ekranach */
+    }
+
+    img {
+        height: 140%; /* Zwiększenie wysokości obrazka na bardzo małych ekranach */
+    }
+
+    .link {
+        padding: 5px; /* Zmniejszenie paddingu dla .link na bardzo małych ekranach */
+        font-size: 1rem; /* Zmniejszenie rozmiaru tekstu dla .link na bardzo małych ekranach */
+    }
+}
+
+
+
+
+/*o nas*/
+@media only screen and (max-width: 768px) {
+    .us img {
+        width: 150px; /* Zmniejszenie szerokości obrazka na mniejszych ekranach */
+        height: 220px; /* Zmniejszenie wysokości obrazka na mniejszych ekranach */
+        margin-left: 50px; /* Dostosowanie marginesu na mniejszych ekranach */
+    }
+
+    .member {
+        flex-direction: column; /* Zmiana kierunku na kolumnowy na mniejszych ekranach */
+        align-items: center;
+    }
+}
+
+/* Media query dla ekranów o szerokości mniejszej niż 480px (np. telefony) */
+@media only screen and (max-width: 480px) {
+    .us img {
+        width: 120px; /* Zmniejszenie szerokości obrazka na bardzo małych ekranach */
+        height: 180px; /* Zmniejszenie wysokości obrazka na bardzo małych ekranach */
+        margin-left: 30px; /* Dostosowanie marginesu na bardzo małych ekranach */
+    }
+}
+
+
+
+/*kontakt*/
+@media only screen and (max-width: 768px) {
+    .contact-section {
+        width: 90%; /* Dostosowanie szerokości na mniejszych ekranach */
+    }
+
+    .send {
+        margin-left: 0; /* Zmiana marginesu na mniejszych ekranach */
+    }
+}
+
+/* Media query dla ekranów o szerokości mniejszej niż 480px (np. telefony) */
+@media only screen and (max-width: 480px) {
+    .contact-section {
+        width: 100%; /* Dostosowanie szerokości na bardzo małych ekranach */
+    }
+
+    .send {
+        width: 100%; /* Dostosowanie szerokości na bardzo małych ekranach */
+        margin-left: 0; /* Zmiana marginesu na bardzo małych ekranach */
+    }
+}
+
+
+
+@media only screen and (max-width: 768px) {
+    /* Stopka */
+    footer {
+        letter-spacing: 4px; /* Zmniejszenie odstępu między literami na mniejszych ekranach */
+    }
+
+    /* Przycisk "scroll-to-top" */
+    .scroll-to-top {
+        bottom: 20px; /* Zmniejszenie odległości od dołu na mniejszych ekranach */
+        right: 20px; /* Zmniejszenie odległości od prawej krawędzi na mniejszych ekranach */
+    }
+
+    .scroll-to-top i {
+        font-size: 30px; /* Zmniejszenie rozmiaru ikony na mniejszych ekranach */
+    }
+}
+
+/* Media query dla ekranów o szerokości mniejszej niż 480px (np. telefony) */
+@media only screen and (max-width: 480px) {
+    /* Stopka */
+    footer {
+        letter-spacing: 2px; /* Zmniejszenie odstępu między literami na bardzo małych ekranach */
+    }
+
+    /* Przycisk "scroll-to-top" */
+    .scroll-to-top {
+        bottom: 15px; /* Zmniejszenie odległości od dołu na bardzo małych ekranach */
+        right: 15px; /* Zmniejszenie odległości od prawej krawędzi na bardzo małych ekranach */
+    }
+
+    .scroll-to-top i {
+        font-size: 25px; /* Zmniejszenie rozmiaru ikony na bardzo małych ekranach */
+    }
+}
