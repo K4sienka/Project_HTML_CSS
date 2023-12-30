@@ -168,7 +168,7 @@
                 <!--Uczelnia-->
                 <div class="box">
                     <div class="intro">Najważniejsze strony naszej uczelni</div>
-                    <div class="square" id="square1">
+                    <div class="square" id="square1" onclick="toggleSquareSize('square1')">
                         <div class="image-container">
                             <img src="../Glowna/photos/agh.jpg" alt="">
                         </div>
@@ -176,7 +176,7 @@
                         <p class="link" onclick="redirectToPage('https://www.agh.edu.pl') ">Przejdź do strony</p>
                     </div>
                 
-                    <div class="square" id="square2">
+                    <div class="square" id="square2" onclick="toggleSquareSize('square2')">
                         <div class="image-container">
                             <img src="../Glowna/photos/wggios.jpg" alt="">
                         </div>
@@ -184,7 +184,7 @@
                         <p class="link" onclick="redirectToPage('https://www.wggios.agh.edu.pl')">Przejdź do strony</p>
                     </div>
                 
-                    <div class="square" id="square3">
+                    <div class="square" id="square3" onclick="toggleSquareSize('square3')">
                         <div class="image-container">
                             <img src="../Glowna/photos/usos.jpg" alt="">
                         </div>
@@ -192,7 +192,7 @@
                         <p class="link" onclick="redirectToPage('https://web.usos.agh.edu.pl/kontroler.php?_action=home/index')">Przejdź do strony</p>
                     </div>
                 
-                    <div class="square" id="square4">
+                    <div class="square" id="square4" onclick="toggleSquareSize('square4')">
                         <div class="image-container">
                             <img src="../Glowna/photos/urss.jpg" alt="">
                         </div>
@@ -210,7 +210,7 @@
                 </div>
                     <div class="member">
                         <div class="us">
-                            <img src="../Glowna/photos/Kasia.jpg">
+                            <img src="../Glowna/photos/Kasia.jpg" id="Kasia">
                             <div class="shortInfo">
                                 <h4>Katarzyna Wesołowska</h4>
                                 <h5>Starostka kierunku</h5>
@@ -219,7 +219,7 @@
                         </div>
                         <div class="clear"></div>
                         <div class="us">
-                            <img src="../Glowna/photos/Karolina.jpg">
+                            <img src="../Glowna/photos/Karolina.jpg" id="Karolina">
                             <div class="shortInfo">
                                 <h4>Karolina Murzyn</h4>
                                 <h5>Zastępca</h5>
@@ -255,9 +255,6 @@
                 </section>
             </div>
 
-            <!--Do przewijania na poczatek-->
-            <div class="scroll-to-top" onclick="scrollToElement('elem0')">
-                <i class="fa-solid fa-circle-arrow-up"></i>
             </div>
 
                     <!--Stopka-->
@@ -269,11 +266,16 @@
         </div>
     </div>
 
+            <!--Do przewijania na poczatek-->
+            <div class="scroll-to-top" onclick="scrollToElement('elem0')">
+                <i class="fa-solid fa-circle-arrow-up"></i>
+
     <!--JAVA SCRIPT-->
     <script src="link_scroll.js"></script>
     <script src="data_rozwin.js"></script>
     <script src="strzalki.js"></script>
     <script src="kropki.js"></script>
+    <script src="ekrany_dotykowe.js"></script>
 </body>
 
 </html>
