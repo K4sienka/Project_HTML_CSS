@@ -111,7 +111,7 @@
 /*FAQ*/
 .middle {
 margin-top: 20rem; 
-margin-bottom: 2rem; 
+margin-bottom: 7rem; 
 }
 
 .questions {
@@ -171,61 +171,66 @@ order: 0;
 
 /*-------------------*/
 /*uczelnia*/
-    .box {
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        height: 62rem;
-    }
+.box::before {
+    height: 120%;
+} 
 
-    .intro {
-        top: 4rem;
-        font-size: 1.4rem;
-        text-align: center;
-        letter-spacing: 0.1rem;
-    }
+.box {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 5rem;
+}
 
-    .square {
-        width: 10rem;
-        height: 10rem;
-        margin: 1rem;
-    }
+.intro {
+    top: -4rem;
+    font-size: 1.4rem;
+    text-align: center;
+    letter-spacing: 0.1rem;
+}
 
-    .square:hover h3 {
-        margin-top: 1.5rem;
-    }
+.square {
+    width: 10rem;
+    height: 10rem;
+    margin: 1rem;
+    top: 1rem;
+}
 
-    .square:hover img {
-        transform: none;
-        transition: none;
-    }
+.square:hover h3 {
+    margin-top: 1.5rem;
+}
 
-    h3{
-        font-size: 1rem;
-        padding: 0.5rem;
-        margin-top: 1rem;
-    }
-    
-    .link {
-        padding: 0.4rem;
-        font-size: 0.8rem;
-    }
+.square:hover img {
+    transform: none;
+    transition: none;
+}
 
-    .square.active {
-        transform: scale(1.2);
-    }
+h3{
+    font-size: 1rem;
+    padding: 0.5rem;
+    margin-top: 1rem;
+}
 
-    .square.active h3 {
-        transform: scale(1.2);
-    }
+.link {
+    padding: 0.4rem;
+    font-size: 0.8rem;
+}
+
+.square.active {
+    transform: scale(1.2);
+}
+
+.square.active h3 {
+    transform: scale(1.2);
+}
 
 
 
 /*-------------------*/
 /*O nas*/
 .about {
-    margin-top: 1rem;
-    margin-bottom: 1rem;
+margin-top: 1rem;
+margin-bottom: 1rem;
 }
 
 .we {
@@ -261,15 +266,15 @@ order: 0;
 }
 
 .shortInfo h4 {
-    font-size: 1.1rem;
+    font-size: 0.92rem;
 }
 
 .shortInfo h5 {
-    font-size: 0.9rem;
+    font-size: 0.8rem;
 }
 
 .shortInfo h6 {
-    font-size: 0.6rem;
+    font-size: 0.5rem;
 }
 
 
@@ -327,9 +332,7 @@ footer
 
 .scroll-to-top {
     top: 92% !important;
-
     right: 10% !important;
-
 }
 
 }
@@ -364,8 +367,9 @@ footer
     ul.podmenu li a {
         padding: 20px 0;
     }
-/*-------------------------------------*/
+    
 
+/*-------------------------------------*/
 /*Aktualnosci*/
 .a0::before {
     height: 80%;
@@ -453,8 +457,8 @@ footer
 /*----------------*/
 /*FAQ*/
 .middle {
-margin-top: 31rem; 
-margin-bottom: 2rem; 
+margin-top: 32rem; 
+margin-bottom: 12rem; 
 }
 
 .questions {
@@ -510,6 +514,172 @@ order: 0;
 
 .right .tab .content1 p {
     padding: 0.8rem 0;
+}
+
+/*-------------------*/
+/*uczelnia*/
+.box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+}
+
+.intro {
+    text-align: center;
+    top: -6rem;
+    font-size: 2.5rem;
+    letter-spacing: 0.1rem;
+}
+
+.square {
+    width: 14rem;
+    height: 14rem;
+    margin: 2rem 2rem;
+}
+
+.square:hover {
+    box-shadow: 0 0 0 ;
+}
+
+.square:hover img {
+    transform: none;
+    transition: none;
+}
+
+h3{
+    font-size: 1.5rem;
+    padding: 0.7rem;
+    margin-top: 1rem;
+}
+
+.square:hover h3 {
+    margin-top: 2rem;
+}
+
+.link {
+    padding: 0.8rem;
+    font-size: 1.4rem;
+}
+
+.square.active {
+    transform: scale(1.2);
+}
+
+.square.active h3 {
+    transform: scale(1.2);
+}
+
+
+
+/*-------------------*/
+/*O nas*/
+.about {
+margin-top: 14rem;
+margin-bottom: 2rem;
+}
+
+.we {
+font-size: 3rem;
+padding-bottom: 0.5rem;
+}
+
+.member {
+margin-top: 1.2rem;
+width: 100%;
+height: 100%;
+flex-direction: column;
+}
+
+.us {
+margin-bottom: 1rem;
+text-align: center;
+flex-wrap: wrap; 
+}
+
+#Karolina {
+margin-left: 0.9rem;
+}
+
+.us img {
+width: 25%;
+height: 37%;
+}
+
+.shortInfo {
+text-wrap: nowrap;
+line-height: 1.5em;
+}
+
+.shortInfo h4 {
+font-size: 1.4rem;
+}
+
+.shortInfo h5 {
+font-size: 1.2rem;
+}
+
+.shortInfo h6 {
+font-size: 0.8rem;
+}
+
+
+
+/*-------------------*/
+/*Kontakt i stopka*/
+.contact-section {
+height: 40rem;
+}
+
+.container
+{
+width: 82%;
+}
+
+textarea{
+height: 9rem;
+}
+
+input[type="text"]{
+height: 2rem;
+}
+
+
+input, textarea
+{
+margin-bottom: 0.5rem;
+padding: 0.4rem;
+}
+
+.contact-left {
+font-size: 1.2rem;
+}
+
+.contact-left h2{
+font-size: 2.5rem;
+margin-bottom: 0.6rem;
+}
+
+.send {
+font-size: 1rem;
+margin-bottom:  1rem;
+padding: 0.2rem 0.8rem;
+}
+
+.send:hover{
+background-color: rgba(14, 98, 158, 0.7);
+}
+
+footer
+{
+padding: 0.2rem;
+letter-spacing: 0.5rem;
+}
+
+.scroll-to-top {
+top: 94% !important;
+right: 5% !important;
 }
 
 
@@ -634,12 +804,13 @@ order: 0;
 /*----------------*/
 /*FAQ*/
 .middle {
-    margin-top: 25rem; 
-    margin-bottom: 2rem; 
+    margin-top: 28rem; 
+    margin-bottom: 16rem; 
     }
     
     .FAQ {
         font-size: 1.4rem;
+        text-wrap: wrap;
     }
 
     .left img {
@@ -648,7 +819,7 @@ order: 0;
     }
     
     .right .tab {
-        width: 20rem;
+        width: 28rem;
         padding: 0 0.7rem 0.7rem;
         margin: 0.7rem;
     }
@@ -681,6 +852,171 @@ order: 0;
     .right .tab .content1 p {
         padding: 1rem 0;
     }
+
+
+
+/*-------------------*/
+/*uczelnia*/
+.box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+}
+
+.intro {
+    text-align: center;
+    top: -7rem;
+    font-size: 3.5rem;
+    letter-spacing: 0.1rem;
+}
+
+.square {
+    width: 18rem;
+    height: 18rem;
+    margin: 3rem 3rem;
+}
+
+.square:hover {
+    box-shadow: 0 0 0 ;
+}
+
+.square:hover img {
+    transform: none;
+    transition: none;
+}
+
+h3{
+    font-size: 2rem;
+    padding: 1rem;
+    margin-top: 1.5rem;
+}
+
+.square:hover h3 {
+    margin-top: 2.2rem;
+}
+
+.link {
+    padding: 1.1rem;
+    font-size: 1.8rem;
+}
+
+.square.active {
+    transform: scale(1.2);
+}
+
+.square.active h3 {
+    transform: scale(1.2);
+}
+
+
+
+/*-------------------*/
+/*O nas*/
+.about {
+margin-top: 12rem;
+margin-bottom: 2rem;
+}
+
+.we {
+font-size: 4rem;
+padding-bottom: 0.5rem;
+}
+
+.member {
+margin-top: 2rem;
+width: 100%;
+height: 100%;
+flex-direction: column;
+}
+
+.us {
+margin-bottom: 2rem;
+text-align: center;
+flex-wrap: wrap; 
+}
+
+.us img {
+width: 25%;
+height: 37%;
+}
+
+.shortInfo {
+text-wrap: nowrap;
+line-height: 2em;
+}
+
+.shortInfo h4 {
+font-size: 2rem;
+}
+
+.shortInfo h5 {
+font-size: 1.8rem;
+}
+
+.shortInfo h6 {
+font-size: 1.2rem;
+}
+
+
+
+/*-------------------*/
+/*Kontakt i stopka*/
+.contact-section {
+height: 60rem;
+}
+
+.container
+{
+width: 70%;
+}
+
+textarea{
+height: 16rem;
+}
+
+input[type="text"]{
+height: 3rem;
+}
+
+
+input, textarea
+{
+margin-bottom: 0.8rem;
+padding: 0.6rem;
+}
+
+.contact-left {
+font-size: 1.4rem;
+}
+
+.contact-left h2{
+font-size: 2.8rem;
+margin-bottom: 0.8rem;
+}
+
+.send {
+font-size: 1rem;
+margin-bottom:  0.4rem;
+padding: 0.3rem 0.6rem;
+}
+
+.send:hover{
+background-color: rgba(14, 98, 158, 0.7);
+}
+
+footer
+{
+font-size: 1.4rem;
+padding: 0.4rem;
+letter-spacing: 0.5rem;
+}
+
+.scroll-to-top {
+top: 92% !important;
+right: 5% !important;
+}
 
 
     
