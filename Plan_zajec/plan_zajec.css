@@ -11,7 +11,9 @@ body{
     width: 100%;  
     background-image: url(../Glowna/A0.jpg); /* Ścieżka do obrazka */
     background-size: cover; /* Dopasowanie obrazka do tła */
-    background-position: center; /* Wyśrodkowanie obrazka */    
+    background-position: center; /* Wyśrodkowanie obrazka */ 
+     
+    
 }
 
 
@@ -22,14 +24,17 @@ body{
     background-color: rgba(255, 255, 255, 0.5);
     text-align: center;
     
+    
 }
 
 .top{
-     padding-bottom: 5vh;
+     padding-bottom: 3vh;
+     background-color: #f0f0f0;  
 }
 
 .bottom{
-     padding-bottom: 5vh
+     padding-bottom: 5vh;
+    
 }
 
 
@@ -126,51 +131,71 @@ article{
        
 }*/
 
+/* ------------------- BOTTOM ----------------------------- */
+
 .bottom{
      
      box-shadow: .5rem .5rem 3rem 1px rgba(0,0,0,0.05);  
      background-color: rgba(255, 255, 255, 0.9);
 }
 
-table{
-    
-     padding: 10px 0px ;
+div.sections{
+     margin-top: 2vh;
+     display:flex;
+     padding: 5vh 0vw ;
      width: 100% ; 
      min-height: auto;
      background-color: rgba(255, 255, 255, 0.7);
+     background-color: #f0f0f0;  
 }
 
-td.left{
+.left{
+     display: flex;
+     flex-direction: column;
+     justify-content: space-around;
+     flex:2;   /* ustawienie na 30% szerokości*/
      border-right: 2px solid #7a0e9e ;
-     
-     width: 30%;
      text-align: center;
-	 font-size: 1.8 vh;
-
+	font-size: 1.8 vh;
+     
 }
+
+.right{
+
+     flex:8;   /* ustawienie na 70% szerokości*/
+     text-align: center;
+}
+
+
      
 
 /* side menu */
 
+.side_menu {
+     display: flex;
+     flex-direction: column;
+     justify-content: space-around; /* Rozłożenie elementów równomiernie */
+     align-items: center; /* Wyśrodkowanie wzdłuż osi poziomej */
+     width: 100%; /* Zapełnienie dostępnego miejsca */
+ }
+
 .side_menu  li {
-     list-style: none;
-     text-decoration: none;
-    
-     padding: 7px 40px 7px 40px;
+
+     list-style: none;             /*usunięcuie domyślnych punktorów*/
+     text-decoration: none;        /* usunięcie podkreślenie*/
+     padding: 10px 40px ;   /*ustawienie wewnętrznych odstępów: g,p,d,l*/
 }
 
 .side_menu  li:hover {
-     list-style: none;
-     text-decoration: none;
+     /*określa sposób zachodzenia zmian podczas najechania*/
      transition: border-radius 1s ease, padding-left 1s ease,  padding-right 1s ease ;
-    
 }
 
 
 .side_menu  li a{
-     display: block;
-     text-decoration: none;
-     padding: 5px;
+     display: block;               /*ustawienie elementów jako bloki w celu zagospodarowania całej przestrzeni*/
+     text-decoration: none;        /* usunięcie podkreślenia*/
+     padding: 0.7vh 4vw;                 /*wewnętrzne odstępy*/
      background-color: black;
      color: white;
      border-radius: 10px;
@@ -178,16 +203,14 @@ td.left{
 
 .side_menu li a:hover{
      background-color: #9E69AF ;  /*podświetlenie przy najechaniu na element */
-     padding-left: 40px; /* Zwiększenie odstępu po najechaniu */
-     padding-right: 40px;
+     padding:7 50px; /* Zwiększenie odstępu po najechaniu */
      border-radius: 100px;
-     transition: border-radius 1.5s ease, padding-left 1.5s ease,  padding-right 1.5s ease ;
-    
+     transition: border-radius 1.5s ease, padding-left 1.5s ease,  padding-right 1.5s ease ;   
 }
 
 .side_menu .active{
-     background-color: #7a0e9e; /*podświetlenie podstrony aktualnej w użyciu*/
 
+     background-color: #7a0e9e; /*podświetlenie podstrony aktualnej w użyciu*/
 }
 
 .side_menu main.active{
@@ -195,18 +218,13 @@ td.left{
 }
 
 /*--------------------------------------------*/
-td.right{
-    
-     width: 70%;
-     text-align: center;
-     position: relative;
-}
+/*
 
 td a.rap{
 	text-decoration: none;
 	color: rgb(0, 0, 0);
 }
-#stopkag{
+#stopka{
      display: block;
      
 }
@@ -217,10 +235,10 @@ footer
 {
    margin-top: 2vh;
     background-color: #f0f0f0;                  /* Kolor wypelnienia tla */
-    padding: 10px;                                      /* Dodatkowy odstep od tekstu do obramowania */
-    text-align: center;                                 /* Wysrodkowanie tekstu w poziomie */
-    letter-spacing: 8px;                           /*odstepy miedzy literami*/
-    opacity: 0.7;
+   padding: 10px;                                      /* Dodatkowy odstep od tekstu do obramowania */
+   text-align: center;                                 /* Wysrodkowanie tekstu w poziomie */
+   letter-spacing: 8px;                           /*odstepy miedzy literami*/
+   opacity: 0.7;
 }
 
 
@@ -230,6 +248,7 @@ footer
 /* zdjecia */
 
 /* wiadomość o tygodniu */
+
 .container
 {
     
@@ -239,7 +258,7 @@ footer
     
     text-align: center;
    /* opacity: 20%;*/
-    border-radius: 10px;
+   border-radius: 10px;
 }
 
 .read_me
@@ -262,13 +281,14 @@ footer
 }
 
 
-.box .img_plan
+.img_plan_1,
+.img_plan_2
 {
      flex:1;
     position: relative;
     text-align: center;
     transition: transform 0.3s, z-index 0.3s;
-    overflow: hidden; /* Ukrycie tresci, ktora wychodzi poza ramki */
+   
     /*opacity: 0.2;*/
     rotate: center;
     overflow: hidden;
@@ -276,7 +296,9 @@ footer
     
 }
 
-.box .img_plan img
+
+.box .img_plan_1 img,
+.box .img_plan_2 img
 {
      width:100%;
      height: auto;
@@ -290,43 +312,54 @@ footer
 .box 
 {
      display: flex;
-     overflow-x: hidden;
+    
         
 }
 
-.prev button, .next button {
-     position: absolute;
-     top: 50%;
-     transform: translateY(-50%);
-     background: none;
-     border: none;
-     font-size: 24px;
-     cursor: pointer;
+.box div.img_plan_1{
+     margin: 0 2vw;
 }
 
-.prev {
-     left: 0;
- }
- 
- .next {
-     right: 0;
- }
+.box div.img_plan_2{
+     margin: 0 2vw 0 0;
+}
 
-.zoomed 
+.zoomed_1,
+.zoomed_2
+/*dla zdjęcia 1*/
 {
-     transform: scale(2.2); /* Powiększenie zdjęcia przy najechaniu */
-     transition-duration: 1s;
-     position: absolute;
-     top: 20%;
-     left: 5%;
-     z-index: 1;    
-     opacity: 1;
+     transform: scale(2.2); /* Powiększenie zdjęcia przy najechaniu *
+      /*transition-duration: 1s;*/
+     /* position: absolute;*/
+      z-index: 100;    
+      opacity: 1;
+     
 }
 
-.zoomed .read_me, .zoomed .container
+.zoomed_1 
+{
+     top: 0vh;
+     left: 0vw;
+}
+.zoomed_2 
+{
+     top: 0vh;
+     left: -30vw;
+}
+
+/*
+.zoom1_2,
+.zoom2_1{
+     width: 0;
+     height: 0;
+}
+*/
+.zoomed_1 .read_me, .zoomed_1 .container,
+.zoomed_2 .read_me, .zoomed_2 .container
 {
      opacity: 0;
 }
+
 
 
 
@@ -342,9 +375,11 @@ footer
 .button-wrapper {
      text-align: center;
      margin-top: 20px; /* Dodaj odstęp między zdjęciami a guzikiem */
- }
+}
 
- button {
+button {
+     margin-top:1vh ;
+     margin-right: 15vw;
      padding: 10px 30px;
      background-color: #7a0e9e;
      color: white;
@@ -352,11 +387,11 @@ footer
      border-radius: 10px;
      cursor: pointer;
      font-size: 16px;
-     text-align: center;
+     text-align:cebter;
      cursor: pointer;
      transition: background-color 0.3s ease, padding-left 0.5s ease,  padding-right 0.5s ease, font-size 0.5s ease ;
      position: relative; /* Dodane */
- }
+}
  
  button:hover {
      padding-left: 40px; /* Zwiększenie odstępu po najechaniu */
@@ -380,3 +415,5 @@ footer
 
 
  }
+
+ 
