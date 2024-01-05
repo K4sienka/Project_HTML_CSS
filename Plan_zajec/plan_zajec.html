@@ -1,121 +1,119 @@
 <!DOCTYPE html>
 <html lang="pl">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Plan Zajęć </title>
-    <link rel="stylesheet" href="plan_zajec.css">
-    <script src="../Plan_zajec/img_zoom.js"></script>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> Plan Zajęć </title>
+        <link rel="stylesheet" href="plan_zajec.css">
+        <script src="../Plan_zajec/img_zoom.js"></script>
 
-</head>
+    </head>
 
-<body>
-    <div class="wrapper">
-        <div class="background">
-            <div class="top" >
-                <header>
-                    <h1>Przewodnik po IiAD</h1>
+    <body>
+        <div class="wrapper">
+            <div class="background">
+                <div class="top" >
+                    <header>
+                        <h1>Przewodnik po IiAD</h1>
 
-                </header>
+                    </header>
 
-                <nav>
-                         <!--Menu główne-->
-            <ul>
-                <li><a class="menu  active" href="../Glowna/StronaGlowna.html"> Strona główna </a></li>
-                <li> <a class="menu" href="#">O nas</a>
-                    <ul class="podmenu">
-                        <li><a href="#">My</a></li>
-                        <li><a href="#">Kontakt</a></li>
-                    </ul>
-                </li>              
-                
-                <li><a class="menu" href="#"> Baza kontaktowa </a></li>
+                    <nav>
+                            <!--Menu główne-->
+                <ul>
+                    <li><a  href="../Glowna/StronaGlowna.html"> Strona główna </a></li>
+                    <li> <a class="menu" href="#">O nas</a>
+                        <ul class="podmenu">
+                            <li><a href="#">My</a></li>
+                            <li><a href="#">Kontakt</a></li>
+                        </ul>
+                    </li>              
+                    
+                    <li><a class="menu" href="#"> Baza kontaktowa </a></li>
 
-                    <li><a class="menu" href="#"> Zarząd kierunku </a></li>
+                        <li><a class="menu" href="#"> Zarząd kierunku </a></li>
 
-                    <li><a class="menu " href="#"> Sesja </a>
-                    <ul class="podmenu">
-                        <li><a href="#">Egzaminy</a></li>
-                        <li><a href="#">Sesja</a></li>
-                    </ul>
-                </li>
-                    <li><a class="menu"  href="#"> Życie Uczelniane </a> <!-- odnośnik do miejsca na stronie-->
-                    <ul class="podmenu">
-                        <li><a href="#">AGH</a></li>
-                        <li><a href="#">Wydział WGGIOŚ</a></li>
-                        <li><a href="#">USOS</a></li>
-                        <li><a href="#">WURSS</a></li>
-                    </ul>
-                </li>
-                    <li><a class="menu" href="../Plan_zajec/plan_zajec.html"> Plan zajęć </a>
-                </li>
-            </ul>
-                </nav>
+                        <li><a class="menu " href="#"> Sesja </a>
+                        <ul class="podmenu">
+                            <li><a href="#">Egzaminy</a></li>
+                            <li><a href="#">Sesja</a></li>
+                        </ul>
+                    </li>
+                        <li><a class="menu"  href="#"> Życie Uczelniane </a> <!-- odnośnik do miejsca na stronie-->
+                        <ul class="podmenu">
+                            <li><a href="#">AGH</a></li>
+                            <li><a href="#">Wydział WGGIOŚ</a></li>
+                            <li><a href="#">USOS</a></li>
+                            <li><a href="#">WURSS</a></li>
+                        </ul>
+                    </li>
+                        <li><a class="menu active" href="../Plan_zajec/plan_zajec.html"> Plan zajęć </a>
+                    </li>
+                </ul>
+                    </nav>
 
-            </div>
+                </div>
 
 
-            <div id="bottom">
-                <div id="margines">
-                    <table>
-                        <tr >
-                            <td class="left" id="left">
-                                <ul class="side_menu">
-                                    
-                                    
-                                    <li><a href="../Plan_zajec/plan_zajec_gr_I.html">Grupa I</a></li>
-                                    <li><a href="../Plan_zajec/plan_zajec_gr_II.html">Grupa II</a></li>
-                                    <li><a href="../Plan_zajec/plan_zajec_gr_III.html">Grupa III</a></li>
-                                    <li><a href="../Plan_zajec/plan_zajec_gr_IV.html">Grupa IV</a></li>
-                                    <li><a href="../Plan_zajec/plan_zajec_gr_V.html">Grupa V</a></li>
-                                    <li><a href="../Plan_zajec/plan_zajec_gr_VI.html">Grupa VI</a></li>
+                <div id="bottom">
 
-                                </ul>
+                    <div class= "sections" > <!--margines-->
+                        
+                        
+                                <section class="left">
+                                    <ul class="side_menu">
+                                        
+                                        
+                                        <li><a href="../Plan_zajec/plan_zajec_gr_I.html">Grupa I</a></li>
+                                        <li><a href="../Plan_zajec/plan_zajec_gr_II.html">Grupa II</a></li>
+                                        <li><a href="../Plan_zajec/plan_zajec_gr_III.html">Grupa III</a></li>
+                                        <li><a href="../Plan_zajec/plan_zajec_gr_IV.html">Grupa IV</a></li>
+                                        <li><a href="../Plan_zajec/plan_zajec_gr_V.html">Grupa V</a></li>
+                                        <li><a href="../Plan_zajec/plan_zajec_gr_VI.html">Grupa VI</a></li>
 
-                            
+                                    </ul>
 
-                            </td>
-                   
-                        <td class="right">
+                                
 
-                            <div class="box">
-                                <div class="img_plan" onclick="Zoom(this)" >
-                                    <img src="../Plan_zajec/plany_zdj/plan_ogolny.png" width="1060" height="630">
-                                    <div class="container">Tygodnie nieparzyste</div>
-                                    <div class="read_me">Kliknij w celu powiększenia</div>
+                                </section>
+                    
+                            <section class="right">
+
+                                <div class="box">
+                                    <div class="img_plan_1" onclick="Zoom(this)" >
+                                        <img src="../Plan_zajec/plany_zdj/plan_ogolny.png" width="1060" height="630"> 
+                                        <div class="container">Tygodnie nieparzyste</div>
+                                        <div class="read_me">Kliknij w celu powiększenia</div>
+                                    </div>
+                                    <div class="img_plan_2" onclick="Zoom(this)">
+                                        <img src="../Plan_zajec/plany_zdj/plan_ogolny_2.png" width="1060" height="630">
+                                        <div class="container">Tygodnie parzyste</div>
+                                        <div class="read_me">Kliknij w celu powiększenia</div>
+                                    </div> 
+
                                 </div>
-                                <div class="img_plan" onclick="Zoom(this)">
-                                    <img src="../Plan_zajec/plany_zdj/plan_ogolny_2.png" width="1060" height="630">
-                                    <div class="container">Tygodnie parzyste</div>
-                                    <div class="read_me">Kliknij w celu powiększenia</div>
-                                </div> 
+                                <!-- 
 
-                            </div>
-                            <!-- 
+                                <button class="prev" onclick="plusSlides(-1)">❮</button>
+                                <button class="next" onclick="plusSlides(1)">❯</button>
 
-                            <button class="prev" onclick="plusSlides(-1)">❮</button>
-                            <button class="next" onclick="plusSlides(1)">❯</button>
--->
-                            <div class="button-wrapper">
-                                <button id="CalendarO" onclick="przeniesDoKalendarza(this.id)">Przejdź do kalendarza</button>
-                            </div>
+                                 -->
+                                <div class="button-wrapper">
+                                    <button id="CalendarO" onclick="przeniesDoKalendarza(this.id)">Przejdź do kalendarza</button>
+                                </div>
 
-                        </td>    
-                </tr>
+                            </section>    
+                    
+                        </div>
 
-
-
-                </table>
-
-           
-
-            <footer>
-                <p> Kraków 2023 </p>
-                <p> Miasteczko Studenckie AGH </p>
-            </footer>
+                    <footer>
+                        <p> Kraków 2023 </p>
+                        <p> Miasteczko Studenckie AGH </p>
+                    </footer>
+                    
+                </div>
         </div>
-    </div>
-    
-</body>
+        
+    </body>
 
 </html>

@@ -1,12 +1,71 @@
 let clicked = false;
-
+/*// wersja 1
 function Zoom(element) {
     if (!clicked) {
-        element.classList.add('zoomed');
-        clicked = true;
+        if (element.classList.contains('img_plan_1')) {
+            element.classList.add('zoomed_1');
+            clicked = true;
+        } else if (element.classList.contains('img_plan_2')) {
+            element.classList.add('zoomed_2');
+            clicked = true;
+        }
     } else {
-        element.classList.remove('zoomed');
+        if (element.classList.contains('img_plan_1')) {
+            element.classList.remove('zoomed_1');
+        } else if (element.classList.contains('img_plan_2')) {
+            element.classList.remove('zoomed_2');
+        }
         clicked = false;
+    }
+}*/
+
+
+
+function Zoom(element) {
+    console.log('Funkcja Zoom została wywołana.'); 
+    // Sprawdza, czy już kliknięto element
+    if (!clicked) {
+        // Jeśli nie, sprawdza klasę klikniętego elementu
+        if (element.classList.contains('img_plan_1')) {
+            // Dodaje klasę zoomed1 dla klikniętego elementu img_plan_1
+            element.classList.add('zoomed_1');
+            // Wykonuje coś dla klas img_plan_1
+
+            // Dodatkowe działania dla img_plan_2
+            const imgPlan2 = document.querySelectorAll('.img_plan_2');
+            imgPlan2.forEach((item) => {
+                // Dodaje klasę zoom1_2 dla elementów img_plan_2
+                item.classList.add('zoom1_2');
+                // Wykonuje coś dla klas img_plan_2
+            });
+        } else if (element.classList.contains('img_plan_2')) {
+            // Dodaje klasę zoomed2 dla klikniętego elementu img_plan_2
+            element.classList.add('zoomed_2');
+            // Wykonuje coś dla klas img_plan_2
+
+            // Dodatkowe działania dla img_plan_1
+            const imgPlan1 = document.querySelectorAll('.img_plan_1');
+            imgPlan1.forEach((item) => {
+                // Dodaje klasę zoom2_1 dla elementów img_plan_1
+                item.classList.add('zoom2_1');
+                // Wykonuje coś dla klas img_plan_1
+            });
+        }
+        clicked = true; // Zmienia flagę na true, żeby zablokować kolejne wywołania
+    } else {
+        // Usuwa dodane klasy zoomed1 i zoomed2
+        const zoomed = document.querySelectorAll('.zoomed_1, .zoomed_2');
+        zoomed.forEach((item) => {
+            item.classList.remove('zoomed_1', 'zoomed_2');
+        });
+
+        // Usuwa dodane klasy zoom1_2 i zoom2_1
+        const zoomClasses = document.querySelectorAll('.zoom1_2, .zoom2_1');
+        zoomClasses.forEach((item) => {
+            item.classList.remove('zoom1_2', 'zoom2_1');
+        });
+
+        clicked = false; // Zmienia flagę na false, aby można było ponownie wykonać akcje po kliknięciu
     }
 }
 
