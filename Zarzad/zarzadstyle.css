@@ -1,0 +1,216 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+ 
+body{ 
+     width: 100%;  
+     background-color: #6A6D78; 
+    
+}
+
+h1 {
+    font-family: 'antic';
+    font-size: 4rem;
+    letter-spacing: 0.8rem;
+    text-align: center;
+}
+
+
+header{
+     display: block;
+     text-align: center;
+     padding: 1rem;
+}
+
+
+/*Menu Główne*/
+ul{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    background-color: #000000;
+    white-space: wrap;
+}
+
+ul li{
+    flex-grow: 1;
+    display: inline-block;
+    position: relative;
+}
+
+ul li a{
+    width: 100%;
+    display: block;
+    padding: 1.5rem 3rem;
+    font-size: 1rem;
+    color: #FFF;
+    text-decoration: none;
+    text-align: center;
+    transition: background-color 0.3s;
+}
+
+ul li ul.podmenu{
+    position: absolute;
+    display: none;
+    width:100%;
+    align-items: center; 
+    z-index: 2; /* Ustaw wyższy indeks warstwy */
+}
+
+ul li ul.podmenu li {
+    width: 100%;
+}
+
+ul.podmenu li a {
+    display: block;
+    text-align: center; /* Wyśrodkowanie tekstu na osi poziomej */
+    text-decoration: none;
+}
+
+ul li:hover ul.podmenu{
+    display: block;
+    z-index: 2; /* Ustaw wyższy indeks warstwy */
+}
+
+a:hover,a.menu:hover{
+     background-color: #9E69AF ;  /*podświetlenie przy najechaniu na element */
+}
+
+ul li.active a,
+ul li a.active {
+    background-color: #7a0e9e;
+}
+
+ul li a:hover /*podswietlanie linkow w podmenu*/
+{
+    background: #009688;
+}
+
+
+/*Karuzela*/
+.up {
+    display: flex;
+    padding: 035px;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: linear-gradient(to left top, #7a0e9e, #d5a6e4);
+}
+
+.wrapper {
+    font-family: "Optima", sans-serif;
+    font-size: 24px;
+    width: 80%;
+    position: relative;
+}
+
+.wrapper i {
+    top: 50%;
+    height: 3rem;
+    width: 3rem;
+    cursor: pointer;
+    font-size: 1.25rem;
+    position: absolute;
+    text-align: center;
+    line-height: 3rem;
+    background: #fff;
+    border-radius: 50%;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.23);
+    transform: translateY(-50%);
+    transition: transforms linear;
+}
+
+.wrapper i:active{
+    transform: translateY(-50%) scale(0.85);
+}
+
+.wrapper i:first-child{
+    z-index: 2;
+    left: -2rem;
+}
+
+.wrapper i:last-child {
+    right: -2rem;
+}
+
+.wrapper .karuzela{
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: calc((100% / 3) - 1rem);
+    overflow-x: auto;
+    scroll-snap-type: x mandatory; /*przewijanie w poziomie*/
+    gap: 1.5rem;
+    border-radius: 1rem;
+    height: 30rem;
+}
+
+.karuzela::-webkit-scrollbar {
+    display: none;
+}
+
+.karuzela .card, 
+.karuzela .img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.karuzela .card {
+    scroll-snap-align: start;
+    height: 28rem;
+    list-style: none;
+    background: #fff;
+    padding-bottom: 0.5rem;
+    flex-direction: column;
+    border-radius: 1rem;
+    line-height: 2.5rem;
+}
+
+.karuzela .card .img {
+background: #7a0e9e;
+height: 16rem;
+width: 16rem;
+border-radius: 50%;
+}
+
+.card .img img {
+width: 15rem;
+height: 15rem;
+border-radius: 50%;
+object-fit: cover;
+border: 1px solid #fff;
+}
+
+.karuzela .card h2 {
+    font-weight: 500;
+    font-size: 2rem;
+}
+
+.karuzela .card h3 {
+color: #6A6D78;
+font-weight: 400;
+font-size: 1.4rem;
+}
+
+.karuzela .card h4 {
+color: #0023a2;
+font-size: 1.2rem;
+}
+
+
+
+
+
+
+@media screen and (max-width: 900px) {
+.wrapper karuzela {
+grid-auto-columns: calc((1008 / 2) - 9px);
+}
+}
+@media screen and (max-width: 600px) {
+.wrapper karuzela {
+grid-auto-columns: 100%;
+}
+}
