@@ -338,13 +338,13 @@ footer
 
 .zoomed_1 
 {
-     top: 0vh;
-     left: 0vw;
+     top: 0 ;
+     left: 12%;
 }
 .zoomed_2 
 {
-     top: 0vh;
-     left: -30vw;
+     top: 0;
+     left: -35%;
 }
 
 /*
@@ -400,20 +400,4 @@ button {
      font-size: 14px;
      
  }
- 
-
- @media only screen and (max-width: 1329px) and (min-width:991){
-
-/*
-1. zmniejszyć powiększenie planów zajęćn i położenie
-1.b zmniejszyć rozmair zdjęć
-2. zmniejszyć paddingi głównego menu
-3.zmniejszyć paddingoi bocznego menu
-4.  
-*/
-
-
-
- }
-
  

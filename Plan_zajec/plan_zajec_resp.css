@@ -1,0 +1,55 @@
+
+@media only screen and (min-width:1414) {
+
+    /**/
+    
+    
+    
+    .zoomed_1 
+    {
+         top: 0 ;
+         left: 12%;
+    }
+    .zoomed_2 
+    {
+         top: 0;
+         left: -35%;
+    }
+    /*
+    1. zmniejszyć powiększenie planów zajęćn i położenie
+    1.b zmniejszyć rozmair zdjęć
+    2. zmniejszyć paddingi głównego menu
+    3.zmniejszyć paddingoi bocznego menu
+    4.  
+    */
+    
+    
+    
+     }
+    
+     @media only screen and (min-width:991) and (max-width: 1413px) {
+        
+        
+         
+         .side_menu  li {
+         
+              /*padding: 10px 40px ;   /*ustawienie wewnętrznych odstępów: g,p,d,l*/
+         }
+         
+         
+         .side_menu  li a{
+                     /* usunięcie podkreślenia*/
+              padding: 0.9vh 3vw;                 /*wewnętrzne odstępy*/
+              background-color: rgb(193, 49, 49);
+              color: rgb(129, 107, 107);
+              border-radius: 10px;
+         }
+         
+         .side_menu li a:hover{
+              background-color: #342738 ;  /*podświetlenie przy najechaniu na element */
+              padding:7 50px; /* Zwiększenie odstępu po najechaniu */
+              border-radius: 100px;
+              transition: border-radius 1.5s ease, padding-left 1.5s ease,  padding-right 1.5s ease ;   
+         }
+    
+     }
