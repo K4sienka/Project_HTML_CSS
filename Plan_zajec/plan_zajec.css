@@ -19,7 +19,7 @@ body{
 
 .wrapper{
      height: 100vh;
-     padding: 5vh 5vw 5vh 5vw;
+     padding: 0 5vw ;
     position:absolute;
     background-color: rgba(255, 255, 255, 0.5);
     text-align: center;
@@ -28,10 +28,19 @@ body{
 }
 
 .top{
-     padding-bottom: 3vh;
+     /*padding-bottom: 3vh;*/
      background-color: #f0f0f0;  
 }
 
+.data_tydzien
+{
+     padding: 2rem 0;
+}
+
+.data_tydzien span
+{
+     font-size: 1rem;
+}
 .bottom{
      padding-bottom: 5vh;
     
@@ -54,7 +63,7 @@ header{
      display: block;
      text-align: center;
      font-size: 1.8vh;
-    padding: 0 0 5vh 0;
+     padding: 1vh 0 1vh 0;
 
 }
 
