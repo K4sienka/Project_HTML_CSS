@@ -3,8 +3,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box; 
-    max-height: 100vh;
-    width: auto;
+    /*max-height: 100vh;*/
+   /* width: auto;*/
 }
 
 body{ 
@@ -20,7 +20,7 @@ body{
 
 .wrapper{
      /*height: 100rem;*/
-     padding: 0 5vw ;
+    /* padding: 0 5vw ; */
     position:absolute;
     background-color: rgba(255, 255, 255, 0.5);
     text-align: center;
@@ -42,10 +42,7 @@ body{
 {
      font-size: 1rem;
 }
-.bottom{
-     padding-bottom: 5vh;
-    
-}
+
 
 
 h1 { /*napis przewodnik po iad */
@@ -68,13 +65,14 @@ header{
 
 }
 
-/* main menu */
+/*------------------------  main menu -------------------------------------*/
 
 nav ul{
      display: flex;
      align-items: center;
      list-style: none;
      background-color: #000000;
+     white-space: wrap;
 }
  
 nav ul li{
@@ -84,26 +82,38 @@ nav ul li{
 }
  
 nav ul li a{
+     width: 100%;
      display: block;
-     padding: 20px 25px;
-     font-size: 18px;
+     padding: 1.5rem 3rem;
+     font-size: 1rem;
      color: #FFF;
      text-decoration: none;
      text-align: center;
+     transition: background-color 0.3s;
 }
  
 nav ul li ul.podmenu{
      position: absolute;
-     display: none;
-     width:100vw;
+    display: none;
+    width:100%;
+    align-items: center; 
+    z-index: 2; /* Ustaw wyższy indeks warstwy */
  }
  
 nav ul li ul.podmenu li {
-     width: 100vw;
-     box-sizing: border-box;}
+     width: 100%;
+     box-sizing: border-box;
+}
+ 
+nav ul.podmenu li a {
+     display: block;
+     text-align: center; /* Wyśrodkowanie tekstu na osi poziomej */
+     text-decoration: none;
+ }
  
 nav ul li:hover ul.podmenu{
      display: block;
+     z-index: 2; /* Ustaw wyższy indeks warstwy */
  }
  
 nav a:hover,a.menu:hover{
@@ -163,7 +173,7 @@ div.sections{
      display: flex;
      flex-direction: column;
      justify-content: space-around;
-     flex:2;   /* ustawienie na 30% szerokości*/
+     flex:2;   /* ustawienie na 20% szerokości*/
      border-right: 2px solid #7a0e9e ;
      text-align: center;
 	font-size: 1.8 vh;
@@ -174,12 +184,13 @@ div.sections{
 
      flex:8;   /* ustawienie na 70% szerokości*/
      text-align: center;
+     flex-direction: row;
 }
 
 
      
 
-/* side menu */
+/* ---------------------- boczne menu ------------------------------------- */
 
 .side_menu {
      display: flex;
@@ -228,35 +239,26 @@ div.sections{
      background-color: #7a0e9e;
 }
 
-/*--------------------------------------------*/
-/*
-
-td a.rap{
-	text-decoration: none;
-	color: rgb(0, 0, 0);
-}
-#stopka{
-     display: block;
-     
-}
-
-/*stopka*/
-
-footer
-{
-   margin-top: 2vh;
-    background-color: #f0f0f0;                  /* Kolor wypelnienia tla */
-   padding: 10px;                                      /* Dodatkowy odstep od tekstu do obramowania */
-   text-align: center;                                 /* Wysrodkowanie tekstu w poziomie */
-   letter-spacing: 8px;                           /*odstepy miedzy literami*/
-   opacity: 0.7;
-}
-
-
-
-
-
-/* zdjecia */
+.side_menu li:nth-child(1) a::before {
+     content: "Grupa I";
+     }
+    .side_menu li:nth-child(2) a::before {
+     content: "Grupa II";
+     }
+     .side_menu li:nth-child(3) a::before {
+     content: "Grupa III";
+     }
+     .side_menu li:nth-child(4) a::before {
+     content: "Grupa IV";
+     }
+     .side_menu li:nth-child(5) a::before {
+     content: "Grupa V";
+     }
+     .side_menu li:nth-child(6) a::before {
+     content: "Grupa VI";
+     }
+ 
+/* ----------------------------------  zdjecia -------------------------------------------------- */
 
 /* wiadomość o tygodniu */
 
@@ -311,6 +313,7 @@ footer
 .box .img_plan_1 img,
 .box .img_plan_2 img
 {
+     max-width: fit-content;
      width:100%;
      height: auto;
      display: inline-block;
@@ -323,8 +326,8 @@ footer
 .box 
 {
      display: flex;
-    
-        
+     flex-direction: row ; 
+          
 }
 
 .box div.img_plan_1{
@@ -368,7 +371,7 @@ footer
 .zoomed_1 .read_me, .zoomed_1 .container,
 .zoomed_2 .read_me, .zoomed_2 .container
 {
-     opacity: 0;
+     display: none;
 }
 
 
@@ -380,17 +383,16 @@ footer
 }
 
 
-
-/*guzik*/
+/* -------------------------- guzik ----------------------------------------*/
 
 .button-wrapper {
      text-align: center;
-     margin-top: 20px; /* Dodaj odstęp między zdjęciami a guzikiem */
+    margin-top: 20px; /* Dodaj odstęp między zdjęciami a guzikiem */
 }
 
 button {
      margin-top:1vh ;
-     margin: 0 25% 0 0;
+     margin: 0 20% 0 0;
      padding: 10px 30px;
      background-color: #7a0e9e;
      color: white;
@@ -398,7 +400,7 @@ button {
      border-radius: 10px;
      cursor: pointer;
      font-size: 16px;
-     text-align:cebter;
+     text-align:center;
      cursor: pointer;
      transition: background-color 0.3s ease, padding-left 0.5s ease,  padding-right 0.5s ease, font-size 0.5s ease ;
      position: relative; /* Dodane */
@@ -412,3 +414,22 @@ button {
      
  }
  
+
+/* ---------------------------------  stopka -----------------------------------------------*/
+
+footer
+{
+   margin-top: 2vh;
+    background-color: #f0f0f0;                  /* Kolor wypelnienia tla */
+   padding: 10px;                                      /* Dodatkowy odstep od tekstu do obramowania */
+   text-align: center;                                 /* Wysrodkowanie tekstu w poziomie */
+   letter-spacing: 8px;                           /*odstepy miedzy literami*/
+   opacity: 0.7;
+}
+
+
+
+
+
+
+
