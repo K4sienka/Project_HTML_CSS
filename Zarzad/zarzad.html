@@ -35,52 +35,82 @@
                 </li>
             </ul>
 
-            <div class="up">
-            <div class="wrapper">
-                <i id="left" class="fa-solid fa-angle-left"></i>
-                <ul class="karuzela">
-                    <li class="card">
-                        <div class="img"><img src="LucjaA.jpg"></div>
-                                <h2>Łucja Adamska</h2>
-                                <h3>Starostka grupy 1</h3>
-                                <h4 class="link" onclick="redirectToPage('https://www.facebook.com/profile.php?id=100007563692746')">Kontakt poprzez Messanger</h4>
-                    </li>
-                    <li class="card">
-                        <div class="img"><img src="BartekI.png"></div>
-                                <h2>Bartosz Irzyk</h2>
-                                <h3>Starosta grupy 2</h3>
-                                <h4 class="link" onclick="redirectToPage('https://www.facebook.com/profile.php?id=100007563692746')">Kontakt poprzez Messanger</h4>
-                    </li>
-                    <li class="card">
-                        <div class="img"><img src="JuliaK.jpg"></div>
-                                <h2>Julia Kot</h2>
-                                <h3>Starostka grupy 3</h3>
-                                <h4 class="link" onclick="redirectToPage('https://www.facebook.com/profile.php?id=100007563692746')">Kontakt poprzez Messanger</h4>
-                    </li>
-                    <li class="card">
-                        <div class="img"><img src="KasiaW.jpg"></div>
-                                <h2>Katarzyna Wesołowska</h2>
-                                <h3>Starostka grupy 4</h3>
-                                <h4 class="link" onclick="redirectToPage('https://www.facebook.com/profile.php?id=100007563692746')">Kontakt poprzez Messanger</h4>
-                    </li>
-                    <li class="card">
-                        <div class="img"><img src="KacperK.jpg"></div>
-                                <h2>Kacper Książek</h2>
-                                <h3>Starosta grupy 5</h3>
-                                <h4 class="link" onclick="redirectToPage('https://www.facebook.com/profile.php?id=100007563692746')">Kontakt poprzez Messanger</h4>
-                    </li>
-                    <li class="card">
-                        <div class="img"><img src="JuliaW.jpg"></div>
-                                <h2>Julia Walencik</h2>
-                                <h3>Starostka grupy 6</h3>
-                                <h4 class="link" onclick="redirectToPage('https://www.facebook.com/profile.php?id=100007563692746')">Kontakt poprzez Messanger</h4>
-                    </li>
-                </ul>
-                <i id="right" class="fa-solid fa-angle-right"></i>
-            </div>
-        </div>
 
+            <!--Przewijanie-->
+        <div class="up">  
+            <div class="container">
+                <div class="swiper swiperCarousel">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="card">
+                                <img class="avatar" src="../Zarzad/LucjaA.jpg" />
+                                <div class="header">
+                                    <h2 class="name">Łucja Adamska</h2>
+                                    <h3 class="title">Starostka Grupy 1</h3>
+                                    <h4 class="contact">Kontakt przez Messanger</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card">
+                                <img class="avatar" src="../Zarzad/BartekI.png" />
+                                <div class="header">
+                                    <h2 class="name">Bartosz Irzyk</h2>
+                                    <h3 class="title">Starosta Grupa 2</h3>
+                                    <h4 class="contact">Kontakt przez Messanger</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card">
+                                <img class="avatar" src="../Zarzad/JuliaK.jpg" />
+                                <div class="header">
+                                    <h2 class="name">Julia Kot</h2>
+                                    <h3 class="title">Starostka Grupa 3</h3>
+                                    <h4 class="contact">Kontakt przez Messanger</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card">
+                                <img class="avatar" src="../Zarzad/KasiaW.jpg" />
+                                <div class="header">
+                                    <h2 class="name">Katarzyna Wesołowska</h2>
+                                    <h3 class="title">Starostka Grupa 4</h3>
+                                    <h4 class="contact">Kontakt przez Messanger</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card">
+                                <img class="avatar" src="../Zarzad/KacperK.jpg" />
+                                <div class="header">
+                                    <h2 class="name">Kacper Książek</h2>
+                                    <h3 class="title">Starosta Grupy 5</h3>
+                                    <h4 class="contact">Kontakt przez Messanger</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card">
+                                <img class="avatar" src="../Zarzad/JuliaW.jpg" />
+                                <div class="header">
+                                    <h2 class="name">Julia Walencik</h2>
+                                    <h3 class="title">Starostka Grupy 6</h3>
+                                    <h4 class="contact">Kontakt przez Messanger</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </div>  
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="twoj-skrypt.js"></script>
             <script src="link_scroll.js"></script>
-            <script src="przewijanie.js"></script>
 </body>
 </html>
