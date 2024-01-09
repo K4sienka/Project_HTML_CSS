@@ -1,0 +1,492 @@
+
+@media only screen and (min-width:1414px) {
+
+    /**/
+    
+
+    .right{
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+    .zoomed_1 
+    {
+         top: 0 ;
+         left: 12%;
+    }
+    .zoomed_2 
+    {
+         top: 0;
+         left: -35%;
+    }
+    /*
+    1. zmniejszyć powiększenie planów zajęćn i położenie
+    1.b zmniejszyć rozmair zdjęć
+    2. zmniejszyć paddingi głównego menu
+    3.zmniejszyć paddingoi bocznego menu
+    4.  
+    */
+    
+    
+}
+
+/* ------------------------ 1413/1180  --------------------------- */
+
+
+@media only screen and (min-width:1180px) and (max-width: 1413px) {
+        
+       /* menu boczne */
+    .side_menu  li {
+    
+         padding: 10px 40px ;   /*ustawienie wewnętrznych odstępów: g,p,d,l*/
+    }
+    
+    
+    .side_menu  li a{
+                /* usunięcie podkreślenia*/
+         padding: 0.9vh 2.8vw;                 /*wewnętrzne odstępy*/
+         
+         border-radius: 10px;
+    }
+    
+    .side_menu li a:hover{
+      padding:7 50px; /* Zwiększenie odstępu po najechaniu */
+         border-radius: 100px;
+         transition: border-radius 1.5s ease, padding-left 1.5s ease,  padding-right 1.5s ease ;   
+    }
+
+    /*guzik*/
+
+    button:hover {
+        padding-left: 40px; /* Zwiększenie odstępu po najechaniu */
+        padding-right: 40px;
+        background-color: #9E69AF;
+        font-size: 13px;
+        
+    }
+
+    button {
+            
+        padding: 10px 30px;
+        font-size: 12px;
+        margin: 0 15% 0 0;
+        
+    }
+
+
+}
+  
+/* ------------------------ 1179/1011  --------------------------- */
+
+@media only screen and (min-width:1011px) and (max-width: 1179px) {
+
+         /* menu boczne */
+        .side_menu  li {
+         
+            padding: 10px 30px ;   /*ustawienie wewnętrznych odstępów: g,p,d,l*/
+       }
+       .side_menu  li a{
+             /* usunięcie podkreślenia*/
+            padding: 0.7vh 2.7vw;                 /*wewnętrzne odstępy*/
+ 
+ 
+        }
+
+
+        /* guzik*/
+
+        
+        button {
+            
+            padding: 10px 30px;
+            font-size: 11px;
+            transition: background-color 0.3s ease, padding-left 0.5s ease,  padding-right 0.5s ease, font-size 0.5s ease ;
+            margin: 0 15% 0 0;
+        }
+
+        button:hover {
+            font-size: 12px;
+            
+        }
+
+}
+
+/* ------------------------ 1010/900  --------------------------- */
+     
+
+@media only screen and (min-width:900px) and (max-width: 1010px) {
+        
+
+    .right{
+
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+     /* menu boczne */
+    .side_menu  li {
+         
+            padding: 10px 20px ;   /*ustawienie wewnętrznych odstępów: g,p,d,l*/
+       }
+
+       .side_menu  li a{
+        /* usunięcie podkreślenia*/
+        padding: 0.7vh 2.4vw;                 /*wewnętrzne odstępy*/
+ 
+
+
+     }
+
+     button {
+            
+        padding: 10px 30px;
+        font-size: 11px;
+        transition: background-color 0.3s ease, padding-left 0.5s ease,  padding-right 0.5s ease, font-size 0.5s ease ;
+        margin: 0 15% 0 0;
+    }
+
+    button:hover {
+        font-size: 12px;
+
+        
+    }
+}
+
+/* ------------------------ 899/660  --------------------------- */
+
+@media only screen and (min-width:660px) and (max-width: 899px) {
+
+    .sections{
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        transition-delay: 1.5s;
+    }
+
+    div.sections{
+        padding:0;
+    }
+    .left{
+        border-right: none;
+        border-bottom:solid 2px #9E69AF;
+        flex:2;
+        margin: 0 40px;
+    }
+
+    .right{
+        flex:8;
+    }
+
+    
+
+    .button-wrapper{
+        flex:2;
+    }
+
+
+    .side_menu {
+        flex-direction: row;
+    }
+   
+    ul.side_menu{
+        padding: 1em 0;
+
+    }
+   .side_menu  li {
+        padding:0;
+        position:relative;
+   }
+   
+   .side_menu  li:hover {
+        /*określa sposób zachodzenia zmian podczas najechania*/
+        transition: border-radius 1s ease, padding-left 1s ease,  padding-right 1s ease ;
+   }
+   
+   
+   .side_menu  li a{
+        display: block ;              /*ustawienie elementów jako bloki w celu zagospodarowania całej przestrzeni*/
+        /*padding: 0.7vh 4vw;                 /*wewnętrzne odstępy*/
+        padding: 0.4em 1.8em;
+        border-radius: 10px;
+
+        position: relative;
+        overflow: hidden;
+        white-space: nowrap;
+   }
+   
+   .side_menu li a:hover{
+        padding:7 50px; /* Zwiększenie odstępu po najechaniu */
+       
+        border-radius: 100px;
+   }
+
+
+   /* -- napis w menu bocznym ---- */
+
+ 
+   .side_menu li:nth-child(1) a::before {
+    content: "O";
+    }
+   .side_menu li:nth-child(2) a::before {
+    content: "I";
+    }
+   .side_menu li:nth-child(3) a::before {
+    content: "II";
+    }
+    .side_menu li:nth-child(4) a::before {
+    content: "III";
+    }
+    .side_menu li:nth-child(5) a::before {
+    content: "IV";
+    }
+    .side_menu li:nth-child(6) a::before {
+    content: "V";
+    }
+    .side_menu li:nth-child(7) a::before {
+    content: "VI";
+    }
+
+
+   
+  
+  /* Kontynuuj dla kolejnych grup */
+  
+   
+ /* -------------------m zdjecia --------- */
+   .box{
+    display: flex;
+    flex-direction: column;
+    width:100%;
+    align-items: center; /* Centrowanie w poziomie */
+    justify-content: center; /* Centrowanie w pionie */
+   }
+
+   
+
+
+
+.box .img_plan_1 img,
+.box .img_plan_2 img
+{
+  
+     width:100%;
+     height: auto;
+     display: inline-block;
+     margin: 0.5em 0;
+
+
+}
+
+.box .img_plan_1,
+.box .img_plan_2{
+    width:60%;
+    margin: auto;
+    text-align: center;
+}
+
+/*napis*/
+
+.read_me
+{
+    position: absolute;
+    top: 43%;
+    left: 29%;
+    padding: 20px;
+    border-radius: 10px;
+    
+}
+
+/*-- powiększenie -- */
+
+.zoomed_1,
+.zoomed_2
+/*dla zdjęcia 1*/
+{
+     transform: scale(1.5);
+}
+
+
+.zoom1_2,
+.zoom2_1{
+     display: none;
+}
+
+.zoomed_1 
+{
+     top:0 ;
+     left: 0;
+}
+.zoomed_2 
+{
+     top: 0;
+     left: 0;
+}
+
+/*------------ guzik -------------------- */
+
+.button-wrapper{
+    align-items: center; /* Centrowanie w poziomie */
+    justify-content: center; /* Centrowanie w pionie */   
+    margin-bottom: 1.5em;              
+}
+
+button{
+    margin:0 ;
+    font-size: 14px;
+}
+
+}
+
+
+/* ------------------------ 659/350  --------------------------- */
+
+@media only screen and (min-width:350px) and (max-width: 659px) {
+
+    .sections{
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+    }
+
+    div.sections{
+        padding:0;
+    }
+    .left{
+        border-right: none;
+        border-bottom:solid 2px #9E69AF;
+        flex:2;
+        margin: 0 40px;
+    }
+
+    .right{
+        flex:8;
+    }
+
+   
+
+    .button-wrapper{
+        flex:2;
+    }
+
+    
+
+    /* ---------------------------- menu boczne -----------------------------------*/
+
+    .side_menu {
+        flex-direction: row;
+    }
+    ul.side_menu{
+        padding: 1em 0;
+
+    }
+   
+   .side_menu  li {
+        padding:0;
+        position:relative;
+   }
+   
+   .side_menu  li:hover {
+        /*określa sposób zachodzenia zmian podczas najechania*/
+        transition: border-radius 1s ease, padding-left 1s ease,  padding-right 1s ease ;
+   }
+   
+   
+   .side_menu  li a{
+        display:block ;              /*ustawienie elementów jako bloki w celu zagospodarowania całej przestrzeni*/
+        /*padding: 0.7vh 4vw;                 /*wewnętrzne odstępy*/
+        padding: 0.4em 1.4em;
+        border-radius: 10px;
+
+        position: relative;
+        overflow: hidden;
+        white-space: nowrap;
+   }
+   
+   .side_menu li a:hover{
+        padding:7 50px; /* Zwiększenie odstępu po najechaniu */
+       
+        border-radius: 100px;
+   }
+
+   /* -- napis w menu bocznym ---- */
+
+   
+   .side_menu li:nth-child(1) a::before {
+    content: "O";
+    }
+   .side_menu li:nth-child(2) a::before {
+    content: "I";
+    }
+   .side_menu li:nth-child(3) a::before {
+    content: "II";
+    }
+    .side_menu li:nth-child(4) a::before {
+    content: "III";
+    }
+    .side_menu li:nth-child(5) a::before {
+    content: "IV";
+    }
+    .side_menu li:nth-child(6) a::before {
+    content: "V";
+    }
+    .side_menu li:nth-child(7) a::before {
+    content: "VI";
+    }
+
+
+
+  
+  /* Kontynuuj dla kolejnych grup */
+  
+   /* -------------------m zdjecia --------- */
+   .box{
+    display: flex;
+    flex-direction: column;
+    width:100%;
+    align-items: center; /* Centrowanie w poziomie */
+    justify-content: center; /* Centrowanie w pionie */
+   }
+
+   
+
+
+
+    .box .img_plan_1 img,
+    .box .img_plan_2 img
+    {
+    
+        width:100%;
+        height: auto;
+        display: inline-block;
+        margin: 0.5em 0;
+
+
+    }
+
+    .box .img_plan_1,
+    .box .img_plan_2{
+        width:60%;
+        margin: auto;
+        text-align: center;
+    }
+
+    
+ 
+
+    .read_me{
+        display: none;
+    }
+
+
+   /*------------ guzik -------------------- */
+
+    .button-wrapper{
+        align-items: center; /* Centrowanie w poziomie */
+        justify-content: center; /* Centrowanie w pionie */     
+        margin-bottom: 1.5em;             
+    }
+
+    button{
+        margin:0 ;
+        font-size: 12px;
+    }
+}
+   

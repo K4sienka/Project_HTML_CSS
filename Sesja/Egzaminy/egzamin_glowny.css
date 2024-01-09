@@ -1,0 +1,114 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+ 
+body{ 
+     width: 100%;   
+     background-color: rgba(202, 226, 245, 0.8);
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    font-size: 24px;
+}
+
+h1 {
+    font-family: 'antic';
+    font-size: 4rem;
+    text-align: center;
+    letter-spacing: 1rem;
+
+    background: url(../Glowna/photos/A0.jpg) repeat;   /*w tle tekstu zdjecie*/
+    -webkit-background-clip: text;
+    color: transparent;
+    background-clip: text;
+    display: inline-block;
+}
+
+
+header{
+     display: block;
+     text-align: center;
+     padding: 1rem;
+     background-color: rgba(0, 0, 0, 0.85);
+}
+
+.content {
+    position: relative;
+}
+
+
+/*Menu Główne*/
+nav ul{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    background-color: #000000;
+    white-space: wrap;
+}
+
+nav ul li{
+    flex-grow: 1;
+    display: inline-block;
+    position: relative;
+}
+
+nav ul li a{
+    width: 100%;
+    display: block;
+    padding: 1.5rem 3rem;
+    font-size: 1rem;
+    color: #FFF;
+    text-decoration: none;
+    text-align: center;
+    transition: background-color 0.3s;
+}
+
+nav ul li ul.podmenu{
+    position: absolute;
+    display: none;
+    width:100%;
+    align-items: center; 
+    z-index: 2; /* Ustaw wyższy indeks warstwy */
+}
+
+nav ul li ul.podmenu li {
+    width: 100%;
+}
+
+nav ul.podmenu li a {
+    display: block;
+    text-align: center; /* Wyśrodkowanie tekstu na osi poziomej */
+    text-decoration: none;
+}
+
+nav ul li:hover ul.podmenu{
+    display: block;
+    z-index: 2; /* Ustaw wyższy indeks warstwy */
+}
+
+nav a:hover,a.menu:hover{
+     background-color: #9E69AF ;  /*podświetlenie przy najechaniu na element */
+}
+
+nav ul li.active a,
+nav ul li a.active {
+    background-color: #7a0e9e;
+}
+
+nav ul li a:hover /*podswietlanie linkow w podmenu*/
+{
+    background: #009688;
+}
+
+/* ------------------------- menu główne ---------------------- */
+
+.fixed_menu{
+    position:fixed;
+    top:0;
+    width:100%;
+}
