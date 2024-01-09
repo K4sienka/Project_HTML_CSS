@@ -1,0 +1,439 @@
+/* reset marginesów paddingu i modelu */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+    /*max-height: 100vh;*/
+   /* width: auto;*/
+}
+
+body{ 
+ /*height: 100rem;*/
+    width: 100%;  
+    background-image: url(../Glowna/A0.jpg); /* Ścieżka do obrazka */
+    background-size: cover; /* Dopasowanie obrazka do tła */
+    background-position: center; /* Wyśrodkowanie obrazka */ 
+     
+    
+}
+
+
+.wrapper{
+     /*height: 100rem;*/
+    /* padding: 0 5vw ; */
+    position:absolute;
+    background-color: rgba(255, 255, 255, 0.5);
+    text-align: center;
+    
+    
+}
+
+.top{
+     /*padding-bottom: 3vh;*/
+     background-color: #f0f0f0;  
+}
+
+.data_tydzien
+{
+     padding: 2rem 0;
+}
+
+.data_tydzien span
+{
+     font-size: 1rem;
+}
+
+
+
+h1 { /*napis przewodnik po iad */
+     position: relative;
+     font-family: 'Copperplate Gothic Light';
+     font-size: 60px;
+     color: #214232;
+     text-align: center;
+     padding: 20px;
+     margin: 0;
+ }
+
+
+header{
+     
+     display: block;
+     text-align: center;
+     font-size: 1.8vh;
+     padding: 1vh 0 1vh 0;
+
+}
+
+/*------------------------  main menu -------------------------------------*/
+
+nav ul{
+      display: flex;
+    align-items: center;
+    list-style: none;
+    background-color: #000000;
+    white-space: wrap;
+}
+ 
+nav ul li{
+     flex-grow: 1;
+     display: inline-block;
+     position: relative;
+}
+ 
+nav ul li a{
+     width: 100% ;
+     display: block;
+     padding: 20px 25px;
+     font-size: 18px;
+     color: #FFF;
+     text-decoration: none;
+     text-align: center;
+     transition: background-color 0.3s;
+}
+ 
+nav ul li ul.podmenu{
+     position: absolute;
+     display: none;
+     /*width:100vw;*/
+     width:100%;
+     align-items: center; 
+     z-index: 2; /* Ustaw wyższy indeks warstwy */
+ 
+ }
+ 
+nav ul li ul.podmenu li {
+     width: 100%;
+     box-sizing: border-box;
+     align-items: center; 
+}
+ 
+ul.podmenu li a {
+     display: block;
+     text-align: center; /* Wyśrodkowanie tekstu na osi poziomej */
+     text-decoration: none;
+}
+nav ul li:hover ul.podmenu{
+     display: block;
+ }
+ 
+nav a:hover,a.menu:hover{
+      background-color: #9E69AF ;  /*podświetlenie przy najechaniu na element */
+ }
+ 
+nav .active{
+      background-color: #7a0e9e; /*podświetlenie podstrony aktualnej w użyciu*/
+ 
+ }
+ 
+ nav main.active{
+      background-color: #7a0e9e;
+ }
+ 
+ nav ul li a:hover /*podswietlanie linkow w podmenu*/
+ {
+     background: #009688;
+ }
+ 
+ h3{
+     font-size: 30px;
+     font-weight: bold;
+     padding-bottom: 15vh;
+ }
+
+/*
+article{
+     background-color: rgb(242, 244, 255);
+     display: block;
+     text-align: center;
+     padding: 2%;
+     border-bottom: 2px solid #7a0e9e;
+     
+       
+}*/
+
+/* ------------------- BOTTOM ----------------------------- */
+
+.bottom{
+     
+     box-shadow: .5rem .5rem 3rem 1px rgba(0,0,0,0.05);  
+     background-color: rgba(255, 255, 255, 0.9);
+}
+
+div.sections{
+     margin-top: 2vh;
+     display:flex;
+     padding: 5vh 0vw ;
+     width: 100% ; 
+     min-height: auto;
+     background-color: rgba(255, 255, 255, 0.7);
+     background-color: #f0f0f0;  
+}
+
+.left{
+     display: flex;
+     flex-direction: column;
+     justify-content: space-around;
+     flex:2;   /* ustawienie na 20% szerokości*/
+     border-right: 2px solid #7a0e9e ;
+     text-align: center;
+	font-size: 1.8 vh;
+     
+}
+
+.right{
+
+     flex:8;   /* ustawienie na 70% szerokości*/
+     text-align: center;
+     flex-direction: row;
+}
+
+
+     
+
+/* ---------------------- boczne menu ------------------------------------- */
+
+.side_menu {
+     display: flex;
+     flex-direction: column;
+     justify-content: space-around; /* Rozłożenie elementów równomiernie */
+     align-items: center; /* Wyśrodkowanie wzdłuż osi poziomej */
+     width: 100%; /* Zapełnienie dostępnego miejsca */
+ }
+
+.side_menu  li {
+
+     list-style: none;             /*usunięcuie domyślnych punktorów*/
+     text-decoration: none;        /* usunięcie podkreślenie*/
+     padding: 10px 40px ;   /*ustawienie wewnętrznych odstępów: g,p,d,l*/
+     position: relative;
+}
+
+.side_menu  li:hover {
+     /*określa sposób zachodzenia zmian podczas najechania*/
+     transition: border-radius 1s ease, padding-left 1s ease,  padding-right 1s ease ;
+}
+
+
+.side_menu  li a{
+     display: block;               /*ustawienie elementów jako bloki w celu zagospodarowania całej przestrzeni*/
+     text-decoration: none;        /* usunięcie podkreślenia*/
+     padding: 0.7vh 4vw;                 /*wewnętrzne odstępy*/
+     background-color: black;
+     color: white;
+     border-radius: 10px;
+}
+
+.side_menu li a:hover{
+     background-color: #9E69AF ;  /*podświetlenie przy najechaniu na element */
+     padding:7 50px; /* Zwiększenie odstępu po najechaniu */
+     border-radius: 100px;
+     transition: border-radius 1.5s ease, padding-left 1.5s ease,  padding-right 1.5s ease ;   
+}
+
+.side_menu .active{
+
+     background-color: #7a0e9e; /*podświetlenie podstrony aktualnej w użyciu*/
+}
+
+.side_menu main.active{
+     background-color: #7a0e9e;
+}
+
+.side_menu li:nth-child(1) a::before {
+    content: "Ogólny";
+    }
+.side_menu li:nth-child(2) a::before {
+     content: "Grupa I";
+     }
+    .side_menu li:nth-child(3) a::before {
+     content: "Grupa II";
+     }
+     .side_menu li:nth-child(4) a::before {
+     content: "Grupa III";
+     }
+     .side_menu li:nth-child(5) a::before {
+     content: "Grupa IV";
+     }
+     .side_menu li:nth-child(6) a::before {
+     content: "Grupa V";
+     }
+     .side_menu li:nth-child(7) a::before {
+     content: "Grupa VI";
+     }
+ 
+/* ----------------------------------  zdjecia -------------------------------------------------- */
+
+/* wiadomość o tygodniu */
+
+.container
+{
+    
+    
+    color: rgb(70, 64, 64);
+    background-color: white;
+    
+    text-align: center;
+   /* opacity: 20%;*/
+   
+}
+
+.read_me
+{
+     position: absolute;
+     top: 45%;
+     left: 35%;
+    color: rgb(0, 0, 0);
+    background-color: rgba(217, 180, 235, 0.8);
+    padding: 15px;
+    text-align: right;
+    border-radius: 10px;
+    
+}
+
+.read_me:hover
+{
+     opacity: 0;
+     transition: opacity 1.5s ease
+}
+
+
+.img_plan_1,
+.img_plan_2
+{
+     flex:1;
+    position: relative;
+    text-align: center;
+    transition: transform 0.3s, z-index 0.3s;
+   
+    /*opacity: 0.2;*/
+    rotate: center;
+    overflow: hidden;
+   
+    
+}
+
+
+.box .img_plan_1 img,
+.box .img_plan_2 img
+{
+     max-width: fit-content;
+     width:100%;
+     height: auto;
+     display: inline-block;
+
+
+}
+
+
+
+.box 
+{
+     display: flex;
+     flex-direction: row ; 
+          
+}
+
+.box div.img_plan_1{
+     margin: 0 2vw;
+}
+
+.box div.img_plan_2{
+     margin: 0 2vw 0 0;
+}
+
+.zoomed_1,
+.zoomed_2
+/*dla zdjęcia 1*/
+{
+     transform: scale(2.2); /* Powiększenie zdjęcia przy najechaniu *
+      /*transition-duration: 1s;*/
+     /* position: absolute;*/
+      z-index: 100;    
+      opacity: 1;
+     
+}
+
+.zoomed_1 
+{
+     top: 0 ;
+     left: 12%;
+}
+.zoomed_2 
+{
+     top: 0;
+     left: -35%;
+}
+
+/*
+.zoom1_2,
+.zoom2_1{
+     width: 0;
+     height: 0;
+}
+*/
+.zoomed_1 .read_me, .zoomed_1 .container,
+.zoomed_2 .read_me, .zoomed_2 .container
+{
+     display: none;
+}
+
+
+
+
+.container:hover /*dla podpisow po najechaniu*/
+{
+    opacity: 1; /*pelna widocznosc */
+}
+
+
+/* -------------------------- guzik ----------------------------------------*/
+
+.button-wrapper {
+     text-align: center;
+    margin-top: 20px; /* Dodaj odstęp między zdjęciami a guzikiem */
+}
+
+button {
+     margin-top:1vh ;
+     margin: 0 20% 0 0;
+     padding: 10px 30px;
+     background-color: #7a0e9e;
+     color: white;
+     border: none;
+     border-radius: 10px;
+     cursor: pointer;
+     font-size: 16px;
+     text-align:center;
+     cursor: pointer;
+     transition: background-color 0.3s ease, padding-left 0.5s ease,  padding-right 0.5s ease, font-size 0.5s ease ;
+     position: relative; /* Dodane */
+}
+ 
+ button:hover {
+     padding-left: 40px; /* Zwiększenie odstępu po najechaniu */
+     padding-right: 40px;
+     background-color: #9E69AF;
+     font-size: 14px;
+     
+ }
+ 
+
+/* ---------------------------------  stopka -----------------------------------------------*/
+
+footer
+{
+   margin-top: 2vh;
+    background-color: #f0f0f0;                  /* Kolor wypelnienia tla */
+   padding: 10px;                                      /* Dodatkowy odstep od tekstu do obramowania */
+   text-align: center;                                 /* Wysrodkowanie tekstu w poziomie */
+   letter-spacing: 8px;                           /*odstepy miedzy literami*/
+   opacity: 0.7;
+}
+
+
+
+
+
+
+
