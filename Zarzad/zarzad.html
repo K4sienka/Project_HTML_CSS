@@ -11,7 +11,7 @@
 </head>
 
 <body>
-            <header>
+            <header id="elem0">
                 <h1>Zarząd kierunku</h1>
             </header>
 
@@ -29,7 +29,7 @@
                         <li><a href="#">Egzaminy</a></li>
                         <li><a href="#">Zaliczenia</a></li>
                     </ul>
-                </li>
+                    </li>
                     <!--<li><a class="menu"  href="../Glowna/StronaGlowna.html">Życie Uczelniane</a> </li>-->
                     <li><a class="menu" href="../Plan_zajec/plan_zajec.html">Plan zajęć</a>
                 </li>
@@ -47,7 +47,7 @@
                                 <div class="header">
                                     <h2 class="name">Łucja Adamska</h2>
                                     <h3 class="title">Starostka Grupy 1</h3>
-                                    <h4 class="contact">Kontakt przez Messanger</h4>
+                                    <h4 class="contact" href="../Zarzad/Kontakt.html">Kontakt przez Messanger</h4>
                                 </div>
                             </div>
                         </div>
@@ -57,7 +57,7 @@
                                 <div class="header">
                                     <h2 class="name">Bartosz Irzyk</h2>
                                     <h3 class="title">Starosta Grupa 2</h3>
-                                    <h4 class="contact">Kontakt przez Messanger</h4>
+                                    <h4 class="contact" href="../Zarzad/Kontakt.html">Kontakt przez Messanger</h4>
                                 </div>
                             </div>
                         </div>
@@ -67,7 +67,7 @@
                                 <div class="header">
                                     <h2 class="name">Julia Kot</h2>
                                     <h3 class="title">Starostka Grupa 3</h3>
-                                    <h4 class="contact">Kontakt przez Messanger</h4>
+                                    <h4 class="contact" href="../Zarzad/Kontakt.html">Kontakt przez Messanger</h4>
                                 </div>
                             </div>
                         </div>
@@ -77,7 +77,7 @@
                                 <div class="header">
                                     <h2 class="name">Katarzyna Wesołowska</h2>
                                     <h3 class="title">Starostka Grupa 4</h3>
-                                    <h4 class="contact">Kontakt przez Messanger</h4>
+                                    <h4 class="contact" href="../Zarzad/Kontakt.html">Kontakt przez Messanger</h4>
                                 </div>
                             </div>
                         </div>
@@ -87,7 +87,7 @@
                                 <div class="header">
                                     <h2 class="name">Kacper Książek</h2>
                                     <h3 class="title">Starosta Grupy 5</h3>
-                                    <h4 class="contact">Kontakt przez Messanger</h4>
+                                    <h4 class="contact" href="../Zarzad/Kontakt.html">Kontakt przez Messanger</h4>
                                 </div>
                             </div>
                         </div>
@@ -97,7 +97,7 @@
                                 <div class="header">
                                     <h2 class="name">Julia Walencik</h2>
                                     <h3 class="title">Starostka Grupy 6</h3>
-                                    <h4 class="contact">Kontakt przez Messanger</h4>
+                                    <h4 class="contact" href="../Zarzad/Kontakt.html">Kontakt przez Messanger</h4>
                                 </div>
                             </div>
                         </div>
@@ -109,8 +109,49 @@
             </div>
         </div>  
 
+        <div class="faculty">
+            <h1>Dziekanat</h1>
+            <div class="square">
+                <div class="person">
+                    <h2>Opiekun kierunku</h2>
+                    <h3>prof. dr hab. inż. Andrzej Leśniak</h3>
+                    <h4>E-mail: lesniak@agh.edu.pl</h4>
+                </div>
+                <div class="person">
+                    <h2>Sprawy dydaktyczne</h2>
+                    <h3>inż. Barbara Małecka</h3>
+                    <h4>Paw. A0, parter, pok. 19
+                        <br>Tel. +48 12 617 23 50</br>
+                        <br>E-mail: bmalecka@agh.edu.pl</br></h4>
+                </div>
+                <div class="person">
+                    <h2>Sprawy socjalne i stypendia</h2>
+                    <h3>mgr inż. Anna Kurowska-Capik</h3>
+                    <h4>Paw. A0, parter, pok. 20
+                        <br>Tel. +48 12 617 46 03</br>
+                        <br>E-mail: akcapik@agh.edu.pl</br></h4>
+                </div>
+                <div class="person">
+                    <h2>Rozliczanie dydaktyki</h2>
+                    <h3>mgr inż. Ewelina Półtorak</h3>
+                    <h4>Paw. A0, parter, pok. 20
+                        <br>Tel. +48 12 617 45 33</br>
+                        <br>E-mail: epoltorak@agh.edu.pl</br></h4>      
+                </div>
+            </div>
+        </div>
+        
+
+
+         <!--Do przewijania na poczatek-->
+         <div class="scroll-to-top" onclick="scrollToElement('elem0')">
+            <i class="fa-solid fa-circle-arrow-up"></i>
+
+
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    <script src="twoj-skrypt.js"></script>
-            <script src="link_scroll.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="link_scroll.js"></script>
+    <script> src="ekrany_dotykowe.js"</script>
+    
 </body>
 </html>

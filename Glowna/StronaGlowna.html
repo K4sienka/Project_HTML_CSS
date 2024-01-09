@@ -19,11 +19,11 @@
     <div class="wrapper">
 
 
-        <div class="top">
+        <div class="top"  id="elem0">
             <header>
                 <h1>Przewodnik po IiAD</h1>
             </header>
-            <div class="begin" id="elem0"></div>
+            <div class="begin"></div>
          <!--Menu główne-->
             <ul>
                 <li><a class="menu  active" href="../Glowna/StronaGlowna.html"> Strona główna </a></li>
@@ -47,9 +47,9 @@
                     <li><a class="menu"  href="#"> Życie Uczelniane </a> <!-- odnośnik do miejsca na stronie-->
                     <ul class="podmenu">
                         <li><a href="#" onclick="scrollToElement('square1')">AGH</a></li>
-                        <li><a href="#" onclick="scrollToElement('square2')">Wydział GGIOŚ</a></li>
-                        <li><a href="#" onclick="scrollToElement('square3')">USOS</a></li>
-                        <li><a href="#" onclick="scrollToElement('square4')">URSS</a></li>
+                        <li><a href="#" onclick="scrollToElement('square1')">Wydział GGIOŚ</a></li>
+                        <li><a href="#" onclick="scrollToElement('square1')">USOS</a></li>
+                        <li><a href="#" onclick="scrollToElement('square1')">URSS</a></li>
                     </ul>
                 </li>
                     <li><a class="menu" href="../Plan_zajec/plan_zajec.html">Plan zajęć</a>
@@ -167,8 +167,8 @@
         <div class="content">
                 <!--Uczelnia-->
                 <div class="box">
-                    <div class="intro">Najważniejsze strony naszej uczelni</div>
-                    <div class="square" id="square1" onclick="toggleSquareSize('square1')">
+                    <div class="intro" id="square1">Najważniejsze strony naszej uczelni</div>
+                    <div class="square" onclick="toggleSquareSize('square1')">
                         <div class="image-container">
                             <img src="../Glowna/photos/agh.jpg" alt="">
                         </div>
@@ -176,7 +176,7 @@
                         <p class="link" onclick="redirectToPage('https://www.agh.edu.pl') ">Przejdź do strony</p>
                     </div>
                 
-                    <div class="square" id="square2" onclick="toggleSquareSize('square2')">
+                    <div class="square" onclick="toggleSquareSize('square2')">
                         <div class="image-container">
                             <img src="../Glowna/photos/wggios.jpg" alt="">
                         </div>
@@ -184,7 +184,7 @@
                         <p class="link" onclick="redirectToPage('https://www.wggios.agh.edu.pl')">Przejdź do strony</p>
                     </div>
                 
-                    <div class="square" id="square3" onclick="toggleSquareSize('square3')">
+                    <div class="square" onclick="toggleSquareSize('square3')">
                         <div class="image-container">
                             <img src="../Glowna/photos/usos.jpg" alt="">
                         </div>
@@ -192,7 +192,7 @@
                         <p class="link" onclick="redirectToPage('https://web.usos.agh.edu.pl/kontroler.php?_action=home/index')">Przejdź do strony</p>
                     </div>
                 
-                    <div class="square" id="square4" onclick="toggleSquareSize('square4')">
+                    <div class="square" onclick="toggleSquareSize('square4')">
                         <div class="image-container">
                             <img src="../Glowna/photos/urss.jpg" alt="">
                         </div>
