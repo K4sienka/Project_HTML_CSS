@@ -82,7 +82,7 @@ nav ul li{
 }
  
 nav ul li a{
-     width: ;
+     width: 100% ;
      display: block;
      padding: 20px 25px;
      font-size: 18px;

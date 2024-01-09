@@ -213,8 +213,8 @@
    }
    
    .side_menu li a:hover{
-        /*padding:7 50px; /* Zwiększenie odstępu po najechaniu */
-        padding: 0;
+        padding:7 50px; /* Zwiększenie odstępu po najechaniu */
+       
         border-radius: 100px;
    }
 
@@ -397,8 +397,8 @@ button{
    }
    
    .side_menu li a:hover{
-        /*padding:7 50px; /* Zwiększenie odstępu po najechaniu */
-        padding: 0;
+        padding:7 50px; /* Zwiększenie odstępu po najechaniu */
+       
         border-radius: 100px;
    }
 
