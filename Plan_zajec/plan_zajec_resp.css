@@ -3,7 +3,7 @@
 
     /**/
     
-    
+
     
     .zoomed_1 
     {
@@ -24,51 +24,287 @@
     */
     
     
-    
-     }
-    
-     @media only screen and (min-width:1011px) and (max-width: 1180px) {
-
+}
+@media only screen and (min-width:1180px) and (max-width: 1413px) {
         
+       /* menu boczne */
+    .side_menu  li {
+    
+         padding: 10px 40px ;   /*ustawienie wewnętrznych odstępów: g,p,d,l*/
+    }
+    
+    
+    .side_menu  li a{
+                /* usunięcie podkreślenia*/
+         padding: 0.9vh 2.8vw;                 /*wewnętrzne odstępy*/
+         
+         border-radius: 10px;
+    }
+    
+    .side_menu li a:hover{
+      padding:7 50px; /* Zwiększenie odstępu po najechaniu */
+         border-radius: 100px;
+         transition: border-radius 1.5s ease, padding-left 1.5s ease,  padding-right 1.5s ease ;   
+    }
+
+    /*guzik*/
+
+    button:hover {
+        padding-left: 40px; /* Zwiększenie odstępu po najechaniu */
+        padding-right: 40px;
+        background-color: #9E69AF;
+        font-size: 13px;
+        
+    }
+
+    button {
+            
+        padding: 10px 30px;
+        font-size: 12px;
+        
+    }
+
+
+}
+    
+@media only screen and (min-width:1011px) and (max-width: 1179px) {
+
+         /* menu boczne */
         .side_menu  li {
          
-            padding: 10px 25px ;   /*ustawienie wewnętrznych odstępów: g,p,d,l*/
+            padding: 10px 30px ;   /*ustawienie wewnętrznych odstępów: g,p,d,l*/
        }
-       
+       .side_menu  li a{
+             /* usunięcie podkreślenia*/
+            padding: 0.7vh 2.7vw;                 /*wewnętrzne odstępy*/
+ 
+ 
+        }
 
 
-     }
+        /* guzik*/
 
-     @media only screen and (min-width:900px) and (max-width: 1010px) {
         
-        .side_menu  li {
+        button {
+            
+            padding: 10px 30px;
+            font-size: 11px;
+            transition: background-color 0.3s ease, padding-left 0.5s ease,  padding-right 0.5s ease, font-size 0.5s ease ;
+        
+        }
+
+        button:hover {
+            font-size: 12px;
+            
+        }
+
+}
+
+
+     
+
+@media only screen and (min-width:900px) and (max-width: 1010px) {
+        
+     /* menu boczne */
+    .side_menu  li {
          
             padding: 10px 20px ;   /*ustawienie wewnętrznych odstępów: g,p,d,l*/
        }
 
+       .side_menu  li a{
+        /* usunięcie podkreślenia*/
+        padding: 0.7vh 2.4vw;                 /*wewnętrzne odstępy*/
+ 
+
 
      }
 
-     @media only screen and (min-width:1180px) and (max-width: 1413px) {
-        
-       
-         .side_menu  li {
-         
-              padding: 10px 40px ;   /*ustawienie wewnętrznych odstępów: g,p,d,l*/
-         }
-         
-         
-         .side_menu  li a{
-                     /* usunięcie podkreślenia*/
-              padding: 0.9vh 3vw;                 /*wewnętrzne odstępy*/
-              
-              border-radius: 10px;
-         }
-         
-         .side_menu li a:hover{
-           padding:7 50px; /* Zwiększenie odstępu po najechaniu */
-              border-radius: 100px;
-              transition: border-radius 1.5s ease, padding-left 1.5s ease,  padding-right 1.5s ease ;   
-         }
+     button {
+            
+        padding: 10px 30px;
+        font-size: 11px;
+        transition: background-color 0.3s ease, padding-left 0.5s ease,  padding-right 0.5s ease, font-size 0.5s ease ;
     
-     }
+    }
+
+    button:hover {
+        font-size: 12px;
+        
+    }
+}
+
+
+@media only screen and (min-width:660px) and (max-width: 899px) {
+
+
+     /* menu boczne */
+     .left{
+       
+        border-bottom: 2px solid #7a0e9e ;
+       border-right: none;
+       margin: 0 6em;
+        
+   }
+   
+   
+
+
+
+     .side_menu {
+        display: flex;
+        justify-content: space-around; /* Rozłożenie elementów równomiernie */
+        align-items: center; /* Wyśrodkowanie wzdłuż osi poziomej */
+        flex-direction: row;
+    
+    }
+  
+    .side_menu  li {
+         
+        padding: 0.4em 1.5em ;   /*ustawienie wewnętrznych odstępów: g,p,d,l*/
+   }
+
+    .side_menu  li a{
+            /* usunięcie podkreślenia*/
+            padding: 0.7vh 5vw;                 /*wewnętrzne odstępy*/
+            font-size: 0.8em;
+    }
+
+
+            /*zmiana menu bocznego */
+        div.sections{
+        
+        display:flex;
+        flex-direction: column;
+        padding: 5vh 0vw ;
+       }
+
+        
+       /* zdjęcia */
+       .box{
+
+        display:flex;
+        flex-direction: column;
+
+       }
+
+       
+       .box .img_plan_1 img,
+       .box .img_plan_2 img
+       {
+            width:70%;
+            height: auto;
+            display: inline-block;
+       
+       
+       }
+       
+       .box div.img_plan_1{
+        margin: 2vh 0 0 0;
+   }
+   
+   .box div.img_plan_2{
+        margin: 2vh 0 0 0;
+   }
+
+       .container{
+        width: 70% ;
+        margin: 0 auto;
+       }
+
+       button {
+        margin: 0 auto;    
+        padding: 10px 30px;
+        font-size: 11px;
+        transition: background-color 0.3s ease, padding-left 0.5s ease,  padding-right 0.5s ease, font-size 0.5s ease ;
+    
+    }
+
+    button:hover {
+        font-size: 12px;
+        
+    }
+
+}
+
+@media only screen and (min-width:300px) and (max-width: 659px) {
+
+
+    .side_menu {
+        display: flex;
+        justify-content: space-around; /* Rozłożenie elementów równomiernie */
+        align-items: center; /* Wyśrodkowanie wzdłuż osi poziomej */
+        flex-direction: row;
+    
+    }
+  
+
+    .right{
+        border-top: 2px solid #7a0e9e;
+        margin: 0 1.5em;
+        flex:15;
+    
+    }
+
+    .left{
+       margin: 1.5em 0;
+       flex:1;
+
+    }
+
+     /* menu boczne */
+    .side_menu  li {
+         
+        padding: 0.4em 1.5em ;   /*ustawienie wewnętrznych odstępów: g,p,d,l*/
+   }
+
+        .side_menu  li a{
+            /* usunięcie podkreślenia*/
+            padding: 0.7vh 1.4vw;                 /*wewnętrzne odstępy*/
+            font-size: 0.65em;
+        }
+
+       /* zdjęcia */
+       .box{
+
+        display:flex;
+        flex-direction: column;
+
+       }
+
+       
+       .box .img_plan_1 img,
+       .box .img_plan_2 img
+       {
+            width:80%;
+            height: auto;
+            display: inline-block;
+       
+       
+       }
+       
+       .box div.img_plan_1{
+        margin: 2vh 0 0 0;
+   }
+   
+   .box div.img_plan_2{
+        margin: 2vh 0 0 0;
+   }
+
+       .container{
+        width: 80% ;
+        margin: 0 auto;
+       }
+/*guzik*/
+       button {
+        margin: 0 auto;  
+        padding: 10px 30px;
+        font-size: 11px;
+        transition: background-color 0.3s ease, padding-left 0.5s ease,  padding-right 0.5s ease, font-size 0.5s ease ;
+    
+    }
+
+    button:hover {
+        font-size: 12px;
+        
+    }
+}

@@ -4,10 +4,11 @@
     padding: 0;
     box-sizing: border-box; 
     max-height: 100vh;
+    width: auto;
 }
 
 body{ 
- height: 100vh;
+ /*height: 100rem;*/
     width: 100%;  
     background-image: url(../Glowna/A0.jpg); /* Ścieżka do obrazka */
     background-size: cover; /* Dopasowanie obrazka do tła */
@@ -18,7 +19,7 @@ body{
 
 
 .wrapper{
-     height: 100vh;
+     /*height: 100rem;*/
      padding: 0 5vw ;
     position:absolute;
     background-color: rgba(255, 255, 255, 0.5);
@@ -193,6 +194,7 @@ div.sections{
      list-style: none;             /*usunięcuie domyślnych punktorów*/
      text-decoration: none;        /* usunięcie podkreślenie*/
      padding: 10px 40px ;   /*ustawienie wewnętrznych odstępów: g,p,d,l*/
+     position: relative;
 }
 
 .side_menu  li:hover {
@@ -267,7 +269,7 @@ footer
     
     text-align: center;
    /* opacity: 20%;*/
-   border-radius: 10px;
+   
 }
 
 .read_me
@@ -388,7 +390,7 @@ footer
 
 button {
      margin-top:1vh ;
-     margin-right: 15vw;
+     margin: 0 25% 0 0;
      padding: 10px 30px;
      background-color: #7a0e9e;
      color: white;
