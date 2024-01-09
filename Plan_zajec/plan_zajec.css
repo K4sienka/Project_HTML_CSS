@@ -68,11 +68,11 @@ header{
 /*------------------------  main menu -------------------------------------*/
 
 nav ul{
-     display: flex;
-     align-items: center;
-     list-style: none;
-     background-color: #000000;
-     white-space: wrap;
+      display: flex;
+    align-items: center;
+    list-style: none;
+    background-color: #000000;
+    white-space: wrap;
 }
  
 nav ul li{
@@ -82,10 +82,10 @@ nav ul li{
 }
  
 nav ul li a{
-     width: 100%;
+     width: ;
      display: block;
-     padding: 1.5rem 3rem;
-     font-size: 1rem;
+     padding: 20px 25px;
+     font-size: 18px;
      color: #FFF;
      text-decoration: none;
      text-align: center;
@@ -94,26 +94,27 @@ nav ul li a{
  
 nav ul li ul.podmenu{
      position: absolute;
-    display: none;
-    width:100%;
-    align-items: center; 
-    z-index: 2; /* Ustaw wyższy indeks warstwy */
+     display: none;
+     /*width:100vw;*/
+     width:100%;
+     align-items: center; 
+     z-index: 2; /* Ustaw wyższy indeks warstwy */
+ 
  }
  
 nav ul li ul.podmenu li {
      width: 100%;
      box-sizing: border-box;
+     align-items: center; 
 }
  
-nav ul.podmenu li a {
+ul.podmenu li a {
      display: block;
      text-align: center; /* Wyśrodkowanie tekstu na osi poziomej */
      text-decoration: none;
- }
- 
+}
 nav ul li:hover ul.podmenu{
      display: block;
-     z-index: 2; /* Ustaw wyższy indeks warstwy */
  }
  
 nav a:hover,a.menu:hover{
