@@ -24,16 +24,19 @@ body{
     
 }
 
+
 h1 {
+    display: flex;
+    justify-content: center; /* Wyśrodkowanie w poziomie */
+    align-items: center; /* Wyśrodkowanie w pionie */
     font-family: 'antic';
     font-size: 4rem;
-    text-align: center;
     letter-spacing: 1rem;
     -webkit-background-clip: text;
     color: white;
-    background-clip: text;
-    display: inline-block;
+     background-clip: text;
 }
+    
 
 
 header{
