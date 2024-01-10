@@ -101,7 +101,7 @@ ul li a:hover /*podswietlanie linkow w podmenu*/
 .container {
   margin: -10rem 0 0 0;
   width: 80%;
-  height: 70%;
+  height: 75%;
   background-color: #000000;
   padding: 10rem 8rem;
   overflow: hidden;
@@ -224,6 +224,7 @@ ul li a:hover /*podswietlanie linkow w podmenu*/
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  transition: 400ms;
 }
 
 .faculty h1 {
@@ -234,8 +235,8 @@ ul li a:hover /*podswietlanie linkow w podmenu*/
 
 .person h2 {
   color: #000;
-  font-size: 3.2rem;
-  margin: 1.2rem;
+  font-size: 2.8rem;
+  margin: 1rem;
 }
 
 .person h3 {
@@ -244,15 +245,14 @@ ul li a:hover /*podswietlanie linkow w podmenu*/
 }
 
 .person h4 {
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   color: #7a0e9e;
-  margin: 2rem;
+  margin: 1rem;
 }
 
 .person:hover {
   box-shadow: 0 12px 40px -1px #c9dff0;
   opacity: 1;
-  transition: 400ms;
   transform: scale(1.2);
 }
 
@@ -271,6 +271,10 @@ ul li a:hover /*podswietlanie linkow w podmenu*/
 .scroll-to-top i {
   font-size: 2.5rem;
 }
+
+
+
+
 
 /*telefony*/
 @media only screen and (min-width: 350px) and (max-width: 480px) 
@@ -462,7 +466,7 @@ ul li a:hover /*podswietlanie linkow w podmenu*/
 }
 
 .person {
-  height: 12rem;
+  height: 15rem;
   margin: 1rem;
   width: calc(70% - 3rem);
 }
@@ -472,16 +476,16 @@ ul li a:hover /*podswietlanie linkow w podmenu*/
 }
 
 .person h2 {
-  font-size: 1.4rem;
+  font-size: 1.8rem;
 }
 
 .person h3 {
-  font-size: 1.1rem;
+  font-size: 1.5rem;
 }
 
 .person h4 {
-  font-size: 0.8rem;
-  margin-top: 1rem;
+  font-size: 1rem;
+  margin-top: 0.2rem;
 }
 
 
@@ -491,33 +495,116 @@ ul li a:hover /*podswietlanie linkow w podmenu*/
 }
 
 .scroll-to-top i {
-  font-size: 2rem;
+  font-size: 2.5rem;
 }
 }
 
 /*Ekrany*/
 @media only screen and (min-width: 769px) and (max-width: 1340px) 
 {
-    /*Menu*/
-    h1 {
-        font-size: 3.5rem;
-        letter-spacing: 0.1em;
-    }
+/*Menu*/
+h1 {
+    font-size: 3.8rem;
+    letter-spacing: 0.1em;
+}
 
-    ul li a {
-        padding: 10px 12px;
-        font-size: 1rem;
-    }
+ul li a {
+    padding: 10px 12px;
+    font-size: 1rem;
+}
 
-    ul li ul.podmenu {
-        width: 100%;
-    }
+ul li ul.podmenu {
+    width: 100%;
+}
 
-    ul li ul.podmenu a {
-        font-size: 0.8rem;
-    }
+ul li ul.podmenu a {
+    font-size: 0.8rem;
+}
 
-    ul.podmenu li a {
-        padding: 15px 0;
-    }
-  }
+ul.podmenu li a {
+    padding: 15px 0;
+}
+
+
+/*Karuzela*/
+.container {
+  margin-top: -8rem;
+  padding: 5rem 2rem;
+  width: 90%;
+  height: 70%;
+}
+
+.card {
+  width: 38rem;
+  height: 22rem;
+  padding: 0.5rem 0 0 0;
+  margin-top: 2rem;
+}
+  
+.avatar {
+  width: 10rem;
+  height: 10rem;
+  transform: translate(-50%, -160%);
+}
+
+.name {
+  font-size: 2.2rem;
+  margin-top: 5rem;
+}
+  
+.title {
+  font-size: 1.8rem;
+  margin: 0.5rem 0 0 0;
+}
+
+.contact {
+  font-size: 1.5rem;
+  margin: 1rem 0 0 0;
+}
+  
+.swiper-slide-active .card {
+  margin-top: 4rem;
+  transform: scale(1.2);
+}
+
+  
+
+/* Dziekanat */
+.faculty {
+  margin-top: -8rem;
+  margin-bottom: 5rem;
+}
+
+.person {
+  height: 17rem;
+  margin: 1rem;
+  width: calc(50% - 3rem);
+}
+
+.faculty h1 {
+  font-size: 3rem;
+}
+
+.person h2 {
+  font-size: 2rem;
+}
+
+.person h3 {
+  font-size: 1.6rem;
+}
+
+.person h4 {
+  font-size: 1.2rem;
+  margin-top: -0.3rem;
+}
+
+
+/*na poczatek strony*/
+.scroll-to-top {
+  right: 5%;
+}
+
+.scroll-to-top i {
+  font-size: 2.7rem;
+}
+}
