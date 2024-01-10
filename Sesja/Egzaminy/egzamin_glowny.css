@@ -129,47 +129,173 @@ nav ul li a:hover /*podswietlanie linkow w podmenu*/
 
 /*------------------------------ slide ---------------------------------*/
 
-#bottom{
+.bottom{
     display: flex;
     flex-direction: column;
-    margin:10em 0;
+    padding:20% 0 13% ;
 }
 
 .termin_1,
 .termin_2,
 .termin_3,
 .Teoria_sygnałów_dyskretnych,
-.Bazy_danych{
+.Bazy_danych,
+.Programowanie_o{
     display: flex;
     flex:1;
-    padding: 3em 7em 0 7em;
     flex-direction: column;
 }
+
 
 .termin_1 .button,
 .termin_2 .button,
 .termin_3 .button,
 .Teoria_sygnałów_dyskretnych .button,
-.Bazy_danych .button {
+.Bazy_danych .button,
+.Programowanie_o .button
+ {
     order: -1; /* Umieszcza guzik na górze flexboxa */
 }
-.button_sort{
-    padding-top:8em;
+
+
+div.termin_1,
+div.termin_2,
+div.termin_3,
+div.Teoria_sygnałów_dyskretnych,
+div.Bazy_danych,
+div.Programowanie_o{
+    padding: 3em 0em 0 0em;
+    width: 100;
+
+}
+
+div.termin_3,
+div.Programowanie_o{
+    padding-bottom: 5em;
 }
 
 .termin_3,
-.Bazy_danych{
+.Programowanie_o{
     padding-bottom: 8em;
 }
 
+/* ----------------------------- tabelki ----------------------------------------------*/
 
-.termin_1 p,
-.termin_2 p,
-.termin_3 p,
-.Bazy_danych p,
-.Teoria_sygnałów_dyskretnych p{
-    padding-top: 2.5em;
+
+.table_1{
+    width: 100%;
 }
+.termin_1 table,
+.termin_2 table,
+.termin_3 table,
+.Bazy_danych table,
+.Teoria_sygnałów_dyskretnych table,
+.Programowanie_o p
+{
+    margin: 3em 0;
+}
+
+
+.table_1 th,
+.table_1 td {
+  width: 20%;
+  padding: 8px; /* Dodatkowy padding dla wyglądu */
+  border: 1px solid #000; /* Ramka dla celów wyglądu */
+  text-align: center; /* Wyśrodkowanie zawartości */
+  border: none;
+}
+
+.table_1 th{
+    border-bottom: 1px solid #786080;
+}
+
+
+
+
+/* ---------- przesunięcie ----------------------- */
+
+.note {
+    text-align: center;
+    margin: 0 15%;
+    padding-bottom: 20px;
+   /* border-top: 4px solid #786080; */
+}
+
+.button
+{
+    padding-bottom: 1em;
+}
+
+button.hideButton{
+    padding: 0.7em 17rem;
+    background-color: #ad84ba;
+    color: white;
+    border: none;
+    /*
+    border-top-right-radius: 60%;
+    border-top-left-radius: 0;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 080%;*/
+    cursor: pointer;
+    font-size: 16px;
+    text-align: center;
+    text-align: center;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}  
+
+.Bazy_danych .hideButton{
+    padding: 0.7em 19rem;
+    background-color: #ad84ba;
+    color: white;
+    border: none;
+    /*
+    border-top-right-radius: 60%;
+    border-top-left-radius: 0;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 080%;*/
+    cursor: pointer;
+    font-size: 16px;
+    text-align: center;
+    text-align: center;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}  
+
+/* ---------guzik przejścia  ---------------- */
+
+.button_sort {
+    position: relative; /* Dodajemy pozycjonowanie */
+    display: flex; /* Ustawiamy na flexbox */
+    align-items: center; /* Wyśrodkowanie w pionie */
+    justify-content: center; /* Wyśrodkowanie w poziomie */
+    height: 10em;
+  }
+.button_sort a button{
+
+    background-color: #84638e;
+    padding: 0.7em 3rem;
+    color: white;
+    border: none;
+   
+    cursor: pointer;
+    font-size: 16px;
+    text-align: center;
+    text-align: center;
+    position: fixed;
+    top:20%;
+    right: 0%;
+   /* transform: translateX(-50%);*/
+
+
+}
+
+div.button_sort{
+    height: 0%;
+}
+
 
 /* ---------------------------------  stopka -----------------------------------------------*/
 
@@ -181,34 +307,5 @@ footer
    text-align: center;                                 /* Wysrodkowanie tekstu w poziomie */
    letter-spacing: 8px;                           /*odstepy miedzy literami*/
    opacity: 0.7;
+   
 }
-
-
-/* ---------- przesunięcie ----------------------- */
-
-#note {
-    text-align: center;
-    margin: 0 auto;
-    padding-bottom: 20px;
-   /* border-top: 4px solid #786080; */
-}
-/*
-.button
-{
-    border-bottom: 4px solid #786080;
-}
-*/
-button{
-    padding: 10px 20px;
-    background-color: #ad84ba;
-    color: white;
-    border: none;
-    border-radius: 10px;
-    cursor: pointer;
-    font-size: 16px;
-    text-align: center;
-    text-align: center;
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-}  

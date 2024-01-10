@@ -16,6 +16,8 @@ $(document).ready(function() {
                     button.text('Teoria sygnałów dyskretnych');
                 } else if (parentClass === 'Bazy_danych') {
                     button.text('Bazy danych');
+                } else if (parentClass === 'Programowanie_o') {
+                    button.text('Programowanie Obiektowe');
                 } else {
                     button.text('T');
                 }
