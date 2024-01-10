@@ -137,16 +137,38 @@ nav ul li a:hover /*podswietlanie linkow w podmenu*/
 
 .termin_1,
 .termin_2,
-.termin_3{
+.termin_3,
+.Teoria_sygnałów_dyskretnych,
+.Bazy_danych{
+    display: flex;
     flex:1;
     padding: 3em 7em 0 7em;
+    flex-direction: column;
 }
 
-.termin_1{
-    padding-top: 8em;
+.termin_1 .button,
+.termin_2 .button,
+.termin_3 .button,
+.Teoria_sygnałów_dyskretnych .button,
+.Bazy_danych .button {
+    order: -1; /* Umieszcza guzik na górze flexboxa */
 }
-.termin_3{
+.button_sort{
+    padding-top:8em;
+}
+
+.termin_3,
+.Bazy_danych{
     padding-bottom: 8em;
+}
+
+
+.termin_1 p,
+.termin_2 p,
+.termin_3 p,
+.Bazy_danych p,
+.Teoria_sygnałów_dyskretnych p{
+    padding-top: 2.5em;
 }
 
 /* ---------------------------------  stopka -----------------------------------------------*/
@@ -170,10 +192,13 @@ footer
     padding-bottom: 20px;
    /* border-top: 4px solid #786080; */
 }
-.button {
+/*
+.button
+{
     border-bottom: 4px solid #786080;
 }
-button {
+*/
+button{
     padding: 10px 20px;
     background-color: #ad84ba;
     color: white;
