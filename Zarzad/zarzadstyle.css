@@ -6,6 +6,9 @@
  
 body{ 
   width: 100%;  
+}
+
+.wrapper {
   background: linear-gradient(to left top, #7a0e9e, #edccf9);
 }
 
@@ -19,9 +22,16 @@ h1 {
 
 
 header{
+  background-color: rgba(0, 0, 0, 0.85);
   display: block;
   text-align: center;
   padding: 1rem;
+}
+
+.top {
+  width: 100%;
+  position: fixed;
+  z-index: 99;
 }
 
 
@@ -95,11 +105,11 @@ ul li a:hover /*podswietlanie linkow w podmenu*/
   justify-content: center;
   align-items: center;
   height: 100vh;
-  margin: 1rem 0 -7rem 0;
+  margin: 0 0 -7rem 0;
 }
 
 .container {
-  margin: -10rem 0 0 0;
+  margin: 20rem 0 0 0;
   width: 80%;
   height: 75%;
   background-color: #000000;
@@ -204,8 +214,7 @@ ul li a:hover /*podswietlanie linkow w podmenu*/
 /* Dziekanat */
 .faculty {
   text-align: center;
-  margin-top: 1rem;
-  margin-bottom: 5rem;
+  margin-top: 15rem;
 }
 
 .square {
@@ -306,7 +315,7 @@ ul li a:hover /*podswietlanie linkow w podmenu*/
 
   /*Karuzela*/
 .container {
-  margin-top: -25rem;
+  margin-top: -15rem;
   padding: 5rem 2rem;
   width: 80%;
   height: 40%;
@@ -349,8 +358,7 @@ ul li a:hover /*podswietlanie linkow w podmenu*/
 
 /* Dziekanat */
 .faculty {
-  margin-top: -25rem;
-  margin-bottom: 3rem;
+  margin-top: -20rem;
 }
 
 .person {
@@ -418,7 +426,7 @@ ul li a:hover /*podswietlanie linkow w podmenu*/
 
 /*Karuzela*/
 .container {
-  margin-top: -15rem;
+  margin-top: 1rem;
   padding: 5rem 2rem;
   width: 80%;
   height: 60%;
@@ -461,8 +469,7 @@ ul li a:hover /*podswietlanie linkow w podmenu*/
 
 /* Dziekanat */
 .faculty {
-  margin-top: -15rem;
-  margin-bottom: 3rem;
+  margin-top: -5rem;
 }
 
 .person {
@@ -528,7 +535,7 @@ ul.podmenu li a {
 
 /*Karuzela*/
 .container {
-  margin-top: -8rem;
+  margin-top: 10rem;
   padding: 5rem 2rem;
   width: 90%;
   height: 70%;
@@ -571,8 +578,7 @@ ul.podmenu li a {
 
 /* Dziekanat */
 .faculty {
-  margin-top: -8rem;
-  margin-bottom: 5rem;
+  margin-top: 8rem;
 }
 
 .person {

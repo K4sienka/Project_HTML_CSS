@@ -32,7 +32,7 @@
 }
 
 .color {
-    top: 3rem;
+    top: 11rem;
     width: 8rem; 
     height: 6rem;
 }
@@ -94,7 +94,7 @@
     height: 1.5rem;
     font-size: 0.3rem;
     white-space: nowrap;
-    margin-top: 1.5rem;
+    margin-top: 2.5rem;
 }
 
 .dots-container {
@@ -110,7 +110,7 @@
 /*-------------------*/
 /*FAQ*/
 .middle {
-margin-top: 20rem; 
+margin-top: 30rem; 
 margin-bottom: 7rem; 
 }
 
@@ -373,13 +373,13 @@ footer
 /*Aktualnosci*/
 .a0::before {
     height: 80%;
-    top: 7rem;
+    top: 13rem;
 }
 
 .color {
     width: 11.5rem; 
     height: 9rem;
-    margin-top: 0.1rem;
+    margin-top: 1.5rem;
 }
 
 .color::before,
@@ -457,7 +457,7 @@ footer
 /*----------------*/
 /*FAQ*/
 .middle {
-margin-top: 32rem; 
+margin-top: 45rem; 
 margin-bottom: 12rem; 
 }
 
@@ -804,7 +804,7 @@ right: 5% !important;
 /*----------------*/
 /*FAQ*/
 .middle {
-    margin-top: 28rem; 
+    margin-top: 35rem; 
     margin-bottom: 16rem; 
     }
     

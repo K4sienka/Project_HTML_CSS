@@ -18,7 +18,7 @@
 
 /*Aktualności*/
 .color {
-    top: 10rem;
+    top: 20rem;
     position: relative;
     background-color: rgba(203, 230, 248, 0.7);
     font-family: 'news';
@@ -205,8 +205,8 @@
 
 /*FAQ*/
 .middle {
-    margin-top: 42rem; 
-    margin-bottom: 16rem;   
+    margin-top: 52rem; 
+    margin-bottom: 15rem;   
 }
 
 .questions {

@@ -44,7 +44,7 @@ header{
     justify-content: center; /* Wyśrodkowanie w poziomie */
     align-items: center; /* Wyśrodkowanie w pionie */
      padding: 1rem;
-     background-color: rgba(0, 0, 0, 0.85);
+    background-color: rgba(0, 0, 0, 0.85);
      width: 100%;
      
 }
