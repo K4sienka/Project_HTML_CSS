@@ -44,7 +44,7 @@ header{
     justify-content: center; /* Wyśrodkowanie w poziomie */
     align-items: center; /* Wyśrodkowanie w pionie */
      padding: 1rem;
-    background-color: rgba(0, 0, 0, 0.85);
+     background-color: rgba(0, 0, 0, 0.85);
      width: 100%;
      
 }
@@ -131,51 +131,38 @@ nav ul li a:hover /*podswietlanie linkow w podmenu*/
     flex-direction: column;
     padding:20% 0 13% ;
 }
+
+
+/* odstęp */
+
+.odstep{
+    height: 12em;
+}
 /*------------------------------ slide ---------------------------------*/
 
-
-
-.termin_1,
-.termin_2,
-.termin_3,
-.Teoria_sygnałów_dyskretnych,
-.Bazy_danych,
-.Programowanie_o{
+.note_slide{
     display: flex;
     flex:1;
     flex-direction: column;
 }
 
 
-.termin_1 .button,
-.termin_2 .button,
-.termin_3 .button,
-.Teoria_sygnałów_dyskretnych .button,
-.Bazy_danych .button,
-.Programowanie_o .button
- {
+.main_button button{
     order: -1; /* Umieszcza guzik na górze flexboxa */
 }
 
+.lecturer button{
+    order: 1; /* Umieszcza guzik na górze flexboxa */
+}
 
-div.termin_1,
-div.termin_2,
-div.termin_3,
-div.Teoria_sygnałów_dyskretnych,
-div.Bazy_danych,
-div.Programowanie_o{
-    padding: 3em 0em 0 0em;
+div.note_slide{
+    padding: 10em 0em 0 0em;
     width: 100;
 
 }
 
-div.termin_3,
-div.Programowanie_o{
-    padding-bottom: 5em;
-}
 
-.termin_3,
-.Programowanie_o{
+.Techniki_In{
     padding-bottom: 8em;
 }
 
@@ -185,12 +172,8 @@ div.Programowanie_o{
 .table_1{
     width: 100%;
 }
-.termin_1 table,
-.termin_2 table,
-.termin_3 table,
-.Bazy_danych table,
-.Teoria_sygnałów_dyskretnych table,
-.Programowanie_o p
+
+.note_slide table
 {
     margin: 3em 0;
 }
@@ -245,7 +228,7 @@ button.hideButton{
     transform: translateX(-50%);
 }  
 
-.Bazy_danych .hideButton{
+.Techniki_In .hideButton{
     padding: 0.7em 19rem;
     background-color: #ad84ba;
     color: white;
@@ -263,39 +246,6 @@ button.hideButton{
     left: 50%;
     transform: translateX(-50%);
 }  
-
-/* ---------guzik przejścia  ---------------- */
-
-.button_sort {
-    position: relative; /* Dodajemy pozycjonowanie */
-    display: flex; /* Ustawiamy na flexbox */
-    align-items: center; /* Wyśrodkowanie w pionie */
-    justify-content: center; /* Wyśrodkowanie w poziomie */
-    height: 10em;
-  }
-.button_sort a button{
-
-    background-color: #84638e;
-    padding: 0.7em 3rem;
-    color: white;
-    border: none;
-   
-    cursor: pointer;
-    font-size: 16px;
-    text-align: center;
-    text-align: center;
-    position: fixed;
-    top:20%;
-    right: 0%;
-   /* transform: translateX(-50%);*/
-
-
-}
-
-div.button_sort{
-    height: 0%;
-}
-
 
 /* ---------------------------------  stopka -----------------------------------------------*/
 
