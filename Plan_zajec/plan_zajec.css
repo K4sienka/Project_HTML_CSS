@@ -10,7 +10,7 @@
 body{ 
  /*height: 100rem;*/
     width: 100%;  
-    background-image: url(../Glowna/A0.jpg); /* Ścieżka do obrazka */
+   
     background-size: cover; /* Dopasowanie obrazka do tła */
     background-position: center; /* Wyśrodkowanie obrazka */ 
      
@@ -24,7 +24,7 @@ body{
     position:absolute;
     background-color: rgba(255, 255, 255, 0.5);
     text-align: center;
-    
+    font-size: 24px;
     
 }
 
@@ -47,9 +47,9 @@ body{
 
 h1 { /*napis przewodnik po iad */
      position: relative;
-     font-family: 'Copperplate Gothic Light';
+     
      font-size: 60px;
-     color: #214232;
+     color: white;
      text-align: center;
      padding: 20px;
      margin: 0;
@@ -58,6 +58,7 @@ h1 { /*napis przewodnik po iad */
 
 header{
      
+     background-color: #000000D9;
      display: block;
      text-align: center;
      font-size: 1.8vh;
@@ -73,6 +74,7 @@ nav ul{
     list-style: none;
     background-color: #000000;
     white-space: wrap;
+    font-family: 'antic';
 }
  
 nav ul li{
@@ -85,7 +87,7 @@ nav ul li a{
      width: 100% ;
      display: block;
      padding: 20px 25px;
-     font-size: 18px;
+     font-size: 1em;
      color: #FFF;
      text-decoration: none;
      text-align: center;
@@ -118,21 +120,21 @@ nav ul li:hover ul.podmenu{
  }
  
 nav a:hover,a.menu:hover{
-      background-color: #84638e ;  /*podświetlenie przy najechaniu na element */
+      background-color: #9962ac ;  /*podświetlenie przy najechaniu na element */
  }
  
 nav .active{
-      background-color: #7a0e9e; /*podświetlenie podstrony aktualnej w użyciu*/
+      background-color: #884E9C; /*podświetlenie podstrony aktualnej w użyciu*/
  
  }
  
  nav main.active{
-      background-color: #7a0e9e;
+      background-color: #884E9C;
  }
  
  nav ul li a:hover /*podswietlanie linkow w podmenu*/
  {
-     background: #009688;
+     background:#489a93;
  }
  
  h3{
@@ -430,7 +432,10 @@ footer
 
 
 
-
+@font-face {
+     font-family: 'antic';
+     src: url("../Glowna/fonts/antic.ttf") format('truetype');
+ }
 
 
 

@@ -18,23 +18,19 @@ document.addEventListener("DOMContentLoaded", function() {
     window.scrollLeft = function() {
         if (currentIndex > 0) {
             currentIndex--;
-            scrollToChild(currentIndex);
         } else {
-            // Przewinięcie do ostatniego dziecka, jeśli jesteśmy na pierwszym
             currentIndex = scrollText.children.length - 1;
-            scrollToChild(currentIndex);
         }
+        scrollToChild(currentIndex);
     };
-
+    
     window.scrollRight = function() {
         if (currentIndex < scrollText.children.length - 1) {
             currentIndex++;
-            scrollToChild(currentIndex);
         } else {
-            // Przewinięcie do pierwszego dziecka, jeśli jesteśmy na ostatnim
             currentIndex = 0;
-            scrollToChild(currentIndex);
         }
+        scrollToChild(currentIndex);
     };
 
     // Dodaj nasłuchiwacz na scrollText, aby automatycznie aktualizować kropki tylko podczas użycia strzałek
@@ -47,6 +43,7 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     });
 
+    
     function scrollToChild(index) {
         currentIndex = index;
         updateDots();

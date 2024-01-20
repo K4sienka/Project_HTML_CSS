@@ -22,14 +22,12 @@ body{
 }
 
 h1 {
-    font-family: 'antic';
     font-size: 4rem;
     text-align: center;
     letter-spacing: 1rem;
-
-    background: url(../Glowna/photos/A0.jpg) repeat;   /*w tle tekstu zdjecie*/
-    -webkit-background-clip: text;
-    color: transparent;
+    /*background: url(../Glowna/photos/A0.jpg) repeat;   w tle tekstu zdjecie, Karolina kazala zmienic
+    -webkit-background-clip: text;*/
+    color: white;
     background-clip: text;
     display: inline-block;
 }
@@ -54,6 +52,7 @@ ul{
     list-style: none;
     background-color: #000000;
     white-space: wrap;
+    font-family: 'antic';
 }
 
 ul li{
@@ -97,15 +96,15 @@ ul li:hover ul.podmenu{
 }
 
 a:hover,a.menu:hover{
-     background-color: #84638E ;  /*podświetlenie przy najechaniu na element */
+     background-color: #9962ac ;  /*podświetlenie przy najechaniu na element */
 }
 
 ul li.active a,
 ul li a.active {
-    background-color: #7a0e9e;
+    background-color:#884E9C;
 }
 
 ul li a:hover /*podswietlanie linkow w podmenu*/
 {
-    background: #009688;
+    background: #489a93;
 }

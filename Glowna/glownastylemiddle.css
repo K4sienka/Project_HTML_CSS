@@ -20,8 +20,9 @@
 .color {
     top: 20rem;
     position: relative;
-    background-color: rgba(203, 230, 248, 0.7);
-    font-family: '';
+    background-color: rgba(212, 239, 237, 0.8);
+
+    font-family: 'title';
     width: 50rem;
     text-align: center;
     height: 16rem;
@@ -37,7 +38,7 @@
 }
 
 .color::before {
-    border-color: rgba(203, 230, 248, 0.7) transparent transparent transparent;
+    border-color: rgba(212, 239, 237, 0.8) transparent transparent transparent;
     right: -11.25rem;
     top: -11.25rem;
     transform: rotate(135deg);
@@ -45,7 +46,7 @@
 }
 
 .color::after {
-    border-color: transparent transparent rgba(203, 230, 248, 0.7) transparent;
+    border-color: transparent transparent rgba(212, 239, 237, 0.8) transparent;
     left: -11.25rem;
     bottom: -11.25rem;
     transform: rotate(135deg);
@@ -194,8 +195,8 @@
     text-align: center;
     width: 15rem;
     font-size: 1rem;
-    font-weight: 500;
-    font-family: 'news';
+    font-weight: 600;
+    font-family: 'titlenb';
     background-color: rgba(109, 173, 168, 0.85);
     margin: auto;
     margin-top: 5rem;
@@ -204,16 +205,14 @@
 
 .More:hover{
     transform: scale(1.15);
-    background-color: rgba(55, 99, 95, 0.85);
+    background-color: rgb(70, 116, 112);
 }
-
-
 
 
 /*FAQ*/
 .middle {
-    margin-top: 52rem; 
-    margin-bottom: 15rem;   
+    margin-top: 55rem; 
+    margin-bottom: 13rem;   
 }
 
 .questions {
@@ -222,7 +221,7 @@
     justify-content: center;
     width: 100%;
     height: 100%;
-    font-family: 'antic';
+    font-family: 'bbc';
 }
 
 .left {
@@ -242,7 +241,7 @@
 }
 
 .questions .left .FAQ h1 {
-    font-size: 5rem;
+    font-size: 7rem;
     color: black;
 }
 
@@ -320,7 +319,7 @@
     width: 100%;
     height: 100%;
     color: rgba(255,255,255, 0.15);
-    font-size: 5em;
+    font-size: 7rem;
     justify-content: flex-end;
     padding: 2rem;
 }
@@ -328,7 +327,7 @@
 .right .tab label h3 {
     position: relative;
     font-weight: 900;
-    font-size: 1.6rem;
+    font-size: 1.4rem;
     color: #000;
     z-index: 10;
     display: flex;
@@ -339,7 +338,7 @@
 
 .right .tab .content1 {
     max-height: 0;
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     font-weight: 600;
     transition: max-height 0.7s ease; 
     overflow: hidden;
@@ -361,7 +360,7 @@
 
 .FAQ .star {
     font-size: 1rem;
-    color: rgb(90, 90, 90);
+    color: #f55a71;
 }
 
 
@@ -457,16 +456,16 @@ img {
 }
 
 .link {
-    background-color: #3a857e;
+    background-color: #3e9f95;
     padding: 1rem;
     text-decoration: none;
     cursor: pointer;
-    color:rgb(2, 92, 83);
+    color:rgb(0, 0, 0);
     font-size: 1.5rem;
     font-family: 'uczelnia';
 }
 
-.link:hover{
+.link:hover, .content .box .square h3:hover {
     color: #7a0e9e;
 }
 

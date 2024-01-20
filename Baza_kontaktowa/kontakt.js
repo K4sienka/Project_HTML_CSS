@@ -35,3 +35,37 @@ function closePanel() {
     // Ukryj guzik "Zamknij panel"
     closeButton.style.display = 'none';
 }
+
+
+
+/* --------------------------------------------------------- */
+
+
+$(document).ready(function() {
+    $('.note_2').hide(); // Hide all note_2 elements initially
+
+    $('.hideButton_lecturer').click(function() {
+        const note_2 = $(this).parent().siblings('.note_2');
+        note_2.slideToggle(function() {
+            const button = $(this).parent().find('.hideButton_lecturer');
+            
+            if ($(this).is(':visible')) {
+                button.text('Kliknij, żeby zwinąć');
+            } else {
+                button.text('Pokaż');
+            }
+        });
+    });
+
+    // Function to close the panel
+    function closePanel() {
+        $('.note_2').hide(); // Hide all note_2 elements
+        $('.hideButton_lecturer').text('Pokaż'); // Reset button text
+    }
+
+    // Click event for the closeButton
+    $('.closeButton').click(function() {
+        closePanel();
+    });
+});
+   

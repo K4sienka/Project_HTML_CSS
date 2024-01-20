@@ -1,145 +1,147 @@
 /* reset marginesów paddingu i modelu */
 *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box; 
-    /*max-height: 100vh;*/
-   /* width: auto;*/
-}
-
-body{ 
- /*height: 100rem;*/
-    width: 100%;  
-    background-image: url(../Glowna/A0.jpg); /* Ścieżka do obrazka */
-    background-size: cover; /* Dopasowanie obrazka do tła */
-    background-position: center; /* Wyśrodkowanie obrazka */ 
-     
-    
-}
-
-
-.wrapper{
-     /*height: 100rem;*/
-    /* padding: 0 5vw ; */
-    position:absolute;
-    background-color: rgba(255, 255, 255, 0.5);
-    text-align: center;
-    
-    
-}
-
-.top{
-     /*padding-bottom: 3vh;*/
-     background-color: #f0f0f0;  
-}
-
-.data_tydzien
-{
-     padding: 2rem 0;
-}
-
-.data_tydzien span
-{
-     font-size: 1rem;
-}
-
-
-
-h1 { /*napis przewodnik po iad */
-     position: relative;
-     font-family: 'Copperplate Gothic Light';
-     font-size: 60px;
-     color: #214232;
-     text-align: center;
-     padding: 20px;
      margin: 0;
+     padding: 0;
+     box-sizing: border-box; 
+     /*max-height: 100vh;*/
+    /* width: auto;*/
  }
-
-
-header{
+ 
+ body{ 
+  /*height: 100rem;*/
+     width: 100%;  
+    
+     background-size: cover; /* Dopasowanie obrazka do tła */
+     background-position: center; /* Wyśrodkowanie obrazka */ 
+      
      
-     display: block;
+ }
+ 
+ 
+ .wrapper{
+      /*height: 100rem;*/
+     /* padding: 0 5vw ; */
+     position:absolute;
+     background-color: rgba(255, 255, 255, 0.5);
      text-align: center;
-     font-size: 1.8vh;
-     padding: 1vh 0 1vh 0;
-
-}
-
-/*------------------------  main menu -------------------------------------*/
-
-nav ul{
-      display: flex;
-    align-items: center;
-    list-style: none;
-    background-color: #000000;
-    white-space: wrap;
-}
- 
-nav ul li{
-     flex-grow: 1;
-     display: inline-block;
-     position: relative;
-}
- 
-nav ul li a{
-     width: 100% ;
-     display: block;
-     padding: 20px 25px;
-     font-size: 18px;
-     color: #FFF;
-     text-decoration: none;
-     text-align: center;
-     transition: background-color 0.3s;
-}
- 
-nav ul li ul.podmenu{
-     position: absolute;
-     display: none;
-     /*width:100vw;*/
-     width:100%;
-     align-items: center; 
-     z-index: 2; /* Ustaw wyższy indeks warstwy */
- 
+     font-size: 24px;
+     
  }
  
-nav ul li ul.podmenu li {
-     width: 100%;
-     box-sizing: border-box;
-     align-items: center; 
-}
- 
-ul.podmenu li a {
-     display: block;
-     text-align: center; /* Wyśrodkowanie tekstu na osi poziomej */
-     text-decoration: none;
-}
-nav ul li:hover ul.podmenu{
-     display: block;
+ .top{
+      /*padding-bottom: 3vh;*/
+      background-color: #f0f0f0;  
  }
  
-nav a:hover,a.menu:hover{
-      background-color: #9E69AF ;  /*podświetlenie przy najechaniu na element */
- }
- 
-nav .active{
-      background-color: #7a0e9e; /*podświetlenie podstrony aktualnej w użyciu*/
- 
- }
- 
- nav main.active{
-      background-color: #7a0e9e;
- }
- 
- nav ul li a:hover /*podswietlanie linkow w podmenu*/
+ .data_tydzien
  {
-     background: #009688;
+      padding: 2rem 0;
  }
  
- h3{
-     font-size: 30px;
-     font-weight: bold;
-     padding-bottom: 15vh;
+ .data_tydzien span
+ {
+      font-size: 1rem;
  }
+ 
+ 
+ 
+ h1 { /*napis przewodnik po iad */
+      position: relative;
+      
+      font-size: 60px;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin: 0;
+  }
+ 
+ 
+ header{
+      
+      background-color: #000000D9;
+      display: block;
+      text-align: center;
+      font-size: 1.8vh;
+      padding: 1vh 0 1vh 0;
+ 
+ }
+ 
+ /*------------------------  main menu -------------------------------------*/
+ 
+ nav ul{
+       display: flex;
+     align-items: center;
+     list-style: none;
+     background-color: #000000;
+     white-space: wrap;
+     font-family: 'antic';
+ }
+  
+ nav ul li{
+      flex-grow: 1;
+      display: inline-block;
+      position: relative;
+ }
+  
+ nav ul li a{
+      width: 100% ;
+      display: block;
+      padding: 20px 25px;
+      font-size: 1em;
+      color: #FFF;
+      text-decoration: none;
+      text-align: center;
+      transition: background-color 0.3s;
+ }
+  
+ nav ul li ul.podmenu{
+      position: absolute;
+      display: none;
+      /*width:100vw;*/
+      width:100%;
+      align-items: center; 
+      z-index: 2; /* Ustaw wyższy indeks warstwy */
+  
+  }
+  
+ nav ul li ul.podmenu li {
+      width: 100%;
+      box-sizing: border-box;
+      align-items: center; 
+ }
+  
+ ul.podmenu li a {
+      display: block;
+      text-align: center; /* Wyśrodkowanie tekstu na osi poziomej */
+      text-decoration: none;
+ }
+ nav ul li:hover ul.podmenu{
+      display: block;
+  }
+  
+ nav a:hover,a.menu:hover{
+       background-color: #9962ac ;  /*podświetlenie przy najechaniu na element */
+  }
+  
+ nav .active{
+       background-color: #884E9C; /*podświetlenie podstrony aktualnej w użyciu*/
+  
+  }
+  
+  nav main.active{
+       background-color: #884E9C;
+  }
+  
+  nav ul li a:hover /*podswietlanie linkow w podmenu*/
+  {
+      background:#489a93;
+  }
+  
+  h3{
+      font-size: 30px;
+      font-weight: bold;
+      padding-bottom: 15vh;
+  }
 
 /*
 article{

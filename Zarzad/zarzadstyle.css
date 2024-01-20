@@ -9,13 +9,12 @@ body{
 }
 
 .wrapper {
-  background: linear-gradient(to left top, #7a0e9e, #edccf9);
+  background: linear-gradient(to left top, #f7f7f7, #edd3f7);
 }
 
 h1 {
-  font-family: 'antic';
   font-size: 4rem;
-  color: #7a0e9e;
+  color: white;
   letter-spacing: 0.8rem;
   text-align: center;
 }
@@ -42,6 +41,7 @@ ul{
   list-style: none;
   background-color: #000000;
   white-space: wrap;
+  font-family: 'antic';
 }
 
 ul li{
@@ -85,17 +85,17 @@ ul li:hover ul.podmenu{
 }
 
 a:hover,a.menu:hover{
-     background-color: #84638e ;  /*podświetlenie przy najechaniu na element */
+     background-color: #9962ac ;  /*podświetlenie przy najechaniu na element */
 }
 
 ul li.active a,
 ul li a.active {
-    background-color: #7a0e9e;
+    background-color: #884E9C;
 }
 
 ul li a:hover /*podswietlanie linkow w podmenu*/
 {
-    background: #009688;
+    background: #489a93;
 }
 
 
@@ -260,7 +260,7 @@ ul li a:hover /*podswietlanie linkow w podmenu*/
 }
 
 .person:hover {
-  box-shadow: 0 12px 40px -1px #c9dff0;
+  box-shadow: 0 12px 40px -1px #ba85cc;
   opacity: 1;
   transform: scale(1.2);
 }
@@ -270,7 +270,7 @@ ul li a:hover /*podswietlanie linkow w podmenu*/
 /*na poczatek strony*/
 .scroll-to-top {
   position: fixed;
-  color: #e4baf2;
+  color: #884E9C;
   cursor: pointer;
   top: 92%;
   right: 3%;
@@ -613,4 +613,11 @@ ul.podmenu li a {
 .scroll-to-top i {
   font-size: 2.7rem;
 }
+}
+
+
+
+@font-face {
+  font-family: 'antic';
+  src: url("../Glowna/fonts/antic.ttf") format('truetype');
 }
