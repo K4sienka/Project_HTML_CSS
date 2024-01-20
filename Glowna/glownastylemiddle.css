@@ -92,7 +92,7 @@
     background-color: rgba(90, 163, 222, 0.8);
     font-weight: 580;
     letter-spacing: 1px;
-    width: 50rem;
+    width: 51rem;
     height: 7rem;
     display: flex;
     flex-direction: column;
@@ -105,15 +105,15 @@
     text-align: center;
     font-size: 1.4rem;
     line-height: 2rem;
-    margin: 1.5rem 0; 
+    margin: 0.6rem 1rem 0 1rem;
     white-space: wrap;
     display: flex;
     animation: slideText 0.5s ease-in-out;
 }
 
 .ps {
-    font-size: 0.7rem;
-    line-height: 1rem;
+    font-size: 0.9rem;
+    line-height: 0.9rem;
 }
 
 .child:first-child {
