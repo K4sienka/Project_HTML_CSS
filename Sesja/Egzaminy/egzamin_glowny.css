@@ -7,7 +7,7 @@
  
 .top{
     position: fixed;
-    margin:  0 0 0 20px;
+    margin:  0 0 0 0px;
     width: 100%;
     z-index: 100;
 }
@@ -116,6 +116,8 @@ nav a:hover,a.menu:hover{
 nav ul li.active a,
 nav ul li a.active {
     background-color: #7a0e9e;
+    /*komentarz*/
+    color:#786080;
 }
 
 nav ul li a:hover /*podswietlanie linkow w podmenu*/
