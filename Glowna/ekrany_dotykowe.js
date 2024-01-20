@@ -19,14 +19,3 @@ if ($(window).width() < 1340) {
     });
 }
 
-//dla uczelni
-function toggleSquareSize(squareId) {
-    var square = document.getElementById(squareId);
-
-    if (square.classList.contains('active')) {
-        square.classList.remove('active');
-    } else {
-        square.classList.add('active');
-    }
-}
-

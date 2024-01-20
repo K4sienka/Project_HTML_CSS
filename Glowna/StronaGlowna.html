@@ -16,10 +16,10 @@
 </head>
 
 <body>
-    <div class="wrapper">
+    <div class="wrapper" id="elem0">
 
 
-        <div class="top"  id="elem0">
+        <div class="top">
             <header>
                 <h1>Przewodnik po IiAD</h1>
             </header>
@@ -27,10 +27,10 @@
          <!--Menu główne-->
             <ul>
                 <li><a class="menu  active" href="../Glowna/StronaGlowna.html"> Strona główna </a></li>
-                <li> <a class="menu" href="#">O nas</a>
+                <li> <a class="menu" href="javascript:void(0)">O nas</a>
                     <ul class="podmenu">
-                        <li><a href="#" onclick="scrollToElement('elem1')">My</a></li>
-                        <li><a href="#" onclick="scrollToElement('elem2')">Kontakt</a></li>
+                        <li><a href="javascript:void(0)" onclick="scrollToElement('elem1')">My</a></li>
+                        <li><a href="javascript:void(0)" onclick="scrollToElement('elem2')">Kontakt</a></li>
                     </ul>
                 </li>              
                 
@@ -44,12 +44,12 @@
                         <li><a href="../Sesja/Zaliczenia/zaliczenia.html">Sesja</a></li>
                     </ul>
                 </li>
-                    <li><a class="menu"  href="#"> Życie Uczelniane </a> <!-- odnośnik do miejsca na stronie-->
+                    <li><a class="menu"  href="javascript:void(0)"> Życie Uczelniane </a> <!-- odnośnik do miejsca na stronie-->
                     <ul class="podmenu">
-                        <li><a href="#" onclick="scrollToElement('square1')">AGH</a></li>
-                        <li><a href="#" onclick="scrollToElement('square1')">Wydział GGIOŚ</a></li>
-                        <li><a href="#" onclick="scrollToElement('square1')">USOS</a></li>
-                        <li><a href="#" onclick="scrollToElement('square1')">URSS</a></li>
+                        <li><a href="javascript:void(0)" onclick="scrollToElement('square1')">AGH</a></li>
+                        <li><a href="javascript:void(0)" onclick="scrollToElement('square1')">Wydział GGIOŚ</a></li>
+                        <li><a href="javascript:void(0)" onclick="scrollToElement('square1')">USOS</a></li>
+                        <li><a href="javascript:void(0)" onclick="scrollToElement('square1')">URSS</a></li>
                     </ul>
                 </li>
                     <li><a class="menu" href="../Plan_zajec/plan_zajec.html">Plan zajęć</a>
@@ -96,7 +96,8 @@
         <div class="middle">
             <div class="questions" id="faq">
                 <div class="left">
-                    <div class="FAQ">FAQ<br>Czyli Najczęściej Zadawane Pytania</br></div>
+                    <div class="FAQ"><h1>FAQ</h1><br><br>Czyli Najczęściej Zadawane Pytania</br>
+                    <span class="star">*Najczęściej zadawane w ostatnim czasie.<br>**Treść sekcji powstała w oparciu o autentyczne pytania studentów IAD na przestrzeni ostatnich 2 lat.</span></div>
                     <img src="../Glowna/photos/logo.png" alt="">
                 </div>
                 <div class="right">
@@ -104,71 +105,77 @@
                             <input type="checkbox" name="acc" id="acc1">
                             <label for="acc1">
                                 <h2>01</h2>
-                                <h3>pytanie</h3>
+                                <h3>Kiedy odbędzie się *wstaw dowolną nazwę przedmiotu* ?</h3>
                             </label>
                             <div class="content1">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                            </div>
+                                <p>Wszystkie terminy egzaminów i zaliczeń, jaki i miejsce ich odbycia się, znajdziecie w zakładce "Sesja zaliczeniowa".</p>
+                            </div>                                
                         </div>
                         <div class="tab">
                             <input type="checkbox" name="acc" id="acc2">
                             <label for="acc2">
                                 <h2>02</h2>
-                                <h3>pytanie</h3>
+                                <h3>Jak będą wyglądać zapisy na II termin kolokwium u dr Oleksika?</h3>
                             </label>
                             <div class="content1">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                            </div>
+                                <p>Najpierw będzie trzeba uzupełnić ankietę, w której pytania będą dotyczyć jakie moduły dana osoba musi poprawić. 
+                                    Na podstawie zebranych danych zostanie opracowany algorytm przypisywania studentów do danej grupy poprawkowej.
+                                </p>
+                            </div>  
                         </div>
                         <div class="tab">
                             <input type="checkbox" name="acc" id="acc3">
                             <label for="acc3">
                                 <h2>03</h2>
-                                <h3>pytanie</h3>
+                                <h3>Czy na zaliczeniu z Programowania w R będzie można korzystać z swoich laptopów?</h3>
                             </label>
                             <div class="content1">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                <p>W celu zapewnienia wszystkim równych szans, decyzją dr Chuchro zaliczenie pisane będzie na komputerach stacjonarnych.
+                                    Komputery zostały odpowiednio przygotowane do tego zadania.
+                                </p>
                             </div>
                         </div>
                         <div class="tab">
                             <input type="checkbox" name="acc" id="acc4">
                             <label for="acc4">
                                 <h2>04</h2>
-                                <h3>pytanie</h3>
+                                <h3>Kiedy będą wyniki z *wstaw dowolną nazwę przedmiotu*</h3>
                             </label>
                             <div class="content1">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                <p>Będą to będą.</p>
                             </div>
                         </div>
                         <div class="tab">
                             <input type="checkbox" name="acc" id="acc5">
                             <label for="acc5">
                                 <h2>05</h2>
-                                <h3>pytanie</h3>
+                                <h3>Z kim się skontaktować w razie wątpliwości dotyczących danego źródła z grupy kierunkowej?</h3>
                             </label>
                             <div class="content1">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                <p>Zawsze z autorem źródła.<br>Ewentualnie z starostką roku.<br>Proszę nie działać na własną rękę.</p>
                             </div>
                         </div>
                         <div class="tab">
                             <input type="checkbox" name="acc" id="acc6">
                             <label for="acc6">
                                 <h2>06</h2>
-                                <h3>pytanie</h3>
+                                <h3>Czy można przełożyć termin kolokwium na następny semestr?</h3>
                             </label>
                             <div class="content1">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                <p>Jest taka możliwość, nazywa się to "warunek".
+                                    <br>Co więcej, można przełożyć więcej niż jeden przedmiot na następne semestry.<br>Wtedy nazywa się to "urlop dziekański".</p>
                             </div>
                         </div>
                 </div>
             </div>
+            <div id="square1"></div>
         </div>
 
         <div class="content">
                 <!--Uczelnia-->
                 <div class="box">
-                    <div class="intro" id="square1">Najważniejsze strony naszej uczelni</div>
-                    <div class="square" onclick="toggleSquareSize('square1')">
+                    <div class="intro">Najważniejsze strony naszej uczelni</div>
+                    <div class="square">
                         <div class="image-container">
                             <img src="../Glowna/photos/agh.jpg" alt="">
                         </div>
@@ -176,7 +183,7 @@
                         <p class="link" onclick="redirectToPage('https://www.agh.edu.pl') ">Przejdź do strony</p>
                     </div>
                 
-                    <div class="square" onclick="toggleSquareSize('square2')">
+                    <div class="square">
                         <div class="image-container">
                             <img src="../Glowna/photos/wggios.jpg" alt="">
                         </div>
@@ -184,7 +191,7 @@
                         <p class="link" onclick="redirectToPage('https://www.wggios.agh.edu.pl')">Przejdź do strony</p>
                     </div>
                 
-                    <div class="square" onclick="toggleSquareSize('square3')">
+                    <div class="square">
                         <div class="image-container">
                             <img src="../Glowna/photos/usos.jpg" alt="">
                         </div>
@@ -192,7 +199,7 @@
                         <p class="link" onclick="redirectToPage('https://web.usos.agh.edu.pl/kontroler.php?_action=home/index')">Przejdź do strony</p>
                     </div>
                 
-                    <div class="square" onclick="toggleSquareSize('square4')">
+                    <div class="square">
                         <div class="image-container">
                             <img src="../Glowna/photos/urss.jpg" alt="">
                         </div>
@@ -200,14 +207,14 @@
                         <p class="link" onclick="redirectToPage('https://samorzad.agh.edu.pl')">Przejdź do strony</p>
                     </div>
                 </div>
-
+                <div  id="elem1"></div>
         </div>
 
                 <!--O nas-->
-                <div class="about" id="elem1"> 
-                <div class="we">
-                    <p>O nas</p>
-                </div>
+                <div class="about"> 
+                    <div class="we">
+                        <p>O nas</p>
+                    </div>
                     <div class="member">
                         <div class="us">
                             <img src="../Glowna/photos/Kasia.jpg" id="Kasia">
@@ -269,6 +276,7 @@
             <!--Do przewijania na poczatek-->
             <div class="scroll-to-top" onclick="scrollToElement('elem0')">
                 <i class="fa-solid fa-circle-arrow-up"></i>
+            </div>
 
     <!--JAVA SCRIPT-->
     <script src="link_scroll.js"></script>

@@ -3,10 +3,10 @@
     padding: 0;
     box-sizing: border-box; 
 }
- 
+
 body{ 
      width: 100%;   
-     background-color: rgba(202, 226, 245, 0.8);
+     background-color: rgba(109, 173, 168, 0.5);
 }
 
 .wrapper {
