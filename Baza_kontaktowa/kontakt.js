@@ -1,7 +1,7 @@
 function togglePanel(termin) {
-    var panel = document.getElementById('panel');
-    var closeButton = document.getElementById('closeButton');
-    
+    var panel = document.querySelector('.panel');
+    var closeButton = document.querySelector('.closeButton');
+
     // Ukryj wszystkie panele
     document.querySelectorAll('.panel').forEach(function (p) {
         p.style.display = 'none';
@@ -21,9 +21,9 @@ function togglePanel(termin) {
 }
 
 function closePanel() {
-    var panel = document.getElementById('panel');
-    var closeButton = document.getElementById('closeButton');
-    
+    var panel = document.querySelector('.panel');
+    var closeButton = document.querySelector('.closeButton');
+
     // Ukryj panel
     panel.style.display = 'none';
 
