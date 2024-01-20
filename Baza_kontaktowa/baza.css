@@ -7,18 +7,20 @@
  
 .top{
     position: fixed;
-    margin:  0 0 0 20px;
+    margin:  0 0 0 0px;
     width: 100%;
     z-index: 100;
 }
 
-body{ 
+body{
+    height: 100vh;
      width: 100%;   
      background-color: white;
 }
 
 .wrapper {
-    display: flex;
+    display: flex ;
+    flex: 1;
     flex-direction: column;
     font-size: 24px;
     
@@ -123,137 +125,139 @@ nav ul li a:hover /*podswietlanie linkow w podmenu*/
     background: #009688;
 }
 
+/* -------------- bottom ------------------------- */
 
-/* ----------------------------- bottom ---------------------------------*/
+#odstep{
 
+        height: 14em;
+    
+    
+}
+
+/* do responsywności*/
 .bottom{
     display: flex;
     flex-direction: column;
-    padding:20% 0 13% ;
+    align-items: center;
+    justify-content: center;
 }
 
 
-/* odstęp */
-
-.odstep{
-    height: 12em;
-}
-/*------------------------------ slide ---------------------------------*/
-
-.note_slide{
-    display: flex;
-    flex:1;
-    flex-direction: column;
-}
 
 
-.main_button button{
-    order: -1; /* Umieszcza guzik na górze flexboxa */
-}
 
-.lecturer button{
-    order: 1; /* Umieszcza guzik na górze flexboxa */
+/* przyciski */
+
+.hideButton {
+    margin-bottom: 1.8em;
+    min-width: 350px; /* Przycisk zajmuje całą dostępną szerokość */
+    padding: 1em;
+    background-color: #ad84ba;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    text-align: center;
 }
 
-div.note_slide{
-    padding: 10em 0em 0 0em;
-    width: 100;
-
+.przyciski {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1em; /* Dodaj odstęp między przyciskami */
+    max-width: 600px; /* Ustalona szerokość przycisków i marginesów razem */
+    margin: 0 auto; /* Wyśrodkowanie diva przyciski */
 }
+/*
 
 
-.Techniki_In{
-    padding-bottom: 8em;
-}
-
-/* ----------------------------- tabelki ----------------------------------------------*/
-
-
-.table_1{
+/* nie ruszać  */
+.panel {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
     width: 100%;
-}
-
-.note_slide table
-{
-    margin: 3em 0;
-}
-
-
-.table_1 th,
-.table_1 td {
-  width: 20%;
-  padding: 8px; /* Dodatkowy padding dla wyglądu */
-  border: 1px solid #000; /* Ramka dla celów wyglądu */
-  text-align: center; /* Wyśrodkowanie zawartości */
-  border: none;
-}
-
-.table_1 th{
-    border-bottom: 1px solid #786080;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.9); /* Przezroczyste białe tło */
+    z-index: 9999;
 }
 
 
-
-
-/* ---------- przesunięcie ----------------------- */
-
-.note {
-    text-align: center;
-    margin: 0 15%;
-    padding-bottom: 20px;
-   /* border-top: 4px solid #786080; */
+.tresc_panelu {
+    display: none;
 }
 
-.button
-{
-    padding-bottom: 1em;
-}
 
-button.hideButton{
-    padding: 0.7em 17rem;
-    background-color: #ad84ba;
-    color: white;
-    border: none;
-    /*
-    border-top-right-radius: 60%;
-    border-top-left-radius: 0;
-    border-bottom-right-radius: 0;
-    border-bottom-left-radius: 080%;*/
-    cursor: pointer;
-    font-size: 16px;
-    text-align: center;
-    text-align: center;
+.panel-content {
     position: absolute;
+    top: 50%;
     left: 50%;
-    transform: translateX(-50%);
-}  
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 45px;
+    border: 1px solid #ccc;
+    width:67% ;
+    height: 65.5%;
+    background-color: rgb(128, 171, 152, 0.5);
+}
 
-.Techniki_In .hideButton{
-    padding: 0.7em 19rem;
-    background-color: #ad84ba;
-    color: white;
+.closeButton {
+    /* Styl guzika zamknięcia */
+    margin-top: 2.5em;
+    padding: 15px 25px;
+    background-color: #007bff;
+    color: #fff;
     border: none;
-    /*
-    border-top-right-radius: 60%;
-    border-top-left-radius: 0;
-    border-bottom-right-radius: 0;
-    border-bottom-left-radius: 080%;*/
     cursor: pointer;
-    font-size: 16px;
+    font-size: 0.7em;
+}
+
+.note{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    background-color: rgb(128, 171, 152, 0.6);
+}
+
+.tresc_panelu{
+ 
+    width:100% ;
+    height: 100%;
+}
+
+table{
+    justify-content: center;
+    align-items: center;
+}
+
+td{
+    justify-content: center;
+    align-items: center;
     text-align: center;
-    text-align: center;
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-}  
+}
+
+ table {
+    border-spacing: 0 0.45em; /* Ustawienie odstępu pionowego między wierszami */
+}
+
+.first_row{
+    
+    font-size: 1.2em;
+}
 
 /* ---------------------------------  stopka -----------------------------------------------*/
 
 footer
 {
-   margin-top: 2vh;
+  
+   
+   
+    margin-top: 6em;
+    margin-bottom: 0px;
     background-color: #f0f0f0;                  /* Kolor wypelnienia tla */
-   padding: 10px;                                      /* Dodatkowy odstep od tekstu do obramowania */
+   padding: 10px;                                   /* Dodatkowy odstep od tekstu do obramowania */
    text-align: center;                                 /* Wysrodkowanie tekstu w poziomie */
    letter-spacing: 8px;                           /*odstepy miedzy literami*/
    opacity: 0.7;

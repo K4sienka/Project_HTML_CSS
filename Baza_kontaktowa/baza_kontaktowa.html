@@ -1,413 +1,539 @@
 <!DOCTYPE html>
 <html lang="pl">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, min-width=300">
-        <title> Egzaminy </title>
-        <link rel="stylesheet" href="baza.css">
-        <link rel="stylesheet" href="plan_zajec_resp.css">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-        <script src="slide_bazy.js"></script> 
 
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, min-width=300">
+    <title> Egzaminy </title>
+    <link rel="stylesheet" href="egzamin_glowny.css">
+    <link rel="stylesheet" href="baza.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="kontakt.js"></script>
+    
+</head>
 
-    <body>
-        <div class="wrapper">
-            <div class="background">
-                <div class="top" >
-                    <header>
-                        <h1>Przewodnik po IiAD</h1>
+<body>
+    <div class="wrapper">
+        <div class="background">
+            <div class="top">
+                <header>
+                    <h1>Przewodnik po IiAD</h1>
+                </header>
 
-                    </header>
+                <nav class="fixed_menu">
+                    <!--Menu główne-->
+                    <ul>
+                        <li><a class="menu" href="../../Glowna/StronaGlowna.html">Strona główna</a></li>
+                        <li><a class="menu active" href="../../Baza_kontaktowa/baza_kontaktowa.html"> Baza kontaktowa </a></li>
+                        <li><a class="menu" href="../../Zarzad/zarzad.html"> Zarząd kierunku </a></li>
+                        <li><a class="menu "> Sesja </a>
+                            <ul class="podmenu">
+                                <li><a href="../Egzaminy/egzaminy.html">Egzaminy</a></li>
+                                <li><a href="../Zaliczenia/zaliczenia.html">Zaliczenia</a></li>
+                            </ul>
+                        </li>
+                        <li><a class="menu " href="../../Plan_zajec/plan_zajec.html"> Plan zajęć </a></li>
+                    </ul>
+                </nav>
+            </div>
 
-                    <nav class="fixed_menu">
-                            <!--Menu główne-->
-                        <ul>
-                            <li><a class="menu" href="../Glowna/StronaGlowna.html">Strona główna</a></li>
-                        
-                            <li><a class="menu active" href="#"> Baza kontaktowa </a></li>
+            <div class="bottom">
 
-                            <li><a class="menu" href="../Zarzad/zarzad.html"> Zarząd kierunku </a></li>
+                <div id="odstep"></div>
 
-                            <li><a class="menu "> Sesja </a>
-                                <ul class="podmenu">
-                                    <li><a href="../Sesja/Egzaminy/egzaminy.html">Egzaminy</a></li>
-                                    <li><a href="../Sesja/Zaliczenia/zaliczenia.html">Zaliczenia</a></li>
-                                </ul>
-                            </li>
-                            
-                            <li><a class="menu" href="../Plan_zajec/plan_zajec.html"> Plan zajęć </a>
-                            </li>
-                        </ul>
-                    </nav>
+                <div class="przyciski">
 
+                    <div class="Programowanie_o rownosc" >
+                        <div class="button">
+                            <button class="hideButton" onclick="togglePanel('programowanie_o')">Programowanie Obiektowe</button>
+                        </div>
+                    </div>
+
+                    <div class="Szyfrowanie rownosc">
+                        <div class="button">
+                            <button class="hideButton" onclick="togglePanel('szyfrowanie')">Szyfrowanie i kompresja danych</button>
+                        </div>
+                    </div>
+
+                    <div class="Linux rownosc">
+                        <div class="button">
+                            <button class="hideButton" onclick="togglePanel('linux')">Przetwarzanie danych w systemir Unix</button>
+                        </div>
+                    </div>
+
+                    <div class="Sygnaly rownosc">
+                        <div class="button">
+                            <button class="hideButton" onclick="togglePanel('sygnaly')">Teoria Sygnałów dyskretnych</button>
+                        </div>
+                    </div>
                     
+                    <div class="Fizyka rownosc">
+                        <div class="button">
+                            <button class="hideButton" onclick="togglePanel('fizyka')">Laboratorium fizyczne</button>
+                        </div>
+                    </div>
+
+                    <div class="Bazy rownosc">
+                        <div class="button">
+                            <button class="hideButton" onclick="togglePanel('bazy')">Bazy Danych</button>
+                        </div>
+                    </div>
+
+                    <div class="Prog_R rownosc">
+                        <div class="button">
+                            <button class="hideButton" onclick="togglePanel('prog_r')">Programowanie w R i wizualizacja danych</button>
+                        </div>
+                    </div>
+
+                    <div class="Ti rownosc">
+                        <div class="button">
+                            <button class="hideButton" onclick="togglePanel('ti')">Techniki Internetowe</button>
+                        </div>
+                    </div>
 
                 </div>
 
 
-                <div classp="bottom">
+                <!-- Panel -->
+                <div id="panel" class="panel">
+                    <div class="panel-content">
 
-                    <div class="odstep"></div>
+                        <!-- ----------------------------------------------- -->
 
-
-                    <div class="Obiektowe note_slide">
-
-                        <div class='note'> 
-                            <div class="Onderka">
-
-                                <div class='note'> 
-                                    <table class="table_1">
-                                        <tr>
-                                          <th>PRZEDMIOT</th>
-                                          <th>DATA</th>
-                                          <th>GODZINA</th>
-                                          <th>BUDYNEK</th>
-                                          <th>SALA</th>
-                                        </tr>
-                                        <tr>
-                                          <td>Teoria sygnałów dyskretnych</td>
-                                          <td>14 luty 2024</td>
-                                          <td>-</td>
-                                          <td>-</td>
-                                          <td>-</td>
-                                        </tr>
-                                        <tr>
-                                          <td>Bazy Danych</td>
-                                          <td>16 luty 2024</td>
-                                          <td>11:00-14:30</td>
-                                          <td>ZDALNIE</td>
-                                          <td>-</td>
-                                        </tr>
-                                      </table>
-                                    
-                                </div>
-                                <div class="button">
-                                    <button class="hideButton lecturer">dr Zbigniew Onderka</button>
-                                </div>
-                            </div>
-
-                        </div>
-
-                        <div class="button">
-                            <button class="hideButton main_button">Programowanie Obiektowe</button>
-                        </div>
-                    </div>
-                           <!-- -------------------------------------------------------------------------------->
-                    <div class="szyfrowanie note_slide">
-
-                        <div class='note'> 
-                            <div class="Mlynarczuk">
-
-                                <div class='note'> 
-                                    <p> 
-                                       
-                                    </p>
-                                    
-                                </div>
-                                <div class="button">
-                                    <button class="hideButton lecturer">dr hab. inż. Mariusz Młynarczuk</button>
-                                </div>
-                            </div>
-
-                        </div>
-
-                        <div class="button">
-                            <button class="hideButton main_button">Szyfrowanie i kompresja danych</button>
-                        </div>
-                    </div>
-                        <!-- -------------------------------------------------------------------------------->
-
-                    <div class="Linux note_slide">
-
-                        <div class='note'> 
-                            <div class="Oleksik">
-
-                                <div class='note'> 
-                                    <p> 
-                                    </p>
-                                    
-                                </div>
-
-                                <div class="button">
-                                    <button class="hideButton lecturer">dr Paweł Oleksik</button>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class='note'> 
-                            <div class="Cianciara">
-
-                                <div class='note'> 
-                                    <p> 
-                                       
-                                    </p>
-                                    
-                                </div>
-                                <div class="button">
-                                    <button class="hideButton lecturer">mgr inż. Aleksander Cianciara</button>
-                                </div>
-                            </div>
-
-                        </div>
-
-                        <div class="button">
-                            <button class="hideButton main_button">Przetwarzanie danych w systemie Unix</button>
-                        </div>
-                    </div>
-                        <!-- ------------------------------------------------------------------------------->
-
-                    <div class="Sygnaly note_slide">
-
-                        <div class='note'> 
-                            <div class="Lesniak">
-
-                                <div class='note'> 
-                                    <p> 
-                                        
-                                    </p>
-                                    
-                                </div>
-                                <div class="button">
-                                    <button class="hideButton lecturer">prof. dr hab inż. Andrzej Leśniak</button>
-                                </div>
-                        </div>
-
-                        <div class='note'> 
-                            <div class="Dwornik">
-
-                                <div class='note'> 
-                                    <p> 
-                                       
-                                    </p>
-                                    
-                                </div>
-
-                                <div class="button">
-                                    <button class="hideButton lecturer">dr inż. Maciej Dwornik</button>
-                                </div>
-                            </div>
-
-                        </div>
-
-                        <div class="button">
-                            <button class="hideButton main_button">Teoria sygnałów dyskretnych</button>
-                        </div>
-                    </div>
-                         <!-------------------------------------------------------------------------------->
-
-                    <div class="Lab_fiz note_slide">
-
-                        <div class='note'> 
-                            <div class="Trela_Makowej">
-
-                                <div class='note'> 
-                                    <p> 
-                                        
-                                    </p>
-                                    
-                                </div>
-                                <div class="button">
-                                    <button class="hideButton lecturer">dr inż Agnieszka Trela-Makowej</button>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class='note'> 
-                            <div class="Czaplinski">
-
-                                <div class='note'> 
-                                    <p> 
-                                        
-                                    </p>
-                                    
-                                </div>
-                                <div class="button">
-                                    <button class="hideButton lecturer">dr Wilhelm Czapliński</button>
-                                </div>
-                            </div>
-                        </div>
-
-
-                        <div class='note'> 
-                            <div class="Samek">
-
-                                <div class='note'> 
-                                    <p> 
-                                        
-                                    </p>
-                                        
-                                </div>
-
-                                <div class="button">
-                                    <button class="hideButton lecturer">dr hab inż. Lucyna Samek</button>
-                                </div>
-
-                            </div>
-                        </div>
-                            
-
-                        <div class="button">
-                            <button class="hideButton main_button">Laboratorium fizyczne</button>
-                        </div>
-
-                        
-                    </div>
-                      <!--  ------------------------------------------------------------------------------- -->
-
-
-                        <div class="Bazy note_slide">
-
+                        <div class="tresc_panelu programowanie_o">
                             <div class='note'> 
-                                <div class="Lupa">
-    
-                                    <div class='note'> 
-                                        <p> 
+
+                                <div class="Onderka">
+
+                                    <table>
+                                        <tbody>
+                                            <tr>
+                                                <td class="first_row"><b> dr Zbigniew Onderka</b></td>
+                                            </tr>
+                                            <tr>
+                                                <td>students.infstos@gmail.com</td>
+                                            </tr>
+                                            <tr>
+                                                <td>A0, 135</td>
+                                            </tr>
+                                            <tr>
+                                                <td>poniedziałek, 10:15</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    
+                                </div>
+
+                                <button class="closeButton" onclick="closePanel()">Zamknij panel</button>
+
+                            </div>
+                        </div>
+
+                        <!-- ----------------------------------------------- -->
+
+                        <div class="tresc_panelu szyfrowanie">
+                            <div class='note'> 
+
+                                <div class="Mlynarczuk">
+
+                                    <table>
+                                        <tbody>
+                                            <tr>
+                                                <td class="first_row"><b> dr hab. inż Mariusz Młynarczuk</b></td>
+                                            </tr>
+                                            <tr>
+                                                <td>mlynar@agh.edu.pl</td>
+                                            </tr>
+                                            <tr>
+                                                <td>A0, 315</td>
+                                            </tr>
+                                            <tr>
+                                                <td>wymagany kontakt w celu ustalenia terminu</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    
+
+                                    
+                                </div>
+
+                                <button class="closeButton" onclick="closePanel()">Zamknij panel</button>
+                                
+
+                            </div>
+                        </div>
+
+                         <!-- ----------------------------------------------- -->
+
+                         <div class="tresc_panelu linux">
+                            <div class='note'> 
+                               
+                                <div class="Oleksik" style="margin-bottom: 1.6em;">
+
+                                    <table>
+                                        <tbody>
+                                            <tr>
+                                                <td class="first_row"><b> dr Paweł Oleksik</b></td>
+                                            </tr>
+                                            <tr>
+                                                <td> oleksik@agh.edu.pl</td>
+                                            </tr>
+                                            <tr>
+                                                <td>A0, 349</td>
+                                            </tr>
+                                            <tr>
+                                                <td>wymagany kontakt w celu ustalenia terminu</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    
+
+                                    
+                                </div>
+                                
+
+
+                                <div class="Cianciara">
+
+                                    <table>
+                                        <tbody>
+                                            <tr>
+                                                <td class="first_row"><b> mgr inż Aleksander Cianciara</b></td>
+                                            </tr>
+                                            <tr>
+                                                <td>alexc@agh.edu.pl</td>
+                                            </tr>
+                                            <tr>
+                                                <td>A0, 349</td>
+                                            </tr>
+                                            <tr>
+                                                <td>wymagany kontakt w celu ustalenia terminu</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    
+
+                                    
+                                </div>
+                                <button class="closeButton" onclick="closePanel()">Zamknij panel</button>
+
+                            </div>
+                        </div>
+
+                        <!-- ----------------------------------------------- -->
+
+                        <div class="tresc_panelu sygnaly">
+                            <div class='note'> 
+                               
+                                <div class="Lesniak" style="margin-bottom: 1.6em;">
+
+                                    <table>
+                                        <tbody>
+                                            <tr>
+                                                <td class="first_row"><b> prof. dr. hab. inż. Andrzej Leśniak</b></td>
+                                            </tr>
+                                            <tr>
+                                                <td>lesniak@agh.edu.pl</td>
+                                            </tr>
+                                            <tr>
+                                                <td>A0, 318</td>
+                                            </tr>
+                                            <tr>
+                                                <td>czwartek, 15:30-16:30, domofon nr 5 </td>
+                                            </tr>
+                                        
+                                            <tr>
+                                                <td>Wymagany wcześniejszy kontakt</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    
+
+                                    
+                                </div>
+                                
+
+
+                                <div class="Dwornik">
+
+                                    <table>
+                                        <tbody>
+                                            <tr>
+                                                <td class="first_row"><b> dr inż Maciej Dwornik</b></td>
+                                            </tr>
+                                            <tr>
+                                                <td>dwornik@agh.edu.pl</td>
+                                            </tr>
+                                            <tr>
+                                                <td>A0, 350c</td>
+                                            </tr>
+                                            <tr>
+                                                <td>poniedziałek, 13:45-14:45</td>
+                                            </tr>
+                                            <tr>
+                                                <td>dodatkowo czat MS Teams</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    
+
+                                    
+                                </div>
+                                <button class="closeButton" onclick="closePanel()">Zamknij panel</button>
+                                
+
+                            </div>
+                        </div>
+
+                         <!-- ----------------------------------------------- -->
+
+                         <div class="tresc_panelu fizyka">
+                            <div class='note'> 
+                               
+                                <div class="Trela" style="margin-bottom: 1.6em;">
+
+                                    <table>
+                                        <tbody>
+                                            <tr>
+                                                <td class="first_row"><b> dr inż Agnieszka Trela-Makowej</b></td>
+                                            </tr>
+                                            <tr>
+                                                <td>agnieszka.trela-makowej@fis.agh.edu.pl</td>
+                                            </tr>
+                                            <tr>
+                                                <td>wymagany kontakt w celu ustalenia terminu</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    
+
+                                    
+                                </div>
+                                
+
+
+                                <div class="Czaplinski" style="margin-bottom: 1.6em;">
+
+                                    <table>
+                                        <tbody>
+                                            <tr>
+                                                <td class="first_row"><b> dr Wilhelm Czapliński</b></td>
+                                            </tr>
+                                            <tr>
+                                                <td>czaplinski@novell.ftj.agh.edu.pl</td>
+                                            </tr>
+                                            <tr>
+                                                <td>wymagany kontakt w celu ustalenia terminu</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+
+                                    
+                                </div>
+
+
+                                
+                                <div class="Samek">
+
+                                    <table>
+                                        <tbody>
+                                            <tr>
+                                                <td class="first_row"><b> dr hab. inż. Lucyna Samek</b></td>
+                                            </tr>
+                                            <tr>
+                                                <td>lucyna.samek@fis.agh.edu.pl</td>
+                                            </tr>
+                                            <tr>
+                                                <td>wymagany kontakt w celu ustalenia terminu</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    
+
+                                    
+                                </div>
+                                <button class="closeButton" onclick="closePanel()">Zamknij panel</button>
+                                
+
+                            </div>
+                        </div>
+
+                         <!-- ----------------------------------------------- -->
+
+                         <div class="tresc_panelu bazy">
+                            <div class='note'> 
+                               
+                                <div class="Lupa" style="margin-bottom: 1.6em;">
+
+                                    <table>
+                                        <tbody>
+                                            <tr>
+                                                <td class="first_row"><b> dr inż Michał Lupa</b></td>
+                                            </tr>
+                                            <tr>
+                                                <td>mlupa@agh.edu.pl</td>
+                                            </tr>
                                            
-                                        </p>
-                                        
-                                    </div>
-                                    <div class="button">
-                                        <button class="hideButton lecturer">dr inż Michał Lupa</button>
-                                    </div>
+                                        </tbody>
+                                    </table>
+                                    
+
+                                    
                                 </div>
-                            </div>
-    
-                            <div class='note'> 
-                                <div class="Ciurej">
-    
-                                    <div class='note'> 
-                                        <p> 
+                                
+
+
+                                <div class="Ciurej" style="margin-bottom: 1.6em;">
+
+                                    <table>
+                                        <tbody>
+                                            <tr>
+                                                <td class="first_row"><b> mgr inż. Maciej Ciurej</b></td>
+                                            </tr>
+                                            <tr>
+                                                <td>czat MS Teams</td>
+                                            </tr>
                                             
-                                        </p>
-                                        
-                                    </div>
-                                    <div class="button">
-                                        <button class="hideButton lecturer">mgr inż Maciej Ciurej</button>
-                                    </div>
+                                        </tbody>
+                                    </table>
+
+                                    
                                 </div>
-                            </div>
-    
-    
-                            <div class='note'> 
+
+
+                                
                                 <div class="Staszel">
-    
-                                    <div class='note'> 
-                                        <p> 
-                                          
-                                        </p>
-                                            
-                                    </div>
-    
-                                    <div class="button">
-                                        <button class="hideButton lecturer">mgr inż Jakub Staszel</button>
-                                    </div>
-    
-                                </div>
-                            </div>
-                                
-    
-                            <div class="button">
-                                <button class="hideButton main_button">Bazy Danych</button>
-                            </div>
-    
-                            
-                        </div>
-                             <!-------------------------------------------------------------------------------->
-                            <div class="Prog_R note_slide">
 
-                                <div class='note'> 
-                                    <div class="Chuchro">
-        
-                                        <div class='note'> 
-                                            <p> 
-                                               
-                                            </p>
-                                            
-                                        </div>
-                                        <div class="button">
-                                            <button class="hideButton lecturer">dr inż Monika Chuchro</button>
-                                        </div>
-                                    </div>
-                                </div>
-        
-                                    <div class="Adamek">
-        
-                                        <div class='note'> 
-                                            <p> 
-                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                                Praesent sed ante luctus, venenatis lorem faucibus, tempus leo.
-                                                Donec ullamcorper bibendum dui, sit amet pretium mauris dictum eu.
-                                                Sed ac molestie eros, finibus mollis nibh. Suspendisse potenti.
-                                                Sed et nulla elit. Cras auctor dapibus faucibus.
-                                                Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
-                                                Morbi rutrum dictum libero et rhoncus. Nulla facilisi. Morbi congue convallis mollis.
-                                                Nunc ac magna lorem. Sed luctus diam tempus dolor posuere ullamcorper.
-                                                Vestibulum placerat enim ut lacus commodo, vel rhoncus magna mattis.
-                                                Vestibulum fermentum metus vitae ante ornare sagittis.
-                                                Duis tellus diam, iaculis a semper et, lacinia sed ante. Donec vitae scelerisque neque, non accumsan nisl.
-                                                Aenean ut consectetur quam, sed cursus dui.
-                                            </p>
-                                            
-                                        </div>
-                                        <div class="button">
-                                            <button class="hideButton lecturer">mgr inż Katarzyna Adamek</button>
-                                        </div>
-                                    </div>
-                                </div>
+                                    <table>
+                                        <tbody>
+                                            <tr>
+                                                <td class="first_row"><b> mgr inż. Jakub Staszel</b></td>
+                                            </tr>
+                                            <tr>
+                                                <td>czat MS Teams</td>
+                                            </tr>
+                                           
+                                        </tbody>
+                                    </table>
                                     
-        
-                                <div class="button">
-                                    <button class="hideButton main_button ">Programowanie w R i wizualizacja danych</button>
-                                </div>
-        
-                                
-                            </div>
-                             <!-- ------------------------------------------------------------------------------- -->
-                    <div class="Techniki_In note_slide">
 
-                        <div class='note'> 
-                            <div class="Mirek">
-
-                                <div class='note'> 
-                                    <p> 
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                        Praesent sed ante luctus, venenatis lorem faucibus, tempus leo.
-                                        Donec ullamcorper bibendum dui, sit amet pretium mauris dictum eu.
-                                        Sed ac molestie eros, finibus mollis nibh. Suspendisse potenti.
-                                        Sed et nulla elit. Cras auctor dapibus faucibus.
-                                        Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
-                                        Morbi rutrum dictum libero et rhoncus. Nulla facilisi. Morbi congue convallis mollis.
-                                        Nunc ac magna lorem. Sed luctus diam tempus dolor posuere ullamcorper.
-                                        Vestibulum placerat enim ut lacus commodo, vel rhoncus magna mattis.
-                                        Vestibulum fermentum metus vitae ante ornare sagittis.
-                                        Duis tellus diam, iaculis a semper et, lacinia sed ante. Donec vitae scelerisque neque, non accumsan nisl.
-                                        Aenean ut consectetur quam, sed cursus dui.
-                                    </p>
                                     
                                 </div>
-                                <div class="button">
-                                    <button class="hideButton lecturer">dr Katarzyna Mirek</button>
-                                </div>
-                            </div>
-                        </div>   
+                                <button class="closeButton" onclick="closePanel()">Zamknij panel</button>
+                                
 
-                        <div class="button">
-                            <button class="hideButton main_button">Techniki internetowe</button>
+                            </div>
                         </div>
+
+                        <!-- ----------------------------------------------- -->
+
+                        <div class="tresc_panelu prog_r">
+                            <div class='note'> 
+                               
+                                <div class="Chchro" style="margin-bottom: 1.6em;">
+
+                                    <table>
+                                        <tbody>
+                                            <tr>
+                                                <td class="first_row"><b> dr inż. Monika Chuchro</b></td>
+                                            </tr>
+                                            <tr>
+                                                <td>chuchro@agh.edu.pl</td>
+                                            </tr>
+                                            <tr>
+                                                <td>MS Teams, A0, 315</td>
+                                            </tr>
+                                            <tr>
+                                                <td>piątek, 13:00-14:00 </td>
+                                            </tr>
+                                            <tr>
+                                                <td>W razie chęci konsultacji stacjonarnych, wymagany wcześniejszy kontakt</td>
+                                            </tr>
+                                           
+                                        </tbody>
+                                    </table>
+                                    
+
+                                    
+                                </div>
+                                
+
+
+                                <div class="Adamek">
+
+                                    <table>
+                                        <tbody>
+                                            <tr>
+                                                <td class="first_row"><b> mgr inż. Katarzyna Adamek</b></td>
+                                            </tr>
+                                            <tr>
+                                                <td>kadamek@agh.edu.pl / pani.adamek@gmail.com</td>
+                                            </tr>
+                                            <tr>
+                                                <td>A0, 351</td>
+                                            </tr>
+                                            <tr>
+                                                <td>wtorek 16:30-17:30</td>
+                                            </tr>
+                                            <tr>
+                                                <td>wymagany wcześniejszy kontakt</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    
+
+                                   
+                                </div>
+                                <button class="closeButton" onclick="closePanel()">Zamknij panel</button>
+
+                            </div>
+                        </div>
+
+                         <!-- ----------------------------------------------- -->
+
+                        <div class="tresc_panelu ti">
+                            <div class='note'> 
+
+                                <div class="Mirek">
+
+                                    <table>
+                                        <tbody>
+                                            <tr>
+                                                <td class="first_row"><b> dr Katarzyna Mirek</b></td>
+                                            </tr>
+                                            <tr>
+                                                <td>kmirek@agh.edu.pl</td>
+                                            </tr>
+                                            <tr>
+                                                <td>A0, 319</td>
+                                            </tr>
+                                            <tr>
+                                                <td>wtorek, 10:00-11:00</td>
+                                            </tr>
+                                            
+                                        </tbody>
+                                    </table>
+                                    
+
+                                   
+                                </div>
+                                <button class="closeButton" onclick="closePanel()">Zamknij panel</button>
+                            </div>
+                        </div>
+
+
 
                     </div>
-
-                
-
-                    <footer>
-                        <p> Kraków 2024 </p>
-                        <p> Miasteczko Studenckie AGH </p>
-                    </footer>
-                    
                 </div>
+
+            </div>
         </div>
-        
-    </body>
+
+        <footer>
+            <p> Kraków 2024 </p>
+            <p> Miasteczko Studenckie AGH </p>
+        </footer>
+    </div>
+</body>
 
 </html>
