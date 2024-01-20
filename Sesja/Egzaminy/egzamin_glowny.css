@@ -110,7 +110,7 @@ nav ul li:hover ul.podmenu{
 }
 
 nav a:hover,a.menu:hover{
-     background-color: #9E69AF ;  /*podświetlenie przy najechaniu na element */
+     background-color: #84638e ;  /*podświetlenie przy najechaniu na element */
 }
 
 nav ul li.active a,
