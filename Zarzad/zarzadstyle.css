@@ -85,7 +85,7 @@ ul li:hover ul.podmenu{
 }
 
 a:hover,a.menu:hover{
-     background-color: #9E69AF ;  /*podświetlenie przy najechaniu na element */
+     background-color: #84638e ;  /*podświetlenie przy najechaniu na element */
 }
 
 ul li.active a,

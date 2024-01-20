@@ -6,7 +6,7 @@
 
 body{ 
      width: 100%;   
-     background-color: rgba(109, 173, 168, 0.5);
+     background-color: #F1FFFC;
 }
 
 .wrapper {
@@ -97,7 +97,7 @@ ul li:hover ul.podmenu{
 }
 
 a:hover,a.menu:hover{
-     background-color: #9E69AF ;  /*podświetlenie przy najechaniu na element */
+     background-color: #84638E ;  /*podświetlenie przy najechaniu na element */
 }
 
 ul li.active a,

@@ -21,7 +21,7 @@
     top: 20rem;
     position: relative;
     background-color: rgba(203, 230, 248, 0.7);
-    font-family: 'news';
+    font-family: '';
     width: 50rem;
     text-align: center;
     height: 16rem;
@@ -71,7 +71,7 @@
 .title .text-item2,
 .title .text-item2 span{
     font-size: 1rem;
-    color: #3662aa;
+    color: #264a47;
 }
 
 .news {
@@ -89,7 +89,7 @@
 
 .scroll-text {
     position: relative;
-    background-color: rgba(90, 163, 222, 0.8);
+    background-color: rgba(109, 173, 168, 0.9);
     font-weight: 580;
     letter-spacing: 1px;
     width: 51rem;
@@ -156,12 +156,12 @@
 
 .icon i {
     font-size: 3.5rem;
-    color: #5aa3de; 
+    color: #6DADA8; 
 }
 
 .icon:hover i {
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
-    color: #3662aa;
+    color: #37635f;
 }
 
 
@@ -175,7 +175,7 @@
 .dot {
     width: 0.5rem;
     height: 0.5rem;
-    background-color: #5aa3de;
+    background-color: #6DADA8;
     border-radius: 50%;
     margin: 0 0.2rem;
     cursor: pointer;
@@ -196,7 +196,7 @@
     font-size: 1rem;
     font-weight: 500;
     font-family: 'news';
-    background-color: rgba(90, 163, 222, 0.85);
+    background-color: rgba(109, 173, 168, 0.85);
     margin: auto;
     margin-top: 5rem;
     white-space: nowrap;
@@ -204,7 +204,7 @@
 
 .More:hover{
     transform: scale(1.15);
-    background-color: rgba(54, 98, 170, 0.8);
+    background-color: rgba(55, 99, 95, 0.85);
 }
 
 
