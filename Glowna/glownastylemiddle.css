@@ -103,10 +103,17 @@
 
 .child {
     text-align: center;
-    font-size: 1.5rem;
-    margin: 1rem 0; 
+    font-size: 1.4rem;
+    line-height: 2rem;
+    margin: 1.5rem 0; 
+    white-space: wrap;
     display: flex;
     animation: slideText 0.5s ease-in-out;
+}
+
+.ps {
+    font-size: 0.7rem;
+    line-height: 1rem;
 }
 
 .child:first-child {
