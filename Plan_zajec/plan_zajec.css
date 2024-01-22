@@ -422,12 +422,16 @@ button {
 
 footer
 {
+width: 100%;
+   position:fixed;
+   bottom: 0;
+   right: 0;
    margin-top: 2vh;
-    background-color: #f0f0f0;                  /* Kolor wypelnienia tla */
+     background-color: #f0f0f0;                  /* Kolor wypelnienia tla */
    padding: 10px;                                      /* Dodatkowy odstep od tekstu do obramowania */
    text-align: center;                                 /* Wysrodkowanie tekstu w poziomie */
    letter-spacing: 8px;                           /*odstepy miedzy literami*/
-   opacity: 0.7;
+   opacity: 0.9;
 }
 
 
