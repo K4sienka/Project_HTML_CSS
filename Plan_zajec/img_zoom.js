@@ -88,7 +88,7 @@ function przeniesDoKalendarza(id) {
     }else if (id === "CalendarVI") {
         window.location.href = 'https://calendar.google.com/calendar/embed?src=ksfh7r8cu3kum1reb8vilh72t075gr29%40import.calendar.google.com&ctz=Europe%2FWarsaw'
     }else if (id === "CalendarO") {
-        window.location.href = "#"
+        window.location.href = "https://calendar.google.com/calendar/embed?src=3rf6v9gcb3nd3bb1nlp1es3umihm85pc%40import.calendar.google.com&ctz=Europe%2FWarsaw"
     }
     
 }
