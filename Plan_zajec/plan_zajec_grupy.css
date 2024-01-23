@@ -14,7 +14,7 @@
      background-size: cover; /* Dopasowanie obrazka do tła */
      background-position: center; /* Wyśrodkowanie obrazka */ 
       
-     
+     transition: all 0.3s ease;
  }
  
  
@@ -68,75 +68,79 @@
  }
  
  /*------------------------  main menu -------------------------------------*/
+ /* ------------------------- menu główne ---------------------- */
+
+.fixed_menu{
+     width:100%;
+ }
+ 
  
  nav ul{
-       display: flex;
+     display: flex;
      align-items: center;
      list-style: none;
      background-color: #000000;
      white-space: wrap;
      font-family: 'antic';
  }
-  
+ 
  nav ul li{
-      flex-grow: 1;
-      display: inline-block;
-      position: relative;
+     flex-grow: 1;
+     display: inline-block;
+     position: relative;
  }
-  
+ 
  nav ul li a{
-      width: 100% ;
-      display: block;
-      padding: 20px 25px;
-      font-size: 1em;
-      color: #FFF;
-      text-decoration: none;
-      text-align: center;
-      transition: background-color 0.3s;
+     width: 100%;
+     display: block;
+     padding: 1.5rem 3rem;
+     font-size: 1em;
+     color: #FFF;
+     text-decoration: none;
+     text-align: center;
+     transition: background-color 0.3s;
+     
  }
-  
+ 
  nav ul li ul.podmenu{
-      position: absolute;
-      display: none;
-      /*width:100vw;*/
-      width:100%;
-      align-items: center; 
-      z-index: 2; /* Ustaw wyższy indeks warstwy */
-  
-  }
-  
+     position: absolute;
+     display: none;
+     width:100%;
+     align-items: center; 
+     z-index: 2; /* Ustaw wyższy indeks warstwy */
+ }
+ 
  nav ul li ul.podmenu li {
-      width: 100%;
-      box-sizing: border-box;
-      align-items: center; 
+     width: 100%;
  }
-  
- ul.podmenu li a {
-      display: block;
-      text-align: center; /* Wyśrodkowanie tekstu na osi poziomej */
-      text-decoration: none;
+ 
+ nav ul.podmenu li a {
+     width: 100% ;
+     display: block;
+     text-align: center; /* Wyśrodkowanie tekstu na osi poziomej */
+     text-decoration: none;
+     
  }
+ 
  nav ul li:hover ul.podmenu{
-      display: block;
-  }
-  
+     display: block;
+     z-index: 2; /* Ustaw wyższy indeks warstwy */
+ }
+ 
  nav a:hover,a.menu:hover{
-       background-color: #9962ac ;  /*podświetlenie przy najechaniu na element */
-  }
-  
- nav .active{
-       background-color: #884E9C; /*podświetlenie podstrony aktualnej w użyciu*/
-  
-  }
-  
-  nav main.active{
-       background-color: #884E9C;
-  }
-  
-  nav ul li a:hover /*podswietlanie linkow w podmenu*/
-  {
-      background:#489a93;
-  }
+      background-color: #9962ac ;  /*podświetlenie przy najechaniu na element */
+ }
+ 
+ nav ul li.active a,
+ nav ul li a.active {
+     background-color: #884E9C;
+ }
+ 
+ nav ul li a:hover /*podswietlanie linkow w podmenu*/
+ {
+     background: #489a93;
+ }
+ 
   
   h3{
       font-size: 30px;

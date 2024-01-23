@@ -29,11 +29,16 @@
     
 }
 
+
 /* ------------------------ 1413/1180  --------------------------- */
 
 
 @media only screen and (min-width:1180px) and (max-width: 1413px) {
         
+    h1{
+        font-size: 3rem;
+        letter-spacing: 0.8rem;
+    }
        /* menu boczne */
     .side_menu  li {
     
@@ -79,6 +84,18 @@
 
 @media only screen and (min-width:1011px) and (max-width: 1179px) {
 
+
+    h1{
+        font-size: 3rem;
+        letter-spacing: 0.5rem;
+    }
+
+    nav ul li a{
+        
+        padding: 1.5rem 3rem;
+        font-size: 0.6em;
+        
+    }
          /* menu boczne */
         .side_menu  li {
          
@@ -116,6 +133,20 @@
 @media only screen and (min-width:900px) and (max-width: 1010px) {
         
 
+
+    
+    h1{
+        font-size: 3rem;
+        letter-spacing: 0.5rem;
+    }
+
+    nav ul li a{
+        
+        padding: 1.5rem 3rem;
+        font-size: 0.6em;
+        
+    }
+    
     .right{
 
         margin-top: auto;
@@ -153,6 +184,20 @@
 /* ------------------------ 899/660  --------------------------- */
 
 @media only screen and (min-width:660px) and (max-width: 899px) {
+
+
+    h1{
+        font-size: 2.5rem;
+        letter-spacing: 0.5rem;
+    }
+
+     
+    nav ul li a{
+        
+        padding: 1.5rem 2.5rem;
+        font-size: 0.6em;
+        
+    }
 
     .sections{
         display: flex;
@@ -338,8 +383,24 @@ button{
 
 /* ------------------------ 659/350  --------------------------- */
 
+
+h1{
+    font-size: 1.5rem;
+    letter-spacing: 0.5rem;
+}
+
 @media only screen and (min-width:350px) and (max-width: 659px) {
 
+    h1{
+        font-size: 1.5rem;
+        letter-spacing: 0.5rem;
+    }
+    nav ul li a{
+        
+        padding: 1rem 2rem;
+        font-size: 0.6em;
+        
+    }
     .sections{
         display: flex;
         flex-direction: column;

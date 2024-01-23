@@ -7,7 +7,7 @@
     
 
     .odstep{
-        height:2.5em
+        height:30px;
 
     }
     
@@ -55,7 +55,7 @@
     
 
        .odstep{
-        height:6em;
+        height:30px;
        }
         h1{
             font-size: 3rem;
@@ -102,7 +102,7 @@
             
     
         .odstep{
-            height:6em;
+            height:30px;
         }
 
 
@@ -121,7 +121,7 @@
     
         .hideButton {
        
-            /*min-width: 250px; /* Przycisk zajmuje całą dostępną szerokość */
+            min-width: 640px; /* Przycisk zajmuje całą dostępną szerokość */
             padding: 1em;
             font-size: 11px;
             
@@ -149,7 +149,7 @@
     
 
         .odstep{
-            height:6em;
+            height:50px;
         }
 
         
@@ -168,11 +168,12 @@
     
         button.hideButton {
        
-            min-width: 550px; /* Przycisk zajmuje całą dostępną szerokość */
+            min-width: 600px; /* Przycisk zajmuje całą dostępną szerokość */
             padding: 1em;
             font-size: 11px;
             
         }
+        
         
         
         footer
@@ -217,9 +218,23 @@
     
     @media only screen and (min-width:560px) and (max-width: 659px) {
     
-        #odstep{
+        
+        .button_sort a button{
+        
+            padding: 0.45em 3rem;
+            font-size: 14px;
+            top:20%;
+            right: 50;
+            
+        }
+        
+        div.button_sort{
+            height: 0%;
+        }
+        
+        .odstep{
     
-            height:10em;
+            height:70px;
         }
         h1{
             font-size: 1.5rem;
@@ -238,7 +253,7 @@
         
         button.hideButton {
        
-            min-width: 500px; /* Przycisk zajmuje całą dostępną szerokość */
+            min-width: 550px; /* Przycisk zajmuje całą dostępną szerokość */
             padding: 1em;
             font-size: 10px;
             
@@ -262,7 +277,7 @@
         .przyciski {
             display: flex;
             flex-direction: column;
-            max-width: 600px; /* Ustalona szerokość przycisków i marginesów razem */
+            max-width: 500px; /* Ustalona szerokość przycisków i marginesów razem */
             margin: 0 auto; /* Wyśrodkowanie diva przyciski */
         }
     
@@ -288,9 +303,25 @@
     }
     @media only screen and (min-width:350px) and (max-width: 560px) {
     
-        #odstep{
+
+
+        
+        .button_sort a button{
+        
+            padding: 0.4em 3rem;
+            font-size: 12px;
+            top:20%;
+            right: 50;
+            
+        }
+        
+        div.button_sort{
+            height: 0%;
+        }
+        
+        .odstep{
     
-            height:1em;
+            height:70px;
         }
         h1{
             padding: 0.7em 0;
@@ -310,7 +341,7 @@
         
         button.hideButton {
        
-            min-width: 300px; /* Przycisk zajmuje całą dostępną szerokość */
+            min-width: 350px; /* Przycisk zajmuje całą dostępną szerokość */
             padding: 1em;
             font-size: 10px;
             
