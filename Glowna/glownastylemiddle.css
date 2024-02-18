@@ -21,14 +21,14 @@
     top: 20rem;
     position: relative;
     background-color: rgba(212, 239, 237, 0.8);
-
     font-family: 'title';
-    width: 50rem;
+    width: 70rem;
     text-align: center;
-    height: 16rem;
+    height: 18rem;
     margin: auto;
 }
 
+/*
 .color::before,
 .color::after {
     content: '';
@@ -51,7 +51,7 @@
     bottom: -11.25rem;
     transform: rotate(135deg);
     z-index: -1;
-}
+}*/
 
 
 .title {
@@ -62,16 +62,16 @@
 
 
 .title .text-item1 {
-    margin-top: 1.5rem;
+    margin-top: 1rem;
     color: #000;
-    font-size: 2.5rem;
+    font-size: 3rem;
     font-weight: 600;
     letter-spacing: 10px;
 }
 
 .title .text-item2,
 .title .text-item2 span{
-    font-size: 1rem;
+    font-size: 1.4rem;
     color: #264a47;
 }
 
@@ -93,7 +93,7 @@
     background-color: rgba(109, 173, 168, 0.9);
     font-weight: 580;
     letter-spacing: 1px;
-    width: 51rem;
+    width: 58rem;
     height: 7rem;
     display: flex;
     flex-direction: column;
@@ -104,17 +104,16 @@
 
 .child {
     text-align: center;
-    font-size: 1.4rem;
-    line-height: 2rem;
-    margin: 0.6rem 1rem 0 1rem;
+    font-size: 1.8rem;
+    line-height: 2.2rem;
     white-space: wrap;
     display: flex;
     animation: slideText 0.5s ease-in-out;
 }
 
 .ps {
-    font-size: 0.9rem;
-    line-height: 0.9rem;
+    font-size: 1.1rem;
+    line-height: 1rem;
 }
 
 .child:first-child {
@@ -148,11 +147,11 @@
 }
 
 #scroll-left {
-    left: -4rem;     /*od lewej krawędzi */
+    left: 2rem;     /*od lewej krawędzi */
 }
 
 #scroll-right {
-    right: -4rem; /*od prawej krawędzi */
+    right: 2rem; /*od prawej krawędzi */
 }
 
 .icon i {
@@ -188,17 +187,22 @@
 
 
 
-/*przycisk FAQ*/
+/*przycisk FAQ i Mapki*/
+.Mores {
+    display: flex;
+    justify-content: center;
+    gap: 8rem;
+}
+
 .More {
-    padding: 1rem 1rem;
+    padding: 1.5rem; 
     text-align: center;
-    width: 15rem;
-    font-size: 1rem;
+    width: 21rem;
+    font-size: 1.2rem;
     font-weight: 600;
     font-family: 'titlenb';
     background-color: rgba(109, 173, 168, 0.85);
-    margin: auto;
-    margin-top: 5rem;
+    margin-top: 8rem;
     white-space: nowrap;
 }
 
@@ -209,6 +213,14 @@
 
 
 /*FAQ*/
+
+/*Odnośnik*/
+#faq {
+    margin-top: -8rem;
+    margin-bottom: 7.5rem; 
+    color: transparent;
+}
+
 .middle {
     margin-top: 55rem; 
     margin-bottom: 13rem;   
@@ -265,7 +277,7 @@
     /*box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     box-shadow: 0 15px 15px rgba(0,0,0, 0.2);*/
     background-color: rgb(44, 131, 124);
-    padding: 1rem 1rem;
+    padding: 1rem 0.9rem;
     width: 44rem;
     overflow: hidden;
     margin: 0.5rem;
@@ -284,8 +296,8 @@
 .right .tab label::after{
     content: '+';
     position: absolute;
-    right: 0.3rem;
-    font-size: 2.5em;
+    right: 1rem;
+    font-size: 2.3em;
     color: rgba(0, 0, 0, 0.5);
     transition: transform 1s;
 }
@@ -385,7 +397,7 @@
     justify-content: center;
     align-items: center;
     position: relative; 
-    margin-bottom: 5rem;
+    margin-bottom: 8rem;
 }
 
 .intro {

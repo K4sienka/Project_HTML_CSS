@@ -33,13 +33,14 @@
 
 .color {
     top: 11rem;
-    width: 8rem; 
-    height: 6rem;
+    width: 15rem; 
+    height: 5rem;
 }
 
+/*
 .color::before,
 .color::after {
-    border-width: 4.25rem; /* brak trojkatow */
+    border-width: 4.25rem;
 }
 
 .color::before {
@@ -50,7 +51,7 @@
 .color::after {
     left: -4.25rem;
     bottom: -4.25rem;
-}
+}*/
 
 .title .text-item1 {
     margin-top: 0.5rem;
@@ -60,45 +61,49 @@
 
 .title .text-item2,
 .title .text-item2 span {
-    font-size: 0.4rem; 
+    font-size: 0.5rem; 
     text-wrap: nowrap;
 }
 
 .scroll-text {
-    width: 9.2rem; 
+    width: 11rem; 
     height: 1.4rem; 
-    margin-top: 1rem;
+    margin-top: 0.5rem;
 }
 
 .child {
     margin-top: 0.1rem;
-    font-size: 0.25rem; 
-    line-height: 0.25rem;
+    font-size: 0.4rem; 
+    line-height: 0.4rem;
 }
 
 .ps {
-    font-size: 0.2rem;
-    line-height: 0.3rem;
+    font-size: 0.25rem;
+    line-height: 0.2rem;
 }
 
 #scroll-left {
-    left: -1.6rem;
-    top: 1.2rem;
+    left: 0.8rem;
+    top: 0.8rem;
 }
 
 #scroll-right {
-    right: -1.6rem;
-    top: 1.2rem;
+    right: 0.8rem;
+    top: 0.8rem;
 }
 
 .icon i {
     font-size: 1rem; 
 }
 
+.Mores {
+    gap: 0.8rem;
+}
+
 .More {
-    padding: 0.5rem 0.3rem;
-    width: 4rem; 
-    height: 1.5rem;
+    padding: 0.3rem;
+    width: 7rem; 
+    height: 1.7rem;
     font-size: 0.3rem;
     white-space: nowrap;
     margin-top: 2.5rem;
@@ -117,8 +122,13 @@
 
 /*-------------------*/
 /*FAQ*/
+#faq {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
 .middle {
-margin-top: 28rem; 
+margin-top: 22rem; 
 margin-bottom: 7rem; 
 }
 
@@ -397,12 +407,12 @@ footer
 }
 
 .color {
-    width: 11.5rem; 
-    height: 9rem;
+    width: 28rem; 
+    height: 8rem;
     margin-top: 1.5rem;
 }
 
-.color::before,
+/*.color::before,
 .color::after {
     border-width: 6.5rem;
 }
@@ -415,45 +425,45 @@ footer
 .color::after {
     left: -6.5rem;
     bottom: -6.5rem;
-}
+}*/
 
 .title .text-item1 {
-    margin-top: 1rem;
-    font-size: 1.6rem;
+    margin-top: 0.7rem;
+    font-size: 1.7rem;
     letter-spacing: 0.1rem; 
 }
 
 .title .text-item2,
 .title .text-item2 span {
-    font-size: 0.6rem; 
+    font-size: 0.8rem; 
     text-wrap: nowrap;
 }
 
 .scroll-text {
-    width: 13rem; 
+    width: 22rem; 
     height: 2rem; 
-    margin-top: 1.5rem;
+    margin-top: 1rem;
 }
 
 .child {
-    font-size: 0.4rem; 
+    font-size: 0.6rem; 
     line-height: 0.5rem;
     margin-top: 0.1rem;
 }
 
 .ps {
-    font-size: 0.2rem;
-    line-height: 0.5rem;
+    font-size: 0.4rem;
+    line-height: 0.3rem;
 }
 
 #scroll-left {
-    left: -2.3rem;
-    top: 1.8rem;
+    left: 0.9rem;
+    top: 1.4rem;
 }
 
 #scroll-right {
-    right: -2.3rem;
-    top: 1.8rem;
+    right: 0.9rem;
+    top: 1.4rem;
 }
 
 .icon i {
@@ -461,17 +471,21 @@ footer
 
 }
 
+.Mores {
+    gap: 2rem;
+}
+
 .More {
-    padding: 0.9rem 0.5rem;
-    height: 3rem;
-    width:  10rem; 
+    padding: 0.8rem;
+    height: 3.5rem;
+    width:  12rem; 
     font-size: 0.6rem;
-    margin-top: 5rem;
+    margin-top: 4rem;
 }
 
 
 .dots-container {
-    margin-top: 0.1rem; 
+    margin-top: 0.3rem; 
 }
 
 .dot {
@@ -556,7 +570,7 @@ order: 0;
 /*-------------------*/
 /*uczelnia*/
 .box::before {
-    height: 115%;
+    height: 125%;
 } 
 
 .box {
@@ -570,7 +584,7 @@ order: 0;
 .intro {
     text-align: center;
     top: -1rem;
-    font-size: 1.8rem;
+    font-size: 2rem;
     letter-spacing: 0.1rem;
 }
 
@@ -767,10 +781,11 @@ right: 5% !important;
 }
 
 .color {
-    width: 20rem; 
-    height: 12rem;
+    width: 45rem; 
+    height: 10rem;
 }
 
+/*
 .color::before,
 .color::after {
     border-width: 8.62rem;
@@ -784,10 +799,10 @@ right: 5% !important;
 .color::after {
     left: -8.55rem;
     bottom: -8.6rem;
-}
+}*/
 
 .title .text-item1 {
-    margin-top: 1.5rem;
+    margin-top: 0.4rem;
     font-size: 2.2rem;
     letter-spacing: 0.1rem; 
 }
@@ -799,15 +814,15 @@ right: 5% !important;
 }
 
 .scroll-text {
-    width: 20rem; 
+    width: 37rem; 
     height: 3rem; 
-    margin-top: 1.2rem;
+    margin-top: 0.9rem;
 }
 
 .child {
     margin-top: 0.1rem;
-    line-height: 0.8rem;
-    font-size: 0.7rem; 
+    line-height: 0.9rem;
+    font-size: 1rem; 
 }
 
 .ps {
@@ -816,17 +831,17 @@ right: 5% !important;
 }
 
 #scroll-left {
-    left: -1.8rem;
+    left: 1.6rem;
     top: 1.8rem;
 }
 
 #scroll-right {
-    right: -1.8rem;
+    right: 1.6rem;
     top: 1.8rem;
 }
 
 .icon i {
-    font-size: 1.5rem; 
+    font-size: 1.8rem; 
    
 }
 
@@ -870,7 +885,7 @@ right: 5% !important;
     }
     
     .right .tab {
-        width: 28rem;
+        width: 33rem;
         padding: 0 0.7rem 0.7rem;
         margin: 0.7rem;
     }
