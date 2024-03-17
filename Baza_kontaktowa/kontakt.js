@@ -12,7 +12,7 @@ function togglePanel(termin) {
         trescPanelu.style.display = 'none';
     });
 
-    // Pokaż panel i kontener dla odpowiedniego terminu
+    // Pokaż panel i kontener dla terminu
     panel.style.display = 'block';
     document.querySelector('.tresc_panelu.' + termin).style.display = 'block';
 
@@ -42,7 +42,7 @@ function closePanel() {
 
 
 $(document).ready(function() {
-    $('.note_2').hide(); // Hide all note_2 elements initially
+    $('.note_2').hide(); 
 
     $('.hideButton_lecturer').click(function() {
         const note_2 = $(this).parent().siblings('.note_2');
@@ -57,13 +57,13 @@ $(document).ready(function() {
         });
     });
 
-    // Function to close the panel
+   
     function closePanel() {
-        $('.note_2').hide(); // Hide all note_2 elements
-        $('.hideButton_lecturer').text('Pokaż'); // Reset button text
+        $('.note_2').hide(); 
+        $('.hideButton_lecturer').text('Pokaż'); 
     }
 
-    // Click event for the closeButton
+   
     $('.closeButton').click(function() {
         closePanel();
     });

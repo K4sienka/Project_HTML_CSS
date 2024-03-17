@@ -107,7 +107,7 @@
      display: none;
      width:100%;
      align-items: center; 
-     z-index: 2; /* Ustaw wyższy indeks warstwy */
+     z-index: 2; /*wyższy indeks warstwy */
  }
  
  nav ul li ul.podmenu li {
@@ -117,14 +117,14 @@
  nav ul.podmenu li a {
      width: 100% ;
      display: block;
-     text-align: center; /* Wyśrodkowanie tekstu na osi poziomej */
+     text-align: center; /* Wyśrodkowanie tekstu  poziomo */
      text-decoration: none;
      
  }
  
  nav ul li:hover ul.podmenu{
      display: block;
-     z-index: 2; /* Ustaw wyższy indeks warstwy */
+     z-index: 2; /* wyższy indeks warstwy */
  }
  
  nav a:hover,a.menu:hover{
@@ -205,13 +205,13 @@ div.sections{
      display: flex;
      flex-direction: column;
      justify-content: space-around; /* Rozłożenie elementów równomiernie */
-     align-items: center; /* Wyśrodkowanie wzdłuż osi poziomej */
+     align-items: center; /* Wyśrodkowanie poziomo */
      width: 100%; /* Zapełnienie dostępnego miejsca */
  }
 
 .side_menu  li {
 
-     list-style: none;             /*usunięcuie domyślnych punktorów*/
+     list-style: none;           
      text-decoration: none;        /* usunięcie podkreślenie*/
      padding: 10px 40px ;   /*ustawienie wewnętrznych odstępów: g,p,d,l*/
      position: relative;
@@ -224,7 +224,7 @@ div.sections{
 
 
 .side_menu  li a{
-     display: block;               /*ustawienie elementów jako bloki w celu zagospodarowania całej przestrzeni*/
+     display: block;               /*ustawienie elementów jako bloki */
      text-decoration: none;        /* usunięcie podkreślenia*/
      padding: 0.7vh 4vw;                 /*wewnętrzne odstępy*/
      background-color: black;

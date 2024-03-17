@@ -260,7 +260,7 @@
    
    
    .side_menu  li a{
-        display: block ;              /*ustawienie elementów jako bloki w celu zagospodarowania całej przestrzeni*/
+        display: block ;             
         /*padding: 0.7vh 4vw;                 /*wewnętrzne odstępy*/
         padding: 0.4em 2em;
         border-radius: 10px;

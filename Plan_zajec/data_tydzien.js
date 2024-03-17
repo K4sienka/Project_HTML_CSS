@@ -9,7 +9,7 @@ function czyTydzienParzysty() {
 
 function getISOWeek(date) {
         const onejan = new Date(date.getFullYear(), 0, 1);
-        const daysOffset = 4 - onejan.getDay(); // Znajduje odstęp do najbliższego poniedziałku
+        const daysOffset = 4 - onejan.getDay(); // 
         const firstMonday = new Date(onejan.getFullYear(), 0, 1 + daysOffset); // Oblicza datę pierwszego poniedziałku
         const daysPassed = Math.floor((date - firstMonday) / 86400000); // Oblicza liczbę dni od pierwszego poniedziałku
         const week = Math.floor(daysPassed / 7) + 1; // Oblicza numer tygodnia
@@ -24,7 +24,7 @@ function updateResultSpan() {
     }
 }
 
-// Wywołanie funkcji updateResultSpan po załadowaniu całej strony
+
 document.addEventListener("DOMContentLoaded", function () {
     updateResultSpan();
 });

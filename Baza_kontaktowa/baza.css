@@ -97,7 +97,7 @@ nav ul li ul.podmenu{
     display: none;
     width:100%;
     align-items: center; 
-    z-index: 2; /* Ustaw wyższy indeks warstwy */
+    z-index: 2;
 }
 
 nav ul li ul.podmenu li {
@@ -107,14 +107,14 @@ nav ul li ul.podmenu li {
 nav ul.podmenu li a {
     width: 100% ;
     display: block;
-    text-align: center; /* Wyśrodkowanie tekstu na osi poziomej */
+    text-align: center; /* Wyśrodkowanie tekstu w poziomie */
     text-decoration: none;
     
 }
 
 nav ul li:hover ul.podmenu{
     display: block;
-    z-index: 2; /* Ustaw wyższy indeks warstwy */
+    z-index: 2; 
 }
 
 nav a:hover,a.menu:hover{
@@ -157,7 +157,7 @@ nav ul li a:hover /*podswietlanie linkow w podmenu*/
 
 .hideButton {
     margin-bottom: 1.8em;
-    min-width: 350px; /* Przycisk zajmuje całą dostępną szerokość */
+    min-width: 350px; /* szerokosć przycisku*/
     padding: 1em;
     background-color: #ad84ba;
     color: white;
@@ -170,9 +170,9 @@ nav ul li a:hover /*podswietlanie linkow w podmenu*/
 .przyciski {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 1em; /* Dodaj odstęp między przyciskami */
-    max-width: 600px; /* Ustalona szerokość przycisków i marginesów razem */
-    margin: 0 auto; /* Wyśrodkowanie diva przyciski */
+    gap: 1em; /*odstęp między przyciskami */
+    max-width: 600px; /* szerokość przycisków i marginesów razem */
+    margin: 0 auto; /* Wyśrodkowanie  */
 }
 /*
 
@@ -248,7 +248,7 @@ td{
 }
 
  table {
-    border-spacing: 0 0.45em; /* Ustawienie odstępu pionowego między wierszami */
+    border-spacing: 0 0.45em; /*odstęp pionowy między wierszami */
 }
 
 .first_row{
@@ -267,7 +267,7 @@ footer
    right: 0;
     margin-top: 4em;
     /*margin-bottom: 0px;*/
-    background-color: #f0f0f0;                  /* Kolor wypelnienia tla */
+    background-color: #f0f0f0;                
    padding: 10px;                                   /* Dodatkowy odstep od tekstu do obramowania */
    text-align: center;                                 /* Wysrodkowanie tekstu w poziomie */
    letter-spacing: 8px;                           /*odstepy miedzy literami*/
