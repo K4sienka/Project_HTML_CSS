@@ -27,12 +27,12 @@
          <!--Menu główne-->
             <ul>
                 <li><a class="menu  active" href="../Glowna/StronaGlowna.html">Strona główna</a></li>
-                <li> <a class="menu" href="javascript:void(0)">O nas</a>
+    <!--        <li> <a class="menu" href="javascript:void(0)">O nas</a>
                     <ul class="podmenu">
                         <li><a href="javascript:void(0)" onclick="scrollToElement('elem1')">My</a></li>
                         <li><a href="javascript:void(0)" onclick="scrollToElement('elem2')">Kontakt</a></li>
                     </ul>
-                </li>              
+                </li>       -->              
                 
                 <li><a class="menu" href="../Baza_kontaktowa/baza_kontaktowa.html">Baza kontaktowa</a></li>
 
@@ -44,12 +44,12 @@
                         <li><a href="https://calendar.google.com/calendar/embed?src=216dd0a1057c0b1ea7f0e2ff1a32e50deabc0d283c44736a18a4c4252444efda%40group.calendar.google.com&ctz=Europe%2FWarsaw">Zaliczenia</a></li>
                     </ul>
                 </li>
-                    <li><a class="menu"  href="javascript:void(0)"> Życie Uczelniane </a> <!-- odnośnik do miejsca na stronie-->
+                    <li><a class="menu"  href="javascript:void(0)"> Strony uczelniane </a> <!-- odnośnik do miejsca na stronie-->
                     <ul class="podmenu">
                         <li><a href="javascript:void(0)" onclick="scrollToElement('square1')">AGH</a></li>
                         <li><a href="javascript:void(0)" onclick="scrollToElement('square1')">Wydział GGIOŚ</a></li>
                         <li><a href="javascript:void(0)" onclick="scrollToElement('square1')">USOS</a></li>
-                        <li><a href="javascript:void(0)" onclick="scrollToElement('square1')">URSS</a></li>
+                        <li><a href="javascript:void(0)" onclick="scrollToElement('square1')">Sylabus IAD</a></li>
                     </ul>
                 </li>
                     <li><a class="menu" href="../Plan_zajec/plan_zajec.html">Plan zajęć</a>
@@ -63,14 +63,14 @@
                     <div class="color">            
                         <div class="title">
                             <span class="text-item1">Aktualności</span>
-                            <span class="text-item2">Na dzień:  <span id="currentDateContainer">
+                            <span class="text-item2">Na dzień:  26.02.2024<!--<span id="currentDateContainer">-->
                         </div>  
                         <div class="news">   
                             <div class="cover">
                                 <button id="scroll-left" class="icon" onclick="scrollLeft2()"><i class="fa-solid fa-angles-left"></i></i></button>
                             
                                 <div class="scroll-text" id="bannerText">
-                                    <div class="child">Starostka roku kolejny dzień ma dość ustalania spraw związanych z sesją
+                                    <div class="child">Starostka roku kolejny dzień ma dość studiów
                                         <p class="ps">
                                             (Dajcie mi urlop)
                                         </p>
@@ -78,12 +78,12 @@
                                             (ale płatny)
                                         </p>
                                         </div>
-                                    <div class="child">W zespole Teams dr Chuchro dodała pdf z zadaniami do kolokwium</div>
-                                    <div class="child">W zespole Teams znajdują się wyniki z Baz Danych dla grup Pana Ciureja</div>
-                                    <div class="child">Poprawa z teorii i praktyki z TSD w tym samym dniu 29.01</div>
-                                    <div class="child">Zaliczenie z Unixa przeniesione o tydzień (tj. 30.01 i 01.02)</div>
-                                    <div class="child">Egzamin u prof. Leśniaka odbędzie się zdalnie!</div>
-                                    <div class="child">Dr Cianciara (w końcu) wstawił wyniki z kolokwium na teams</div>
+                                    <div class="child"></div>
+                                    <div class="child"></div>
+                                    <div class="child"></div>
+                                    <div class="child"></div>
+                                    <div class="child"></div>
+                                    <div class="child"></div>
                                 </div>
                                 <button id="scroll-right" class="icon" onclick="scrollRight()"><i class="fa-solid fa-angles-right"></i></button>
                             </div>
@@ -91,19 +91,28 @@
                         </div>
                         <div id="dots" class="dots-container"></div>
                 
-                        <article class="More" onclick="scrollToElement('faq')">
-                            <p>Masz pytania?</p>
-                            <p>Dowiedz się więcej!</p>
-                        </article>
+                        <div class="Mores">
+                            <article class="More" onclick="scrollToElement('faq')">
+                                <p>Masz pytania?</p>
+                                <p>Dowiedz się więcej!</p>
+                            </article>
+                        
+                            <article class="More" id='map'>
+                                <p>Szukasz mapki grillowni?</p>
+                                <p>Kliknij tutaj!</p>
+                            </article>
+                        </div>
+                        
                     </div>
                 </div>
                 
         <!--FAQ-->
         <div class="middle">
-            <div class="questions" id="faq">
+            <div id="faq">.</div>
+            <div class="questions">
                 <div class="left">
                     <div class="FAQ"><h1>FAQ</h1><br>Czyli Najczęściej Zadawane Pytania</br>
-                    <span class="star">*Najczęściej zadawane w ostatnim czasie.<br>**Treść sekcji powstała w oparciu o autentyczne pytania studentów IAD na przestrzeni ostatnich 2 lat.</span></div>
+                    <span class="star">*Najczęściej zadawane w ostatnim czasie.</span></div>
                     <img src="../Glowna/photos/logo.png" alt="">
                 </div>
                 <div class="right">
@@ -111,7 +120,7 @@
                             <input type="checkbox" name="acc" id="acc1">
                             <label for="acc1">
                                 <h2>01</h2>
-                                <h3>Kiedy odbędzie się *wstaw dowolną nazwę przedmiotu* ?</h3>
+                                <h3>Kiedy odbędzie się zaliczenie/egzamin z *nazwa przedmiotu* ?</h3>
                             </label>
                             <div class="content1">
                                 <p>Wszystkie terminy egzaminów i zaliczeń, jaki i miejsce ich odbycia się, znajdziecie w zakładce "Sesja zaliczeniowa".</p>
@@ -121,11 +130,11 @@
                             <input type="checkbox" name="acc" id="acc2">
                             <label for="acc2">
                                 <h2>02</h2>
-                                <h3>Jak będą wyglądać zapisy na II termin kolokwium u dr Oleksika?</h3>
+                                <h3>Jaki jest mail/Kiedy ma konsultacje *nazwisko prowadzącego*?</h3>
                             </label>
                             <div class="content1">
-                                <p>Najpierw będzie trzeba uzupełnić ankietę, w której pytania będą dotyczyć jakie moduły dana osoba musi poprawić. 
-                                    Na podstawie zebranych danych zostanie opracowany algorytm przypisywania studentów do danej grupy poprawkowej.
+                                <p>Wszystkich prowadzących oraz ich konsultacje znajdziecie w zakładce "Baza kontaktowa". 
+                                Jeśli danego prowadzącego tam nie ma, to znaczy, że sama nie posiadam takiej wiedzy.
                                 </p>
                             </div>  
                         </div>
@@ -133,11 +142,11 @@
                             <input type="checkbox" name="acc" id="acc3">
                             <label for="acc3">
                                 <h2>03</h2>
-                                <h3>Czy na zaliczeniu z Programowania w R będzie można korzystać z swoich laptopów?</h3>
+                                <h3>Czy możemy zrobić *data* zdalne?</h3>
                             </label>
                             <div class="content1">
-                                <p>W celu zapewnienia wszystkim równych szans, decyzją dr Chuchro zaliczenie pisane będzie na komputerach stacjonarnych.
-                                    Komputery zostały odpowiednio przygotowane do tego zadania.
+                                <p>Jeśli jest sposobna sytuacja do przeprowadzania zdalnych, zawsze pytam, około tydzień wcześniej, prowadzących.
+                                O aktualizację sytuacji należy czekać na informację na grupie kierunkowej lub przejrzeć sekcję "Aktualności".
                                 </p>
                             </div>
                         </div>
@@ -145,7 +154,7 @@
                             <input type="checkbox" name="acc" id="acc4">
                             <label for="acc4">
                                 <h2>04</h2>
-                                <h3>Kiedy będą wyniki z *wstaw dowolną nazwę przedmiotu*</h3>
+                                <h3>Kiedy będą wyniki z *nazwa przedmiotu*?</h3>
                             </label>
                             <div class="content1">
                                 <p>Będą to będą.</p>
@@ -155,21 +164,27 @@
                             <input type="checkbox" name="acc" id="acc5">
                             <label for="acc5">
                                 <h2>05</h2>
-                                <h3>Z kim się skontaktować w razie wątpliwości dotyczących pochodzenia pomocy naukowej z grupy kierunkowej?</h3>
+                                <h3>Ile jest nieobecności z *nazwa przedmiotu*?</h3>
                             </label>
                             <div class="content1">
-                                <p>Zawsze z autorem źródła.<br>Ewentualnie ze starostką roku.<br>Proszę nie działać na własną rękę.</p>
+                                <p><!--Z wszystkim przedmiotów w tym semestrze jest po 1 nieobecności. Każdy przedmiot można odrobić w innej grupie.--></p>
                             </div>
                         </div>
                         <div class="tab">
                             <input type="checkbox" name="acc" id="acc6">
                             <label for="acc6">
                                 <h2>06</h2>
-                                <h3>Czy można przełożyć termin kolokwium na następny semestr?</h3>
+                        <!--      <h3>Czy można przełożyć termin kolokwium na następny semestr?</h3>
                             </label>
                             <div class="content1">
                                 <p>Jest taka możliwość, nazywa się to "warunek".
                                     <br>Co więcej, można przełożyć więcej niż jeden przedmiot na następne semestry.<br>Wtedy nazywa się to "urlop dziekański".</p>
+                            </div>
+                        -->  
+                                <h3>Czy *to* zdjęcie zostało zrobione legalnie?</h3>
+                            </label>
+                            <div class="content1">
+                                <p>Na 99% nie.</p>
                             </div>
                         </div>
                 </div>
@@ -207,16 +222,16 @@
                 
                     <div class="square">
                         <div class="image-container">
-                            <img src="../Glowna/photos/urss.jpg" alt="">
+                            <img src="../Glowna/photos/sylabus.jpg" alt="">
                         </div>
-                        <h3>URSS</h3>
-                        <p class="link" onclick="redirectToPage('https://samorzad.agh.edu.pl')">Przejdź do strony</p>
+                        <h3>Sylabus IAD</h3>
+                        <p class="link" onclick="redirectToPage('https://sylabusy.agh.edu.pl/pl/1/2/18/1/4/6/24')">Przejdź do strony</p>
                     </div>
                 </div>
                 <div  id="elem1"></div>
         </div>
 
-                <!--O nas-->
+              <!--O nas
                 <div class="about"> 
                     <div class="we">
                         <p>O nas</p>
@@ -247,7 +262,7 @@
                   
 
 
-                <!-- Kontakt -->
+                Kontakt
                 <div class="contact" id="elem2">
                 <section class="contact-section">
                     <div class="container">
@@ -268,11 +283,11 @@
                 </section>
             </div>
 
-            </div>
+            </div>  -->
 
                     <!--Stopka-->
                     <footer>
-                        <p> Kraków 2023 </p>
+                        <p> Kraków 2024 </p>
                         <p> Miasteczko Studenckie AGH </p>
                     </footer>
             </div>

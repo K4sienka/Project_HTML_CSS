@@ -9,7 +9,7 @@ body{
 }
 
 .wrapper {
-  background: linear-gradient(to left top, #f7f7f7, #edd3f7);
+  background: linear-gradient(to left top, #f7f7f7, #eac2fa);
 }
 
 h1 {
@@ -171,12 +171,12 @@ ul li a:hover /*podswietlanie linkow w podmenu*/
 }
   
 .name {
-  font-size: 2.2rem;
-  margin-top: 1rem;
+  font-size: 2rem;
+  margin-top: 2.5rem;
 }
   
 .title {
-  font-size: 1.6rem;
+  font-size: 1.3rem;
   font-weight: 400;
   margin: 1rem 0 0 0;
   color: #ba85cc;
