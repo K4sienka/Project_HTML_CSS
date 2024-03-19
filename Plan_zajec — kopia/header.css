@@ -58,7 +58,7 @@ nav ul{
     font-family: 'antic';
 }
 
- ul li{
+nav ul li{
     flex-grow: 1;
     display: inline-block;
     position: relative;
@@ -75,7 +75,7 @@ nav ul{
     transition: background-color 0.3s;
 }
 
-ul li ul.podmenu{
+nav ul li ul.podmenu{
     position: absolute;
     display: none;
     width:100%;
@@ -83,17 +83,17 @@ ul li ul.podmenu{
     z-index: 2; /* Ustaw wyższy indeks warstwy */
 }
 
- ul li ul.podmenu li {
+nav ul li ul.podmenu li {
     width: 100%;
 }
 
-ul.podmenu li a {
+nav ul.podmenu li a {
     display: block;
     text-align: center; /* Wyśrodkowanie tekstu na osi poziomej */
     text-decoration: none;
 }
 
-ul li:hover ul.podmenu{
+nav ul li:hover ul.podmenu{
     display: block;
     z-index: 2; /* Ustaw wyższy indeks warstwy */
 }
@@ -132,20 +132,20 @@ ul li a:hover /*podswietlanie linkow w podmenu*/
         letter-spacing: 0.1em;
     }
 
-    ul li a {
+     ul li a {
         padding: 3px 6px;
         font-size: 0.5rem;
     }
 
-    ul li ul.podmenu {
+    nav  ul li ul.podmenu {
         width: 100%;
     }
 
-    ul li ul.podmenu a {
+    nav ul li ul.podmenu a {
         font-size: 0.4rem;
     }
 
-    ul.podmenu li a {
+    nav ul.podmenu li a {
         padding: 15px 0;
     }
 }
@@ -160,20 +160,20 @@ ul li a:hover /*podswietlanie linkow w podmenu*/
         letter-spacing: 0.2rem;
     }
 
-    ul li a {
+     ul li a {
         padding: 0.8rem 0.5rem;
         font-size: 0.8rem;
     }
 
-    ul li ul.podmenu {
+    nav ul li ul.podmenu {
         width: 100%;
     }
 
-    ul li ul.podmenu a {
+    nav ul li ul.podmenu a {
         font-size: 0.6rem;
     }
 
-    ul.podmenu li a {
+    nav ul.podmenu li a {
         padding: 20px 0;
     }
     
@@ -193,15 +193,15 @@ ul li a:hover /*podswietlanie linkow w podmenu*/
         font-size: 1rem;
     }
 
-    ul li ul.podmenu {
+    nav ul li ul.podmenu {
         width: 100%;
     }
 
-    ul li ul.podmenu a {
+    nav  ul li ul.podmenu a {
         font-size: 0.8rem;
     }
 
-    ul.podmenu li a {
+    nav ul.podmenu li a {
         padding: 15px 0;
     }
 
