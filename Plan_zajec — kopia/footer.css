@@ -1,0 +1,73 @@
+
+/* ---------------------------------  stopka -----------------------------------------------*/
+
+footer
+{
+    width: 100%;
+   position:relative;
+   /*bottom: 0;
+   right: 0;*/
+   margin-top: 2vh;
+    background-color: #f0f0f0;                  /* Kolor wypelnienia tla */
+   padding: 10px;                                      /* Dodatkowy odstep od tekstu do obramowania */
+   text-align: center;                                 /* Wysrodkowanie tekstu w poziomie */
+   letter-spacing: 8px;                           /*odstepy miedzy literami*/
+   opacity: 0.9;
+   padding: 30px 0;
+}
+
+
+
+@font-face {
+     font-family: 'antic';
+     src: url("../Glowna/fonts/antic.ttf") format('truetype');
+ }
+
+
+
+ @media only screen and (min-width: 350px) and (max-width: 480px) 
+ {
+
+    footer
+    {
+    width: 100%;
+    position:relative;
+    /*bottom: 0;
+    right: 0;*/
+    margin-top: 2vh;
+    background-color: #f0f0f0;                  /* Kolor wypelnienia tla */
+    padding: 10px;                                      /* Dodatkowy odstep od tekstu do obramowania */
+    text-align: center;                                 /* Wysrodkowanie tekstu w poziomie */
+    letter-spacing: 5px;                           /*odstepy miedzy literami*/
+    opacity: 0.9;
+    padding: 30px 0;
+    font-size: 15px;
+    }
+
+  
+}
+
+
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+
+
+    footer
+    {
+    width: 100%;
+    position:relative;
+    /*bottom: 0;
+    right: 0;*/
+    margin-top: 2vh;
+    background-color: #f0f0f0;                  /* Kolor wypelnienia tla */
+    padding: 14px;                                      /* Dodatkowy odstep od tekstu do obramowania */
+    text-align: center;                                 /* Wysrodkowanie tekstu w poziomie */
+    letter-spacing: 6px;                           /*odstepy miedzy literami*/
+    opacity: 0.9;
+    padding: 30px 0;
+    font-size: 16px;
+    }
+
+
+
+}
+ 

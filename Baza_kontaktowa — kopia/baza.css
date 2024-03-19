@@ -1,0 +1,284 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+ 
+.top{
+    position: fixed;
+    margin:  0 0 0 0px;
+    width: 100%;
+    z-index: 100;
+}
+
+body{
+    height: 100vh;
+     width: 100%;   
+     background-color: white;
+     transition: all 0.3s ease;
+}
+
+.wrapper {
+    display: flex ;
+    flex: 1;
+    flex-direction: column;
+    font-size: 24px;
+    height: 100vh;
+
+    
+}
+
+
+h1 {
+    display: flex;
+    justify-content: center; /* Wyśrodkowanie w poziomie */
+    align-items: center; /* Wyśrodkowanie w pionie */
+    font-size: 4rem;
+    letter-spacing: 1rem;
+    -webkit-background-clip: text;
+    color: white;
+     background-clip: text;
+}
+    
+
+
+header{
+    
+    justify-content: center; /* Wyśrodkowanie w poziomie */
+    align-items: center; /* Wyśrodkowanie w pionie */
+     padding: 1rem;
+     background-color: rgba(0, 0, 0, 0.85);
+     width: 100%;
+     
+}
+
+.content {
+    position: relative;
+}
+
+
+/* ------------------------- menu główne ---------------------- */
+
+.fixed_menu{
+    width:100%;
+}
+
+
+nav ul{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    background-color: #000000;
+    white-space: wrap;
+    font-family: 'antic';
+}
+
+nav ul li{
+    flex-grow: 1;
+    display: inline-block;
+    position: relative;
+}
+
+nav ul li a{
+    width: 100%;
+    display: block;
+    padding: 1.5rem 3rem;
+    font-size: 1em;
+    color: #FFF;
+    text-decoration: none;
+    text-align: center;
+    transition: background-color 0.3s;
+    
+}
+
+nav ul li ul.podmenu{
+    position: absolute;
+    display: none;
+    width:100%;
+    align-items: center; 
+    z-index: 2;
+}
+
+nav ul li ul.podmenu li {
+    width: 100%;
+}
+
+nav ul.podmenu li a {
+    width: 100% ;
+    display: block;
+    text-align: center; /* Wyśrodkowanie tekstu w poziomie */
+    text-decoration: none;
+    
+}
+
+nav ul li:hover ul.podmenu{
+    display: block;
+    z-index: 2; 
+}
+
+nav a:hover,a.menu:hover{
+     background-color: #9962ac ;  /*podświetlenie przy najechaniu na element */
+}
+
+nav ul li.active a,
+nav ul li a.active {
+    background-color: #884E9C;
+}
+
+nav ul li a:hover /*podswietlanie linkow w podmenu*/
+{
+    background: #489a93;
+}
+
+/* -------------- bottom ------------------------- */
+
+#odstep{
+
+        height: 15em;
+    
+    
+}
+
+/* do responsywności*/
+.bottom{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: auto 0;
+}
+
+
+
+
+
+/* przyciski */
+
+.hideButton {
+    margin-bottom: 1.8em;
+    min-width: 350px; /* szerokosć przycisku*/
+    padding: 1em;
+    background-color: #ad84ba;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    text-align: center;
+}
+
+.przyciski {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1em; /*odstęp między przyciskami */
+    max-width: 600px; /* szerokość przycisków i marginesów razem */
+    margin: 0 auto; /* Wyśrodkowanie  */
+}
+/*
+
+
+/* nie ruszać  */
+.panel {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.9); /* Przezroczyste białe tło */
+    z-index: 9999;
+}
+
+
+.tresc_panelu {
+    display: none;
+}
+
+
+.panel-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 45px;
+    border: 1px solid #ccc;
+    width:50% ;
+    height: 65%;
+    background-color: rgba(109, 173, 168,0.6);
+}
+
+.closeButton {
+    /* Styl guzika zamknięcia */
+    margin-top: 2.5em;
+    padding: 15px 25px;
+    background-color: #884E9C;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 0.7em;
+}
+
+.note{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    background-color: rgba(109, 173, 168,0.7);
+    font-size: 18px;
+    
+}
+
+.tresc_panelu{
+ 
+    width:100% ;
+    height: 100%;
+}
+
+table{
+    justify-content: center;
+    align-items: center;
+}
+
+td{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+ table {
+    border-spacing: 0 0.45em; /*odstęp pionowy między wierszami */
+}
+
+.first_row{
+    
+    font-size: 1.2em;
+}
+
+/* ---------------------------------  stopka -----------------------------------------------*/
+
+footer
+{
+  width: 100%;
+   position:fixed;
+   
+   bottom: 0;
+   right: 0;
+    margin-top: 4em;
+    /*margin-bottom: 0px;*/
+    background-color: #f0f0f0;                
+   padding: 10px;                                   /* Dodatkowy odstep od tekstu do obramowania */
+   text-align: center;                                 /* Wysrodkowanie tekstu w poziomie */
+   letter-spacing: 8px;                           /*odstepy miedzy literami*/
+   opacity: 0.7;
+   font-size: 1rem;
+   
+}
+
+@font-face {
+    font-family: 'antic';
+    src: url("../Glowna/fonts/antic.ttf") format('truetype');
+}
+
+

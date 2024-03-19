@@ -1,0 +1,470 @@
+
+
+.wrapper{
+    /*height: 100rem;*/
+   /* padding: 0 5vw ; */
+   
+   background-color: rgba(255, 255, 255, 0.5);
+   text-align: center;
+   font-size: 24px;
+   flex:1;
+   
+}
+
+#odstep{
+    height: 60px;
+}
+
+.sections{
+    display: flex;
+
+    width: 100%;
+
+}
+
+
+
+/*boczne menu*/
+
+
+.side_menu ul{
+
+    background-color: white;
+
+}
+
+.left{
+  
+    width: 20% ;
+   position: fixed;
+   top: 30%;
+   
+}
+
+
+.side_menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around; /* Rozłożenie elementów równomiernie */
+    align-items: center; /* Wyśrodkowanie poziome*/
+    width: 100%; /* Zapełnienie dostępnego miejsca */
+}
+
+.side_menu  li {
+
+    list-style: none;             
+    text-decoration: none;        
+    padding: 10px 40px ;   /*ustawienie wewnętrznych odstępów: g,p,d,l*/
+    position: relative;
+}
+
+.side_menu  li:hover {
+    /*określa sposób zachodzenia zmian podczas najechania*/
+    transition: border-radius 1s ease, padding-left 1s ease,  padding-right 1s ease ;
+}
+
+
+.side_menu  li a{
+    display: block;               /*ustawienie elementów jako bloki */
+    text-decoration: none;        /* usunięcie podkreślenia*/
+    padding: 0.7vh 4vw;                 /*wewnętrzne odstępy*/
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+}
+
+.side_menu li a:hover{
+    background-color: #9E69AF ;  /*podświetlenie przy najechaniu na element */
+    padding:7 50px; /* Zwiększenie odstępu po najechaniu */
+    border-radius: 100px;
+    transition: border-radius 1.5s ease, padding-left 1.5s ease,  padding-right 1.5s ease ;   
+}
+
+.side_menu .active{
+
+    background-color: #7a0e9e; /*podświetlenie podstrony aktualnej w użyciu*/
+}
+
+.side_menu main.active{
+    background-color: #7a0e9e;
+}
+
+
+
+
+
+/*************************************************/
+
+.read_me{
+    display: none;
+}
+
+
+.right{
+   /* flex:10;*/
+   margin-left: 15%;
+    width: 80%;
+   
+}
+
+
+.right h3{
+
+    margin-bottom: 30px;
+}
+
+
+.right .box{
+    align-items: center;
+    
+    width: 100%;
+    padding: 80px;
+
+}
+
+
+/*  Kliknij w celu powiększenia */
+
+.img_plan.zoomed {
+    transform: scale(1.45); /* Przykładowy efekt powiększenia */
+    z-index: 2000; /* Aby upewnić się, że powiększony obrazek jest na wierzchu */
+    position: relative; /* Potrzebne, jeśli używamy z-index */
+   
+}
+
+.img_plan{
+    width:100%;
+    height: auto;
+    position: relative;
+
+}
+
+.img_plan img{
+    width: 80%;
+}
+
+.read_me {
+    position: absolute;
+    top: 90%;
+    left: 75%;
+    transform: translate(-50%, -50%);
+    color: rgb(0, 0, 0);
+    background-color: rgba(217, 180, 235, 0.8);
+    padding: 15px;
+    text-align: right;
+    border-radius: 10px;
+}
+
+.read_me:hover
+{
+     opacity: 0;
+     transition: opacity 1.5s ease
+}
+
+/* Styl dla odwrócenia i skalowania zdjęcia na telefonach */
+ .mobile-zoomed{
+    display: none;
+}
+
+.mobile-zoomed-on{
+    display: block;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(90deg);
+    background-color: white;
+    width: 100vh;
+    height: 100vw;
+    z-index: 30000; /* Zapewnia, że zdjęcie będzie na wierzchu */
+   
+}
+
+
+
+
+
+
+/* -------------------------- guzik ----------------------------------------*/
+
+.button-wrapper {
+    text-align: center;
+   margin-top: 20px; /* Dodaj odstęp między zdjęciami a guzikiem */
+}
+
+button {
+    margin-top:1vh ;
+    padding: 10px 30px;
+    background-color: #7a0e9e;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    text-align:center;
+    cursor: pointer;
+    transition: background-color 0.3s ease, padding-left 0.5s ease,  padding-right 0.5s ease, font-size 0.5s ease ;
+    position: relative; /* Dodane */
+}
+
+button:hover {
+    padding-left: 40px; /* Zwiększenie odstępu po najechaniu */
+    padding-right: 40px;
+    background-color: #9E69AF;
+    font-size: 14px;
+    
+}
+
+
+
+
+
+
+.data_tydzien
+{
+     padding: 1rem 0;
+     display: none;
+}
+
+.data_tydzien span
+{
+     font-size: 1rem;
+}
+
+
+
+
+
+@media only screen and (min-width: 350px) and (max-width: 480px) 
+{
+
+    #odstep{
+        height: 0px;
+    }
+   .left .side_menu{
+    display: none;
+   }
+   .duzy_ekran{
+    display: block;
+   }
+
+
+   .schedule_menu .side_menu{
+
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 0 0px;
+   }
+
+   .schedule_menu .side_menu li{
+
+    padding: 10px 5px;
+    
+   }
+
+   
+   .schedule_menu .side_menu li a{
+
+    padding: 10px 0px;
+    
+   }
+
+   h3{
+    font-size: 20px;
+   }
+
+    #ostatni a{
+        margin: 0 30% 0 30%;
+        width: 40%;
+    }
+
+
+
+   .right{
+    /* flex:10;*/
+    margin-left: 0%;
+     width: 100%;
+    }
+
+    .right .box{
+
+       padding:40px;
+    }
+
+
+  
+   
+
+    .read_me{
+        display: none;
+    }
+
+
+    button{
+        font-size: 12px;
+        padding: 10px 20px;
+    }
+ 
+}
+
+
+
+
+@media only screen and (min-width: 481px) and (max-width: 768px) 
+{
+    
+    #odstep{
+        height: 120px;
+    }
+   .left .side_menu{
+     display: none;
+   }
+   .duzy_ekran{
+        display: block;
+   }
+
+
+   .schedule_menu .side_menu{
+
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 0 0px;
+   }
+
+   .schedule_menu .side_menu li{
+
+    padding: 10px 7px;
+    
+   }
+
+   
+   .schedule_menu .side_menu li a{
+
+        padding: 10px 3px;
+
+   }
+
+
+    #ostatni a{
+        margin: 0 30% 0 30%;
+        width: 40%;
+    }
+
+
+
+    h3{
+        font-size: 27px;
+    }
+
+
+
+    .right{
+        /* flex:10;*/
+        margin-left: 0%;
+        width: 100%;
+    }
+
+    .right .box{
+
+        padding:50px;
+        
+
+    }
+
+
+        .read_me{
+            display: none;
+        }
+
+
+        button{
+            font-size: 18px;
+            padding: 10px 20px;
+        }
+ 
+    
+}
+
+
+@media only screen and (min-width: 769px) and (max-width: 1340px) 
+{
+    
+    #odstep{
+        height: 220px;
+    }
+   .left .side_menu{
+     display: none;
+   }
+   .duzy_ekran{
+        display: block;
+   }
+
+
+   .schedule_menu .side_menu{
+
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 0 0px;
+   }
+
+   .schedule_menu .side_menu li{
+
+    padding: 10px 7px;
+    
+   }
+
+   
+   .schedule_menu .side_menu li a{
+
+        padding: 10px 3px;
+
+   }
+
+
+    #ostatni a{
+        margin: 0 30% 0 30%;
+        width: 40%;
+    }
+
+
+
+
+
+   h3{
+    font-size: 27px;
+   }
+
+
+
+   .right{
+    /* flex:10;*/
+    margin-left: 0%;
+     width: 100%;
+    }
+
+    .right .box{
+       
+    }
+
+
+    .read_me{
+        display: none;
+    }
+
+
+    button{
+        font-size: 18px;
+        padding: 10px 20px;
+    }
+    
+    
+}
+
+@media only screen and (min-width: 1341px) and (max-width: 1450px){
+
+
+.left{
+
+    top:20%;
+}
+
+} 
