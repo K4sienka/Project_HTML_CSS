@@ -333,7 +333,7 @@ div.sections{
 .box .img_plan_1 img,
 .box .img_plan_2 img
 {
-     max-width: fit-content;
+     
      width:100%;
      height: auto;
      display: inline-block;

@@ -5,11 +5,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, min-width=350">
     <title>Baza kontaktowa</title>
-    <link rel="stylesheet" href="egzamin_glowny.css">
-    <link rel="stylesheet" href="baza.css">
-    <link rel="stylesheet" href="baza_responsywnosc.css">
+    
+   <link rel="stylesheet" href="middle_baza.css"> 
+    
+    <link rel="stylesheet" href="../Plan_zajec/footer.css"> 
+    <link rel="stylesheet" href="../Plan_zajec/header.css"> 
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="kontakt.js"></script>
+    <script src="../Plan_zajec/ToSection.js"></script>
+    <script src="../Plan_zajec/Menu.js"></script>
     
 </head>
 
@@ -18,515 +23,253 @@
         <div class="background">
             <div class="top">
                 <header>
-                    <h1>Przewodnik po IiAD</h1>
-                </header>
+                       
 
-                <nav class="fixed_menu">
-                    <!--Menu główne-->
-                    <ul>
-                        <li><a class="menu" href="../Glowna/StronaGlowna.html">Strona główna</a></li>
-                        <li><a class="menu active" href="../Baza_kontaktowa/baza_kontaktowa.html">Baza kontaktowa</a></li>
-                        <li><a class="menu" href="../Zarzad/zarzad.html">Zarząd kierunku</a></li>
-                        <li><a class="menu ">Sesja zaliczeniowa</a>
-                            <ul class="podmenu">
-                                <li><a href="../Sesja/Egzaminy/egzaminy.html">Egzaminy</a></li>
-                                <li><a href="https://calendar.google.com/calendar/embed?src=216dd0a1057c0b1ea7f0e2ff1a32e50deabc0d283c44736a18a4c4252444efda%40group.calendar.google.com&ctz=Europe%2FWarsaw">Zaliczenia</a></li>
+                   
+
+                    <nav>
+                         <!--Menu główne-->
+                         <ul class="main_menu">
+                            <li><a class="menu" href="../Glowna/StronaGlowna.html">Strona główna</a></li>
+                        
+                            <li><a class="menu active" href="../Baza_kontaktowa/baza_kontaktowa.html"> Baza kontaktowa </a></li>
+
+                            <li><a class="menu" href="../Zarzad/zarzad.html"> Zarząd kierunku </a></li>
+
+                            <li><a class="menu " href="#"> Sesja </a>
+                                <ul class="podmenu">
+                                    <li><a href="../Sesja/Egzaminy/egzaminy.html">Egzaminy</a></li>
+                                    <li><a href="https://calendar.google.com/calendar/embed?src=216dd0a1057c0b1ea7f0e2ff1a32e50deabc0d283c44736a18a4c4252444efda%40group.calendar.google.com&ctz=Europe%2FWarsawSesja/Zaliczenia/zaliczenia.html">Zaliczenia</a></li>
+
+                                </ul>
+                            </li>
+                            
+                            <li><a class="menu" href="../Plan_zajec/plan_zajec.html"> Plan zajęć </a>
+                            </li>
+                        </ul>
+
+
+                        <div class="przycisk_menu" onclick="Rozwin()">
+                            <span>☰</span>
+                        </div>
+
+                        <div class="menu_rozwijane">
+
+                            <li><a class="menu" href="../index.html">Strona główna</a></li>
+                        
+                            <li class="active" ><a class="menu" href="../Baza_kontaktowa/baza_kontaktowa.html"> Baza kontaktowa </a></li>
+
+                            <li><a class="menu" href="../Zarzad/zarzad.html"> Zarząd kierunku </a></li>
+
+                            <li><a class="menu " href="../Sesja/Egzaminy/egzaminy.html"> Sesja </a>
+                            
+                            <li><a class="menu" href="../Plan_zajec/plan_zajec.html"> Plan zajęć </a>
+                            </li>
+        
+                        </div>
+                    </nav>
+
+                    <div class="data_tydzien">
+
+                        <span id="resultSpan"></span>
+                    </div>
+
+
+                    <section class="schedule_menu duzy_ekran">
+                        <ul class="side_menu">
+                            
+                           
+                            <li><a onclick="goToSection('I')" > Grupa I </a></li>
+                            <li><a onclick="goToSection('II')" > Grupa II</a></li>
+                            <li><a onclick="goToSection('III')" > Grupa III</a></li>
+                            <li><a onclick="goToSection('IV')" > Grupa IV</a></li>
+                            <li><a onclick="goToSection('V')" > Grupa V</a></li>
+                            <li><a onclick="goToSection('VI')" > Grupa VI</a></li>
+                            
+                        </ul>
+
+                        <div class="ostatni">
+
+                            <ul class="side_menu" id="ostatni">
+                                
+                            
+                            
+                                <li><a onclick="goToSection('O')" > Ogólny</a></li>
+
                             </ul>
-                        </li>
-                        <li><a class="menu " href="../Plan_zajec/plan_zajec.html">Plan zajęć</a></li>
-                    </ul>
-                </nav>
+
+                        </div>
+
+                    
+
+                    </section>
+
+                </header>
             </div>
 
             <div class="bottom">
 
                 <div id="odstep"></div>
 
-                <div class="przyciski">
+                <section class="left">
+                    <ul class="side_menu">
+                                
+                        <li><a  onclick="goToSection('Sieci_komputerowe')" >Sieci komputerowe</a></li>
+                        <li><a  onclick="goToSection('Python')">Programowanie w języku Python</a></li>
+                        <li><a  onclick="goToSection('Grafika')">Grafika komputerowa 3D</a></li>
+                        <li><a  onclick="goToSection('Statystyka')" >Statystyka matemtyczna</a></li>
+                        <li><a  onclick="goToSection('Modelowanie')">Modelowanie statystyczne w naukach o Ziemi</a></li>
+                        <li><a  onclick="goToSection('Metody_numeryczne')" > Metody numeryczne</a></li>
+                       
 
-                    <div class="Programowanie_o rownosc" >
-                        <div class="button">
-                            <button class="hideButton" onclick="togglePanel('programowanie_o')">Programowanie Obiektowe</button>
-                        </div>
+                    </ul>
+
+
+
+
+                </section>
+
+                <section class="right">
+
+                    <div class="consultation-hours">
+                   
+                        <br>
+                        <ul class="subject" id="Sieci_komputerowe">
+                            <li>
+                                <h2>Sieci komputerowe</h2>
+                                <br>
+                                
+                
+                                <div class="professor-name">dr hab. inż. Mariusz Młynarczuk</div>
+                                <div class="hours">e-mail: mlynar@agh.edu.pl </div>
+                                <div class="hours">miejsce: A0 315</div>
+                                <div class="hours">Wednesday: 14:00 - 16:00</div>
+                                <br>
+                            </li>
+                            <li>
+                                <br>
+                                <div class="professor-name">dr inż. Aleksander Cianciara</div>
+                                <div class="hours">e-mail: alexc@agh.edu.pl </div>
+                                <div class="hours">miejsce: A0 349</div>
+                                <div class="hours">Wednesday: 14:00 - 16:00</div>
+                                <br>
+                            </li>
+                            <!-- Add more professors and hours as needed -->
+                        </ul>
+    
+                        <br> 
+    
+    
+                        <ul class="subject" id="Python">
+                            <li>
+                                <h2>Programowanie w języku Python</h2>
+                                <br>
+                                
+                
+                                <div class="professor-name">dr Paweł Oleksik</div>
+                                <div class="hours">e-mail: oleksik@agh.edu.pl </div>
+                                <div class="hours">miejsce: A0 349</div>
+                                <div class="hours">Wednesday: 14:00 - 16:00</div>
+                                <br>
+                            </li>
+                           
+                            <!-- Add more professors and hours as needed -->
+                        </ul>
+    
+                        <br> 
+    
+                        <ul class="subject" id="Grafika">
+                            <li>
+                                <h2>Grafika komputerowa 3D</h2>
+                                <br>
+                                
+                
+                                <div class="professor-name">dr inż. Justyna Bała</div>
+                                <div class="hours">e-mail: jbala@agh.edu.pl</div>
+                                <div class="hours">miejsce:</div>
+                                <div class="hours">Wednesday: 14:00 - 16:00</div>
+                                <br>
+                            </li>
+                           
+                            <!-- Add more professors and hours as needed -->
+                        </ul>
+    
+    
+                        <br> 
+    
+                        <ul class="subject" id="Statystyka">
+                            <li>
+                                <h2>Statystyka matematyczna</h2>
+                                <br>
+                                
+                
+                                <div class="professor-name">prof. dr hab. inż. Andrzej Leśniak</div>
+                                <div class="hours">e-mail: lesniak@agh.edu.pl </div>
+                                <div class="hours">miejsce: </div>
+                                <div class="hours">Wednesday: 14:00 - 16:00</div>
+                                <br>
+                            </li>
+                            <li>
+                                <br>
+                                <div class="professor-name">mgr inż. Michał Wilkosz</div>
+                                <div class="hours">e-mail:  </div>
+                                <div class="hours">miejsce: </div>
+                                <div class="hours">Wednesday: </div>
+                                <br>
+                            </li>
+                            <!-- Add more professors and hours as needed -->
+                        </ul>
+    
+    
+    
+    
+    
+                        <br> 
+    
+                        <ul class="subject" id="Modelowanie">
+                            <li>
+                                <h2>Modelowanie statystyczne w naukach o Ziemi</h2>
+                                <br>
+                                
+                
+                                <div class="professor-name">dr Paweł Oleksik</div>
+                                <div class="hours">e-mail: oleksik@agh.edu.pl </div>
+                                <div class="hours">miejsce: A0 349</div>
+                                <div class="hours">Wednesday: 14:00 - 16:00</div>
+                                <br>
+                            </li>
+                           
+                            <!-- Add more professors and hours as needed -->
+                        </ul>
+                        <br>
+    
+    
+                        <ul class="subject" id="Metody_numeryczne">
+                            <li>
+                                <h2>Metody numeryczne</h2>
+                                <br>
+                                
+                
+                                <div class="professor-name">dr inż. Anna Franczyk</div>
+                                <div class="hours">e-mail:  </div>
+                                <div class="hours">miejsce: </div>
+                                <div class="hours">Wednesday: 14:00 - 16:00</div>
+                                <br>
+                            </li>
+                           
+                            <!-- Add more professors and hours as needed -->
+                        </ul>
                     </div>
+    
+                   
 
-                    <div class="Szyfrowanie rownosc">
-                        <div class="button">
-                            <button class="hideButton" onclick="togglePanel('szyfrowanie')">Szyfrowanie i kompresja danych</button>
-                        </div>
-                    </div>
 
-                    <div class="Linux rownosc">
-                        <div class="button">
-                            <button class="hideButton" onclick="togglePanel('linux')">Przetwarzanie danych w systemie Unix</button>
-                        </div>
-                    </div>
 
-                    <div class="Sygnaly rownosc">
-                        <div class="button">
-                            <button class="hideButton" onclick="togglePanel('sygnaly')">Teoria Sygnałów dyskretnych</button>
-                        </div>
-                    </div>
-                    
-                    <div class="Fizyka rownosc">
-                        <div class="button">
-                            <button class="hideButton" onclick="togglePanel('fizyka')">Laboratorium fizyczne</button>
-                        </div>
-                    </div>
+                </section>
 
-                    <div class="Bazy rownosc">
-                        <div class="button">
-                            <button class="hideButton" onclick="togglePanel('bazy')">Bazy Danych</button>
-                        </div>
-                    </div>
-
-                    <div class="Prog_R rownosc">
-                        <div class="button">
-                            <button class="hideButton" onclick="togglePanel('prog_r')">Programowanie w R i wizualizacja danych</button>
-                        </div>
-                    </div>
-
-                    <div class="Ti rownosc">
-                        <div class="button">
-                            <button class="hideButton" onclick="togglePanel('ti')">Techniki Internetowe</button>
-                        </div>
-                    </div>
-
-                </div>
-
-
-                <!-- Panel -->
-                <div id="panel" class="panel">
-                    <div class="panel-content">
-
-                        <!-- ----------------------------------------------- -->
-
-                        <div class="tresc_panelu programowanie_o">
-                            <div class='note'> 
-
-                                <div class="Onderka">
-
-                                    <table>
-                                        <tbody>
-                                            <tr>
-                                                <td class="first_row"><b> dr Zbigniew Onderka</b></td>
-                                            </tr>
-                                            <tr>
-                                                <td>students.infstos@gmail.com</td>
-                                            </tr>
-                                            <tr>
-                                                <td>A0, 135</td>
-                                            </tr>
-                                            <tr>
-                                                <td>poniedziałek, 10:15</td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                    
-                                </div>
-
-                                <button class="closeButton" onclick="closePanel()">Zamknij panel</button>
-
-                            </div>
-                        </div>
-
-                        <!-- ----------------------------------------------- -->
-
-                        <div class="tresc_panelu szyfrowanie">
-                            <div class='note'> 
-
-                                <div class="Mlynarczuk">
-
-                                    <table>
-                                        <tbody>
-                                            <tr>
-                                                <td class="first_row"><b> dr hab. inż Mariusz Młynarczuk</b></td>
-                                            </tr>
-                                            <tr>
-                                                <td>mlynar@agh.edu.pl</td>
-                                            </tr>
-                                            <tr>
-                                                <td>A0, 315</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Wymagany kontakt w celu ustalenia terminu</td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                    
-
-                                    
-                                </div>
-
-                                <button class="closeButton" onclick="closePanel()">Zamknij panel</button>
-                                
-
-                            </div>
-                        </div>
-
-                         <!-- ----------------------------------------------- -->
-
-                         <div class="tresc_panelu linux">
-                            <div class='note'> 
-                               
-                                <div class="Oleksik" style="margin-bottom: 1.6em;" >
-                                    
-                                        <table>
-                                            <tbody>
-                                                <tr>
-                                                    <td class="first_row"><b> dr Paweł Oleksik</b></td>
-                                                </tr>
-                                                <tr>
-                                                    <td> oleksik@agh.edu.pl</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>A0, 349</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Wymagany kontakt w celu ustalenia terminu</td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-                                
-                                    
-
-                                    
-                                </div>
-                                
-
-
-                                <div class="Cianciara">
-
-                                    <table>
-                                        <tbody>
-                                            <tr>
-                                                <td class="first_row"><b> mgr inż Aleksander Cianciara</b></td>
-                                            </tr>
-                                            <tr>
-                                                <td>alexc@agh.edu.pl</td>
-                                            </tr>
-                                            <tr>
-                                                <td>A0, 349</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Wymagany kontakt w celu ustalenia terminu</td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-
-                                    
-                                    
-                                </div>
-                                <button class="closeButton" onclick="closePanel()">Zamknij panel</button>
-
-                            </div>
-                        </div>
-
-                        <!-- ----------------------------------------------- -->
-
-                        <div class="tresc_panelu sygnaly">
-                            <div class='note'> 
-                               
-                                <div class="Lesniak" style="margin-bottom: 1.6em;">
-
-                                    <table>
-                                        <tbody>
-                                            <tr>
-                                                <td class="first_row"><b> prof. dr. hab. inż. Andrzej Leśniak</b></td>
-                                            </tr>
-                                            <tr>
-                                                <td>lesniak@agh.edu.pl</td>
-                                            </tr>
-                                            <tr>
-                                                <td>A0, 318</td>
-                                            </tr>
-                                            <tr>
-                                                <td>czwartek, 15:30-16:30, domofon nr 5 </td>
-                                            </tr>
-                                        
-                                            <tr>
-                                                <td>Wymagany wcześniejszy kontakt</td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                    
-
-                                    
-                                </div>
-                                
-
-
-                                <div class="Dwornik">
-
-                                    <table>
-                                        <tbody>
-                                            <tr>
-                                                <td class="first_row"><b> dr inż Maciej Dwornik</b></td>
-                                            </tr>
-                                            <tr>
-                                                <td>dwornik@agh.edu.pl</td>
-                                            </tr>
-                                            <tr>
-                                                <td>A0, 350c</td>
-                                            </tr>
-                                            <tr>
-                                                <td>poniedziałek, 13:45-14:45</td>
-                                            </tr>
-                                            <tr>
-                                                <td>dodatkowo czat MS Teams</td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                    
-
-                                    
-                                </div>
-                                <button class="closeButton" onclick="closePanel()">Zamknij panel</button>
-                                
-
-                            </div>
-                        </div>
-
-                         <!-- ----------------------------------------------- -->
-
-                         <div class="tresc_panelu fizyka">
-                            <div class='note'> 
-                               
-                                <div class="Trela" style="margin-bottom: 1.6em;">
-
-                                    <table>
-                                        <tbody>
-                                            <tr>
-                                                <td class="first_row"><b> dr inż Agnieszka Trela-Makowej</b></td>
-                                            </tr>
-                                            <tr>
-                                                <td>agnieszka.trela-makowej@fis.agh.edu.pl</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Wymagany kontakt w celu ustalenia terminu</td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                    
-
-                                    
-                                </div>
-                                
-
-
-                                <div class="Czaplinski" style="margin-bottom: 1.6em;">
-
-                                    <table>
-                                        <tbody>
-                                            <tr>
-                                                <td class="first_row"><b> dr Wilhelm Czapliński</b></td>
-                                            </tr>
-                                            <tr>
-                                                <td>czaplinski@novell.ftj.agh.edu.pl</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Wymagany kontakt w celu ustalenia terminu</td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-
-                                    
-                                </div>
-
-
-                                
-                                <div class="Samek">
-
-                                    <table>
-                                        <tbody>
-                                            <tr>
-                                                <td class="first_row"><b> dr hab. inż. Lucyna Samek</b></td>
-                                            </tr>
-                                            <tr>
-                                                <td>lucyna.samek@fis.agh.edu.pl</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Wymagany kontakt w celu ustalenia terminu</td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                    
-
-                                    
-                                </div>
-                                <button class="closeButton" onclick="closePanel()">Zamknij panel</button>
-                                
-
-                            </div>
-                        </div>
-
-                         <!-- ----------------------------------------------- -->
-
-                         <div class="tresc_panelu bazy">
-                            <div class='note'> 
-                               
-                                <div class="Lupa" style="margin-bottom: 1.6em;">
-
-                                    <table>
-                                        <tbody>
-                                            <tr>
-                                                <td class="first_row"><b> dr inż Michał Lupa</b></td>
-                                            </tr>
-                                            <tr>
-                                                <td>mlupa@agh.edu.pl</td>
-                                            </tr>
-                                           
-                                        </tbody>
-                                    </table>
-                                    
-
-                                    
-                                </div>
-                                
-
-
-                                <div class="Ciurej" style="margin-bottom: 1.6em;">
-
-                                    <table>
-                                        <tbody>
-                                            <tr>
-                                                <td class="first_row"><b> mgr inż. Maciej Ciurej</b></td>
-                                            </tr>
-                                            <tr>
-                                                <td>czat MS Teams</td>
-                                            </tr>
-                                            
-                                        </tbody>
-                                    </table>
-
-                                    
-                                </div>
-
-
-                                
-                                <div class="Staszel">
-
-                                    <table>
-                                        <tbody>
-                                            <tr>
-                                                <td class="first_row"><b> mgr inż. Jakub Staszel</b></td>
-                                            </tr>
-                                            <tr>
-                                                <td>czat MS Teams</td>
-                                            </tr>
-                                           
-                                        </tbody>
-                                    </table>
-                                    
-
-                                    
-                                </div>
-                                <button class="closeButton" onclick="closePanel()">Zamknij panel</button>
-                                
-
-                            </div>
-                        </div>
-
-                        <!-- ----------------------------------------------- -->
-
-                        <div class="tresc_panelu prog_r">
-                            <div class='note'> 
-                               
-                                <div class="Chchro" style="margin-bottom: 1.6em;">
-
-                                    <table>
-                                        <tbody>
-                                            <tr>
-                                                <td class="first_row"><b> dr inż. Monika Chuchro</b></td>
-                                            </tr>
-                                            <tr>
-                                                <td>chuchro@agh.edu.pl</td>
-                                            </tr>
-                                            <tr>
-                                                <td>MS Teams, A0, 315</td>
-                                            </tr>
-                                            <tr>
-                                                <td>piątek, 13:00-14:00 </td>
-                                            </tr>
-                                            <tr>
-                                                <td>W razie chęci konsultacji stacjonarnych, wymagany wcześniejszy kontakt</td>
-                                            </tr>
-                                           
-                                        </tbody>
-                                    </table>
-                                    
-
-                                    
-                                </div>
-                                
-
-
-                                <div class="Adamek">
-
-                                    <table>
-                                        <tbody>
-                                            <tr>
-                                                <td class="first_row"><b> mgr inż. Katarzyna Adamek</b></td>
-                                            </tr>
-                                            <tr>
-                                                <td>kadamek@agh.edu.pl / pani.adamek@gmail.com</td>
-                                            </tr>
-                                            <tr>
-                                                <td>A0, 351</td>
-                                            </tr>
-                                            <tr>
-                                                <td>wtorek 16:30-17:30</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Wymagany wcześniejszy kontakt</td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                    
-
-                                   
-                                </div>
-                                <button class="closeButton" onclick="closePanel()">Zamknij panel</button>
-
-                            </div>
-                        </div>
-
-                         <!-- ----------------------------------------------- -->
-
-                        <div class="tresc_panelu ti">
-                            <div class='note'> 
-
-                                <div class="Mirek">
-
-                                    <table>
-                                        <tbody>
-                                            <tr>
-                                                <td class="first_row"><b> dr Katarzyna Mirek</b></td>
-                                            </tr>
-                                            <tr>
-                                                <td>kmirek@agh.edu.pl</td>
-                                            </tr>
-                                            <tr>
-                                                <td>A0, 319</td>
-                                            </tr>
-                                            <tr>
-                                                <td>wtorek, 10:00-11:00</td>
-                                            </tr>
-                                            
-                                        </tbody>
-                                    </table>
-                                    
-
-                                   
-                                </div>
-                                <button class="closeButton" onclick="closePanel()">Zamknij panel</button>
-                            </div>
-                        </div>
-
-
-
-                    </div>
-                </div>
+                
+                     
+               
 
             </div>
         </div>

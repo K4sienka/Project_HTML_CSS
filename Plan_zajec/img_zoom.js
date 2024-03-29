@@ -1,75 +1,59 @@
-let clicked = false;
-/*// wersja 1
-function Zoom(element) {
-    if (!clicked) {
-        if (element.classList.contains('img_plan_1')) {
-            element.classList.add('zoomed_1');
-            clicked = true;
-        } else if (element.classList.contains('img_plan_2')) {
-            element.classList.add('zoomed_2');
-            clicked = true;
-        }
-    } else {
-        if (element.classList.contains('img_plan_1')) {
-            element.classList.remove('zoomed_1');
-        } else if (element.classList.contains('img_plan_2')) {
-            element.classList.remove('zoomed_2');
-        }
-        clicked = false;
-    }
-}*/
-
-
+/*let clicked = false;
 
 function Zoom(element) {
-
     var screenWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
     if (screenWidth >= 659) {
-            console.log('Funkcja Zoom została wywołana.'); 
-            // Sprawdza, czy już kliknięto element
-            if (!clicked) {
-                // Jeśli nie, sprawdza klasę klikniętego elementu
-                if (element.classList.contains('img_plan_1')) {
-                    // Dodaje klasę zoomed1 dla klikniętego elementu img_plan_1
-                    element.classList.add('zoomed_1');
-                   
-
-                    const imgPlan2 = document.querySelectorAll('.img_plan_2');
-                    imgPlan2.forEach((item) => {
-                        // Dodaje klasę zoom1_2 dla elementów img_plan_2
-                        item.classList.add('zoom1_2');
-                       
-                    });
-                } else if (element.classList.contains('img_plan_2')) {
-                    // Dodaje klasę zoomed2 dla klikniętego elementu img_plan_2
-                    element.classList.add('zoomed_2');
-                   
-                    const imgPlan1 = document.querySelectorAll('.img_plan_1');
-                    imgPlan1.forEach((item) => {
-                        // Dodaje klasę zoom2_1 dla elementów img_plan_1
-                        item.classList.add('zoom2_1');
-                      
-                    });
-                }
-                clicked = true; 
-            } else {
-                // Usuwa dodane klasy zoomed1 i zoomed2
-                const zoomed = document.querySelectorAll('.zoomed_1, .zoomed_2');
-                zoomed.forEach((item) => {
-                    item.classList.remove('zoomed_1', 'zoomed_2');
-                });
-
-                // Usuwa dodane klasy zoom1_2 i zoom2_1
-                const zoomClasses = document.querySelectorAll('.zoom1_2, .zoom2_1');
-                zoomClasses.forEach((item) => {
-                    item.classList.remove('zoom1_2', 'zoom2_1');
-                });
-
-                clicked = false; 
-            }
+        console.log('Funkcja Zoom została wywołana.');
+        // Znajduje element .read_me wewnątrz klikniętego .img_plan
+        const readMeElement = element.querySelector('.read_me');
+        
+        if (element.classList.contains('zoomed')) {
+            // Usuwa klasę zoomed, jeśli element był już powiększony
+            element.classList.remove('zoomed');
+            // Zmienia tekst na "Kliknij w celu powiększenia"
+            if (readMeElement) readMeElement.textContent = "Kliknij w celu powiększenia";
+        } else {
+            // Usuwa klasę zoomed z wszelkich wcześniej powiększonych elementów
+            // i przywraca oryginalny tekst
+            document.querySelectorAll('.img_plan.zoomed').forEach((zoomedElement) => {
+                zoomedElement.classList.remove('zoomed');
+                const innerReadMe = zoomedElement.querySelector('.read_me');
+                if (innerReadMe) innerReadMe.textContent = "Kliknij w celu powiększenia";
+            });
+            // Dodaje klasę zoomed do klikniętego elementu
+            element.classList.add('zoomed');
+            // Zmienia tekst na "Kliknij, żeby pomniejszyć"
+            if (readMeElement) readMeElement.textContent = "Kliknij, żeby pomniejszyć";
+        }
     }
 }
+*/
 
+/* DO POPRAWIENIE  */
+
+
+
+/*
+function Zoom(element) {
+    var screenWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+    // Zakładamy, że ekran mniejszy niż 1024px to urządzenia mobilne (telefony i tablety)
+    if (screenWidth < 1024) {
+        console.log('Funkcja Zoom została wywołana na urządzeniu mobilnym.');
+        
+        if (element.classList.contains('mobile-zoomed-on')) {
+            // Jeśli element był już powiększony, cofamy zmianę klasy
+            element.classList.remove('mobile-zoomed-on');
+        } else {
+            // Usuwamy klasę mobile-zoomed-on z wszelkich elementów, które były już zmodyfikowane
+            document.querySelectorAll('.mobile-zoomed-on').forEach((zoomedElement) => {
+                zoomedElement.classList.remove('mobile-zoomed-on');
+            });
+            // Dodajemy klasę mobile-zoomed-on do klikniętego elementu, aby zaznaczyć jego powiększenie
+            element.classList.remove('mobile-zoomed'); // Usuwamy starą klasę, jeśli jest
+            element.classList.add('mobile-zoomed-on');
+        }
+    }
+}*/
 
 function przeniesDoKalendarza(id) {
     if (id === "CalendarI") {

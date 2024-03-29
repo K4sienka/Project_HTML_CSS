@@ -1,19 +1,21 @@
+#odstep{
+    height: 100px;
+}
+
+
 .consultation-hours {
     font-family: Arial, sans-serif;
+
     max-width: 600px;
     margin: 0 auto;
     padding: 20px;
     background-color: #f5f5f5;
     border-radius: 8px;
-    display: flex;
-    flex-direction: column;
+
+ 
+    
 }
 
-ul.subject{
-
-    display: flex;
-    flex-direction: column;
-}
 .consultation-hours h2 {
     text-align: center;
     color: #333;
@@ -22,6 +24,8 @@ ul.subject{
 .consultation-hours ul {
     list-style: none;
     padding: 0;
+    display: flex;
+    flex-direction: column;
 }
 
 .consultation-hours ul li {

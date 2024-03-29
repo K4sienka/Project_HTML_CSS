@@ -4,7 +4,7 @@ function czyTydzienParzysty() {
     var result = (currentWeek % 2 === 0) ? "parzysty" : "nieparzysty";
     var formattedDate = currentDate.toLocaleDateString('pl-PL', { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' });
 
-    return `${formattedDate}`; //, tydzień jest ${result}.
+    return `Dzisiaj jest ${formattedDate}, tydzień jest ${result}.`;
 }
 
 function getISOWeek(date) {
