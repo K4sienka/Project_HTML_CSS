@@ -1,4 +1,4 @@
-//link do innej strony, otwiera sie w nowej karcie
+//otwieranie w nowej karcie
 function redirectToPage(url) {
     window.open(url, '_blank');
 }
@@ -13,60 +13,79 @@ function scrollToElement(elementId) {
 }
 
 
-//przewijanie zdjec
+//karuzela
 /**
   Swiper:
   https://swiperjs.com/
 **/
 const swiper = new Swiper(".swiperCarousel", {
-  slidesPerView: 3,        // Określenie liczby widocznych slajdów na raz
-  centeredSlides: true,    // Ustawienie, czy slajdy mają być wyśrodkowane
-  spaceBetween: 3,         // Odległość między slajdami
+  slidesPerView: 3,        
+  centeredSlides: true,    
+  spaceBetween: 3,       
   keyboard: {
-    enabled: true,         // Włączenie obsługi klawiatury do nawigacji
+    enabled: true,       
   },
-  loop: true,               // Ustawienie, czy pokazywać slajdy w pętli
- // pagination: {
- //   el: ".swiper-pagination",  // Określenie elementu dla paginacji (jeśli istnieje)
- // },
+  loop: true,             
   navigation: {
-    nextEl: ".swiper-button-next",  // Określenie elementu dla przycisku "Next"
-    prevEl: ".swiper-button-prev",  // Określenie elementu dla przycisku "Prev"
+    nextEl: ".swiper-button-next", 
+    prevEl: ".swiper-button-prev",  
   },
-// Dodanie dodatkowych opcji dla efektu kółka
-loopAdditionalSlides: 1, // Dodatkowe slajdy w pętli, aby zapewnić płynność
-loopedSlides: 3, // Ilość slajdów, które mają być kopiowane w pętli
+loopAdditionalSlides: 1,
+loopedSlides: 3, 
 });
 
-// Pobranie wszystkich elementów o klasie "swiper-slide" i dodanie nasłuchiwacza kliknięcia
 const slides = document.getElementsByClassName("swiper-slide");
 for (const slide of slides) {
   slide.addEventListener("click", () => {
       const { className } = slide;
-      // Sprawdzenie, czy klasa zawiera "swiper-slide-next" lub "swiper-slide-prev"
       if (className.includes("swiper-slide-next")) {
-          swiper.slideNext();  // Przewinięcie do następnego slajdu
+          swiper.slideNext();
       } else if (className.includes("swiper-slide-prev")) {
-          swiper.slidePrev();  // Przewinięcie do poprzedniego slajdu
+          swiper.slidePrev();
       }
   });
 }
 
-// Funkcja do dostosowywania rozmiaru tekstu, aby dopasować się do dostępnego miejsca
 function resizeTextToFit() {
   const quoteEls = document.getElementsByClassName('quote');
   for (const el of quoteEls) {
       el.style.width = el.offsetWidth;
       el.style.height = el.offsetHeight;
   }
-  // textFit(quoteEls, { maxFontSize: 14 });  Wykorzystanie biblioteki textFit do dopasowania rozmiaru tekstu
 }
-
-// Wywołanie funkcji resizeTextToFit na początku
 resizeTextToFit();
 
-// Dodanie nasłuchiwacza zdarzeń dla zmiany rozmiaru okna i ponowne wywołanie resizeTextToFit
 addEventListener("resize", (event) => {
   resizeTextToFit();
 });
+
+
+
+
+//dziekanat
+function togglePerson(personId) {
+  var i, tabcontent, tablinks;
+
+  tabcontent = document.getElementsByClassName("person");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+
+  document.getElementById(personId).style.display = "block";
+  event.currentTarget.className += " active";
+}
+function togglePerson(personId) {
+  var person = document.getElementById(personId);
+  
+  person.classList.toggle("active");
+}
+
+
+
+
 

@@ -7,32 +7,27 @@
     <link rel="stylesheet" href="responsywnosc.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
-    <title>Zarzad kierunku</title>
+    <title>Zarzad i Dziekanat</title>
 </head>
 
 <body>
     <div class="wrapper" id="elem0">
     <div class="top">
-            <header>
-                <h1>Przewodnik po IiAD</h1>
-            </header>
-
         <!--Menu główne-->
             <ul>
-                <li><a class="menu" href="../index.html">Strona główna</a></li>
+                <li><a class="menu" href="../Glowna/StronaGlowna.html">Strona główna</a></li>
                 <!--<li> <a class="menu" href="../Glowna/StronaGlowna.html">O nas</a></li>-->              
                 
                 <li><a class="menu" href="../Baza_kontaktowa/baza_kontaktowa.html">Baza kontaktowa</a></li>
 
-                    <li><a class="menu  active" >Zarząd kierunku</a></li>
+                    <li><a class="menu  active" href="#">Zarząd i Dziekanat</a></li>
 
-                    <li><a class="menu " href="#">Sesja zaliczeniowa</a>
+                    <li><a class="menu " href="#">Sesja</a>
                     <ul class="podmenu">
                         <li><a href="../Sesja/Egzaminy/egzaminy.html">Egzaminy</a></li>
                         <li><a href="../Sesja/Zaliczenia/zaliczenia.html">Zaliczenia</a></li>
                     </ul>
                     </li>
-                    <!--<li><a class="menu"  href="../Glowna/StronaGlowna.html">Życie Uczelniane</a> </li>-->
                     <li><a class="menu" href="../Plan_zajec/plan_zajec.html">Plan zajęć</a>
                 </li>
             </ul>
@@ -49,7 +44,6 @@
                                 <div class="header">
                                     <h2 class="name">Łucja Adamska</h2>
                                     <h3 class="title">Starostka dziekańskiej Grupy 1<br>Starostka laboratoryjnej Grupy 1</h3>
-                                    <h4 class="contact"  onclick="redirectToPage('../Zarzad/Kontakt.html')">Kontakt przez Messanger</h4>
                                 </div>
                             </div>
                         </div>
@@ -59,17 +53,15 @@
                                 <div class="header">
                                     <h2 class="name">Bartosz Irzyk</h2>
                                     <h3 class="title">Starosta laboratoryjnej Grupy 2</h3>
-                                    <h4 class="contact" onclick="redirectToPage('../Zarzad/Kontakt.html')">Kontakt przez Messanger</h4>
                                 </div>
                             </div>
                         </div>
                         <div class="swiper-slide">
                             <div class="card">
-                                <img class="avatar" src="../Zarzad/JuliaK.jpg" />
+                                <img class="avatar" src="../Zarzad/WeronikaJ.jpg" />
                                 <div class="header">
-                                    <h2 class="name">Julia Kot</h2>
+                                    <h2 class="name">Weronika Jopek</h2>
                                     <h3 class="title">Starostka laboratoryjnej Grupy 3</h3>
-                                    <h4 class="contact" onclick="redirectToPage('../Zarzad/Kontakt.html')">Kontakt przez Messanger</h4>
                                 </div>
                             </div>
                         </div>
@@ -79,7 +71,6 @@
                                 <div class="header">
                                     <h2 class="name">Katarzyna Wesołowska</h2>
                                     <h3 class="title">Starostka roku<br>Starostka dziekańskiej Grupy 2<br>Starostka laboratoryjnej Grupy 4</h3>
-                                    <h4 class="contact" onclick="redirectToPage('../Zarzad/Kontakt.html')">Kontakt przez Messanger</h4>
                                 </div>
                             </div>
                         </div>
@@ -89,7 +80,6 @@
                                 <div class="header">
                                     <h2 class="name">Kacper Książek</h2>
                                     <h3 class="title">Starosta laboratoryjnej Grupy 5</h3>
-                                    <h4 class="contact" onclick="redirectToPage('../Zarzad/Kontakt.html')">Kontakt przez Messanger</h4>
                                 </div>
                             </div>
                         </div>
@@ -99,7 +89,6 @@
                                 <div class="header">
                                     <h2 class="name">Julia Walencik</h2>
                                     <h3 class="title">Starostka dziekańskiej Grupy 3<br>Starostka laboratoryjnej Grupy 6</h3>
-                                    <h4 class="contact" onclick="redirectToPage('../Zarzad/Kontakt.html')">Kontakt przez Messanger</h4>
                                 </div>
                             </div>
                         </div>
@@ -113,33 +102,42 @@
 
         <div class="faculty">
             <h1>Dziekanat</h1>
-            <div class="square">
-                <div class="person">
-                    <h2>Prodziekan ds. ogólnych i spraw studenckich</h2>
-                    <h3>prof. dr hab. Ewa Kmiecik</h3>
-                    <h4>Tel. +48 12 617 50 34
-                    <br>E-mail: ewa.kmiecik@agh.edu.pl</h4>
+            <div class="tabs">
+                <div class="tab">
+                    <button class="tablinks" onclick="togglePerson('Prodziekan')">Prodziekan</button>
+                    <div class="person" id="Prodziekan">
+                        <h2>prof. dr hab. Ewa Kmiecik</h2>
+                        <h3>A-0, niski parter, pok. 012</h3>
+                        <h4>Tel. +48 12 617 50 34
+                        <br>E-mail: ewa.kmiecik@agh.edu.pl</h4>
+                    </div>
                 </div>
-                <div class="person">
-                    <h2>Sprawy dydaktyczne</h2>
-                    <h3>inż. Barbara Małecka</h3>
-                    <h4>Paw. A0, parter, pok. 19
-                        <br>Tel. +48 12 617 23 50
+                <div class="tab">
+                    <button class="tablinks" onclick="togglePerson('Dydaktyczne')">Sprawy Dydaktyczne</button>
+                    <div class="person" id="Dydaktyczne">
+                        <h2>inż. Barbara Małecka</h2>
+                        <h3>Paw. A0, parter, pok. 19</h3>
+                        <h4>Tel. +48 12 617 23 50
                         <br>E-mail: bmalecka@agh.edu.pl</h4>
+                    </div>
                 </div>
-                <div class="person">
-                    <h2>Sprawy socjalne i stypendia</h2>
-                    <h3>mgr inż. Anna Kurowska-Capik</h3>
-                    <h4>Paw. A0, parter, pok. 20
-                        <br>Tel. +48 12 617 46 03
+                <div class="tab">
+                    <button class="tablinks" onclick="togglePerson('Socjalne')">Sprawy Socjalne</button>
+                    <div class="person" id="Socjalne">
+                        <h2>mgr inż. Anna Kurowska-Capik</h2>
+                        <h3>Paw. A0, parter, pok. 20</h3>
+                        <h4>Tel. +48 12 617 46 03
                         <br>E-mail: akcapik@agh.edu.pl</h4>
+                    </div>
                 </div>
-                <div class="person">
-                    <h2>Rozliczanie dydaktyki</h2>
-                    <h3>mgr inż. Ewelina Półtorak</h3>
-                    <h4>Paw. A0, parter, pok. 20
-                        <br>Tel. +48 12 617 45 33
+                <div class="tab">
+                    <button class="tablinks" onclick="togglePerson('Rozliczanie')">Rozliczanie Dydaktyki</button>
+                    <div class="person" id="Rozliczanie">
+                        <h2>mgr inż. Ewelina Półtorak</h2>
+                        <h3>Paw. A0, parter, pok. 20</h3>
+                        <h4>Tel. +48 12 617 45 33
                         <br>E-mail: epoltorak@agh.edu.pl</h4>      
+                    </div>
                 </div>
             </div>
         </div>
@@ -150,6 +148,11 @@
          <div class="scroll-to-top" onclick="scrollToElement('elem0')">
             <i class="fa-solid fa-circle-arrow-up"></i>
     </div>
+
+    <footer>
+        <p> Kraków 2024 </p>
+        <p> Miasteczko Studenckie AGH </p>
+    </footer>
 
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>

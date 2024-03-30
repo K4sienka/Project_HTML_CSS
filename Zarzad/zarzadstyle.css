@@ -12,21 +12,6 @@ body{
   background: linear-gradient(to left top, #f7f7f7, #eac2fa);
 }
 
-h1 {
-  font-size: 4rem;
-  color: white;
-  letter-spacing: 0.8rem;
-  text-align: center;
-}
-
-
-header{
-  background-color: rgba(0, 0, 0, 0.85);
-  display: block;
-  text-align: center;
-  padding: 1rem;
-}
-
 .top {
   width: 100%;
   position: fixed;
@@ -66,7 +51,7 @@ ul li ul.podmenu{
     display: none;
     width:100%;
     align-items: center; 
-    z-index: 2; /* Ustaw wyższy indeks warstwy */
+    z-index: 2;
 }
 
 ul li ul.podmenu li {
@@ -75,17 +60,17 @@ ul li ul.podmenu li {
 
 ul.podmenu li a {
     display: block;
-    text-align: center; /* Wyśrodkowanie tekstu na osi poziomej */
+    text-align: center;
     text-decoration: none;
 }
 
 ul li:hover ul.podmenu{
     display: block;
-    z-index: 2; /* Ustaw wyższy indeks warstwy */
+    z-index: 2;
 }
 
 a:hover,a.menu:hover{
-     background-color: #9962ac ;  /*podświetlenie przy najechaniu na element */
+     background-color: #9962ac ;
 }
 
 ul li.active a,
@@ -93,7 +78,7 @@ ul li a.active {
     background-color: #884E9C;
 }
 
-ul li a:hover /*podswietlanie linkow w podmenu*/
+ul li a:hover
 {
     background: #489a93;
 }
@@ -105,15 +90,13 @@ ul li a:hover /*podswietlanie linkow w podmenu*/
   justify-content: center;
   align-items: center;
   height: 100vh;
-  margin: 0 0 -7rem 0;
 }
 
 .container {
-  margin: 20rem 0 0 0;
-  width: 80%;
-  height: 75%;
+  width: 75%;
+  height: 55%;
   background-color: #000000;
-  padding: 10rem 8rem;
+  padding: 8rem 6rem;
   overflow: hidden;
 }
 
@@ -131,13 +114,13 @@ ul li a:hover /*podswietlanie linkow w podmenu*/
 .swiper-slide {
   display: flex !important;
   justify-content: center;
-  align-items: center; /* Dodanie stylu, aby elementy były wyśrodkowane w pionie */
+  align-items: center;
 }
 
 .card {
   background-color: #f9fafe;
-  width: 50rem;
-  height: 18rem;
+  width: 40rem;
+  height: 13rem;
   border-radius: 10px;
   display: flex;
   flex-direction: column;
@@ -151,8 +134,8 @@ ul li a:hover /*podswietlanie linkow w podmenu*/
 }
   
 .avatar {
-  width: 12rem;
-  height: 12rem;
+  width: 10rem;
+  height: 10rem;
   border-radius: 50%;
   border: 5px solid #f9fafe;
   box-shadow: 0 0 50px #ccc;
@@ -171,22 +154,16 @@ ul li a:hover /*podswietlanie linkow w podmenu*/
 }
   
 .name {
-  font-size: 2rem;
-  margin-top: 2.5rem;
+  font-size: 1.8rem;
+  margin-top: 1rem;
 }
   
 .title {
-  font-size: 1.3rem;
-  font-weight: 400;
-  margin: 1rem 0 0 0;
-  color: #ba85cc;
-}
-
-.contact {
+  line-height: 1.5rem;
   font-size: 1.2rem;
-  color: #7a0e9e;
-  margin: 1.2rem 0 0 0;
-  cursor: pointer;
+  font-weight: 400;
+  margin: 0.6rem 0 0 0;
+  color: #ba85cc;
 }
 
 .swiper-slide-active {
@@ -210,61 +187,88 @@ ul li a:hover /*podswietlanie linkow w podmenu*/
   outline: none;
 }
   
-
-/* Dziekanat */
-.faculty {
-  text-align: center;
-  margin-top: 15rem;
+/*Dziekanat*/
+.faculty{
+  margin-top: -15rem;
+  padding: 5rem;
 }
 
-.square {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap; 
-}
-
-.person {
-  width: calc(50% - 12rem);
-  height: 22rem;
-  background-color: rgb(255, 255, 255);
-  text-align: center;
-  margin: 4rem;
-  border-radius: 10px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  transition: 400ms;
-}
-
-.faculty h1 {
-  font-family: 'antic';
+h1 {
   font-size: 5rem;
-  color: #FFF;
+  color: white;
+  letter-spacing: 0.8rem;
+  text-align: center;
+  margin-bottom: 2rem;
+  
+  text-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .person h2 {
   color: #000;
-  font-size: 2.8rem;
-  margin: 1rem;
+  font-size: 1.8rem;
 }
 
 .person h3 {
   color: #ba85cc;
-  font-size: 2.5rem;
+  font-size: 1.3rem;
 }
 
 .person h4 {
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   color: #7a0e9e;
-  margin: 1rem;
 }
 
-.person:hover {
-  box-shadow: 0 12px 40px -1px #ba85cc;
+.person {
+  overflow: hidden;
+  transition: opacity 0.6s, transform 0.6s, max-height 0.6s linear;
+  max-height: 0;
+  background-color: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  line-height: 2rem;
+  opacity: 0;
+  transform: scaleY(0);
+  transform-origin: top;
+}
+
+.person.active {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 9rem;
   opacity: 1;
-  transform: scale(1.2);
+  transform: scaleY(1);
+  max-height: 15rem;
 }
 
+.tab {
+  flex-basis: 40%;
+}
+
+.tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: center;
+}
+
+.tablinks {
+  width: 100%;
+  background-color: white;
+  color: #e5b7fc;
+  font-size: 1.8rem;
+  font-family: 'antic';
+  letter-spacing: 0.2rem;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 0.5rem;
+  text-align: center;
+}
+
+.tablinks:hover {
+  color: #c16fdc;
+}
 
 
 /*na poczatek strony*/
@@ -281,7 +285,19 @@ ul li a:hover /*podswietlanie linkow w podmenu*/
   font-size: 2.5rem;
 }
 
-
+/*stopka*/
+footer
+{
+  width: 100%;
+  bottom: 0;
+  right: 0;
+  margin-top: 2vh;
+  background-color: #f0f0f0;                 
+  padding: 10px;                                     
+  text-align: center;                               
+  letter-spacing: 8px;                           
+  opacity: 0.9;  
+}
 
 
 
@@ -325,7 +341,7 @@ ul li a:hover /*podswietlanie linkow w podmenu*/
   width: 20rem;
   height: 10rem;
   padding: 0.5rem 0 0 0;
-  margin-top: -2rem;
+  margin-top: -0.1rem;
 }
   
 .avatar {
@@ -335,18 +351,14 @@ ul li a:hover /*podswietlanie linkow w podmenu*/
 }
 
 .name {
-  font-size: 0.8rem;
-  margin-top: 0.4rem;
+  font-size: 0.5rem;
+  margin-top: 0.1rem;
 }
   
 .title {
-  font-size: 0.8rem;
-  margin: 0.5rem 0 0 0;
-}
-
-.contact {
-  font-size: 0.6rem;
-  margin: 1rem 0 0 0;
+  line-height: 0.7rem;
+  font-size: 0.4rem;
+  margin: 0.1rem 0 0 0;
 }
   
 .swiper-slide-active .card {
