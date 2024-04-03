@@ -1,18 +1,3 @@
-//otwieranie w nowej karcie
-function redirectToPage(url) {
-    window.open(url, '_blank');
-}
-
-//przesuwanie po stronie
-function scrollToElement(elementId) {
-  var element = document.getElementById(elementId);
-
-  if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
-  }
-}
-
-
 //karuzela
 /**
   Swiper:
@@ -21,7 +6,7 @@ function scrollToElement(elementId) {
 const swiper = new Swiper(".swiperCarousel", {
   slidesPerView: 3,        
   centeredSlides: true,    
-  spaceBetween: 3,       
+  spaceBetween: 1,       
   keyboard: {
     enabled: true,       
   },
@@ -32,6 +17,16 @@ const swiper = new Swiper(".swiperCarousel", {
   },
 loopAdditionalSlides: 1,
 loopedSlides: 3, 
+
+
+breakpoints: {
+  480: {
+    spaceBetween: 20
+  },
+  640: {
+    spaceBetween: 30
+  }
+}
 });
 
 const slides = document.getElementsByClassName("swiper-slide");
@@ -63,27 +58,23 @@ addEventListener("resize", (event) => {
 
 
 //dziekanat
-function togglePerson(personId) {
-  var i, tabcontent, tablinks;
-
-  tabcontent = document.getElementsByClassName("person");
-  for (i = 0; i < tabcontent.length; i++) {
-    tabcontent[i].style.display = "none";
-  }
-
-  tablinks = document.getElementsByClassName("tablinks");
-  for (i = 0; i < tablinks.length; i++) {
-    tablinks[i].className = tablinks[i].className.replace(" active", "");
-  }
-
-  document.getElementById(personId).style.display = "block";
-  event.currentTarget.className += " active";
-}
-function togglePerson(personId) {
+function togglePerson(personId, event) {
   var person = document.getElementById(personId);
+  var button = event.currentTarget; // Aktualnie kliknięty przycisk
   
-  person.classList.toggle("active");
+  // Sprawdzenie, czy element jest już aktywny
+  if (person.classList.contains("active")) {
+    person.classList.remove("active"); // Jeśli tak, usuń klasę 'active', co ukryje element
+    button.classList.remove("activeButton"); // i usuń klasę zmieniającą wygląd przycisku
+  } else {
+    person.classList.add("active"); // W przeciwnym razie dodaj klasę 'active', co pokaże element
+    button.classList.add("activeButton"); // i dodaj klasę zmieniającą wygląd przycisku
+  }
 }
+
+
+
+
 
 
 

@@ -11,26 +11,44 @@
 </head>
 
 <body>
-    <div class="wrapper" id="elem0">
+    <div class="wrapper">
     <div class="top">
         <!--Menu główne-->
-            <ul>
-                <li><a class="menu" href="../Glowna/StronaGlowna.html">Strona główna</a></li>
-                <!--<li> <a class="menu" href="../Glowna/StronaGlowna.html">O nas</a></li>-->              
-                
-                <li><a class="menu" href="../Baza_kontaktowa/baza_kontaktowa.html">Baza kontaktowa</a></li>
+        <nav>
+            <ul class="main_menu">
+               <li><a class="menu" href="../index.html">Strona główna</a></li>
+           
+               <li><a class="menu" href="../Baza_kontaktowa/baza_kontaktowa.html"> Baza kontaktowa </a></li>
 
-                    <li><a class="menu  active" href="#">Zarząd i Dziekanat</a></li>
+               <li><a class="menu active" href="../Zarzad/zarzad.html"> Zarząd i dziekanat </a></li>
 
-                    <li><a class="menu " href="#">Sesja</a>
-                    <ul class="podmenu">
-                        <li><a href="../Sesja/Egzaminy/egzaminy.html">Egzaminy</a></li>
-                        <li><a href="../Sesja/Zaliczenia/zaliczenia.html">Zaliczenia</a></li>
-                    </ul>
-                    </li>
-                    <li><a class="menu" href="../Plan_zajec/plan_zajec.html">Plan zajęć</a>
-                </li>
-            </ul>
+               <li><a class="menu " href="#"> Sesja </a>
+                   <ul class="podmenu">
+                       <li><a href="../Sesja/Egzaminy/egzaminy.html">Egzaminy</a></li>
+                       <li><a href="https://calendar.google.com/calendar/embed?src=216dd0a1057c0b1ea7f0e2ff1a32e50deabc0d283c44736a18a4c4252444efda%40group.calendar.google.com&ctz=Europe%2FWarsawSesja/Zaliczenia/zaliczenia.html">Zaliczenia</a></li>
+
+                   </ul>
+               </li>
+               
+               <li><a class="menu" href="../Plan_zajec/plan_zajec.html"> Plan zajęć </a>
+               </li>
+           </ul>
+
+
+           <div class="przycisk_menu" onclick="Rozwin()">
+               <span>☰</span>
+           </div>
+
+           <div class="menu_rozwijane">
+
+               <li><a class="menu" href="../index.html">Strona główna</a></li>          
+               <li class="menu" ><a class="menu" href="../Baza_kontaktowa/baza_kontaktowa.html"> Baza kontaktowa </a></li>
+               <li><a class="active" href="../Zarzad/zarzad.html"> Zarząd i dziekanat </a></li>
+               <li><a class="menu " href="../Sesja/Egzaminy/egzaminy.html">Egzaminy</a></li>
+               <li><a class="menu " href="https://calendar.google.com/calendar/embed?src=216dd0a1057c0b1ea7f0e2ff1a32e50deabc0d283c44736a18a4c4252444efda%40group.calendar.google.com&ctz=Europe%2FWarsawSesja/Zaliczenia/zaliczenia.html">Zaliczenia</a></li>
+               <li><a class="menu" href="../Plan_zajec/plan_zajec.html"> Plan zajęć </a></li>
+           </div>
+       </nav>
     </div>
 
             <!--Przewijanie-->
@@ -104,7 +122,7 @@
             <h1>Dziekanat</h1>
             <div class="tabs">
                 <div class="tab">
-                    <button class="tablinks" onclick="togglePerson('Prodziekan')">Prodziekan</button>
+                    <button class="tablinks" onclick="togglePerson('Prodziekan', event)">Prodziekan</button>
                     <div class="person" id="Prodziekan">
                         <h2>prof. dr hab. Ewa Kmiecik</h2>
                         <h3>A-0, niski parter, pok. 012</h3>
@@ -113,7 +131,7 @@
                     </div>
                 </div>
                 <div class="tab">
-                    <button class="tablinks" onclick="togglePerson('Dydaktyczne')">Sprawy Dydaktyczne</button>
+                    <button class="tablinks" onclick="togglePerson('Dydaktyczne', event)">Sprawy Dydaktyczne</button>
                     <div class="person" id="Dydaktyczne">
                         <h2>inż. Barbara Małecka</h2>
                         <h3>Paw. A0, parter, pok. 19</h3>
@@ -122,7 +140,7 @@
                     </div>
                 </div>
                 <div class="tab">
-                    <button class="tablinks" onclick="togglePerson('Socjalne')">Sprawy Socjalne</button>
+                    <button class="tablinks" onclick="togglePerson('Socjalne', event)">Sprawy Socjalne</button>
                     <div class="person" id="Socjalne">
                         <h2>mgr inż. Anna Kurowska-Capik</h2>
                         <h3>Paw. A0, parter, pok. 20</h3>
@@ -131,7 +149,7 @@
                     </div>
                 </div>
                 <div class="tab">
-                    <button class="tablinks" onclick="togglePerson('Rozliczanie')">Rozliczanie Dydaktyki</button>
+                    <button class="tablinks" onclick="togglePerson('Rozliczanie', event)">Rozliczanie Dydaktyki</button>
                     <div class="person" id="Rozliczanie">
                         <h2>mgr inż. Ewelina Półtorak</h2>
                         <h3>Paw. A0, parter, pok. 20</h3>
@@ -141,12 +159,6 @@
                 </div>
             </div>
         </div>
-        
-
-
-         <!--Do przewijania na poczatek-->
-         <div class="scroll-to-top" onclick="scrollToElement('elem0')">
-            <i class="fa-solid fa-circle-arrow-up"></i>
     </div>
 
     <footer>
@@ -156,8 +168,8 @@
 
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
-    <script src="link_scroll.js"></script>
-    <script src="ekrany_dotykowe.js"></script>
+    <script src="swiper_button.js"></script>
+    <script src="Menu.js"></script>
     
 </body>
 </html>
