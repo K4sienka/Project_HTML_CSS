@@ -30,4 +30,19 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 
+//rozwijanie
+if ($(window).width() < 1550) {
+    $('.menu').on('click', function (e) {
+        if ($(this).next('.podmenu').length > 0) {
+            e.preventDefault();
 
+            if (!$(this).data('expanded')) {
+                $(this).next('.podmenu').slideDown();
+                $(this).data('expanded', true);
+            } else {
+                $(this).next('.podmenu').slideUp();
+                $(this).data('expanded', false);
+            }
+        }
+    });
+}

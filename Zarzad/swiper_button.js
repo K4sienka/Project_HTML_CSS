@@ -17,16 +17,6 @@ const swiper = new Swiper(".swiperCarousel", {
   },
 loopAdditionalSlides: 1,
 loopedSlides: 3, 
-
-
-breakpoints: {
-  480: {
-    spaceBetween: 20
-  },
-  640: {
-    spaceBetween: 30
-  }
-}
 });
 
 const slides = document.getElementsByClassName("swiper-slide");

@@ -1,5 +1,5 @@
 //dla menu
-if ($(window).width() < 1340) {
+if ($(window).width() < 1550) {
     $('.menu').on('click', function (e) {
         // Sprawdź, czy element posiada podmenu
         if ($(this).next('.podmenu').length > 0) {

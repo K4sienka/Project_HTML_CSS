@@ -148,6 +148,8 @@ span{
 
 
 
+
+
 /*Karuzela*/
 .up {
   display: flex;
@@ -225,7 +227,7 @@ span{
   line-height: 2rem;
   font-size: 1.5rem;
   font-weight: 400;
-  margin: 0.6rem 0 0 0;
+  margin: 0.6rem 0.4rem 0 0.4rem;
   color: #ba85cc;
 }
 
@@ -351,15 +353,18 @@ footer
 
 
 /*telefony*/
-@media only screen and (min-width: 350px) and (max-width: 480px) 
+@media only screen and (min-width: 350px) and (max-width: 470px)
 {
-nav{
-  background-color: #000000;
+/*Menu*/
+.menu_rozwijane li a{
+  height: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-h1 {
-  font-size: 1.5rem;
-  letter-spacing: 0.1em;
+nav{
+  background-color: #000000;
 }
 
 ul li a {
@@ -382,7 +387,7 @@ ul.podmenu li a {
 
 /*Karuzela*/
 .up {
-  padding: 5rem 0 3rem 0;
+  padding: 7rem 0 3rem 0;
 }
 
 .container {
@@ -392,7 +397,7 @@ ul.podmenu li a {
 }
 
 .card {
-  width: 22rem;
+  width: 30rem;
   height: 8rem;
   padding: 1rem 0 0 0;
   margin-top: 3rem;
@@ -402,17 +407,18 @@ ul.podmenu li a {
   width: 3.5rem;
   height: 3.5rem;
   transform: translate(-50%, -150%);
+  border: 3px solid #f9fafe;
 }
 
 .name {
-  font-size: 0.6rem;
-  margin-top: 0.1rem;
+  font-size: 0.8rem;
+  margin-top: 0.2rem;
 }
   
 .title {
   font-size: 0.5rem;
-  margin: 0.7rem 0 0 0;
-  line-height: 0.7rem;
+  margin: 0.3rem 0.2rem 0 0.2rem;
+  line-height: 0.5rem;
 }
   
 .swiper-slide-active .card {
@@ -423,7 +429,7 @@ ul.podmenu li a {
 
 /* Dziekanat */
 .faculty{
-  padding: 0 0 2rem;
+  padding: 0 0 5rem;
 }
 
 h1 {
@@ -478,66 +484,211 @@ footer
 }
 }
 
-
-/* tablety*/
-@media only screen and (min-width: 481px) and (max-width: 768px) 
+@media only screen and (min-width: 470px) and (max-width: 650px)
 {
+/*Menu*/
+.menu_rozwijane li a{
+  height: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  }
+
+nav{
+  background-color: #000000;
+}
+
+ul li a {
+  padding: 3px 6px;
+  font-size: 0.5rem;
+}
+
+ul li ul.podmenu {
+  width: 100%;
+}
+
+ul li ul.podmenu a {
+  font-size: 0.4rem;
+}
+
+ul.podmenu li a {
+  padding: 15px 0;
+}
+
+
 /*Karuzela*/
+.up {
+  padding: 7rem 0 3rem 0;
+}
+
 .container {
-  margin-top: 1rem;
-  padding: 5rem 2rem;
-  width: 80%;
-  height: 60%;
+  padding: 2rem 1rem;
+  width: 90%;
+  height: 75%;
 }
 
 .card {
-  width: 25rem;
-  height: 17rem;
-  padding: 0.5rem 0 0 0;
-  margin-top: -2rem;
+  width: 35rem;
+  height: 12rem;
+  margin-top: 9rem;
 }
-  
+   
 .avatar {
-  width: 8rem;
-  height: 8rem;
-  transform: translate(-50%, -150%);
+  width: 5.5rem;
+  height: 5.5rem;
+  transform: translate(-50%, -140%);
+  border: 4px solid #f9fafe;
 }
 
 .name {
-  font-size: 1.6rem;
-  margin-top: 1rem;
+  font-size: 1rem;
+  margin-top: 0.1rem;
 }
   
 .title {
-  font-size: 1.2rem;
-  margin: 0.5rem 0 0 0;
-}
-
-.contact {
-  font-size: 1rem;
-  margin: 1rem 0 0 0;
+  font-size: 0.8rem;
+  margin: 0.3rem 0.3rem 0 0.3rem;
+  line-height: 0.9rem;
 }
   
 .swiper-slide-active .card {
-  margin-top: 3rem;
-  transform: scale(1.2);
+  margin-top: 0.1rem;
+  transform: scale(1.3);
 }
-
-  
+ 
 
 /* Dziekanat */
-.faculty {
-  margin-top: -5rem;
+.faculty{
+  padding: 0 0 5rem;
+}
+
+h1 {
+  font-size: 2.2rem;
+  letter-spacing: 0.3rem;
+  margin-bottom: 1.5rem;
+}
+
+.person h2 {
+  font-size: 1.1rem;
+}
+
+.person h3 {
+  font-size: 0.9rem;
+}
+
+.person h4 {
+  font-size: 0.8rem;
 }
 
 .person {
-  height: 15rem;
-  margin: 1rem;
-  width: calc(70% - 3rem);
+  line-height: 1.2rem;
 }
 
-.faculty h1 {
-  font-size: 2.8rem;
+.person.active {
+  min-height: 6rem;
+  max-height: 10rem;
+}
+
+.tab {
+  flex-basis: 80%;
+}
+
+.tabs {
+  gap: 1rem;
+}
+
+.tablinks {
+  width: 100%;
+  font-size: 1.1rem;
+  letter-spacing: 0.1rem;
+  padding: 0.4rem;
+}
+
+/*stopka*/
+footer
+{
+  width: 100%;              
+  padding: 0.6rem;                                     
+  letter-spacing: 0.3rem;    
+  font-size: 0.9rem;  
+}
+
+}
+
+
+/*Tablety*/
+@media only screen and (min-width: 650px) and (max-width: 850px)
+{
+/*Menu*/
+ul li a {
+  padding: 0.7rem 1.2rem;
+  font-size: 1.4rem;
+}
+
+ul li ul.podmenu {
+  width: 100%;
+}
+
+ul li ul.podmenu a {
+  font-size: 1.1rem;
+}
+
+ul.podmenu li a {
+  padding: 1rem 0;
+}
+
+
+/*Karuzela*/
+.up {
+  padding: 10rem 0 4rem 0;
+}
+
+.container {
+  padding: 5rem 1rem;
+  width: 90%;
+  height: 75%;
+}
+
+.card {
+  width: 30rem;
+  height: 15rem;
+  padding: 1rem 0 0 0;
+  margin-top: 3rem;
+}
+  
+.avatar {
+  width: 6.5rem;
+  height: 6.5rem;
+  transform: translate(-50%, -160%);
+  border: 5px solid #f9fafe;
+}
+
+.name {
+  font-size: 1.4rem;
+  margin-top: 0.7rem;
+}
+  
+.title {
+  font-size: 0.9rem;
+  margin: 0.5rem 0.2rem 0 0.2rem;
+  line-height: 1.2rem;
+}
+  
+.swiper-slide-active .card {
+  margin-top: 0.1rem;
+  transform: scale(1.3);
+}
+ 
+
+/* Dziekanat */
+.faculty{
+  padding: 0 0 8rem;
+}
+
+h1 {
+  font-size: 3.5rem;
+  letter-spacing: 0.3rem;
+  margin-bottom: 1.5rem;
 }
 
 .person h2 {
@@ -549,80 +700,117 @@ footer
 }
 
 .person h4 {
-  font-size: 1rem;
-  margin-top: 0.2rem;
-}
-
-
-/*na poczatek strony*/
-.scroll-to-top {
-  right: 5%;
-}
-
-.scroll-to-top i {
-  font-size: 2.5rem;
-}
-}
-
-/*Ekrany*/
-@media only screen and (min-width: 769px) and (max-width: 1340px) 
-{
-/*Karuzela*/
-.container {
-  margin-top: 10rem;
-  padding: 5rem 2rem;
-  width: 90%;
-  height: 70%;
-}
-
-.card {
-  width: 38rem;
-  height: 22rem;
-  padding: 0.5rem 0 0 0;
-  margin-top: 2rem;
-}
-  
-.avatar {
-  width: 10rem;
-  height: 10rem;
-  transform: translate(-50%, -160%);
-}
-
-.name {
-  font-size: 2.2rem;
-  margin-top: 5rem;
-}
-  
-.title {
-  font-size: 1.8rem;
-  margin: 0.5rem 0 0 0;
-}
-
-.contact {
-  font-size: 1.5rem;
-  margin: 1rem 0 0 0;
-}
-  
-.swiper-slide-active .card {
-  margin-top: 4rem;
-  transform: scale(1.2);
-}
-
-  
-
-/* Dziekanat */
-.faculty {
-  margin-top: 8rem;
+  font-size: 1.2rem;
 }
 
 .person {
-  height: 17rem;
-  margin: 1rem;
-  width: calc(50% - 3rem);
+  line-height: 1.5rem;
 }
 
-.faculty h1 {
-  font-size: 3rem;
+.person.active {
+  min-height: 8rem;
+  max-height: 15rem;
+}
+
+.tab {
+  flex-basis: 80%;
+}
+
+.tabs {
+  gap: 1.6rem;
+}
+
+.tablinks {
+  width: 100%;
+  font-size: 1.7rem;
+  letter-spacing: 0.2rem;
+  padding: 0.5rem;
+}
+
+/*stopka*/
+footer
+{
+  width: 100%;              
+  padding: 0.8rem;                                     
+  letter-spacing: 0.4rem;    
+  font-size: 1.2rem;  
+}
+}
+
+
+/*tablety v2*/
+@media only screen and (min-width: 850px) and (max-width: 1000px)
+{
+/*Menu*/
+ul li a {
+  padding: 0.7rem 1.2rem;
+  font-size: 1.4rem;
+}
+
+ul li ul.podmenu {
+  width: 100%;
+}
+
+ul li ul.podmenu a {
+  font-size: 1.1rem;
+}
+
+ul.podmenu li a {
+  padding: 1rem 0;
+}
+
+
+/*Karuzela*/
+.up {
+  padding: 10rem 0 4rem 0;
+}
+
+.container {
+  padding: 5rem 1rem;
+  width: 90%;
+  height: 75%;
+}
+
+.card {
+  width: 35rem;
+  height: 13rem;
+  padding: 1rem 0 0 0;
+  margin-top: 7rem;
+}
+  
+.avatar {
+  width: 8rem;
+  height: 8rem;
+  transform: translate(-50%, -140%);
+  border: 5px solid #f9fafe;
+}
+
+.name {
+  font-size: 1.5rem;
+  margin-top: 0.9rem;
+}
+  
+.title {
+  font-size: 1rem;
+  margin: 0.5rem 0.2rem 0 0.2rem;
+  line-height: 1.3rem;
+}
+  
+.swiper-slide-active .card {
+  margin-top: 3rem;
+  transform: scale(1.4);
+}
+ 
+
+/* Dziekanat */
+.faculty{
+  padding: 0 0 9rem;
+}
+
+h1 {
+  font-size: 5rem;
+  letter-spacing: 0.3rem;
+  margin-bottom: 2rem;
 }
 
 .person h2 {
@@ -630,15 +818,107 @@ footer
 }
 
 .person h3 {
-  font-size: 1.6rem;
+  font-size: 1.7rem;
 }
 
 .person h4 {
-  font-size: 1.2rem;
-  margin-top: -0.3rem;
+  font-size: 1.4rem;
 }
 
+.person {
+  line-height: 2rem;
 }
+
+.person.active {
+  min-height: 9rem;
+  max-height: 15rem;
+}
+
+.tab {
+  flex-basis: 80%;
+}
+
+.tabs {
+  gap: 1.8rem;
+}
+
+.tablinks {
+  width: 100%;
+  font-size: 2rem;
+  letter-spacing: 0.3rem;
+  padding: 0.6rem;
+}
+
+/*stopka*/
+footer
+{
+  width: 100%;              
+  padding: 0.8rem;                                     
+  letter-spacing: 0.4rem;    
+  font-size: 1.2rem;  
+}
+}
+
+/*ekrany*/
+@media only screen and (min-width: 1000px) and (max-width: 1380px)
+{
+  /*Menu*/
+ul li a {
+  padding: 1rem 1.5rem;
+  font-size: 1.7rem;
+}
+
+ul li ul.podmenu {
+  width: 100%;
+}
+
+ul li ul.podmenu a {
+  font-size: 1.5rem;
+}
+
+ul.podmenu li a {
+  padding: 1.2rem 0;
+}
+
+
+/*Karuzela*/
+.container {
+  padding: 7rem 1rem;
+}
+
+.card {
+  width: 35rem;
+  height: 16rem;
+  padding: 3rem 0 0 0;
+
+}
+  
+.avatar {
+  width: 9rem;
+  height: 9rem;
+}
+
+.name {
+  font-size: 1.8rem;
+  margin-top: 1rem;
+}
+  
+.title {
+  font-size: 1.2rem;
+  margin: 0.5rem 0.2rem 0 0.2rem;
+  line-height: 1.3rem;
+}
+
+
+/* Dziekanat */
+.tablinks{
+  font-size: 1.9rem;
+}
+.tabs {
+  gap: 2rem;
+}
+}
+
 /*inne menu*/
 @media (max-width: 650px) {
     
