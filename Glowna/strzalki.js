@@ -20,22 +20,20 @@ function showCurrentText() {
 function scrollLeft() {
     currentIndex = (currentIndex - 1 + bannerText.children.length) % bannerText.children.length;
     showCurrentText();
-    bannerText.style.animation = 'none'; // Wyłącz animację
-    void bannerText.offsetWidth; // Przeczytaj offset, aby zresetować animację
-    bannerText.style.animation = null; // Ponownie włącz animację
+    bannerText.style.animation = 'none';
+    void bannerText.offsetWidth; 
+    bannerText.style.animation = null;
 }
 
 function scrollRight() {
     currentIndex = (currentIndex + 1) % bannerText.children.length;
     showCurrentText();
-    bannerText.style.animation = 'none'; // Wyłącz animację
-    void bannerText.offsetWidth; // Przeczytaj offset, aby zresetować animację
-    bannerText.style.animation = null; // Ponownie włącz animację
+    bannerText.style.animation = 'none'; 
+    void bannerText.offsetWidth; 
+    bannerText.style.animation = null; 
 }
 
-// Dodajemy obsługę kliknięć
 scrollLeftBtn.addEventListener('click', scrollLeft);
 scrollRightBtn.addEventListener('click', scrollRight);
 
-// Pokazujemy pierwszy tekst
 showCurrentText();

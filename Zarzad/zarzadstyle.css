@@ -255,6 +255,7 @@ span{
 /*Dziekanat*/
 .faculty{
   padding: 0 0 8rem 0;
+  text-decoration: none;
 }
 
 h1 {
@@ -357,7 +358,7 @@ footer
 {
 /*Menu*/
 .menu_rozwijane li a{
-  height: 3rem;
+  height: 3.8rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -488,7 +489,7 @@ footer
 {
 /*Menu*/
 .menu_rozwijane li a{
-  height: 3rem;
+  height: 3.8rem;
   display: flex;
   justify-content: center;
   align-items: center;

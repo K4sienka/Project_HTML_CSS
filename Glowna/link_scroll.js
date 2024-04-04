@@ -6,7 +6,7 @@ function redirectToPage(url) {
 //link do mapki
 document.getElementById('map').addEventListener('click', function() 
 {
-    window.open('../Glowna/photos/mapka.jpg', '_blank');
+    window.open('Glowna/photos/mapka.jpg', '_blank');
 });
 
 //przesuwanie po stronie

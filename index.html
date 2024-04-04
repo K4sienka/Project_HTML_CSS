@@ -18,43 +18,64 @@
 <body>
     <div class="wrapper" id="elem0">
 
-
         <div class="top">
             <header>
                 <h1>Przewodnik po IiAD</h1>
-            </header>
-            <div class="begin"></div>
-         <!--Menu główne-->
-            <ul>
-                <li><a class="menu  active" href="../Glowna/StronaGlowna.html">Strona główna</a></li>
-    <!--        <li> <a class="menu" href="javascript:void(0)">O nas</a>
-                    <ul class="podmenu">
-                        <li><a href="javascript:void(0)" onclick="scrollToElement('elem1')">My</a></li>
-                        <li><a href="javascript:void(0)" onclick="scrollToElement('elem2')">Kontakt</a></li>
-                    </ul>
-                </li>       -->              
-                
-                <li><a class="menu" href="Baza_kontaktowa/baza_kontaktowa.html">Baza kontaktowa</a></li>
+            </header>   
+                <nav>
+                    <ul class="main_menu">
+                            <li><a class="menu active" href="../index.html"> Strona główna </a></li>
+                <!--        <li> <a class="menu" href="javascript:void(0)">O nas</a>
+                                <ul class="podmenu">
+                                    <li><a href="javascript:void(0)" onclick="scrollToElement('elem1')">My</a></li>
+                                    <li><a href="javascript:void(0)" onclick="scrollToElement('elem2')">Kontakt</a></li>
+                                </ul>
+                            </li>       -->              
+                            <li><a class="menu" href="Baza_kontaktowa/baza_kontaktowa.html">Baza kontaktowa</a></li>
+            
+                                <li><a class="menu" href="Zarzad/zarzad.html"> Zarząd i dziekanat </a></li>
+            
+                                <li><a class="menu " href="#"> Sesja </a>
+                                    <ul class="podmenu">
+                                        <li><a href="../Sesja/Egzaminy/egzaminy.html">Egzaminy</a></li>
+                                        <li><a href="https://calendar.google.com/calendar/embed?src=216dd0a1057c0b1ea7f0e2ff1a32e50deabc0d283c44736a18a4c4252444efda%40group.calendar.google.com&ctz=Europe%2FWarsawSesja/Zaliczenia/zaliczenia.html">Zaliczenia</a></li>
+                                    </ul>
+                                </li>
+                                <li><a class="menu"  href="javascript:void(0)"> Strony uczelniane </a>
+                                <ul class="podmenu">
+                                    <li><a href="javascript:void(0)" onclick="scrollToElement('square1')">AGH</a></li>
+                                    <li><a href="javascript:void(0)" onclick="scrollToElement('square1')">Wydział GGIOŚ</a></li>
+                                    <li><a href="javascript:void(0)" onclick="scrollToElement('square1')">USOS</a></li>
+                                    <li><a href="javascript:void(0)" onclick="scrollToElement('square1')">Sylabus IAD</a></li>
+                                </ul>
+                            </li>
+                                <li><a class="menu"  href="Glowna/brak.html"> Zapisy </a>
+                                <!--<li><a class="menu"  href="https://student.agh.edu.pl/~kmurzyn/formularz/submit.php"> Zapisy </a>-->
+                                <li><a class="menu" href="Plan_zajec/plan_zajec.html"> Plan zajęć </a>
+                            </li>
+                        </ul>
+                   </ul>
+        
+                   <!--Menu na mniejsze ekrany-->
+                   <div class="przycisk_menu" onclick="Rozwin()">
+                       <span>☰</span>
+                   </div>
+        
+                   <div class="menu_rozwijane">
+        
+                    <li><a class="active" href="../index.html"> Strona główna </a></li>             
+                    <li><a class="menu" href="Baza_kontaktowa/baza_kontaktowa.html">Baza kontaktowa</a></li>
+                    <li><a class="menu" href="Zarzad/zarzad.html"> Zarząd i dziekanat </a></li>
+                    <li><a class="menu" href="../Sesja/Egzaminy/egzaminy.html">Egzaminy</a></li>
+                    <li><a class="menu" href="https://calendar.google.com/calendar/embed?src=216dd0a1057c0b1ea7f0e2ff1a32e50deabc0d283c44736a18a4c4252444efda%40group.calendar.google.com&ctz=Europe%2FWarsawSesja/Zaliczenia/zaliczenia.html">Zaliczenia</a></li>
+                    <li><a class="menu" href="javascript:void(0)" onclick="scrollToElement('square1')">Strony uczelniane</a></li>
+                    <li><a class="menu"  href="Glowna/brak.html"> Zapisy </a>
+                    <!--<li><a class="menu"  href="https://student.agh.edu.pl/~kmurzyn/formularz/submit.php"> Zapisy </a>-->
+                    <li><a class="menu" href="Plan_zajec/plan_zajec.html"> Plan zajęć </a></li>
+                   </div>
+               </nav>
+            
 
-                    <li><a class="menu" href="Zarzad/zarzad.html">Zarząd kierunku</a></li>
-
-                    <li><a class="menu ">Sesja zaliczeniowa</a>
-                    <ul class="podmenu">
-                        <li><a href="Sesja/Egzaminy/egzaminy.html">Egzaminy</a></li>
-                        <li><a href="https://calendar.google.com/calendar/embed?src=216dd0a1057c0b1ea7f0e2ff1a32e50deabc0d283c44736a18a4c4252444efda%40group.calendar.google.com&ctz=Europe%2FWarsaw">Zaliczenia</a></li>
-                    </ul>
-                </li>
-                    <li><a class="menu"  href="javascript:void(0)"> Strony uczelniane </a> <!-- odnośnik do miejsca na stronie-->
-                    <ul class="podmenu">
-                        <li><a href="javascript:void(0)" onclick="scrollToElement('square1')">AGH</a></li>
-                        <li><a href="javascript:void(0)" onclick="scrollToElement('square1')">Wydział GGIOŚ</a></li>
-                        <li><a href="javascript:void(0)" onclick="scrollToElement('square1')">USOS</a></li>
-                        <li><a href="javascript:void(0)" onclick="scrollToElement('square1')">Sylabus IAD</a></li>
-                    </ul>
-                </li>
-                    <li><a class="menu" href="Plan_zajec/plan_zajec.html">Plan zajęć</a>
-                </li>
-            </ul>
         </div> <!--koniec top-->
 
 
@@ -63,27 +84,21 @@
                     <div class="color">            
                         <div class="title">
                             <span class="text-item1">Aktualności</span>
-                            <span class="text-item2">Na dzień:  26.02.2024<!--<span id="currentDateContainer">-->
+                            <span class="text-item2">Na dzień:  04.04.2024<!--<span id="currentDateContainer">-->
                         </div>  
                         <div class="news">   
                             <div class="cover">
                                 <button id="scroll-left" class="icon" onclick="scrollLeft2()"><i class="fa-solid fa-angles-left"></i></i></button>
                             
                                 <div class="scroll-text" id="bannerText">
-                                    <div class="child">Starostka roku kolejny dzień ma dość studiów
-                                        <p class="ps">
-                                            (Dajcie mi urlop)
-                                        </p>
-                                        <p class="ps">
-                                            (ale płatny)
-                                        </p>
-                                        </div>
-                                    <div class="child"></div>
-                                    <div class="child"></div>
-                                    <div class="child"></div>
-                                    <div class="child"></div>
-                                    <div class="child"></div>
-                                    <div class="child"></div>
+<!--Tu mozna uzyc klasy ps do mniejszych dopisków-->
+                                    <div class="child">Pan Wilkosz sprawdził część zestawów z statystyki</div>
+                                    <div class="child">Z dniem 03.04 rozpoczynają się ćwiczenia z Modelowania</div>
+                                    <div class="child">Z dniem 18.04 rozpoczymają się wykłady z Modelowania</div>
+                                    <div class="child">Kolokwium z Metod Numerycznych 17.04 dla wszystkich</div>
+                                    <div class="child">Zaliczenie wykładów z Grafiki 3D 25.04 w trakcie ostatniego wykładu z tego przedmiotu</div>
+                                    <div class="child">W dniu 04.04 wszystkie wykłady zdalnie, linki na grupie kierunkowej</div>
+                                    <div class="child">W dniu 03.04 i 04.04 ćwiczenia z Grafiki 3D zdalnie, linki na stronie prowadzącej</div>
                                 </div>
                                 <button id="scroll-right" class="icon" onclick="scrollRight()"><i class="fa-solid fa-angles-right"></i></button>
                             </div>
@@ -96,11 +111,6 @@
                                 <p>Masz pytania?</p>
                                 <p>Dowiedz się więcej!</p>
                             </article>
-                        
-                            <article class="More" id='map'>
-                                <p>Szukasz mapki grillowni?</p>
-                                <p>Kliknij tutaj!</p>
-                            </article>
                         </div>
                         
                     </div>
@@ -112,7 +122,7 @@
             <div class="questions">
                 <div class="left">
                     <div class="FAQ"><h1>FAQ</h1><br>Czyli Najczęściej Zadawane Pytania</br>
-                    <span class="star">*Najczęściej zadawane w ostatnim czasie.</span></div>
+                    <span class="star"><!--*Najczęściej zadawane w ostatnim czasie.--></span></div>
                     <img src="Glowna/photos/logo.png" alt="">
                 </div>
                 <div class="right">
@@ -167,7 +177,7 @@
                                 <h3>Ile jest nieobecności z *nazwa przedmiotu*?</h3>
                             </label>
                             <div class="content1">
-                                <p><!--Z wszystkim przedmiotów w tym semestrze jest po 1 nieobecności. Każdy przedmiot można odrobić w innej grupie.--></p>
+                                <p>Sieci komputerowe, Programowanie w Pythonie oraz Modelowanie w naukach o Ziemi mają "nielimitowane nieobecności". Na pozostałych przedmiotach jest po 2 nieobecności. Każdą nieobecność można odrobić w innej grupie.</p>
                             </div>
                         </div>
                         <div class="tab">
@@ -181,10 +191,10 @@
                                     <br>Co więcej, można przełożyć więcej niż jeden przedmiot na następne semestry.<br>Wtedy nazywa się to "urlop dziekański".</p>
                             </div>
                         -->  
-                                <h3>Czy *to* zdjęcie zostało zrobione legalnie?</h3>
+                                <h3>Jak znaleźć się z znajomymi na miasteczku?</h3>
                             </label>
                             <div class="content1">
-                                <p>Na 99% nie.</p>
+                                <p>Łapcie fotkę grillowni:  <span id="map">Kliknij tutaj!</span></p>
                             </div>
                         </div>
                 </div>
@@ -228,7 +238,6 @@
                         <p class="link" onclick="redirectToPage('https://sylabusy.agh.edu.pl/pl/1/2/18/1/4/6/24')">Przejdź do strony</p>
                     </div>
                 </div>
-                <div  id="elem1"></div>
         </div>
 
               <!--O nas
@@ -301,10 +310,9 @@
 
     <!--JAVA SCRIPT-->
     <script src="Glowna/link_scroll.js"></script>
-    <script src="Glowna/data_rozwin.js"></script>
     <script src="Glowna/strzalki.js"></script>
     <script src="Glowna/kropki.js"></script>
-    <script src="Glowna/ekrany_dotykowe.js"></script>
+    <script src="Glowna/expand.js"></script>
 </body>
 
 </html>
