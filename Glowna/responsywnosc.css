@@ -3,12 +3,14 @@
 {
 /*Menu*/
 h1 {
-    font-size: 1.5rem;
-    letter-spacing: 0.1em;
+    font-size: 2rem;
+    letter-spacing: 0.1rem;
+    display: inline;
 }
 
 .menu_rozwijane li a{
-  height: 3.8rem;
+  height: 3rem;
+  font-size: 1.2rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -18,235 +20,202 @@ nav{
   background-color: #000000;
 }
 
-ul li a {
-  padding: 3px 6px;
-  font-size: 0.5rem;
-}
-
 ul li ul.podmenu {
   width: 100%;
 }
 
-ul li ul.podmenu a {
-  font-size: 0.4rem;
-}
-
-ul.podmenu li a {
-  padding: 15px 0;
-}
-
 /*-----------------*/
 /*Aktualnosci*/
-.a0::before {
-    height: 50%;
-    top: 5rem;
-}
+.a0 {
+    min-height: 70vh;
+    width: 100%;
+    padding: 13.2rem 0 0 0;
+} 
 
 .color {
-    top: 11rem;
-    width: 15rem; 
-    height: 5rem;
+    top: 0.5rem;
+    width: 21rem;
+    height: 8rem;
 }
 
-/*
-.color::before,
-.color::after {
-    border-width: 4.25rem;
+.title {
+    line-height: 1.11rem;
 }
 
-.color::before {
-    right: -4.25rem;
-    top: -4.25rem;
-}
-
-.color::after {
-    left: -4.25rem;
-    bottom: -4.25rem;
-}*/
 
 .title .text-item1 {
-    margin-top: 0.5rem;
-    font-size: 0.9rem;
-    letter-spacing: 0.1rem; 
+    margin-top: 0.7rem;
+    font-size: 1.1rem;
+    letter-spacing: 8px;
 }
 
 .title .text-item2,
-.title .text-item2 span {
-    font-size: 0.5rem; 
-    text-wrap: nowrap;
+.title .text-item2 span{
+    font-size: 0.6rem;
 }
 
 .scroll-text {
-    width: 11rem; 
-    height: 1.4rem; 
-    margin-top: 0.5rem;
+    letter-spacing: 1px;
+    width: 18rem;
+    height: 3rem;
+    margin-top: 0.8rem;
 }
 
 .child {
-    margin-top: 0.1rem;
-    font-size: 0.4rem; 
-    line-height: 0.4rem;
+    font-size: 0.8rem;
+    line-height: 1.2rem;
 }
 
-.ps {
-    font-size: 0.25rem;
-    line-height: 0.2rem;
+
+/*strzalki*/
+#scroll-left,
+#scroll-right {
+    top: 1.5rem;         
 }
 
 #scroll-left {
-    left: 0.8rem;
-    top: 0.8rem;
+    left: 0.15rem;    
 }
 
 #scroll-right {
-    right: 0.8rem;
-    top: 0.8rem;
+    right: 0.15rem; 
 }
 
 .icon i {
-    font-size: 1rem; 
+    font-size: 1.4rem;
 }
 
-.Mores {
-    gap: 0.8rem;
-}
-
-.More {
-    padding: 0.3rem;
-    width: 7rem; 
-    height: 1.7rem;
-    font-size: 0.3rem;
-    white-space: nowrap;
-    margin-top: 2.5rem;
-}
-
+/*kropki*/
 .dots-container {
-    margin-top: 0.08rem; 
+    margin-top: 0.4rem; 
 }
 
 .dot {
-    width: 0.15rem;
-    height: 0.15rem;
-    margin: 0 0.1rem;
+    width: 0.25rem;
+    height: 0.25rem;
+    margin: 0 0.2rem;
 }
 
+/*przycisk FAQ*/
+.More {
+    padding: 0.8rem 0 0.8rem 0 ; 
+    width: 9rem;
+    font-size: 0.5rem;
+    margin-top: 3rem;
+}
 
 /*-------------------*/
 /*FAQ*/
 #faq {
-    margin-top: 2rem;
-    margin-bottom: 1rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
 }
 
 .middle {
-margin-top: 22rem; 
-margin-bottom: 7rem; 
+    margin-top: -2rem; 
+    margin-bottom: 4rem;  
 }
 
 .questions {
-flex-direction: column;
-align-items: center;
-justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .FAQ {
-    font-size: 1rem;
+    font-size: 1.2rem;
 }
 
 .questions .left .FAQ h1 {
-    font-size: 2rem;
+    font-size: 2.5rem;
 }
 
-.left,
-.right {
-order: 0;
-}
 
 .left img {
-    width: 20%;
-    height: 20%;
+    width: 40%;
+    height: 40%;
+    margin-bottom: 1rem;
 }
 
 .right .tab {
-    width: 20rem;
+    width: 18rem;
     padding: 0 0.5rem;
-    margin: 0.1rem;
+    margin: 0.3rem;
 }
 
 .right .tab label::after{
-    right: 0.1rem;
-    font-size: 1.5rem;
+    right: 0.5rem;
+    font-size: 1.1rem;
 }
 
 .right .tab label h2 {
-    min-width: 1.5rem;
-    min-height: 1.5rem;
-    font-size: 1rem;
+    min-width: 1.2rem;
+    min-height: 1.2rem;
+    font-size: 0.7rem;
     margin-right: 0.1rem;
 }
 
 .right .tab input:checked ~ label h2 {
-    font-size: 4rem;
+    font-size: 3rem;
 }
 
 .right .tab label h3 {
     font-size: 0.8rem; 
-    padding: 1rem;
-    line-height: 0.8rem;
+    padding: 0.8rem;
+    line-height: 1rem;
 }
 
 .right .tab .content1 {
-    font-size: 0.8rem;
-    line-height: 1rem;
-
+    font-size: 0.7rem;
+    line-height: 0.9rem;
 }
 
 .right .tab .content1 p {
     padding: 0.5rem 0;
 }
 
-.FAQ .star {
-    font-size: 0.5rem;
-}
-
 /*-------------------*/
 /*uczelnia*/
-.box::before {
-    height: 120%;
-} 
-
 .box {
-    flex-direction: column;
+    min-height: 33rem ;
     align-items: center;
     justify-content: center;
-    margin-bottom: 5rem;
+    margin: 0;
 }
 
 .intro {
-    top: -4rem;
+    top: 0.8rem;
     font-size: 1.4rem;
     text-align: center;
     letter-spacing: 0.1rem;
+    margin: 0 0.2rem 0 0.2rem;
 }
 
 .square {
-    width: 10rem;
-    height: 10rem;
-    margin: 1rem;
-    top: 1rem;
+    width: 9rem;
+    height: 9rem;
+    margin: 0.6rem;
+    top: 2rem;
+    margin-bottom: 3rem;
+}
+
+.square:hover{
+    box-shadow: none;
 }
 
 .square:hover h3 {
     margin-top: 1rem;
+    transform: none;
 }
 
 .square:hover img {
-    transform: none;
+    transform: scale(1.2);
     transition: none;
 }
 
 .content .box .square h3{
-    font-size: 1.2rem;
+    font-size: 1rem;
     padding: 1rem;
     margin-top: 0.5rem;
 }
@@ -256,18 +225,8 @@ order: 0;
     font-size: 0.8rem;
 }
 
-.square.active {
-    transform: scale(1.2);
-}
-
-.square.active h3 {
-    transform: scale(1.2);
-}
-
-
-
-/*-------------------*/
-/*O nas*/
+/*-------------------
+/*O nas
 .about {
 margin-top: 1rem;
 margin-bottom: 1rem;
@@ -319,8 +278,8 @@ margin-bottom: 1rem;
 
 
 
-/*-------------------*/
-/*Kontakt i stopka*/
+/*-------------------
+/*Kontakt i stopka
 .contact-section {
     height: 30rem;
 }
@@ -360,289 +319,256 @@ input, textarea
     padding: 0.1rem 0.5rem;
     margin: 0 0.7rem;
 }
-
-footer
-{
-    padding: 0.2rem;
-    letter-spacing: 0.5rem;
-}
+*/
 
 .scroll-to-top {
-    top: 92% !important;
-    right: 10% !important;
+    top: 95% !important;
+    right: 3% !important;
 }
 
 .scroll-to-top i {
     font-size: 1.8rem;
 }
 
+/*stopka*/
+footer {
+  width: 100%;              
+  padding: 0.5rem;                                     
+  letter-spacing: 0.3rem;    
+  font-size: 0.7rem;  
 }
-
+}
 
 
 @media only screen and (min-width: 470px) and (max-width: 650px)
 {
 /*Menu*/
+h1 {
+    font-size: 2.5rem;
+    letter-spacing: 0.1rem;
+    display: inline;
+}
+
 .menu_rozwijane li a{
-  height: 3.8rem;
+  height: 3.5rem;
+  font-size: 1.5rem;
   display: flex;
   justify-content: center;
   align-items: center;
-  }
+}
 
 nav{
   background-color: #000000;
-}
-
-ul li a {
-  padding: 3px 6px;
-  font-size: 0.5rem;
 }
 
 ul li ul.podmenu {
   width: 100%;
 }
 
-ul li ul.podmenu a {
-  font-size: 0.4rem;
-}
-
-ul.podmenu li a {
-  padding: 15px 0;
-}
-    
-
-/*-------------------------------------*/
+/*-----------------*/
 /*Aktualnosci*/
-.a0::before {
-    height: 80%;
-    top: 6rem;
-}
+.a0 {
+    min-height: 70vh;
+    width: 100%;
+    padding: 13.2rem 0 0 0;
+} 
 
 .color {
-    width: 28rem; 
-    height: 8rem;
-    margin-top: 1.5rem;
+    top: 0.5rem;
+    width: 29rem;
+    height: 10rem;
 }
 
-/*.color::before,
-.color::after {
-    border-width: 6.5rem;
+.title {
+    line-height: 1.5rem;
 }
 
-.color::before {
-    right: -6.5rem;
-    top: -6.5rem;
-}
-
-.color::after {
-    left: -6.5rem;
-    bottom: -6.5rem;
-}*/
 
 .title .text-item1 {
-    margin-top: 0.7rem;
+    margin-top: 0.6rem;
     font-size: 1.7rem;
-    letter-spacing: 0.1rem; 
+    letter-spacing: 8px;
 }
 
 .title .text-item2,
-.title .text-item2 span {
-    font-size: 0.8rem; 
-    text-wrap: nowrap;
+.title .text-item2 span{
+    font-size: 1rem;
 }
 
 .scroll-text {
-    width: 22rem; 
-    height: 2rem; 
-    margin-top: 1rem;
+    letter-spacing: 1px;
+    width: 24.5rem;
+    height: 4rem;
+    margin-top: 0.7rem;
 }
 
 .child {
-    font-size: 0.6rem; 
-    line-height: 0.5rem;
-    margin-top: 0.1rem;
+    font-size: 0.9rem;
+    line-height: 1.3rem;
+    margin: 0 0.2rem 0 0.2rem;
 }
 
-.ps {
-    font-size: 0.4rem;
-    line-height: 0.3rem;
+
+/*strzalki*/
+#scroll-left,
+#scroll-right {
+    top: 2rem;         
 }
 
 #scroll-left {
-    left: 0.9rem;
-    top: 1.4rem;
+    left: 0.3rem;    
 }
 
 #scroll-right {
-    right: 0.9rem;
-    top: 1.4rem;
+    right: 0.3rem; 
 }
 
 .icon i {
-    font-size: 1.4rem; 
-
+    font-size: 1.9rem;
 }
 
-.Mores {
-    gap: 2rem;
-}
-
-.More {
-    padding: 0.8rem;
-    height: 3.5rem;
-    width:  12rem; 
-    font-size: 0.6rem;
-    margin-top: 4rem;
-}
-
-
+/*kropki*/
 .dots-container {
-    margin-top: 0.3rem; 
+    margin-top: 0.4rem; 
 }
 
 .dot {
-    width: 0.25rem;
-    height: 0.25rem;
+    width: 0.35rem;
+    height: 0.35rem;
+    margin: 0 0.25rem;
 }
 
+/*przycisk FAQ*/
+.More {
+    padding: 1rem 0 1rem 0 ; 
+    width: 10rem;
+    font-size: 0.7rem;
+    margin-top: 3rem;
+}
 
-
-/*----------------*/
+/*-------------------*/
 /*FAQ*/
+#faq {
+    margin-top: -5rem;
+    margin-bottom: 7rem;
+}
+
 .middle {
-margin-top: 39rem; 
-margin-bottom: 8rem; 
+    margin-top: -2rem; 
+    margin-bottom: 5rem;  
 }
 
 .questions {
-flex-direction: column;
-align-items: center;
-justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .FAQ {
-    font-size: 1.2rem;
+    font-size: 1.6rem;
 }
 
 .questions .left .FAQ h1 {
-    font-size: 5rem;
+    font-size: 3.8rem;
 }
 
-.left,
-.right {
-order: 0;
-}
 
 .left img {
-    width: 40%;
-    height: 40%;
+    width: 50%;
+    height: 50%;
+    margin-bottom: 1.5rem;
 }
 
 .right .tab {
-    width: 27rem;
-    padding: 0 0.7rem 0.7rem;
-    margin: 0.7rem;
+    width: 29rem;
+    padding: 0 0.8rem;
+    margin: 0.5rem;
 }
 
 .right .tab label::after{
-    right: 0.5rem;
-    font-size: 2rem;
+    right: 0.7rem;
+    font-size: 1.6rem;
 }
 
 .right .tab label h2 {
-    min-width: 2.2rem;
-    min-height: 2.2rem;
-    font-size: 1.7rem;
-    margin-right: 0.3rem;
+    min-width: 1.5rem;
+    min-height: 1.5rem;
+    font-size: 1rem;
+    margin-right: 0.1rem;
 }
 
 .right .tab input:checked ~ label h2 {
-    font-size: 6rem;
+    font-size: 4.5rem;
 }
 
 .right .tab label h3 {
-    font-size: 1.2rem; 
-    padding: 1.2rem;
-    line-height: 1.3rem;
+    font-size: 1.3rem; 
+    padding: 1.5rem;
+    line-height: 1.5rem;
 }
 
 .right .tab .content1 {
-    font-size: 1rem;
-    line-height: 1.2;
+    font-size: 1.2rem;
+    line-height: 1.3rem;
 }
 
 .right .tab .content1 p {
-    padding: 0.8rem 0;
-}
-
-.FAQ .star {
-    font-size: 0.7rem;
+    padding: 0.9rem 0;
 }
 
 /*-------------------*/
 /*uczelnia*/
-.box::before {
-    height: 125%;
-} 
-
 .box {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    min-height: 33rem ;
     align-items: center;
-    height: auto;
+    justify-content: center;
+    margin: 0;
 }
 
 .intro {
+    top: 0.8rem;
+    font-size: 2.2rem;
     text-align: center;
-    top: -1rem;
-    font-size: 2rem;
     letter-spacing: 0.1rem;
+    margin: 0 0.2rem 0 0.2rem;
 }
 
 .square {
-    width: 12rem;
-    height: 12rem;
-    margin: 2rem;
+    width: 11rem;
+    height: 11rem;
+    margin: 1.5rem;
+    top: 5rem;
+    margin-bottom: 7rem;
 }
 
-.square:hover {
-    box-shadow: 0 0 0 ;
+.square:hover{
+    box-shadow: none;
+}
+
+.square:hover h3 {
+    margin-top: 1rem;
+    transform: none;
 }
 
 .square:hover img {
-    transform: none;
+    transform: scale(1.2);
     transition: none;
 }
 
 .content .box .square h3{
-    font-size: 1.5rem;
-    padding: 1.2rem;
-    margin-top: 1rem;
-}
-
-.square:hover h3 {
-    margin-top: 2rem;
+    font-size: 1rem;
+    padding: 1rem;
+    margin-top: 0.5rem;
 }
 
 .link {
-    padding: 0.8rem;
-    font-size: 1.4rem;
+    padding: 0.4rem;
+    font-size: 0.8rem;
 }
 
-.square.active {
-    transform: scale(1.2);
-}
-
-.square.active h3 {
-    transform: scale(1.2);
-}
-
-
-
-/*-------------------*/
-/*O nas*/
+/*-------------------
+/*O nas
 .about {
 margin-top: 2rem;
 margin-bottom: 2rem;
@@ -692,10 +618,8 @@ font-size: 1.1rem;
 font-size: 0.6rem;
 }
 
-
-
-/*-------------------*/
-/*Kontakt i stopka*/
+/*-------------------
+/*Kontakt i stopka
 .contact-section {
 height: 40rem;
 }
@@ -738,11 +662,15 @@ padding: 0.2rem 0.8rem;
 .send:hover{
 background-color: rgba(14, 98, 158, 0.7);
 }
+*/
+
 
 footer
 {
-padding: 0.2rem;
-letter-spacing: 0.5rem;
+  width: 100%;              
+  padding: 0.6rem;                                     
+  letter-spacing: 0.3rem;    
+  font-size: 0.9rem;  
 }
 
 .scroll-to-top {
@@ -750,10 +678,10 @@ top: 94% !important;
 right: 5% !important;
 }
 
+.scroll-to-top i {
+    font-size: 2.2rem;
 }
-
-
-
+}
 
 
 
@@ -762,237 +690,249 @@ right: 5% !important;
 {
 /*Menu*/
 h1 {
-    font-size: 2.2rem;
-    letter-spacing: 0.2rem;
+    font-size: 2.8rem;
+    letter-spacing: 0.3rem;
+}
+
+.menu_rozwijane li a{
+    height: 3.8rem;
+    font-size: 1.7rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+  
+  nav{
+    background-color: #000000;
+}
+  
+  ul li ul.podmenu {
+    width: 100%;
 }
 
 ul li a {
-  padding: 0.7rem 1.2rem;
-  font-size: 1.4rem;
+    padding: 0.8rem 1.5rem;
+    font-size: 1.6rem;
 }
-
-ul li ul.podmenu {
-  width: 100%;
+  
+  ul li ul.podmenu {
+    width: 100%;
 }
-
-ul li ul.podmenu a {
-  font-size: 1.1rem;
+  
+  ul li ul.podmenu a {
+    font-size: 1.1rem;
 }
-
-ul.podmenu li a {
-  padding: 1rem 0;
+  
+  ul.podmenu li a {
+    padding: 1rem 0;
 }
 
 /*-----------------*/
 /*Aktualnosci*/
-.a0::before {
-    height: 70%;
-    top: 8rem;
-}
+.a0 {
+    min-height: 100vh;
+    width: 100%;
+    padding: 20rem 0 0 0;
+} 
 
 .color {
-    width: 45rem; 
-    height: 10rem;
+    top: -0.5rem;
+    width: 39rem;
+    height: 13rem;
 }
 
-/*
-.color::before,
-.color::after {
-    border-width: 8.62rem;
+.title {
+    line-height: 2rem;
 }
 
-.color::before {
-    right: -8.55rem;
-    top: -8.6rem;
-}
-
-.color::after {
-    left: -8.55rem;
-    bottom: -8.6rem;
-}*/
 
 .title .text-item1 {
-    margin-top: 0.4rem;
+    margin-top: 0.8rem;
     font-size: 2.2rem;
-    letter-spacing: 0.1rem; 
+    letter-spacing: 8px;
 }
 
 .title .text-item2,
-.title .text-item2 span {
-    font-size: 1rem; 
-    text-wrap: nowrap;
+.title .text-item2 span{
+    font-size: 1.4rem;
 }
 
 .scroll-text {
-    width: 37rem; 
-    height: 3rem; 
+    letter-spacing: 1px;
+    width: 33rem;
+    height: 5rem;
     margin-top: 0.9rem;
 }
 
 .child {
-    margin-top: 0.1rem;
-    line-height: 0.9rem;
-    font-size: 1rem; 
+    font-size: 1.2rem;
+    line-height: 1.4rem;
+    margin: 0 0.3rem 0 0.3rem;
 }
 
-.ps {
-    font-size: 0.5rem;
-    line-height: 0.6rem;
+
+/*strzalki*/
+#scroll-left,
+#scroll-right {
+    top: 2.5rem;         
 }
 
 #scroll-left {
-    left: 1.6rem;
-    top: 1.8rem;
+    left: 0.4rem;    
 }
 
 #scroll-right {
-    right: 1.6rem;
-    top: 1.8rem;
+    right: 0.4rem; 
 }
 
 .icon i {
-    font-size: 1.8rem; 
-   
+    font-size: 2.5rem;
 }
 
-.More {
-    padding: 0.9rem 0.5rem;
-    height: 3rem;
-    width:  10rem; 
-    font-size: 0.6rem;
-    margin-top: 5rem;
-}
-
+/*kropki*/
 .dots-container {
-    margin-top: 0.3rem; 
+    margin-top: 0.5rem; 
 }
 
 .dot {
     width: 0.4rem;
     height: 0.4rem;
+    margin: 0 0.25rem;
+}
+
+/*przycisk FAQ*/
+.More {
+    padding: 1.5rem 0 1.5rem 0 ; 
+    width: 13.5rem;
+    font-size: 1rem;
+    margin-top: 6rem;
+}
+
+/*-------------------*/
+/*FAQ*/
+#faq {
+    margin-top: -5rem;
+    margin-bottom: 7rem;
+}
+
+.middle {
+    margin-top: -2rem; 
+    margin-bottom: 5rem;  
+}
+
+.questions {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.FAQ {
+    font-size: 2rem;
+}
+
+.questions .left .FAQ h1 {
+    font-size: 5rem;
 }
 
 
-/*----------------*/
-/*FAQ*/
-.middle {
-    margin-top: 35rem; 
-    margin-bottom: 16rem; 
-    }
-    
-    .FAQ {
-        font-size: 1.3rem;
-        text-wrap: wrap;
-    }
+.left img {
+    width: 55%;
+    height: 55%;
+    margin-bottom: 1.8rem;
+}
 
-    .questions .left .FAQ h1 {
-        font-size: 5rem;
-    }
+.right .tab {
+    width: 33rem;
+    padding: 0 1rem;
+    margin: 0.5rem;
+}
 
-    .left img {
-        width: 60%;
-        height: 60%;
-    }
-    
-    .right .tab {
-        width: 33rem;
-        padding: 0 0.7rem 0.7rem;
-        margin: 0.7rem;
-    }
-    
-    .right .tab label::after{
-        right: 1rem;
-        font-size: 2.5rem;
-    }
-    
-    .right .tab label h2 {
-        width: 1.8rem;
-        height: 1.8rem;
-        font-size: 2.2rem;
-        margin-right: 0.5rem;
-    }
-    
-    .right .tab input:checked ~ label h2 {
-        font-size: 8.5rem;
-    }
-    
-    .right .tab label h3 {
-        font-size: 1.4rem; 
-    }
-    
-    .right .tab .content1 {
-        font-size: 1.2rem;
-    
-    }
-    
-    .right .tab .content1 p {
-        padding: 1rem 0;
-    }
+.right .tab label::after{
+    right: 0.9rem;
+    font-size: 2.8rem;
+}
 
-    .FAQ .star {
-        font-size: 1rem;
-    }
+.right .tab label h2 {
+    min-width: 2.3rem;
+    min-height: 2.3rem;
+    font-size: 1.7rem;
+    margin-right: 0.2rem;
+}
 
+.right .tab input:checked ~ label h2 {
+    font-size: 5.5rem;
+}
+
+.right .tab label h3 {
+    font-size: 1.4rem; 
+    padding: 1.6rem;
+    line-height: 1.5rem;
+}
+
+.right .tab .content1 {
+    font-size: 1.2rem;
+    line-height: 1.4rem;
+}
+
+.right .tab .content1 p {
+    padding: 1rem 0;
+}
 
 /*-------------------*/
 /*uczelnia*/
 .box {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    min-height: 42rem ;
     align-items: center;
-    height: auto;
+    justify-content: center;
+    margin: 0;
 }
 
 .intro {
+    top: 1rem;
+    font-size: 3rem;
     text-align: center;
-    top: -7rem;
-    font-size: 3.5rem;
     letter-spacing: 0.1rem;
+    margin: 0 0.2rem 0 0.2rem;
 }
 
 .square {
-    width: 18rem;
-    height: 18rem;
-    margin: 3rem 3rem;
+    width: 16rem;
+    height: 16rem;
+    margin: 1.8rem;
+    top: 8rem;
+    margin-bottom: 12rem;
 }
 
-.square:hover {
-    box-shadow: 0 0 0 ;
-}
-
-.square:hover img {
-    transform: none;
-    transition: none;
-}
-
-h3{
-    font-size: 2rem;
-    padding: 1rem;
-    margin-top: 1.5rem;
+.square:hover{
+    box-shadow: none;
 }
 
 .square:hover h3 {
-    margin-top: 2.2rem;
+    margin-top: 1.8rem;
+    transform: none;
+}
+
+.square:hover img {
+    transform: scale(1.3);
+    transition: none;
+}
+
+.content .box .square h3{
+    font-size: 1.9rem;
+    padding: 1.5rem;
+    margin-top: 1.3rem;
 }
 
 .link {
-    padding: 1.1rem;
-    font-size: 1.8rem;
-}
-
-.square.active {
-    transform: scale(1.2);
-}
-
-.square.active h3 {
-    transform: scale(1.2);
+    padding: 0.8rem;
+    font-size: 1.5rem;
 }
 
 
 
-/*-------------------*/
-/*O nas*/
+/*-------------------
+/*O nas
 .about {
 margin-top: 12rem;
 margin-bottom: 2rem;
@@ -1040,8 +980,8 @@ font-size: 1.2rem;
 
 
 
-/*-------------------*/
-/*Kontakt i stopka*/
+/*-------------------
+/*Kontakt i stopka
 .contact-section {
 height: 60rem;
 }
@@ -1084,29 +1024,41 @@ padding: 0.3rem 0.6rem;
 .send:hover{
 background-color: rgba(14, 98, 158, 0.7);
 }
+*/
 
 footer
 {
-font-size: 1.4rem;
-padding: 0.4rem;
-letter-spacing: 0.5rem;
+  width: 100%;              
+  padding: 0.8rem;                                     
+  letter-spacing: 0.4rem;    
+  font-size: 1.2rem;  
 }
 
 .scroll-to-top {
 top: 92% !important;
-right: 5% !important;
+right: 4% !important;
 }
+
+.scroll-to-top i {
+    font-size: 2.5rem;
+}
+
 }
 
 
 
 /*tablety v2*/
-@media only screen and (min-width: 850px) and (max-width: 1000px)
+@media only screen and (min-width: 850px) and (max-width: 1300px)
 {
 /*Menu*/
+h1 {
+    font-size: 3.5rem;
+    letter-spacing: 0.4rem;
+}
+
 ul li a {
-  padding: 0.7rem 1.2rem;
-  font-size: 1.4rem;
+  padding: 0.7rem 1.9rem;
+  font-size: 1.1rem;
 }
 
 ul li ul.podmenu {
@@ -1114,11 +1066,345 @@ ul li ul.podmenu {
 }
 
 ul li ul.podmenu a {
-  font-size: 1.1rem;
+  font-size: 1.2rem;
 }
 
 ul.podmenu li a {
-  padding: 1rem 0;
+  padding: 1.5rem 0;
+}
+
+/*-----------------*/
+/*Aktualnosci*/
+.a0 {
+    min-height: 100vh;
+    width: 100%;
+    padding: 20rem 0 0 0;
+} 
+
+.color {
+    top: -0.5rem;
+    width: 52rem;
+    height: 15rem;
+}
+
+.title {
+    line-height: 2.5rem;
+}
+
+
+.title .text-item1 {
+    margin-top: 0.8rem;
+    font-size: 2.6rem;
+    letter-spacing: 8px;
+}
+
+.title .text-item2,
+.title .text-item2 span{
+    font-size: 1.4rem;
+}
+
+.scroll-text {
+    letter-spacing: 1px;
+    width: 45rem;
+    height: 6rem;
+    margin-top: 0.9rem;
+}
+
+.child {
+    font-size: 1.5rem;
+    line-height: 1.8rem;
+    margin: 0 0.3rem 0 0.3rem;
+}
+
+
+/*strzalki*/
+#scroll-left,
+#scroll-right {
+    top: 2.6rem;         
+}
+
+#scroll-left {
+    left: 0.4rem;    
+}
+
+#scroll-right {
+    right: 0.4rem; 
+}
+
+.icon i {
+    font-size: 3rem;
+}
+
+/*kropki*/
+.dots-container {
+    margin-top: 0.5rem; 
+}
+
+.dot {
+    width: 0.4rem;
+    height: 0.4rem;
+    margin: 0 0.25rem;
+}
+
+/*przycisk FAQ*/
+.More {
+    padding: 1.5rem 0 1.5rem 0 ; 
+    width: 13.5rem;
+    font-size: 1rem;
+    margin-top: 6rem;
+}
+
+/*-------------------*/
+/*FAQ*/
+#faq {
+    margin-top: -5rem;
+    margin-bottom: 7rem;
+}
+
+.middle {
+    margin-top: -2rem; 
+    margin-bottom: 5rem;  
+}
+
+.questions {
+    align-items: center;
+    justify-content: center;
+}
+
+.FAQ {
+    font-size: 2rem;
+    white-space: pre-wrap;
+}
+
+.questions .left .FAQ h1 {
+    font-size: 5.5rem;
+}
+
+
+.left img {
+    width: 70%;
+    height: 70%;
+    margin-bottom: 0rem;
+    margin-top: -5rem;
+}
+
+.right .tab {
+    width: 36rem;
+    padding: 0 1rem;
+    margin: 0.8rem;
+}
+
+.right .tab label::after{
+    right: 0.7rem;
+    font-size: 2.6rem;
+}
+
+.right .tab label h2 {
+    min-width: 2.2rem;
+    min-height: 2.2rem;
+    font-size: 1.6rem;
+    margin-right: 0.2rem;
+}
+
+.right .tab input:checked ~ label h2 {
+    font-size: 6rem;
+}
+
+.right .tab label h3 {
+    font-size: 1.5rem; 
+    padding: 1.5rem;
+    line-height: 1.4rem;
+}
+
+.right .tab .content1 {
+    font-size: 1.4rem;
+    line-height: 1.3rem;
+}
+
+.right .tab .content1 p {
+    padding: 0.9rem 0;
+}
+
+/*-------------------*/
+/*uczelnia*/
+.box {
+    min-height: 42rem ;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+}
+
+.intro {
+    top: 1rem;
+    font-size: 3.5rem;
+    text-align: center;
+    letter-spacing: 0.1rem;
+    margin: 0 0.2rem 0 0.2rem;
+}
+
+.square {
+    width: 20rem;
+    height: 20rem;
+    margin: 1.8rem;
+    top: 10rem;
+    margin-bottom: 14rem;
+}
+
+.square:hover{
+    box-shadow: none;
+}
+
+.square:hover h3 {
+    margin-top: 3rem;
+    transform: none;
+}
+
+.square:hover img {
+    transform: scale(1.3);
+    transition: none;
+}
+
+.content .box .square h3{
+    font-size: 2.5rem;
+    padding: 1.8rem;
+    margin-top: 1.8rem;
+}
+
+.link {
+    padding: 1.2rem;
+    font-size: 1.8rem;
+}
+
+}
+
+
+
+/*ekrany*/
+@media only screen and (min-width: 1000px) and (max-width: 1300px)
+{
+    /*Menu*/
+h1 {
+    font-size: 4rem;
+    letter-spacing: 0.4rem;
+}
+
+ul li a {
+  padding: 0.7rem 2.1rem;
+  font-size: 1.5rem;
+}
+
+ul li ul.podmenu {
+  width: 100%;
+}
+
+ul li ul.podmenu a {
+  font-size: 1.4rem;
+}
+
+ul.podmenu li a {
+  padding: 1.6rem 0;
+}
+
+/*-------------------*/
+/*uczelnia*/
+.box {
+    min-height: 42rem ;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+}
+
+.intro {
+    top: 1rem;
+    font-size: 3.5rem;
+    text-align: center;
+    letter-spacing: 0.1rem;
+    margin: 0 0.2rem 0 0.2rem;
+}
+
+.square {
+    width: 20rem;
+    height: 20rem;
+    margin: 1.8rem;
+    top: 10rem;
+    margin-bottom: 14rem;
+}
+
+.square:hover{
+    box-shadow: none;
+}
+
+.square:hover h3 {
+    margin-top: 3rem;
+    transform: none;
+}
+
+.square:hover img {
+    transform: scale(1.3);
+    transition: none;
+}
+
+.content .box .square h3{
+    font-size: 2.5rem;
+    padding: 1.8rem;
+    margin-top: 1.8rem;
+}
+
+.link {
+    padding: 1.2rem;
+    font-size: 1.8rem;
+}
+}
+
+/*ekran v237345*/
+@media only screen and (min-width: 1130px) and (max-width: 1480px)
+{
+    /*uczelnia*/
+.box {
+    min-height: 35rem ;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+}
+
+.intro {
+    top: 1rem;
+    font-size: 4rem;
+    text-align: center;
+    letter-spacing: 0.1rem;
+    margin: 0 0.2rem 0 0.2rem;
+}
+
+.square {
+    width: 16rem;
+    height: 16rem;
+    margin: 0.8rem;
+    top: 1rem;
+    margin-bottom: 2rem;
+}
+
+.square:hover{
+    box-shadow: none;
+}
+
+.square:hover h3 {
+    margin-top: 2rem;
+    transform: scale(1.2);
+}
+
+.square:hover img {
+    transform: scale(1.1);
+}
+
+.content .box .square h3{
+    font-size: 1.7rem;
+    padding: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.link {
+    padding: 1rem;
+    font-size: 1.5rem;
 }
 
 }
