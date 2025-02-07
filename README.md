@@ -22,7 +22,7 @@ Get in touch with group leaders, year representatives, and the **faculty contact
 ### 🎓 Exam Sessions
 View exams grouped by **dates or subjects** to easily track your schedule.
 
-![Exam Sessions](Podglad/sesja.png
+![Exam Sessions](Podglad/sesja.png)
 
 ### 📅 Class Schedules
 Access all schedules in one place, including the complete **year schedule** and **individual group schedules**.
